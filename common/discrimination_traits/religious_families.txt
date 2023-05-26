@@ -1,0 +1,268 @@
+﻿# heritage = yes for faith groups, heritage = no or null for families
+
+abrahamic = {
+	#Family
+}
+	#Christian, Muslim, and Jewish in vanilla
+	orishan = {
+		heritage = yes
+	}
+	
+	rastafari = {
+		heritage = yes
+	}
+	
+	vodun = {
+		heritage = yes
+	}
+	
+	afrosyncretic = { #Covers Orishan, Rastafari, and Vodun, making all three essentially flavour
+		heritage = yes
+	}
+
+	vernacular = {
+		heritage = yes
+	}
+
+	postadventist = {
+		heritage = yes
+	}
+	
+	divina_patriota = {
+		heritage = yes
+	}
+	
+	originario = {
+		heritage = yes
+	}
+	
+	peyotist = {
+		heritage = yes
+	}
+	
+	universalist = {
+		heritage = yes
+	}
+	
+	tributist = {
+		heritage = yes
+	}
+	
+	tarahumara = {
+		heritage = yes
+	}
+	
+	spiritist = {
+		heritage = yes
+	}
+	
+	druze_heritage = {
+		heritage = yes
+	}
+	
+	rezadeiros = {
+		heritage = yes
+	}
+
+#Harmonic Family [eastern]
+	#Buddhism in vanilla
+	atlantean = {
+		heritage = yes
+	}
+	
+	guruist = {
+		heritage = yes
+	}
+	
+	mayanist = {
+		heritage = yes
+	}
+	
+	nanakpanthi = {
+		heritage = yes
+	}
+	
+	naturalist = {
+		heritage = yes
+	}
+	
+	neoniponic = {
+		heritage = yes
+	}
+	
+	wellness = {
+		heritage = yes
+	}
+	
+	hindu_heritage = {
+		heritage = yes
+	}
+	
+	esoteric = {
+		heritage = yes
+	}
+	
+anachronous = {
+	#Family
+}
+
+	americanist = {
+		heritage = yes
+	}
+	
+	artistic = {
+		heritage = yes
+	}
+	
+	capitalist_heritage = { #probably rename
+		heritage = yes
+	}
+	
+	digital = {
+		heritage = yes
+	}
+	
+	idiosyncratic = {
+		heritage = yes
+	}
+	
+	industrial_heritage = { #probably rename
+		heritage = yes
+	}
+	
+	idunnic = {
+		heritage = yes
+	}
+	
+	modernist = {
+		heritage = yes
+	}
+	
+	platinean = {
+		heritage = yes
+	}
+	
+	quantum = {
+		heritage = yes
+	}
+	
+	jacobin = {
+		heritage = yes
+	}
+	
+	scholastic = {
+		heritage = yes
+	}
+	
+amerindian = {
+	#Family
+}
+
+	amazonian_religion = {
+		heritage = yes
+	}
+	
+	andean_religion = {
+		heritage = yes
+	}
+	
+	chon = {
+		heritage = yes
+	}
+	
+	indigenaelecti = {
+		heritage = yes
+	}
+	
+	haudenosaunee = {
+		heritage = yes
+	}
+	
+	inuit_religion = {
+		heritage = yes
+	}
+	
+	feyentun = {
+		heritage = yes
+	}
+	
+	medicine = {
+		heritage = yes
+	}
+	
+	mesoamerican_religion = {
+		heritage = yes
+	}
+	
+	navajo_religion = {
+		heritage = yes
+	}
+	
+	northwestern_religion = {
+		heritage = yes
+	}
+	
+	plains_religion = {
+		heritage = yes
+	}
+	
+#Folkloric can be glossed as Animist for now
+folkloric = {
+	#Family
+}
+
+	astronomer = {
+		heritage = yes
+	}
+	
+	athletic = {
+		heritage = yes
+	}
+	
+	conterraneo = {
+		heritage = yes
+	}
+	
+	gardenerian = {
+		heritage = yes
+	}
+	
+	lacustrine = {
+		heritage = yes
+	}
+	
+	llanoist = {
+		heritage = yes
+	}
+	
+	nautical = {
+		heritage = yes
+	}
+	
+	norse = {
+		heritage = yes
+	}
+	
+	occultist = {
+		heritage = yes
+	}
+	
+	pampeano = {
+		heritage = yes
+	}
+	
+	patagonic = {
+		heritage = yes
+	}
+	
+	sebastianic = {
+		heritage = yes
+	}
+	
+	trailwalker = {
+		heritage = yes
+	}
+	
+	viticulturian = {
+		heritage = yes
+	}

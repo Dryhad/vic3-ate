@@ -1,0 +1,30 @@
+﻿CHARACTERS = {
+	c:PDC = {
+		create_character = {
+			first_name = "Efraim"
+			last_name = "Troyer"
+			ruler = yes
+			age = 57
+			culture = cu:north_german #deitsch
+			religion = rel:anabaptist
+			interest_group = ig_rural_folk
+			ideology = ideology_traditionalist
+			traits = {
+				pious
+			}
+		}
+		create_character = {
+			first_name = "Kasper"
+			last_name = "Troyer"
+			heir = yes
+			age = 34
+			culture = cu:north_german #deitsch
+			religion = rel:anabaptist
+			interest_group = ig_rural_folk
+			ideology = ideology_moderate
+			traits = {
+				charismatic
+			}
+		}
+	}
+}

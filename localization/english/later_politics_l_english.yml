@@ -1,0 +1,130 @@
+﻿l_english:
+ ideology_matriarchal: "Matriarchal"
+ ideology_matriarchal_desc:0 "#lore This interest group has a tradition of female leadership.#!"
+ 
+ #Abrahamic
+ ig_cristero_devout: "Prelature of Cristo Rey" #Cristero Faith
+ ig_apostolic_church: "Apostolic Catholic Church" #Apostolic Faith
+ ig_ursuline_order: "Order of Saint Ursula" #Ursuline Faith
+ ig_particularist_church: "Particularist Catholic Church" #Particularist Faith
+ ig_animaist_church: "Animaist Catholic Church" #Animaist Faith
+ ig_mama_tada_order: "New Order of Mama Tada" #Mama Tada Faith
+ ig_tridentine_church: "Tridentine Catholic Church" #Tridentine Faith
+ ig_penitente_fraternities: "Penitente Fraternities" #Penitente Faith
+ ig_cruzoob_devout: "Church of the Holiest Cross of Protection" #Cruzo'ob Faith
+ ig_jolljepunco_church: "Jolljepunco Church" #Jolljepunco Faith
+ ig_redemptionist_convention: "Redemptionist Convention" #Redemptionist Faith
+ ig_old_order_movement: "Old Order Movement" #Old Order Faith
+ ideology_old_order_moralist: "Old Order Moralist"
+ ideology_old_order_moralist_desc: "#lore The elders of the Old Order emphasise nonviolence and plain living, and accordingly oppose militarism and heavy industry.#!"
+ ig_peace_church: "Peace Church" #Peace Church Faith
+ ig_united_church: "United Church" #United Church Faith
+ ideology_united_moralist: "United Moralist"
+ ideology_united_moralist_desc: "#lore The United Church takes a pluralistic stance to other faiths and teaches coexistance and tolerance.#!"
+ ig_moravian_brethren: "Moravian Brethren" #Moravian Faith
+ ig_freedomite_devout: "Sovereign People of Freedom" #Freedomite Faith
+ ig_mormon_priesthood: "Church of the Latter Day Saints" #LDS Religion
+ ideology_mormon_moralist: "Mormon Moralist"
+ ideology_mormon_moralist_desc: "#lore The Latter Day Saints leadership favour a form of government that combines democratic elections with religious leaders.#!"
+ ig_santeria_devout: "Regla de Ocha" #Santeria Faith
+ ig_trance_drummer: "Tambor de Mina" #Trance-Drummer faith
+ ig_palo_devout: "Regla Conga del Palo" #Palo Faith
+ ig_behemothian_covenant: "Behemothian Covenant" #Behemothian Faith
+ ig_legion_of_remembrance: "Legion of Remembrance" #Remembrant Faith
+ ideology_remembrant_moralist: "Remembrant Moralist"
+ ideology_remembrant_moralist_desc: "#lore The Remembrant priesthood favors a defensive military that neither seeks to visit the horrors of war on others, nor to allow aggressive invaders free reign.#!"
+ ig_reborn_children: "Reborn Children of Christ" #Reborn Faith
+ ig_army_of_paracletes: "Army of Paracletes" #Paraclete Faith
+ ig_ayahan_devout: "Tea Dance of Ayah" #Ayahan Faith
+ ig_limpio_devout: "Esoteric Fraternity of the Limpios" #Limpio Faith
+ ig_navegante_priesthood: "Priesthood of the Navegantes" #Navegante Faith
+ 
+ #Amerindian
+ ig_hekura_devout: "Brother-Tribes of Hekura" #Hekura Faith
+ ig_ypykuera_devout: "Ñande Ypykuera Ñe'engue" #Ypykuera Faith
+ ig_fire_cross_hearth: "Fire Cross Hearth" #Fire Cross Faith
+ ig_half_moon_hearth: "Half Moon Hearth" #Half Moon Hearth
+ 
+ #Anachronous
+ ig_americanist_judiciary: "Americanist Judiciary" #Americanist Religion
+ ideology_americanist_moralist: "Americanist Moralist"
+ ideology_americanist_moralist_desc: "#lore Americanists believe in a republican form of government guided by a priestly judiciary.#!"
+ ig_vanguards_of_progress: "Vanguards of Progress" #Vanguardista Faith
+ ig_universal_constructivists: "Universal Constructivists" #Constructivist Faith
+ ig_consumerist_management: "Corporatist Management" #Corporatist Religion
+ ideology_consumerist_pious: "Corporatist Piousness"
+ ideology_consumerist_pious_desc: "#lore Corporatists believe that the free market is sacred and that it is blasphemous for the government to intervene.#!"
+ ig_cyberede_covens: "Covens of the Cyberede" #Cyberede Faith
+ ig_webweaver_devout: "Web of the World" #Webweaver Faith
+ ig_hexagonal_rite: "Hexagonal Rite" #Hexagonal Faith
+ ig_alineado_partisans: "Alineado Partisans" #Alineado Faith
+ ig_auditorista_university: "Auditorista University" #Auditorista Faith
+ ig_galvanist_assembly: "Galvanizing Assembly" #Galvanist Faith
+ ig_promethian_cults: "Promethean Cults" #Promethean Faith
+ ig_sustainablist_devout: "School of Sustained Glory" #Sustainablist Faith
+ ig_innovatorist_movement: "Innovatorist Movement" #Innovatorist Faith
+ ig_enigmaticos_devout: "Tribunal for the Study of Enigmas" #Enigmatico Faith
+ ig_quantum_academia: "Quantum Academia" #Quantum Religion
+ 
+ #Folkloric
+ ig_ashtari_devout: "Ashtar Galactic Command" #Ashtari Faith
+ ig_siderale_devout: "Sociedad de Salvacion Sideral" #Siderale Faith
+ ig_boards_of_the_gnarl: "Boards of the Gnarl" #Gnarlist Faith
+ ig_burner_rite: "Rite of the Burning Man" #Burner Faith
+ ig_gaian_faithful: "Children of Gaia" #Gaian Faith
+ ideology_gaian_moralist: "Gaian Moralist"
+ ideology_gaian_moralist_desc:0 "#lore Gaians believe that different cultures should coexist peacefully.#!"
+ ig_stewards_of_the_holocene: "Stewards of the Holocene" #Holocenian Faith
+ ig_revengeant_devout: "Warriors of the Slain Goddess" #Revengeant Faith
+ ig_saurian_cults: "Saurian Cults" #Saurian Faith
+ ig_fogsong_devout: "Grove of Foggy Days" #Fogsong Faith
+ ig_pirate_brethren: "Brethren of the Coast" #Pirate Faith
+ ig_diabolic_devout: "Church of Starry Wisdom" #Diabolic Faith
+ ig_draconic_tables: "Draconic Tables" #Draconic Faith
+ ig_salem_lodge: "Lodges of the Societies of Salem" #Salemite Faith
+ ig_cantos_de_la_gauchada: "Cantos de la Gauchada" #Gauchada Faith
+ ig_banda_de_juventude: "Banda de Juventude" #Juventide Faith
+ ideology_juventide_moralist: "Juventide Moralist"
+ ideology_juventide_moralist_desc: "#lore Juventide theology teaches the divinity of youth, and children are accorded an honored place in the community.#!"
+ ig_sebastian_devout: "Children of King Sebastian" #Sebastianismo Faith
+ 
+ #Harmonic
+ ig_nation_of_phylos: "Nation of Phylos" #Phylosian Faith
+ ig_order_of_quetzalcoatl: "Order of Quetzalcoatl" #Quetzaltec Faith
+ ig_balamvotanismo_devout: "Cult of the Supreme Votan" #Balamvotanismo Faith
+ ig_johrei_devout: "Templo de Luz Oriente" #Johrei Faith
+ ig_hare_krishna_society: "Society of Krishna Consciousness" #Hare Krishna Faith
+ 
+ ideology_chromatacia_paternalistic: "Chromatagensia"
+ ideology_chromatacia_paternalistic_desc: "#lore This interest group believes in a society organised by color, with purple at the top, down to greys at the very bottom."
+ 
+ ideology_leader_capitalizt: "Capitalizt"
+ ideology_leader_capitalizt_desc: "#lore This leader believes in a fully privatized society ruled by corporations.#!"
+ ideology_leader_xenophile: "Xenophile"
+ ideology_leader_xenophile_desc: "#lore This leader has a fondness for other cultures and wants to see them respected.#!"
+ 
+ law_freedom_of_confession:0 "Freedom of Confession"
+ law_freedom_of_conscience_desc:0 "The state has an official state religion but some degree of nonconformity in rites and teachings is tolerated."
+ law_youth_suffrage:0 "Youth Suffrage"
+ law_youth_suffrage_desc:0 "Children are educated with an emphasis on facilitating and encouraging their political participation."
+ 
+ ig_purple: "Purples"
+ ig_blue: "Blues"
+ ig_green: "Greens"
+ ig_yellow: "Yellows"
+ ig_orange: "Oranges"
+ ig_red: "Reds"
+ ig_national_colour: "National Colour"
+ 
+ ig_ahotti: "Ahotti"
+ ig_iltan: "Iltan"
+ ig_ziljir: "Ziljir"
+ 
+ gov_theodemocracy:0 "Theodemocracy"
+ gov_theodemocracy_desc:0 "A [concept_government_type] combining republican principles with Latter Day Saints theology.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ gov_absolute_grand_division:0 "Absolute Grand Division"
+ gov_absolute_grand_division_desc:2 "This is a [concept_government_type] where the power rests completely with the [Concept('concept_ruler','$RULER_TITLE_GRAND_DUKE$')] or [Concept('concept_ruler','$RULER_TITLE_GRAND_DUCHESS$')].\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ gov_grand_division:0 "Grand Division"
+ gov_grand_division_desc:2 "This is a [concept_government_type] where the power rests mainly with the [Concept('concept_ruler','$RULER_TITLE_GRAND_DUKE$')] or [Concept('concept_ruler','$RULER_TITLE_GRAND_DUCHESS$')].\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ gov_constitutional_grand_division:0 "Constitutional Grand Division"
+ gov_constitutional_grand_division_desc:2 "This is a [concept_government_type] where the [Concept('concept_ruler','$RULER_TITLE_GRAND_DUKE$')] or [Concept('concept_ruler','$RULER_TITLE_GRAND_DUCHESS$')] is the [concept_head_of_state], but [Concept('concept_votes','$concept_voting$')] and a constitution dictates the [Concept('concept_law','$concept_laws$')].\n\n$TRANSFER_OF_POWER_NAME_DESC$"

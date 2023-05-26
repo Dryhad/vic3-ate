@@ -1,0 +1,10 @@
+﻿DIPLOMACY = {
+	#Completely blanked from vanilla
+	
+	c:BBQ = {
+		create_diplomatic_pact = {
+			country = c:AST
+			type = puppet
+		}
+	}
+}

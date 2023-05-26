@@ -1,0 +1,179 @@
+﻿shangrilaism = {
+	texture = "gfx/interface/icons/religion_icons/gelugpa.dds"
+	traits = {
+		buddhist
+		eastern
+	}
+	color = { 252 3 198 }
+}
+
+humanistic_buddhism = {
+	texture = "gfx/interface/icons/religion_icons/gelugpa.dds"
+	traits = {
+		buddhist
+		eastern
+	}
+	color = { 198 104 45 }
+}
+
+samaj_hinduism = {
+	texture = "gfx/interface/icons/religion_icons/hindu.dds"
+	traits = {
+		hindu_heritage
+		eastern
+	}
+	color = { 255 0 0 }
+	taboos = {
+		meat
+	}
+}
+
+sanatani = {
+	texture = "gfx/interface/icons/religion_icons/hindu.dds"
+	traits = {
+		hindu_heritage
+		eastern
+	}
+	color = { 255 145 28 }
+	taboos = {
+		meat
+	}
+}
+
+hare_krishna = {
+	texture = "gfx/interface/icons/religion_icons/hindu.dds"
+	traits = {
+		hindu_heritage
+		eastern
+	}
+	color = { 102 204 255 }
+	taboos = {
+		meat fish
+	}
+}
+
+johrei = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		neoniponic
+		eastern
+	}
+	color = { 168 152 72 }
+}
+
+phylosian = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		atlantean
+		eastern
+	}
+	color = { 73 245 228 }
+}
+
+quetzaltec = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		atlantean
+		eastern
+	}
+	color = { 120 0 0 }
+}
+
+theosophist = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		atlantean
+		eastern
+	}
+	color = { 137 38 112 }
+}
+
+sahasrara = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		guruist
+		eastern
+	}
+	color = { 178 132 229 }
+}
+
+anahata = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		guruist
+		eastern
+	}
+	color = { 147 88 214 }
+}
+
+balamvotanism = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		mayanist
+		eastern
+	}
+	color = { 69 63 118 }
+}
+
+neomayan = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		mayanist
+		eastern
+	}
+	color = { 154 242 194 }
+}
+
+petromancer = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		wellness
+		eastern
+	}
+	color = { 112 58 55 }
+}
+
+gaian = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		naturalist
+		eastern
+	}
+	color = { 76 178 102 }
+}
+
+holocenian = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		naturalist
+		eastern
+	}
+	color = { 21 94 40 }
+}
+
+revengeant = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		naturalist
+		eastern
+	}
+	color = { 79 110 87 }
+}
+
+burner = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		naturalist
+		eastern
+	}
+	color = { 167 241 121 }
+}
+
+saurian = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		naturalist
+		eastern
+	}
+	color = { 153 158 46 }
+}

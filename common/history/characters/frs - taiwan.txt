@@ -1,0 +1,21 @@
+﻿CHARACTERS = {
+	c:FRS = {
+		create_character = {
+			first_name = "Huang_An"
+			last_name = "Wu"
+			ig_leader = yes
+			interest_group = ig_landowners
+			ideology = ideology_republican_leader #Weird to have on a Landowner but Derrick said so
+			traits = {
+			}
+		}
+		create_character = {
+			first_name = "Duyi"
+			ig_leader = yes
+			interest_group = ig_intelligentsia
+			ideology = ideology_radical
+			traits = {
+			}
+		}
+	}
+}

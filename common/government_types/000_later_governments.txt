@@ -1,0 +1,111 @@
+﻿gov_theodemocracy = {
+	transfer_of_power = presidential_elective
+
+	male_ruler = "RULER_TITLE_PRESIDENT"
+	female_ruler = "RULER_TITLE_PRESIDENT"
+	
+	possible = {
+		has_law = law_type:law_theocracy
+		country_has_voting_franchise = yes
+		OR = {
+			country_has_state_religion = rel:mormon
+			country_has_state_religion = rel:woolleyite
+			country_has_state_religion = rel:strangite
+			country_has_state_religion = rel:lamanite
+			country_has_state_religion = rel:quadrine
+		}
+	}
+}
+
+gov_absolute_grand_division = {
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_GRAND_DUKE"
+	female_ruler = "RULER_TITLE_GRAND_DUCHESS"
+	
+	male_heir = "" # Empty on purpose
+	female_heir = "" # Empty on purpose
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		has_law = law_type:law_autocracy 
+		country_tier = grand_principality
+
+		OR = {
+			AND = {
+				exists = c:TNE
+				c:TNE = ROOT
+			}
+			AND = {
+				exists = c:TNM
+				c:TNM = ROOT
+			}
+			AND = {
+				exists = c:TNW
+				c:TNW = ROOT
+			}
+		}
+	}
+}
+
+gov_grand_division = {
+	transfer_of_power = hereditary
+	
+	male_ruler = "RULER_TITLE_GRAND_DUKE"
+	female_ruler = "RULER_TITLE_GRAND_DUCHESS"
+
+	male_heir = "" # Empty on purpose
+	female_heir = "" # Empty on purpose
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		country_has_voting_franchise = no
+		country_tier = grand_principality
+
+		OR = {
+			AND = {
+				exists = c:TNE
+				c:TNE = ROOT
+			}
+			AND = {
+				exists = c:TNM
+				c:TNM = ROOT
+			}
+			AND = {
+				exists = c:TNW
+				c:TNW = ROOT
+			}
+		}
+	}
+}
+
+gov_constitutional_grand_division = {
+	transfer_of_power = hereditary
+	
+	male_ruler = "RULER_TITLE_GRAND_DUKE"
+	female_ruler = "RULER_TITLE_GRAND_DUCHESS"
+
+	male_heir = "" # Empty on purpose
+	female_heir = "" # Empty on purpose
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		country_has_voting_franchise = yes
+		country_tier = grand_principality
+
+		OR = {
+			AND = {
+				exists = c:TNE
+				c:TNE = ROOT
+			}
+			AND = {
+				exists = c:TNM
+				c:TNM = ROOT
+			}
+			AND = {
+				exists = c:TNW
+				c:TNW = ROOT
+			}
+		}
+	}
+}

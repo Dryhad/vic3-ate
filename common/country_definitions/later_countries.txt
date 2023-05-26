@@ -1,0 +1,233 @@
+﻿
+BBQ = { # Babakiueria
+	color = { 112 54 16 }
+	
+	tier = kingdom
+	
+	country_type = recognized
+	
+	cultures = { aborigine }
+	
+	capital = STATE_QUEENSLAND
+}
+
+TNE = { #East Tennessee
+	color = { 221 75 26 }
+	
+	tier = grand_principality
+	
+	country_type = recognized
+	
+	cultures = { dixie } #For now
+	
+	capital = STATE_TENNESSEE
+}
+
+TNM = { #Middle Tennessee
+	color = { 239 39 27 }
+	
+	tier = grand_principality
+	
+	country_type = recognized
+	
+	cultures = { dixie } #For now
+	
+	capital = STATE_TENNESSEE
+}
+
+TNW = { #West Tennessee
+	color = { 200 70 48 }
+	
+	tier = grand_principality
+	
+	country_type = recognized
+	
+	cultures = { dixie } #For now
+	
+	capital = STATE_TENNESSEE
+}
+
+OSU = { #Just copying Ofaloaf's dev diary example
+	color = { 206 15 61 }
+	
+	tier = principality
+	
+	country_type = recognized
+	
+	cultures = { yankee }
+	religion = galvanist
+	
+	capital = STATE_OHIO
+}
+
+NYS = {
+	color = { 0 42 134 }
+	
+	tier = kingdom
+	
+	country_type = recognized
+	
+	cultures = { yankee } #gothamite
+	religion = jewish
+	
+	capital = STATE_NEW_YORK
+}
+
+TXK = {
+	color = { 208 225 255 }
+	
+	tier = kingdom
+	
+	country_type = recognized
+	
+	cultures = { dixie } #arklatexan
+	
+	capital = STATE_ARKANSAS
+}
+
+ARX = {
+	color = { 146 62 176 }
+	
+	tier = kingdom
+	
+	country_type = recognized
+	
+	cultures = { yankee } #For now
+	
+	capital = STATE_ARIZONA
+}
+
+IOW = {
+	color = { 188 194 65 }
+	
+	tier = kingdom
+	
+	country_type = recognized
+	
+	cultures = { yankee } #For now
+	
+	capital = STATE_IOWA
+}
+
+PDC = {
+	color = { 129 35 65 }
+	
+	tier = kingdom
+	
+	country_type = recognized
+	
+	cultures = { north_german } #deitsch
+	religion = anabaptist
+	
+	capital = STATE_PENNSYLVANIA
+}
+
+BLU = {
+	color = { 6 24 38 }
+	
+	tier = principality
+	
+	country_type = recognized
+	
+	cultures = { dixie } #appalachian
+	
+	capital = STATE_NORTH_CAROLINA
+}
+
+WVA = {
+	color = { 221 96 49 }
+	
+	tier = principality
+	
+	country_type = recognized
+	
+	cultures = { dixie } #appalachian
+	
+	capital = STATE_WEST_VIRGINIA
+}
+
+WDC = {
+	color = { 10 49 97 }
+	
+	tier = kingdom
+	
+	country_type = recognized
+	
+	cultures = { yankee } #for now
+	religion = constitutionalist
+	
+	capital = STATE_DISTRICT_OF_COLUMBIA
+}
+
+WIS = {
+	color = { 20 60 20 }
+	
+	tier = kingdom
+	
+	country_type = recognized
+	
+	cultures = { yankee } #for now
+	
+	capital = STATE_WISCONSIN
+}
+
+ORD = {
+	color = { 121 220 227 }
+	
+	tier = kingdom
+	
+	country_type = recognized
+	
+	cultures = { yankee } #for now
+	
+	capital = STATE_ILLINOIS
+}
+
+KFC = {
+	color = { 12 124 77 }
+	
+	tier = grand_principality
+	
+	country_type = recognized
+	
+	cultures = { dixie } #for now
+	
+	capital = STATE_KENTUCKY
+}
+
+CLT = {
+	color = { 37 40 61 }
+	
+	tier = city_state
+	
+	country_type = recognized
+	
+	cultures = { dixie }
+	
+	capital = STATE_NORTH_CAROLINA
+}
+
+SVH = {
+	color = { 255 142 114 }
+	
+	tier = city_state
+	
+	country_type = recognized
+	
+	cultures = { dixie }
+	
+	capital = STATE_GEORGIA
+}
+
+NVR = {
+	color = { 238 10 10 }
+	
+	tier = empire
+	
+	country_type = recognized
+	
+	cultures = { russian } #vladivostokiy primorskiy
+	religion = nousthreskeia
+	
+	capital = STATE_OUTER_MANCHURIA
+}

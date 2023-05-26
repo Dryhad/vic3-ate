@@ -1,0 +1,54 @@
+﻿# Anything not from AtE Proper/The Americas
+
+thelema = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		anachronous
+		esoteric
+	}
+	color = { 0.6 0.4 0.3 }
+}
+
+glorian = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		anachronous
+		scholastic
+	}
+	color = { 0.6 0.6 0.5 }
+}
+
+chromatacia = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		anachronous
+		scholastic
+	}
+	color = { 0.6 0.4 0.3 }
+}
+
+nousthreskeia = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		eastern
+		esoteric
+	}
+	color = { 0.44 0.39 0.33 }
+}
+
+cult_of_reason = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		anachronous
+		jacobin
+	}
+	color = { 0.2 0.5 0.7 }
+}
+
+dreaming = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		animist #replace
+	}
+	color = { 112 54 16 }
+}

@@ -1,0 +1,410 @@
+﻿# Because Christianity is just so big it needs its own file.
+
+#Conclavian is vanilla Catholic
+
+tridentinism = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 211 186 110 }
+}
+
+liberationism = {
+	texture = "gfx/interface/icons/law_icons/unused/church_and_state.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 182 145 28 }
+}
+
+apostolicism = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 232 232 58 }
+}
+
+ciceritism = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 255 106 0 }
+}
+
+celestism = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 255 178 127 }
+}
+
+cristero = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 206 17 38 }
+}
+
+particularist_religion = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 224 176 53 }
+}
+
+ursuline = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 229 178 0 }
+}
+
+#Evangelical is vanilla Protestant
+
+neopentecostalism = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 50 29 68 }
+}
+
+anglican = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 153 165 204 }
+}
+
+moravian = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 204 204 102 }
+}
+
+mormon = {
+	texture = "gfx/interface/icons/religion_icons/unused/mormonism.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 191 102 140 }
+	
+	taboos = {
+		liquor wine tea coffee tobacco opium
+	} 
+}
+
+woolleyite = {
+	texture = "gfx/interface/icons/religion_icons/unused/mormonism.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 204 140 153 }
+	
+	taboos = {
+		liquor wine tea coffee tobacco opium
+	} 
+}
+
+strangite = {
+	texture = "gfx/interface/icons/religion_icons/unused/mormonism.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 153 89 127 }
+	
+	taboos = {
+		liquor wine tea coffee tobacco opium
+	} 
+}
+
+lamanite = {
+	texture = "gfx/interface/icons/religion_icons/unused/mormonism.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 193 137 161 }
+	
+	taboos = {
+		liquor wine tea coffee tobacco opium
+	} 
+}
+
+quadrine = {
+	texture = "gfx/interface/icons/religion_icons/unused/mormonism.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 140 76 89 }
+	
+	taboos = {
+		liquor wine tea coffee tobacco opium
+	} 
+}
+
+anabaptist = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 153 153 63 }
+	
+	taboos = {
+		electricity automobiles telephones radios
+	} 
+}
+
+peace_church = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	taboos = {
+		liquor wine
+	}
+	color = { 20 62 84 }
+}
+
+muckerism = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 80 66 99 }
+	
+	taboos = {
+		liquor wine tobacco
+	} 
+}
+
+insular_carribean = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 178 178 165 }
+}
+
+animism = { #This is fucking awkward
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 224 154 89 }
+}
+
+divina_chicha = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 175 144 117 }
+}
+
+pentecostalism = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 142 137 175 }
+}
+
+byzantine_rite = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 178 0 255 }
+}
+
+israelite = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	taboos = {
+		liquor wine
+	}
+	color = { 31 96 165 }
+}
+
+united_church = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 200 37 28 }
+}
+
+penitents = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 87 15 91 }
+}
+
+#Taborists are vanilla Orthodox (probably)
+
+mama_tatda = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	taboos = {
+		liquor wine
+	}
+	color = { 199 234 70 }
+}
+
+cruzob = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 147 175 91 }
+}
+
+nnu_asutmamg = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 120 0 0 }
+}
+
+jolljepunco = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 120 10 25 }
+}
+
+river_baptist = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 148 2 30 }
+}
+
+redemptionist = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	taboos = {
+		liquor wine
+	}
+	color = { 100 23 10 }
+}
+
+freedomite = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	taboos = {
+		meat fish
+	}
+	color = { 125 23 0 }
+}
+
+kojtumbrem = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 140 255 251 }
+}
+
+benzedura = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 182 255 0 }
+}
+
+limpio = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 137 84 42 }
+}
+
+navegante = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 49 77 156 }
+}
+
+rosicrucian = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 125 23 0 }
+}
+
+santa_muerte = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		christian
+		abrahamic
+	}
+	color = { 22 22 22 }
+}

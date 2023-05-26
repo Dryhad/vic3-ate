@@ -1,0 +1,271 @@
+﻿# Oh alright I'll do them (I hate everything)
+
+camino_estelar = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		astronomer
+	}
+	color = { 163 57 120 }
+}
+
+zetanology = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		astronomer
+	}
+	color = { 181 43 206 }
+}
+
+valley_of_dawn = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		astronomer
+	}
+	color = { 206 89 80 }
+}
+
+siderale = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		astronomer
+	}
+	color = { 181 66 49 }
+}
+
+ashtari = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		astronomer
+	}
+	color = { 172 172 219 }
+}
+
+gnarlist = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		athletic
+	}
+	color = { 0 255 203 }
+}
+
+stokeism = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		athletic
+	}
+	color = { 209 255 255 }
+}
+
+boiadist = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		conterraneo
+	}
+	color = { 213 116 142 }
+}
+
+pantaneiro = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		conterraneo
+	}
+	color = { 230 190 200 }
+}
+
+evonian = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		gardenerian
+	}
+	color = { 19 242 190 } 
+}
+
+aria_de_machete = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		llanoist
+	}
+	color = { 86 76 45 }
+}
+
+lakeshore = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		nautical
+	}
+	color = { 75 54 214 } 
+}
+
+brethren = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		nautical
+	}
+	color = { 76 51 51 }
+}
+
+pelagic = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		nautical
+	}
+	color = { 80 80 80 }
+}
+
+viking = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		nautical
+	}
+	color = { 79 38 131 }
+}
+
+masonic = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		occultist
+	}
+	color = { 12 97 60 }
+}
+
+diabolic = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		occultist
+	}
+	color = { 8 51 15 }
+}
+
+draconian = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		occultist
+	}
+	color = { 8 180 46 }
+}
+
+gauchada = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		pampeano
+	}
+	color = { 86 73 66 }
+}
+
+farrapo = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		pampeano
+	}
+	color = { 72 0 255 }
+}
+
+calafatist = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		patagonic
+	}
+	color = { 121 163 117 }
+}
+
+juventide = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		patagonic
+	}
+	color = { 255 228 88 }
+}
+
+sebastianism = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		sebastianic
+	}
+	color = { 203 255 0 }
+}
+
+real_road = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		trailwalker
+	}
+	color = { 68 102 204 }
+}
+
+midnight_sun = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		trailwalker
+	}
+	color = { 0 51 204 }
+}
+
+dustrider = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		trailwalker
+	}
+	color = { 86 119 204 }
+}
+
+interranger = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		trailwalker
+	}
+	color = { 36 60 138 }
+}
+
+sagestepper = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		trailwalker
+	}
+	color = { 174 220 194 }
+}
+
+saguarorrinche = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		trailwalker
+	}
+	color = { 0 100 0 }
+}
+
+vendimia_sol = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		folkloric
+		viticulturian
+	}
+	color = { 164 16 218 }
+}

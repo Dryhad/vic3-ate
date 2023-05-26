@@ -1,0 +1,214 @@
+﻿hekura = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		amazonian_religion
+		amerindian
+	}
+	color = { 175 25 19 }
+}
+
+hekwapienai = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		amazonian_religion
+		amerindian
+	}
+	color = { 188 255 186 }
+}
+
+iraacungeguma = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		amazonian_religion
+		amerindian
+	}
+	color = { 91 127 167 }
+}
+
+porantimao = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		amazonian_religion
+		amerindian
+	}
+	color = { 181 167 120 }
+}
+
+wasahure_sena = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		amazonian_religion
+		amerindian
+	}
+	color = { 127 153 255 }
+}
+
+inkarri_religion = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		andean_religion
+		amerindian
+	}
+	color = { 160 56 143 }
+}
+
+inti_religion = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		andean_religion
+		amerindian
+	}
+	color = { 206 10 173 }
+}
+
+pachamama_religion = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		andean_religion
+		amerindian
+	}
+	color = { 123 182 129 }
+}
+
+xoon = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		chon
+		amerindian
+	}
+	color = { 112 69 82 }
+}
+
+gaiwiio = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		haudenosaunee
+		amerindian
+	}
+	color = { 226 188 202 }
+	taboos = {
+		liquor wine
+	}
+}
+
+exovedate = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		indigenaelecti
+		amerindian
+		abrahamic
+	}
+	color = { 244 168 150 }
+}
+
+ayahan = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		indigenaelecti
+		amerindian
+		abrahamic
+	}
+	color = { 226 188 202 }
+}
+
+unipkaaq = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		inuit
+		amerindian
+	}
+	color = { 63 165 45 }
+}
+
+ilisaijjut = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		inuit
+		amerindian
+	}
+	color = { 51 71 167 }
+}
+
+midewiwin = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		medicine
+		amerindian
+	}
+	color = { 165 102 10 }
+}
+
+jakakukuecha = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		mesoamerican_religion
+		amerindian
+	}
+	color = { 135 5 187 }
+}
+
+tucaari_wixarika = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		mesoamerican_religion
+		amerindian
+	}
+	color = { 253 102 255 }
+}
+
+miquiztonatiuh = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		mesoamerican_religion
+		amerindian
+	}
+	color = { 255 255 255 }
+}
+
+hach_kanik = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		mesoamerican_religion
+		amerindian
+	}
+	color = { 79 150 80 }
+}
+
+hozhooji = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		navajo_religion
+		amerindian
+	}
+	color = { 250 239 181 }
+}
+
+raven_tales = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		northwestern_religion
+		amerindian
+	}
+	color = { 150 10 10 }
+}
+
+sun_dance = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		plains_religion
+		amerindian
+	}
+	taboos = {
+		liquor wine
+	}
+	color = { 243 249 143 }
+}
+
+nguillatun = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		feyentun
+		amerindian
+	}
+	color = { 39 170 89 }
+}

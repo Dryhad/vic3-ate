@@ -1,0 +1,14 @@
+
+state_religion_is_matriarchal = {
+	OR = {
+		country_has_state_religion = rel:gaian
+		country_has_state_religion = rel:revengenant
+		country_has_state_religion = rel:ursuline
+		country_has_state_religion = rel:libertarian
+		country_has_state_religion = rel:lacunarclast
+		country_has_state_religion = rel:quadrine
+		country_has_state_religion = rel:muckerism
+		country_has_state_religion = rel:madre_patria
+		country_has_state_religion = rel:chromatacia
+	}
+}

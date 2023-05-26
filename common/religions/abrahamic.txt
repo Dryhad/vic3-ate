@@ -1,0 +1,561 @@
+﻿#Christians in their own file
+
+traditionalist = {
+	texture = "gfx/interface/icons/religion_icons/sunni.dds"
+	traits = {
+		muslim
+		abrahamic
+	}
+	color = { 0 153 0 }
+	
+	taboos = {
+		liquor wine
+	} 
+}
+
+abbasiyya = {
+	texture = "gfx/interface/icons/religion_icons/sunni.dds"
+	traits = {
+		muslim
+		abrahamic
+	}
+	color = { 25 127 76 }
+	
+	taboos = {
+		liquor wine
+	} 
+}
+
+shriner = {
+	texture = "gfx/interface/icons/religion_icons/shiite.dds"
+	traits = {
+		muslim
+		abrahamic
+	}
+	color = { 51 178 25 }
+	
+	#taboos = {
+	#	liquor wine
+	#}
+}
+
+misrist = {
+	texture = "gfx/interface/icons/religion_icons/shiite.dds"
+	traits = {
+		muslim
+		abrahamic
+	}
+	color = { 51 204 0 }
+	
+	#taboos = {
+	#	liquor wine
+	#}
+}
+
+murabitun = {
+	texture = "gfx/interface/icons/religion_icons/sunni.dds"
+	traits = {
+		muslim
+		abrahamic
+	}
+	color = { 126 187 66 }
+	
+	taboos = {
+		liquor wine
+	} 
+}
+
+muhsin = {
+	texture = "gfx/interface/icons/religion_icons/shiite.dds"
+	traits = {
+		muslim
+		abrahamic
+	}
+	color = { 55 123 123 }
+	
+	taboos = {
+		liquor wine
+	}
+}
+
+kebatinan = {
+	texture = "gfx/interface/icons/religion_icons/shiite.dds"
+	traits = {
+		muslim
+		abrahamic
+	}
+	color = { 58 145 28 }
+	
+	taboos = {
+		liquor wine
+	}
+}
+
+ahmadiyya = {
+	texture = "gfx/interface/icons/religion_icons/sunni.dds"
+	traits = {
+		muslim
+		abrahamic
+	}
+	color = { 45 123 40 }
+	
+	taboos = {
+		liquor wine
+	} 
+}
+
+amriki = {
+	texture = "gfx/interface/icons/religion_icons/sunni.dds"
+	traits = {
+		muslim
+		abrahamic
+	}
+	color = { 23 132 10 }
+	
+	taboos = {
+		liquor wine
+	} 
+}
+
+islahiyyun = {
+	texture = "gfx/interface/icons/religion_icons/sunni.dds"
+	traits = {
+		muslim
+		abrahamic
+	}
+	color = { 60 140 23 }
+	
+	taboos = {
+		liquor wine
+	} 
+}
+
+haredi = {
+	texture = "gfx/interface/icons/religion_icons/jewish.dds"
+	traits = {
+		jewish
+		abrahamic
+	}
+	color = { 25 178 255 }
+}	
+
+reform = {
+	texture = "gfx/interface/icons/religion_icons/jewish.dds"
+	traits = {
+		jewish
+		abrahamic
+	}
+	color = { 25 127 229 }
+}	
+
+meshichist = {
+	texture = "gfx/interface/icons/religion_icons/jewish.dds"
+	traits = {
+		jewish
+		abrahamic
+	}
+	color = { 25 76 178 }
+}	
+
+edah_amazonah = {
+	texture = "gfx/interface/icons/religion_icons/jewish.dds"
+	traits = {
+		jewish
+		abrahamic
+	}
+	color = { 0 148 151 }
+}	
+
+anussim = {
+	texture = "gfx/interface/icons/religion_icons/jewish.dds"
+	traits = {
+		jewish
+		abrahamic
+	}
+	color = { 0 148 255 }
+}	
+
+kadmonic = {
+	texture = "gfx/interface/icons/religion_icons/jewish.dds"
+	traits = {
+		jewish
+		abrahamic
+	}
+	color = { 0 125 234 }
+}
+
+lucumi = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		orishan
+		afrosyncretic
+		abrahamic
+	}
+	color = { 153 191 0 }
+}
+
+candomble = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		orishan
+		afrosyncretic
+		abrahamic
+	}
+	color = { 38 127 0 }
+}
+
+tambor_de_mina = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		orishan
+		afrosyncretic
+		abrahamic
+	}
+	color = { 34 177 76 }
+}
+
+winti = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		orishan
+		afrosyncretic
+		abrahamic
+	}
+	color = { 153 127 76 }
+}
+
+palo = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		orishan
+		afrosyncretic
+		abrahamic
+	}
+	color = { 238 34 12 }
+}
+
+bobo_ashanti = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		rastafari
+		afrosyncretic
+		abrahamic
+	}
+	taboos = {
+		meat
+	}
+	color = { 229 114 0 }
+}
+
+nyabinghi = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		rastafari
+		afrosyncretic
+		abrahamic
+	}
+	taboos = {
+		meat
+	}
+	color = { 178 76 38 }
+}
+
+twelve_tribes = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		rastafari
+		afrosyncretic
+		abrahamic
+	}
+	color = { 204 102 0 }
+}
+
+vodou = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		vodun
+		afrosyncretic
+		abrahamic
+	}
+	color = { 51 127 76 }
+}
+
+voodoo = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		vodun
+		afrosyncretic
+		abrahamic
+	}
+	color = { 76 127 51 }
+}
+
+revelationist = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		vernacular
+		abrahamic
+	}
+	color = { 153 178 102 }
+}
+
+watcher = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		vernacular
+		abrahamic
+	}
+	color = { 100 200 100 }
+}
+
+behemothist = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		vernacular
+		abrahamic
+	}
+	color = { 0 15 0 }
+}
+
+omenteller = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		vernacular
+		abrahamic
+	}
+	color = { 153 168 156 }
+}
+
+remembrant = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		postadventist
+		abrahamic
+	}
+	color = { 241 94 88 }
+}
+
+paracletian = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		postadventist
+		abrahamic
+	}
+	color = { 255 136 201 }
+}
+
+reborn = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		postadventist
+		abrahamic
+	}
+	taboos = {
+		liquor wine
+	}
+	color = { 219 78 2 }
+}
+
+paktokej = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		postadventist
+		abrahamic
+	}
+	color = { 140 140 255 }
+}
+
+patria_grande = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		divina_patriota
+		abrahamic
+	}
+	color = { 204 79 57 }
+}
+
+madre_patria = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		divina_patriota
+		abrahamic
+	}
+	color = { 175 142 49 }
+}
+
+mesias_che = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		divina_patriota
+		abrahamic
+	}
+	color = { 196 91 49 }
+}
+
+qabantajik = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		originario
+		abrahamic
+	}
+	color = { 69 118 63 }
+}
+
+votanzapatista = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		originario
+		abrahamic
+	}
+	taboos = {
+		liquor wine opium
+	}
+	color = { 151 40 40 }
+}
+
+tlaneltokayotl = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		originario
+		abrahamic
+	}
+	color = { 248 106 6 }
+}
+
+half_moon = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		peyotist
+		abrahamic
+		amerindian
+	}
+	taboos = {
+		liquor wine
+	}
+	color = { 239 159 0 }
+}
+
+fire_cross = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		peyotist
+		abrahamic
+		amerindian
+	}
+	taboos = {
+		liquor wine
+	}
+	color = { 255 96 22 }
+}
+
+raichari = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		tarahumara
+		abrahamic
+		amerindian
+	}
+	color = { 45 185 85 }
+}
+
+bahai = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		universalist
+		abrahamic
+	}
+	taboos = {
+		liquor wine
+	}
+	color = { 198 59 136 }
+}
+
+unitarian_universalism = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		universalist
+		abrahamic
+	}
+	color = { 238 44 82 }
+}
+
+archipelagic = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		tributist
+		abrahamic
+	}
+	color = { 117 112 162 }
+}
+
+santa_diablada = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		tributist
+		abrahamic
+	}
+	color = { 181 14 17 }
+}
+
+tres_potencias = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		spiritist
+		abrahamic
+	}
+	color = { 175 100 19 }
+}
+
+kardecist = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		spiritist
+		abrahamic
+	}
+	color = { 127 106 0 }
+}
+
+santo_daime = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		spiritist
+		abrahamic
+	}
+	color = { 91 127 0 }
+}
+
+umbanda = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		spiritist
+		abrahamic
+	}
+	color = { 200 200 255 }
+}
+
+druze = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		druze_heritage
+		abrahamic
+	}
+	color = { 0 180 0 }
+}
+
+terra_benta = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		rezadeiros
+		abrahamic
+	}
+	color = { 76 255 0 }
+}
+
+jurema_sagrada = {
+	texture = "gfx/interface/icons/generic_icons/unused/religion_icons.dds"
+	traits = {
+		rezadeiros
+		abrahamic
+	}
+	color = { 120 70 50 }
+}

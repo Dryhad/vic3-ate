@@ -1,0 +1,31 @@
+﻿nys_hamilton_character_template = {
+    first_name = Alexander
+    last_name = Publius
+    culture = cu:gothamite
+    female = no
+    religion = hamiltonian
+    ideology = ideology_vanguardist
+    interest_group = ig_trade_unions
+    birth_date = 3455.1.11
+    traits = {
+        experienced_political_operator
+        tactful
+    }   
+    interest_group_leader_usage = {
+        country_trigger = {
+            exists = c:NYS
+            this = c:NYS
+        }
+        interest_group_trigger = {
+            is_marginal = no
+            OR = {
+                is_interest_group_type = ig_trade_unions
+                is_interest_group_type = ig_intelligentsia
+				is_interest_group_type = ig_armed_forces
+            } 
+        }   
+        earliest_usage_date = 3475.1.1
+        latest_usage_date = 3536.1.1
+        chance = 75
+    }   
+}

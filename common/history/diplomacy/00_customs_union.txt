@@ -1,0 +1,9 @@
+﻿DIPLOMACY = {
+	#Mormon Confederation
+	c:DES = {	
+		create_diplomatic_pact = {
+			country = c:NVJ
+			type = customs_union
+		}	
+	}
+}

@@ -1,0 +1,276 @@
+﻿
+# Root = Releasing Country
+# scope:target = Released Country
+on_country_released_as_independent = {
+	effect = {
+		scope:target = {
+			if = {
+				limit = {
+					OR = {
+						country_has_state_religion = rel:constitutionalist
+						country_has_state_religion = rel:principlist
+						country_has_state_religion = rel:libertarian
+						country_has_state_religion = rel:exceptionalist
+						country_has_state_religion = rel:imaginerian
+					}
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_americanist_judiciary
+					remove_ideology = ideology_moralist
+					add_ideology = ideology_americanist_moralist
+				}
+			}
+			if = {
+				limit = {
+					country_has_state_religion = rel:gaian
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_gaian_faithful
+					remove_ideology = ideology_moralist
+					add_ideology = ideology_gaian_moralist
+				}
+			}
+			if = {
+				limit = {
+					country_has_state_religion = rel:consumerist
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_consumerist_management
+					remove_ideology = ideology_pious
+					add_ideology = ideology_consumerist_pious
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						country_has_state_religion = rel:mormon
+						country_has_state_religion = rel:woolleyite
+						country_has_state_religion = rel:strangite
+						country_has_state_religion = rel:lamanite
+						country_has_state_religion = rel:quadrine
+					}
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_mormon_priesthood
+					remove_ideology = ideology_moralist
+					add_ideology = ideology_mormon_moralist
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						country_has_state_religion = rel:liberationist
+						country_has_state_religion = rel:mesias_che
+						country_has_state_religion = rel:votanzapatismo
+					}
+				}
+				ig:ig_devout = {
+					remove_ideology = ideology_pious
+					add_ideology = ideology_proletarian
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						country_has_state_religion = rel:gaian
+						country_has_state_religion = rel:revengenant
+						country_has_state_religion = rel:ursuline
+						country_has_state_religion = rel:libertarian
+						country_has_state_religion = rel:lacunarclast
+						country_has_state_religion = rel:quadrine
+						country_has_state_religion = rel:muckerism
+						country_has_state_religion = rel:madre_patria
+					}
+				}
+				ig:ig_devout = {
+					remove_ideology = ideology_patriarchal
+					add_ideology = ideology_matriarchal
+				}
+			}
+		}
+	}
+}
+
+# Root = Releasing Country
+# scope:target = Released Country
+on_country_released_as_own_subject = {
+	effect = {
+		scope:target = {
+			if = {
+				limit = {
+					OR = {
+						country_has_state_religion = rel:constitutionalist
+						country_has_state_religion = rel:principlist
+						country_has_state_religion = rel:libertarian
+						country_has_state_religion = rel:exceptionalist
+						country_has_state_religion = rel:imaginerian
+					}
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_americanist_judiciary
+					remove_ideology = ideology_moralist
+					add_ideology = ideology_americanist_moralist
+				}
+			}
+			if = {
+				limit = {
+					country_has_state_religion = rel:gaian
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_gaian_faithful
+					remove_ideology = ideology_moralist
+					add_ideology = ideology_gaian_moralist
+				}
+			}
+			if = {
+				limit = {
+					country_has_state_religion = rel:consumerist
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_consumerist_management
+					remove_ideology = ideology_pious
+					add_ideology = ideology_consumerist_pious
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						country_has_state_religion = rel:mormon
+						country_has_state_religion = rel:woolleyite
+						country_has_state_religion = rel:strangite
+						country_has_state_religion = rel:lamanite
+						country_has_state_religion = rel:quadrine
+					}
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_mormon_priesthood
+					remove_ideology = ideology_moralist
+					add_ideology = ideology_mormon_moralist
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						country_has_state_religion = rel:liberationist
+						country_has_state_religion = rel:mesias_che
+						country_has_state_religion = rel:votanzapatismo
+					}
+				}
+				ig:ig_devout = {
+					remove_ideology = ideology_pious
+					add_ideology = ideology_proletarian
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						country_has_state_religion = rel:gaian
+						country_has_state_religion = rel:revengenant
+						country_has_state_religion = rel:ursuline
+						country_has_state_religion = rel:libertarian
+						country_has_state_religion = rel:lacunarclast
+						country_has_state_religion = rel:quadrine
+						country_has_state_religion = rel:muckerism
+						country_has_state_religion = rel:madre_patria
+					}
+				}
+				ig:ig_devout = {
+					remove_ideology = ideology_patriarchal
+					add_ideology = ideology_matriarchal
+				}
+			}
+		}
+	}
+}
+
+# Root = Releasing Country
+# scope:target = Released Country
+on_country_released_as_overlord_subject = {
+	effect = {
+		scope:target = {
+			if = {
+				limit = {
+					OR = {
+						country_has_state_religion = rel:constitutionalist
+						country_has_state_religion = rel:principlist
+						country_has_state_religion = rel:libertarian
+						country_has_state_religion = rel:exceptionalist
+						country_has_state_religion = rel:imaginerian
+					}
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_americanist_judiciary
+					remove_ideology = ideology_moralist
+					add_ideology = ideology_americanist_moralist
+				}
+			}
+			if = {
+				limit = {
+					country_has_state_religion = rel:gaian
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_gaian_faithful
+					remove_ideology = ideology_moralist
+					add_ideology = ideology_gaian_moralist
+				}
+			}
+			if = {
+				limit = {
+					country_has_state_religion = rel:consumerist
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_consumerist_management
+					remove_ideology = ideology_pious
+					add_ideology = ideology_consumerist_pious
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						country_has_state_religion = rel:mormon
+						country_has_state_religion = rel:woolleyite
+						country_has_state_religion = rel:strangite
+						country_has_state_religion = rel:lamanite
+						country_has_state_religion = rel:quadrine
+					}
+				}
+				ig:ig_devout = {
+					set_interest_group_name = ig_mormon_priesthood
+					remove_ideology = ideology_moralist
+					add_ideology = ideology_mormon_moralist
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						country_has_state_religion = rel:liberationist
+						country_has_state_religion = rel:mesias_che
+						country_has_state_religion = rel:votanzapatismo
+					}
+				}
+				ig:ig_devout = {
+					remove_ideology = ideology_pious
+					add_ideology = ideology_proletarian
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						country_has_state_religion = rel:gaian
+						country_has_state_religion = rel:revengenant
+						country_has_state_religion = rel:ursuline
+						country_has_state_religion = rel:libertarian
+						country_has_state_religion = rel:lacunarclast
+						country_has_state_religion = rel:quadrine
+						country_has_state_religion = rel:muckerism
+						country_has_state_religion = rel:madre_patria
+					}
+				}
+				ig:ig_devout = {
+					remove_ideology = ideology_patriarchal
+					add_ideology = ideology_matriarchal
+				}
+			}
+		}
+	}
+}

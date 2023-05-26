@@ -1,0 +1,319 @@
+﻿constitutionalist = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		americanist
+		anachronous
+	}
+	color = { 76 76 204 }
+}
+
+principlist = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		americanist
+		anachronous
+	}
+	color = { 102 102 230 }
+}
+
+libertarian = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		americanist
+		anachronous
+	}
+	color = { 112 112 150 }
+}
+
+exceptionalist = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		americanist
+		anachronous
+	}
+	color = { 51 51 178 }
+}
+
+imaginerian = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		americanist
+		anachronous
+	}
+	color = { 0 110 153 }
+}
+
+consumerist = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		capitalist_heritage
+		anachronous
+	}
+	color = { 12 127 12 }
+}
+
+monetarist = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		capitalist_heritage
+		anachronous
+	}
+	color = { 25 102 25 }
+}
+
+lacunarclast = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		capitalist_heritage
+		anachronous
+	}
+	color = { 216 140 255 }
+}
+
+greenbacker = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		capitalist_heritage
+		americanist
+		anachronous
+	}
+	color = { 188 255 0 }
+}
+
+galvanist = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		industrial_heritage
+		anachronous
+	}
+	color = { 178 89 51 }
+}
+
+sustainablist = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		industrial_heritage
+		anachronous
+	}
+	color = { 173 63 46 }
+}
+
+promethean = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		industrial_heritage
+		anachronous
+	}
+	color = { 188 88 18 }
+}
+
+innovatorism = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		industrial_heritage
+		anachronous
+	}
+	color = { 191 95 113 }
+}
+
+enigmatismo = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		industrial_heritage
+		anachronous
+	}
+	color = { 0 51 153 }
+}
+
+atomicist = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		quantum
+		anachronous
+	}
+	color = { 191 255 5 }
+}
+
+aphite = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		quantum
+		anachronous
+	}
+	color = { 153 102 51 }
+	
+	taboos = {
+		#uranium #If we add this good, Aphites should taboo it
+	}
+}
+
+thermonullist = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		quantum
+		anachronous
+	}
+	color = { 155 11 69 }
+}
+
+novaist = {
+	texture = "gfx/interface/icons/generic_icons/unused/culture_icon.dds"
+	traits = {
+		quantum
+		anachronous
+	}
+	color = { 255 128 0 }
+}
+
+webweaver = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		digital
+		anachronous
+	}
+	color = { 46 49 146 }
+}
+
+cyberede = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		digital
+		anachronous
+	}
+	color = { 227 191 14 }
+}
+
+syncado = { #Unfinished on the CK3 side; future-proofing
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		digital
+		anachronous
+	}
+	color = { 227 191 14 }
+}
+
+darian = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		artistic
+		anachronous
+	}
+	color = { 0 103 198 }
+}
+
+constructivist = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		artistic
+		anachronous
+	}
+	color = { 234 187 174 }
+}
+
+el_santo = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		idiosyncratic
+		anachronous
+	}
+	color = { 227 79 5 }
+}
+
+auditorista = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		idiosyncratic
+		anachronous
+	}
+	color = { 0 61 121 }
+}
+
+alineado = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		idiosyncratic
+		anachronous
+	}
+	color = { 0 99 65 }
+}
+
+confederal = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		platinean
+		anachronous
+	}
+	color = { 38 119 160 }
+}
+
+federalista = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		platinean
+		anachronous
+	}
+	color = { 134 208 216 }
+}
+
+unitario = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		platinean
+		anachronous
+	}
+	color = { 120 151 160 }
+}
+
+anthropophagic = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		modernist
+		anachronous
+	}
+	color = { 168 219 177 }
+}
+
+architecturalist = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		modernist
+		anachronous
+	}
+	color = { 96 96 96 }
+}
+
+sagarana = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		modernist
+		anachronous
+	}
+	color = { 0 255 144 }
+}
+
+alternative_society = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		modernist
+		anachronous
+	}
+	color = { 0 10 240 }
+}
+
+saudosism = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		modernist
+		anachronous
+	}
+	color = { 161 173 121 }
+}
+
+earthvault = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	traits = {
+		idunnic
+		anachronous
+	}
+	color = { 42 23 9 }
+}
