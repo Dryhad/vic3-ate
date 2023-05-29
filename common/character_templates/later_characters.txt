@@ -29,3 +29,151 @@
         chance = 75
     }   
 }
+
+nvr_prokhor_zakharov_character_template = {
+	first_name = Prokhor
+	last_name = Zakharov
+	culture = cu:primorskiy
+	female = no
+	religion = rel:atheist
+	ideology = ideology_positivist
+	interest_group = ig_intelligentsia
+	traits = {
+		innovative
+		erudite
+	}
+}
+
+sco_deirdre_skye_character_template = {
+	first_name = Deirdre
+	last_name = Skye
+	culture = cu:scottish
+	female = yes
+	religion = rel:gaian #dohoho
+	ideology = ideology_moderate #ideology_environmentalist
+	interest_group = ig_intelligentsia #probably
+	traits = {
+		romantic
+		reserved
+	}
+}
+
+bht_pravin_lal_character_template = {
+	first_name = Pravin
+	last_name = Lal
+	culture = cu:gujarati
+	female = no
+	religion = rel:sunni
+	ideology = ideology_humanitarian
+	interest_group = ig_intelligentsia
+	traits = {
+		master_bureaucrat
+		persistent
+	}
+}
+
+nmb_nwabudike_morgan_character_template = {
+	first_name = Nwabudike
+	last_name = Morgan
+	culture = cu:swahili
+	female = no
+	ideology = ideology_market_liberal
+	interest_group = ig_industrialists
+	traits = {
+		ambitious
+		grifter
+	}
+}
+
+dix_miriam_godwinson_character_template = {
+	first_name = Miriam
+	last_name = Godwinson
+	culture = cu:dixie
+	female = yes
+	religion = rel:protestant
+	ideology = ideology_theocrat
+	interest_group = ig_devout
+	traits = {
+		pious
+		firebrand
+	}
+}
+
+pco_corazon_santiago_character_template = {
+	first_name = Corazon
+	last_name = Santiago
+	culture = cu:caribeno
+	female = yes
+	ideology = ideology_jingoist_leader #Maybe
+	interest_group = ig_armed_forces
+	traits = {
+		celebrity_commander
+		cruel
+	}
+}
+
+chi_shengji_yang_character_template = {
+	first_name = Sheng_Ji
+	last_name = Yang
+	culture = cu:han
+	female = no
+	religion = rel:mahayana
+	ideology = ideology_authoritarian
+	interest_group = ig_petty_bourgeoisie #Maybe
+	traits = {
+		expert_political_operator
+		imperious
+	}
+}
+
+ast_domai_character_template = {
+	first_name = Arthur
+	last_name = Donaldson
+	culture = cu:australian
+	female = no
+	ideology = ideology_communist #Maybe
+	interest_group = ig_trade_unions
+	traits = {
+		engineer
+		charismatic
+	}
+}
+
+win_sinder_roze_character_template = {
+	first_name = Asa
+	last_name = Wright
+	culture = cu:afro_caribbean
+	female = yes
+	ideology = ideology_radical
+	interest_group = ig_industrialists
+	traits = {
+		hedonist
+		engineer
+	}
+}
+
+nen_ulrik_svensgaard_character_template = {
+	first_name = Ulrik
+	last_name = Svensgaard
+	culture = cu:yankee
+	female = no
+	ideology = ideology_moderate
+	interest_group = ig_armed_forces
+	traits = {
+		expert_naval_commander
+		reserved
+	}
+}
+
+sca_annikki_luttinen_character_template = {
+	first_name = Annikki
+	last_name = Luttinen
+	culture = cu:norwegian
+	female = yes
+	ideology = ideology_positivist #probably
+	interest_group = ig_industrialists #probably
+	traits = {
+		direct
+		reserved
+	}
+}
