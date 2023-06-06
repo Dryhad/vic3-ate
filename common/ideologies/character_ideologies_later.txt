@@ -230,3 +230,56 @@ ideology_leader_xenophile = {
 		value = 100
 	}
 }
+
+ideology_leader_loyalist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_loyalist.dds"
+	
+	character_ideology = yes
+	
+	lawgroup_taxation = {
+		law_per_capita_based_taxation = approve
+		law_proportional_taxation = strongly_approve
+		law_graduated_taxation = approve
+		law_land_based_taxation = neutral
+		law_consumption_based_taxation = disapprove
+	}
+	
+	lawgroup_internal_security = {
+		law_no_home_affairs = strongly_disapprove
+		law_guaranteed_liberties = neutral
+		law_national_guard = neutral
+		law_secret_police = neutral
+	}
+	
+	possible = {
+		# Agitator ideologies should disapprove of a current law
+		NAND = {
+			has_role = agitator
+			owner = {
+				has_law = law_type:law_proportional_taxation
+				NOT = { has_law = law_type:law_no_home_affairs }
+			}
+		}
+		scope:interest_group = {
+			NOT = {
+				is_interest_group_type = ig_petty_bourgeoisie
+				is_interest_group_type = ig_armed_forces
+			}
+		}
+		scope:interest_group = {
+			NOR = {
+				has_variable = chose_vanguardism
+				has_variable = chose_communism
+				has_variable = chose_anarchism
+				has_variable = communist_ig_var
+				has_variable = chose_fascism
+				has_variable = chose_conservatism
+				has_variable = chose_ethno_nationalism
+			}
+		}
+	}
+	
+	leader_weight = {
+		value = 100
+	}
+}
