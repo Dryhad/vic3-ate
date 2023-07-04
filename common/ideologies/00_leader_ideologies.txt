@@ -270,6 +270,18 @@ ideology_republican_leader = {
 		law_hereditary_bureaucrats = disapprove
 	}
 	
+	lawgroup_distribution_of_power = {
+		law_universal_suffrage = strongly_approve
+		law_census_voting = strongly_approve
+		law_wealth_voting = approve
+		law_landed_voting = neutral
+		law_single_party_state = neutral
+		law_technocracy = neutral
+		law_oligarchy = disapprove
+		law_autocracy = disapprove
+		law_anarchy = strongly_disapprove
+	}	
+	
 	possible = {
 		# Agitators should have an ideology at odds with current laws
 		NAND = {
@@ -689,6 +701,18 @@ ideology_feminist = {
 		law_women_own_property = disapprove
 		law_no_womens_rights = strongly_disapprove
 	}
+	
+	lawgroup_distribution_of_power = {
+		law_universal_suffrage = strongly_approve
+		law_census_voting = strongly_approve
+		law_wealth_voting = approve
+		law_landed_voting = neutral
+		law_single_party_state = neutral
+		law_technocracy = disapprove
+		law_anarchy = disapprove
+		law_oligarchy = strongly_disapprove
+		law_autocracy = strongly_disapprove
+	}	
 	
 	possible = {
 		owner = { 

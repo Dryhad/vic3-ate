@@ -92,6 +92,13 @@ ideology_laissez_faire = {
 		law_homesteading = neutral
 		law_commercialized_agriculture = approve
 	}
+	
+	lawgroup_rights_of_women = {
+		law_no_womens_rights = disapprove
+		law_women_own_property = neutral
+		law_women_in_the_workplace = approve
+		law_womens_suffrage = disapprove
+	}
 }
 
 ideology_individualist = {
@@ -122,13 +129,6 @@ ideology_individualist = {
 		law_no_migration_controls = approve
 		law_migration_controls = disapprove
 		law_closed_borders = strongly_disapprove
-	}
-	
-	lawgroup_rights_of_women = {
-		law_no_womens_rights = disapprove
-		law_women_own_property = neutral
-		law_women_in_the_workplace = approve
-		law_womens_suffrage = disapprove
 	}
 }
 

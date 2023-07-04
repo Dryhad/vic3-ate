@@ -76,8 +76,8 @@ ideology_gaian_moralist = {
 	icon = "gfx/interface/icons/ideology_icons/unused/pacifist.dds" #Replace
 	
 	lawgroup_governance_principles = {
-		law_monarchy = strongly_approve
-		law_theocracy = approve	
+		law_theocracy = strongly_approve
+		law_monarchy = approve
 		law_presidential_republic = neutral
 		law_parliamentary_republic = neutral
 		law_council_republic = strongly_disapprove
