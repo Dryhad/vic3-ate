@@ -292,6 +292,7 @@ ideology_republican_leader = {
 					has_law = law_type:law_parliamentary_republic
 				}
 				has_law = law_type:law_elected_bureaucrats
+				has_law = law_type:law_universal_suffrage
 			}
 		}
 		# Monarchs cannot be republicans
@@ -724,6 +725,7 @@ ideology_feminist = {
 			has_role = agitator
 			owner = {
 				has_law = law_type:law_womens_suffrage
+				has_law = law_type:law_universal_suffrage
 			}
 		}
 		scope:interest_group = {
