@@ -1,10 +1,11 @@
 ﻿CHARACTERS = {
 	c:NYS = {
 		create_character = {
+			first_name = culture
 			last_name = "Levi"
 			ig_leader = yes
 			ruler = yes
-			culture = cu:yankee #gothamite
+			culture = cu:gothamite
 			religion = r:jewish
 			age = 43
 			interest_group = ig_devout
@@ -14,9 +15,10 @@
 			}
 		}
 		create_character = {
+			first_name = culture
 			last_name = "Wayne"
 			ig_leader = yes
-			culture = cu:yankee #gothamite
+			culture = cu:gothamite
 			age = 43
 			interest_group = ig_armed_forces
 			ideology = ideology_moderate #for now
@@ -25,9 +27,10 @@
 			}
 		}
 		create_character = {
+			first_name = culture
 			last_name = "Coeur"
 			ig_leader = yes
-			culture = cu:yankee #gothamite
+			culture = cu:gothamite
 			age = 43
 			interest_group = ig_petty_bourgeoise
 			ideology = ideology_moderate #for now
@@ -36,9 +39,10 @@
 			}
 		}
 		create_character = {
+			first_name = culture
 			last_name = "Amos"
 			ig_leader = yes
-			culture = cu:yankee #gothamite
+			culture = cu:gothamite
 			age = 43
 			interest_group = ig_industrialists
 			ideology = ideology_moderate #for now

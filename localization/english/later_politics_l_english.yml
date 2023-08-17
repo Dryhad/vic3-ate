@@ -1,6 +1,8 @@
 ﻿l_english:
  ideology_matriarchal: "Matriarchal"
- ideology_matriarchal_desc:0 "#lore This interest group has a tradition of female leadership.#!"
+ ideology_matriarchal_desc: "#lore This interest group has a tradition of female leadership.#!"
+ ideology_omerta: "Omertà"
+ ideology_omerta_desc: "#lore This interest group believes everyone should keep their mouths shut and not involve the authorities, capisce?"
  
  #Abrahamic
  ig_cristero_devout: "Prelature of Cristo Rey" #Cristero Faith
@@ -73,7 +75,7 @@
  ig_burner_rite: "Rite of the Burning Man" #Burner Faith
  ig_gaian_faithful: "Children of Gaia" #Gaian Faith
  ideology_gaian_moralist: "Gaian Moralist"
- ideology_gaian_moralist_desc:0 "#lore Gaians believe that different cultures should coexist peacefully.#!"
+ ideology_gaian_moralist_desc: "#lore Gaians believe that different cultures should coexist peacefully.#!"
  ig_stewards_of_the_holocene: "Stewards of the Holocene" #Holocenian Faith
  ig_revengeant_devout: "Warriors of the Slain Goddess" #Revengeant Faith
  ig_saurian_cults: "Saurian Cults" #Saurian Faith
@@ -104,6 +106,10 @@
  ideology_leader_xenophile_desc: "#lore This leader has a fondness for other cultures and wants to see them respected.#!"
  ideology_leader_loyalist: "Loyalist"
  ideology_leader_loyalist_desc: "#lore This leader believes each citizen should pay their dues to fund the vital functions of the state."
+ ideology_environmentalist: "Environmentalist"
+ ideology_environmentalist_desc: "#lore This leader believes in protecting the natural environment from exploitation and neglect."
+ ideology_nimby: "Nimby"
+ ideology_nimby_desc: "#lore This leader is all for cultural and industrial progress so long as it happens far away."
  
  law_freedom_of_confession:0 "Freedom of Confession"
  law_freedom_of_conscience_desc:0 "The state has an official state religion but some degree of nonconformity in rites and teachings is tolerated."

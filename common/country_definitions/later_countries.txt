@@ -18,7 +18,7 @@ TNE = { #East Tennessee
 	
 	country_type = recognized
 	
-	cultures = { dixie } #For now
+	cultures = { appalachian }
 	
 	capital = STATE_TENNESSEE
 }
@@ -30,7 +30,7 @@ TNM = { #Middle Tennessee
 	
 	country_type = recognized
 	
-	cultures = { dixie } #For now
+	cultures = { riverlander }
 	
 	capital = STATE_TENNESSEE
 }
@@ -42,7 +42,7 @@ TNW = { #West Tennessee
 	
 	country_type = recognized
 	
-	cultures = { dixie } #For now
+	cultures = { riverlander }
 	
 	capital = STATE_TENNESSEE
 }
@@ -54,7 +54,7 @@ OSU = { #Just copying Ofaloaf's dev diary example
 	
 	country_type = recognized
 	
-	cultures = { yankee }
+	cultures = { steelfolk }
 	religion = galvanist
 	
 	capital = STATE_OHIO
@@ -67,7 +67,7 @@ NYS = {
 	
 	country_type = recognized
 	
-	cultures = { yankee } #gothamite
+	cultures = { gothamite }
 	religion = jewish
 	
 	capital = STATE_NEW_YORK
@@ -80,7 +80,7 @@ TXK = {
 	
 	country_type = recognized
 	
-	cultures = { dixie } #arklatexan
+	cultures = { arklatexan }
 	
 	capital = STATE_ARKANSAS
 }
@@ -92,7 +92,7 @@ ARX = {
 	
 	country_type = recognized
 	
-	cultures = { yankee } #For now
+	cultures = { arixan }
 	
 	capital = STATE_ARIZONA
 }
@@ -104,7 +104,7 @@ IOW = {
 	
 	country_type = recognized
 	
-	cultures = { yankee } #For now
+	cultures = { heartlander }
 	
 	capital = STATE_IOWA
 }
@@ -116,7 +116,7 @@ PDC = {
 	
 	country_type = recognized
 	
-	cultures = { north_german } #deitsch
+	cultures = { deitsch }
 	religion = anabaptist
 	
 	capital = STATE_PENNSYLVANIA
@@ -129,7 +129,7 @@ BLU = {
 	
 	country_type = recognized
 	
-	cultures = { dixie } #appalachian
+	cultures = { appalachian }
 	
 	capital = STATE_NORTH_CAROLINA
 }
@@ -141,7 +141,7 @@ WVA = {
 	
 	country_type = recognized
 	
-	cultures = { dixie } #appalachian
+	cultures = { appalachian }
 	
 	capital = STATE_WEST_VIRGINIA
 }
@@ -153,7 +153,7 @@ WDC = {
 	
 	country_type = recognized
 	
-	cultures = { yankee } #for now
+	cultures = { beltway }
 	religion = constitutionalist
 	
 	capital = STATE_DISTRICT_OF_COLUMBIA
@@ -166,7 +166,7 @@ WIS = {
 	
 	country_type = recognized
 	
-	cultures = { yankee } #for now
+	cultures = { dairylander }
 	
 	capital = STATE_WISCONSIN
 }
@@ -178,7 +178,7 @@ ORD = {
 	
 	country_type = recognized
 	
-	cultures = { yankee } #for now
+	cultures = { chicagoan }
 	
 	capital = STATE_ILLINOIS
 }
@@ -190,7 +190,7 @@ KFC = {
 	
 	country_type = recognized
 	
-	cultures = { dixie } #for now
+	cultures = { riverlander }
 	
 	capital = STATE_KENTUCKY
 }
@@ -226,8 +226,20 @@ NVR = {
 	
 	country_type = recognized
 	
-	cultures = { russian } #vladivostokiy primorskiy
+	cultures = { primorskiy petropavlovskiy }
 	religion = nousthreskeia
 	
 	capital = STATE_OUTER_MANCHURIA
+}
+
+VES = {
+	color = { 65 99 42 }
+	
+	tier = kingdom
+	
+	country_type = recognized
+	
+	cultures = { australino wladfaeg }
+	
+	capital = STATE_PATAGONIA
 }

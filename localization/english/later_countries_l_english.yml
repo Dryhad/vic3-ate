@@ -37,6 +37,8 @@
  SVH_ADJ: "Savannahian"
  NVR: "Novorussiya"
  NVR_ADJ: "Novorussiyan"
+ VES: "Vespugia"
+ VES_ADJ: "Vespugian"
  
  dyn_c_amur_free_state: "Amur Free State"
  dyn_c_amur_free_state_adj: "Amurian"

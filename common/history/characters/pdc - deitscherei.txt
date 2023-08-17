@@ -5,7 +5,7 @@
 			last_name = "Troyer"
 			ruler = yes
 			age = 57
-			culture = cu:north_german #deitsch
+			culture = cu:deitsch
 			religion = rel:anabaptist
 			interest_group = ig_rural_folk
 			ideology = ideology_traditionalist
@@ -18,7 +18,7 @@
 			last_name = "Troyer"
 			heir = yes
 			age = 34
-			culture = cu:north_german #deitsch
+			culture = cu:deitsch
 			religion = rel:anabaptist
 			interest_group = ig_rural_folk
 			ideology = ideology_moderate

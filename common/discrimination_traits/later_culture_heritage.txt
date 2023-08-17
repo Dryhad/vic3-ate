@@ -1,0 +1,59 @@
+﻿heritage_family_bolivarian = {
+	heritage = yes
+}
+
+heritage_family_brazilian = {
+	heritage = yes
+}
+
+heritage_family_central_american = {
+	heritage = yes
+}
+
+heritage_family_eastern_indigenous = {
+	heritage = yes
+}
+
+heritage_family_east_coast = {
+	heritage = yes
+}
+
+heritage_family_great_guyanese = {
+	heritage = yes
+}
+
+heritage_family_mennonite = {
+	heritage = yes
+}
+
+heritage_family_mesoamerican = {
+	heritage = yes
+}
+
+heritage_family_mountain_central = {
+	heritage = yes
+}
+
+heritage_family_northern_indigenous = {
+	heritage = yes
+}
+
+heritage_family_siberian = {
+	heritage = yes
+}
+
+heritage_family_southern_cone = {
+	heritage = yes
+}
+
+heritage_family_southern_indigenous = {
+	heritage = yes
+}
+
+heritage_family_western_indigenous = {
+	heritage = yes
+}
+
+heritage_family_west_coast = {
+	heritage = yes
+}

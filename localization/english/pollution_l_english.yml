@@ -1,4 +1,4 @@
 ﻿l_english:
  STATE_POLLUTION:0 "Pollution\n$STATE_POLLUTION_CONDENSED$"
  TOOLTIP_STATE_POLLUTION:0 "#BOLD #V Pollution#!#!\nCurrent Pollution: #b [State.StateRegion.GetPollutionLevel|%R2]#!"
- STATE_POLLUTION_CONDENSED:0 "#b [State.GetStateRegion.GetDevastationLevel|%R1]#!"
+ STATE_POLLUTION_CONDENSED:0 "#b [State.GetStateRegion.GetPollutionLevel|%R1]#!"

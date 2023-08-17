@@ -1,0 +1,721 @@
+﻿tradition_RICE_whalers = {
+	
+}
+
+tradition_RICE_master_whalers = {
+	
+}
+
+tradition_mystical_ancestors = {
+
+}
+
+tradition_wild_hunt = {
+
+}
+
+tradition_tribute_to_the_fallen = {
+
+}
+
+tradition_wandering_warriors = { 
+
+}
+
+tradition_yankee_ingenuity = {
+
+}
+
+tradition_blitz_tactics = {
+
+}
+
+
+tradition_cowboys = {
+
+}
+
+tradition_boiadeiros = {
+
+}
+
+tradition_llaneros = {
+
+}
+
+tradition_soldados_de_cuera = {
+
+}
+
+tradition_mercenary_soccer = {
+
+}
+
+tradition_hillsea_riders = {
+
+}
+
+tradition_cangaco = {
+
+}
+
+tradition_bentwood_crafts = {
+
+}
+
+tradition_dog_breeders = {
+
+}
+
+tradition_gaucho_legacy = {
+
+}
+
+tradition_incaic_legacy = {
+
+}
+
+tradition_southern_knights = {
+
+}
+
+tradition_forest_wardens = {
+
+}
+
+
+tradition_mountaineer_ruralism = {
+
+}
+
+tradition_aztec_legacy = {
+
+}
+
+tradition_desert_ribat = {
+
+}
+
+tradition_cosmopolitan_elitism = {
+
+}
+
+tradition_coffee_making = {
+
+}
+
+tradition_brewmasters = {
+
+}
+
+tradition_cheesemongers = {
+
+}
+
+tradition_syrup_makers = {
+
+}
+
+tradition_rogues_will_be_rogues = {
+
+}
+
+tradition_resourceful_tinkerers = {
+
+}
+
+tradition_exotic_plantations = {
+
+}
+
+tradition_kanaima_sorcery = {
+
+}
+
+tradition_materos = {
+
+}
+
+tradition_cordel_literature = {
+
+}
+
+tradition_corridos = {
+
+}
+
+tradition_dia_de_muertos = {
+
+}
+
+tradition_initiation_rites = {
+
+}
+
+tradition_carnival = {
+
+}
+
+tradition_potlatch = {
+
+}
+
+tradition_bbqs = {
+
+}
+
+tradition_six_banners = {
+
+}
+
+tradition_town_council = {
+
+}
+
+tradition_tundra_dwellers = {
+
+}
+
+tradition_caatinga_dwellers = {
+
+}
+
+tradition_three_sisters = {
+
+}
+
+tradition_milpa = {
+
+}
+
+tradition_tlacolol = {
+
+}
+
+tradition_mayan_tolerance = {
+
+}
+
+tradition_lords_of_the_mayab = {
+
+}
+
+tradition_brazilian_cosmopolitanism = {
+
+}
+
+tradition_ao_ritual_succession = {
+
+}
+
+tradition_ao_restricted_adoption = {
+
+}
+
+tradition_ao_expanded_adoption = {
+
+}
+
+tradition_xenophilic = {
+
+}
+
+tradition_chivalry = {
+
+}
+
+tradition_hard_working = {
+
+}
+
+tradition_loyal_soldiers = {
+
+}
+
+tradition_pacifism = {
+
+}
+
+tradition_spartan = {
+
+}
+
+tradition_diasporic = {
+
+}
+
+tradition_hunters = {
+
+}
+
+tradition_vegetarianism = {
+
+}
+
+tradition_seafaring = {
+
+}
+
+tradition_storytellers = {
+
+}
+
+tradition_music_theory = {
+
+}
+
+tradition_poetry = {
+
+}
+
+tradition_fishermen = {
+
+}
+
+tradition_mendicant_mystics = {
+
+}
+
+tradition_warrior_culture = {
+
+}
+
+tradition_martial_admiration = {
+
+}
+
+tradition_philosopher_culture = {
+
+}
+
+tradition_welcoming = {
+
+}
+
+tradition_eye_for_an_eye = {
+
+}
+
+tradition_zealous_people = {
+
+}
+
+tradition_forbearing = {
+
+}
+
+tradition_equitable = {
+
+}
+
+tradition_charitable = {
+
+}
+
+tradition_modest = {
+
+}
+
+tradition_practiced_pirates = {
+
+}
+
+tradition_life_is_just_a_joke = {
+
+}
+
+tradition_artisans = {
+
+}
+
+tradition_monogamous = {
+
+}
+
+tradition_polygamous = {
+
+}
+
+tradition_concubines = {
+
+}
+
+tradition_sacred_mountains = {
+
+}
+
+tradition_sacred_groves = {
+
+}
+
+tradition_culinary_art = {
+
+}
+
+tradition_festivities = {
+
+}
+
+tradition_sorcerous_metallurgy = {
+
+}
+
+tradition_mystical_ancestors = {
+
+}
+
+tradition_religion_blending = {
+
+}
+
+tradition_religious_patronage = {
+
+}
+
+tradition_medicinal_plants = {
+
+}
+
+tradition_sacred_hunts = {
+
+}
+
+tradition_faith_bound = {
+
+}
+
+tradition_by_the_sword = {
+
+}
+
+tradition_language_scholars = {
+
+}
+
+tradition_runestones = {
+
+}
+
+tradition_merciful_blindings = {
+
+}
+
+tradition_caravaneers = {
+
+}
+
+tradition_horse_lords = {
+
+}
+
+tradition_californian_succession = {
+
+}
+
+tradition_court_eunuchs = {
+
+}
+
+tradition_legalistic = {
+
+}
+
+tradition_republican_legacy = {
+
+}
+
+tradition_hereditary_hierarchy = {
+
+}
+
+tradition_esteemed_hospitality = {
+
+}
+
+tradition_gardening = {
+
+}
+
+tradition_tribe_unity = {
+
+}
+
+tradition_astute_diplomats = {
+
+}
+
+tradition_collective_lands = {
+
+}
+
+tradition_female_only_inheritance = {
+
+}
+
+tradition_equal_inheritance = {
+
+}
+
+tradition_metal_craftsmanship = {
+
+}
+
+tradition_family_entrepreneurship = {
+
+}
+
+tradition_wedding_ceremonies = {
+
+}
+
+tradition_culture_blending = {
+
+}
+
+tradition_isolationist = {
+
+}
+
+tradition_fervent_temple_builders = {
+
+}
+
+tradition_agrarian = {
+
+}
+
+tradition_pastoralists = {
+
+}
+
+tradition_parochialism = {
+
+}
+
+tradition_ruling_caste = {
+
+}
+
+tradition_staunch_traditionalists = {
+
+}
+
+tradition_hill_dwellers = {
+
+}
+
+tradition_forest_folk = {
+
+}
+
+tradition_mountain_homes = {
+
+}
+
+tradition_dryland_dwellers = {
+
+}
+
+tradition_jungle_dwellers = {
+
+}
+
+tradition_wetlanders = {
+
+}
+
+tradition_hidden_cities = {
+
+}
+
+tradition_ancient_miners = {
+
+}
+
+tradition_castle_keepers = {
+
+}
+
+tradition_city_keepers = {
+
+}
+
+tradition_maritime_mercantilism = {
+
+}
+
+tradition_monastic_communities = {
+
+}
+
+tradition_pageants = {
+
+}
+
+tradition_futuwaa = {
+
+}
+
+tradition_mubarizuns = {
+
+}
+
+tradition_desert_ribat = {
+
+}
+
+tradition_land_of_the_bow = {
+
+}
+
+tradition_druzhina = {
+
+}
+
+tradition_hussar = {
+
+}
+
+tradition_horn_mountain_skirmishing = {
+
+}
+
+tradition_bush_hunting = {
+
+}
+
+tradition_mobile_guards = {
+
+}
+
+tradition_khadga_puja = {
+
+}
+
+tradition_garuda_warriors = {
+
+}
+
+tradition_burman_royal_army = {
+
+}
+
+tradition_mountain_herding = {
+
+}
+
+tradition_upland_skirmishing = {
+
+}
+
+tradition_strong_kinship = {
+
+}
+
+tradition_polders = {
+
+}
+
+tradition_hird = {
+
+}
+
+tradition_chanson_de_geste = {
+
+}
+
+tradition_winter_warriors = {
+
+}
+
+tradition_forest_fighters = {
+
+}
+
+tradition_mountaineers = {
+
+}
+
+tradition_warriors_of_the_dry = {
+
+}
+
+tradition_highland_warriors = {
+
+}
+
+tradition_jungle_warriors = {
+
+}
+
+tradition_only_the_strong = {
+
+}
+
+tradition_warriors_by_merit = {
+
+}
+
+tradition_warrior_monks = {
+
+}
+
+tradition_talent_acquisition = {
+
+}
+
+tradition_strength_in_numbers = {
+
+}
+
+tradition_frugal_armorsmiths = {
+
+}
+
+tradition_malleable_invaders = {
+
+}
+
+tradition_quarrelsome = {
+
+}
+
+tradition_swords_for_hire = {
+
+}
+
+tradition_reverence_for_veterans = {
+
+}
+
+tradition_stalwart_defenders = {
+
+}
+
+tradition_battlefield_looters = {
+
+}
+
+tradition_hit_and_run = {
+
+}
+
+tradition_stand_and_fight = {
+
+}
+
+tradition_adaptive_skirmishing = {
+
+}
+
+tradition_formation_fighting = {
+
+}
+
+tradition_horse_breeder = {
+
+}
+
+tradition_longbow_competitions = {
+
+}

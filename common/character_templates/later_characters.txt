@@ -3,7 +3,7 @@
     last_name = Publius
     culture = cu:gothamite
     female = no
-    religion = hamiltonian
+    religion = rel:constituionalist #hamiltonian
     ideology = ideology_vanguardist
     interest_group = ig_trade_unions
     birth_date = 3455.1.11
@@ -28,6 +28,75 @@
         latest_usage_date = 3536.1.1
         chance = 75
     }   
+}
+
+txk_benjamin_eleazar_character_template = {
+	first_name = Benjamin
+	last_name = Eleazar
+	culture = cu:yiddish
+	female = no
+	religion = rel:jewish
+	ideology = ideology_pacifist
+	interest_group = ig_rural_folk
+	age = 70 #Ostensibly nearly 3500 years old, this will make him look old at least
+	traits = {
+		reserved
+		direct
+	}
+	agitator_usage = {
+		country_trigger = {
+			c:TXK ?= this
+		}
+        interest_group_trigger = {
+            is_marginal = no
+            OR = {
+                is_interest_group_type = ig_rural_folk
+                is_interest_group_type = ig_trade_unions
+				is_interest_group_type = ig_intelligentsia
+            } 
+        }   
+		earliest_usage_date = 3436.1.1
+		latest_usage_date = 3536.1.1
+		chance = 50
+	}
+}
+
+ves_medex_guedder_character_template = {
+	first_name = Medex
+	last_name = Guedder
+	culture = cu:australino
+	female = no
+	ideology = ideology_authoritarian #Could be fascist, but really more of a standard military dictator
+	interest_group = ig_armed_forces
+	traits = {
+		direct
+		ambitious
+	}
+	commander_usage = {
+		country_trigger = {
+			c:VES ?= this
+		}
+		role = general
+		earliest_usage_date = 3490.1.1
+		latest_usage_date = 3536.1.1
+		chance = 50
+	}
+}
+
+ves_zachary_gray_character_template = {
+	first_name = Zachary
+	last_name = Gray
+	culture = cu:wladfaeg #Not really Welsh but this places him in Vespugia
+	female = no
+	religion = rel:atheist
+	ideology = ideology_atheist
+	interest_group = ig_intelligentsia
+	age = 21
+	traits = {
+		arrogant
+		reckless
+		charismatic
+	}
 }
 
 nvr_prokhor_zakharov_character_template = {
@@ -102,7 +171,7 @@ dix_miriam_godwinson_character_template = {
 pco_corazon_santiago_character_template = {
 	first_name = Corazon
 	last_name = Santiago
-	culture = cu:caribeno
+	culture = cu:boricua
 	female = yes
 	ideology = ideology_jingoist_leader #Maybe
 	interest_group = ig_armed_forces
@@ -142,7 +211,7 @@ ast_domai_character_template = {
 win_sinder_roze_character_template = {
 	first_name = Asa
 	last_name = Wright
-	culture = cu:afro_caribbean
+	culture = cu:calypsonian
 	female = yes
 	ideology = ideology_radical
 	interest_group = ig_industrialists
@@ -175,5 +244,62 @@ sca_annikki_luttinen_character_template = {
 	traits = {
 		direct
 		reserved
+	}
+}
+
+ess_cyrus_rotheram_character_template = {
+	first_name = Cyrus
+	last_name = Rotheram
+	culture = cu:north_german
+	female = no
+	ideology = ideology_royalist
+	interest_group = ig_armed_forces
+	traits = {
+	}
+}
+
+ess_clinton_alderdice_character_template = {
+	first_name = Clinton
+	last_name = Alderdice
+	culture = cu:french #I guess
+	female = no
+	ideology = ideology_communist
+	interest_group = ig_intelligentsia
+	traits = {
+		literary
+	}
+}
+
+ess_ignace_curnow_character_template = {
+	first_name = Ignace
+	last_name = Curnow
+	culture = cu:russian
+	female = no
+	ideology = ideology_authoritarian #Maybe
+	interest_group = ig_industrialists
+	traits = {
+	}
+}
+
+ess_octavius_cutler_character_template = {
+	first_name = Octavius
+	last_name = dynn_Cutler
+	culture = cu:british
+	female = no
+	ideology = ideology_market_liberal
+	interest_group = ig_petty_bourgeoisie
+	traits = {
+	}
+}
+
+ess_luther_griggs_character_template = {
+	first_name = Luther
+	last_name = dynn_Griggs
+	culture = cu:swedish
+	female = no
+	ideology = ideology_positivist
+	interest_group = ig_intelligentsia
+	traits = {
+		innovative
 	}
 }

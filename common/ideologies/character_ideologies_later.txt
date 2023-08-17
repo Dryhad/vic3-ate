@@ -283,3 +283,70 @@ ideology_leader_loyalist = {
 		value = 100
 	}
 }
+
+ideology_environmentalist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_buddhist_moralist.dds" #Replace
+	
+	character_ideology = yes
+	
+	#Placeholder
+	
+	possible = {
+		always = no #For now
+		
+		scope:interest_group = {
+			NOR = {
+				has_variable = chose_vanguardism
+				has_variable = chose_communism
+				has_variable = chose_anarchism
+				has_variable = communist_ig_var
+				has_variable = chose_fascism
+				has_variable = chose_conservatism
+				has_variable = chose_ethno_nationalism
+			}
+		}
+	}
+	
+	leader_weight = {
+		value = 0
+	}
+}
+
+ideology_nimby = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_reactionary.dds" #Replace
+	
+	character_ideology = yes
+	
+	#Placeholder
+	
+	lawgroup_migration = {
+		law_no_migration_controls = strongly_disapprove
+		law_migration_controls = approve
+		law_closed_borders = neutral
+	}
+	
+	possible = {
+		always = no #For now
+		
+		scope:interest_group = {
+			NOT = {
+				is_interest_group_type = ig_industrialists
+			}
+		}
+		scope:interest_group = {
+			NOR = {
+				has_variable = chose_vanguardism
+				has_variable = chose_communism
+				has_variable = chose_anarchism
+				has_variable = communist_ig_var
+				has_variable = chose_fascism
+				has_variable = chose_conservatism
+				has_variable = chose_ethno_nationalism
+			}
+		}
+	}
+	
+	leader_weight = {
+		value = 0
+	}
+}

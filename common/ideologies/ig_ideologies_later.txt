@@ -334,3 +334,28 @@ ideology_juventide_moralist = {
 		law_youth_suffrage = strongly_approve
 	}
 }
+
+ideology_omerta = {
+	icon = "gfx/interface/icons/ideology_icons/unused/no_ideology.dds" #Replace
+	
+	lawgroup_policing = {
+		law_militarized_police = disapprove
+		law_dedicated_police = disapprove
+		law_local_police = neutral
+		law_no_police = approve
+	}	
+
+	lawgroup_internal_security = {
+		law_secret_police = disapprove
+		law_national_guard = disapprove
+		law_no_home_affairs = approve
+		law_guaranteed_liberties = neutral
+	}	
+	
+	lawgroup_free_speech = {
+		law_outlawed_dissent = approve
+		law_censorship = approve
+		law_right_of_assembly = neutral
+		law_protected_speech = disapprove
+	}
+}
