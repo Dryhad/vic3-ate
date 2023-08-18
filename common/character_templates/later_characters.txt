@@ -99,6 +99,52 @@ ves_zachary_gray_character_template = {
 	}
 }
 
+mel_thomas_lecoultre_character_template = {
+	first_name = Thomas
+	last_name = le_Coultre
+	culture = cu:french
+	female = no
+	religion = rel:cult_of_reason
+	ideology = ideology_atheist
+	interest_group = ig_intelligentsia
+	age = 25
+	traits = {
+		reserved
+		erudite
+	}
+}
+
+mel_emanuel_comte_character_template = { #Fathers and Sons
+	first_name = Emmanuel
+	last_name = Comte
+	culture = cu:french
+	female = no
+	religion = rel:cult_of_reason
+	ideology = ideology_reformer
+	interest_group = ig_intelligentsia
+	age = 41
+	traits = {
+		charismatic
+		tactful
+		imperious
+	}
+}
+
+mel_meyssonnier_character_template = {
+	first_name = culture
+	last_name = Meyssonnier
+	culture = cu:french
+	religion = rel:cult_of_reason
+	ideology = ideology_communist
+	interest_group = ig_armed_forces
+	age = 41
+	traits = {
+		popular_commander
+		direct
+		meticulous
+	}
+}
+
 nvr_prokhor_zakharov_character_template = {
 	first_name = Prokhor
 	last_name = Zakharov
