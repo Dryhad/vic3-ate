@@ -249,17 +249,17 @@
 		}
 	}
 	s:STATE_OUTER_MANCHURIA = {
-		region_state:CHI = {
+		region_state:NVR = {
 			create_pop = {
-				culture = manchu
+				culture = primorskiy
 				size = 1303996
 			}
 			create_pop = {
-				culture = korean
+				culture = petropavlovskiy
 				size = 11996
 			}
 			create_pop = {
-				culture = siberian
+				culture = chukchi
 				size = 32800
 			}
 		}
@@ -1216,7 +1216,7 @@
 		}
 	}
 	s:STATE_SAKHALIN = {
-		region_state:SKH = {
+		region_state:NVR = {
 			create_pop = {
 				culture = ainu
 				size = 24004

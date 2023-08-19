@@ -39,6 +39,12 @@
  NVR_ADJ: "Novorussiyan"
  VES: "Vespugia"
  VES_ADJ: "Vespugian"
+ MEL: "Malevil"
+ MEL_ADJ: "Malevillian"
+ PHP: "Pfennig-Hlabpfennig"
+ PHP_ADJ: "Pfennigen"
+ NIK: "Nickajack"
+ NIK_ADJ: "Nickajack"
  
  dyn_c_amur_free_state: "Amur Free State"
  dyn_c_amur_free_state_adj: "Amurian"

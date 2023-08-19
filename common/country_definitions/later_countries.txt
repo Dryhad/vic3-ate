@@ -243,3 +243,40 @@ VES = {
 	
 	capital = STATE_PATAGONIA
 }
+
+MEL = {
+	color = { 200 80 80 }
+	
+	tier = principality
+	
+	country_type = unrecognized
+	
+	cultures = { french }
+	religion = cult_of_reason
+	
+	capital = STATE_POITOU
+}
+
+PHP = {
+	color = { 170 115 70 }
+	
+	tier = grand_principality
+	
+	country_type = unrecognized
+	
+	cultures = { north_german }
+	
+	capital = STATE_SAXONY
+}
+
+NIK = {
+	color = { 183 36 92 }
+	
+	tier = principality
+	
+	country_type = recognized
+	
+	cultures = { appalachian }
+	
+	capital = STATE_ALABAMA
+}

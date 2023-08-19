@@ -557,7 +557,7 @@
 		}
 		region_state:TNE = {
 			create_pop = {
-				culture = yankee
+				culture = appalachian
 				size = 204800
 			}
 		}
@@ -608,6 +608,12 @@
 				size = 22240
 			}
 		}
+		region_state:NIK = {
+			create_pop = {
+				culture = appalachian
+				size = 100000
+			}
+		}
 	}
 	s:STATE_FLORIDA = {
 		region_state:USA = {
@@ -653,6 +659,18 @@
 				pop_type = slaves
 				culture = afro_american
 				size = 256172
+			}
+		}
+		region_state:NIK = {
+			create_pop = {
+				culture = appalachian
+				size = 20000
+			}
+		}
+		region_state:SVH = {
+			create_pop = {
+				culture = dixie
+				size = 20000
 			}
 		}
 	}

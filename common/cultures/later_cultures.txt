@@ -103968,7 +103968,7 @@ rimense = {
 
 riverlander = {
         color = { 25 75 125 }
-        religion = tombwatcher
+        religion = watcher
         
         traits = {
             #TODO

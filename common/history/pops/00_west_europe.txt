@@ -685,18 +685,20 @@
 		}
 	}
 	s:STATE_POITOU = {
-		region_state:FRA = {
+		region_state:MEL = {
 			create_pop = {
 				culture = french
+				religion = cult_of_reason
 				size = 1680062
 			}
 			create_pop = {
 				culture = french
-				religion = protestant
+				religion = cult_of_reason
 				size = 65087
 			}
 			create_pop = {
 				culture = occitan
+				religion = cult_of_reason
 				size = 3001
 			}
 			create_pop = {
@@ -862,22 +864,25 @@
 		}
 	}
 	s:STATE_AQUITAINE = {
-		region_state:FRA = {
+		region_state:MEL = {
 			create_pop = {
 				culture = occitan
+				religion = cult_of_reason
 				size = 1703916
 			}
 			create_pop = {
 				culture = occitan
-				religion = protestant
+				religion = cult_of_reason
 				size = 18784
 			}
 			create_pop = {
 				culture = french
+				religion = cult_of_reason
 				size = 58129
 			}
 			create_pop = {
 				culture = basque
+				religion = cult_of_reason
 				size = 60145
 			}
 			create_pop = {
@@ -1606,7 +1611,7 @@
 		}
 	}
 	s:STATE_SAXONY = {
-		region_state:SAX = {
+		region_state:SRB = {
 			create_pop = {
 				culture = north_german
 				size = 1453212
@@ -1630,7 +1635,7 @@
 				size = 50106
 			}
 		}
-		region_state:MEI = {
+		region_state:PHP = {
 			create_pop = {
 				culture = north_german
 				size = 133000

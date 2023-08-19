@@ -1788,7 +1788,7 @@
 		}
 	}
 	s:STATE_POITOU={
-		region_state:FRA={
+		region_state:MEL={
 			create_building={
 				building="building_paper_mills"
 				level=2
@@ -2088,7 +2088,7 @@
 		}
 	}
 	s:STATE_AQUITAINE={
-		region_state:FRA={
+		region_state:MEL={
 			create_building={
 				building="building_government_administration"
 				level=3
@@ -3556,7 +3556,7 @@
 		}
 	}
 	s:STATE_SAXONY={
-		region_state:SAX={
+		region_state:SRB={
 			create_building={
 				building="building_government_administration"
 				level=1
@@ -3606,7 +3606,7 @@
 				activate_production_methods={ "pm_mobile_artillery" "pm_wound_dressing" "pm_cavalry_scouts" "pm_no_specialists" "pm_line_infantry" }
 			}
 		}
-		region_state:MEI = {
+		region_state:PHP = {
 			create_building={
 				building="building_rye_farm"
 				level=1
