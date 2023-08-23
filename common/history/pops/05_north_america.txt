@@ -563,19 +563,14 @@
 		}
 	}
 	s:STATE_MISSISSIPPI = {
-		region_state:USA = {
+		region_state:MAG = {
 			create_pop = {
 				culture = dixie
 				size = 172804
 			}
 			create_pop = {
-				culture = afro_american
-				size = 943 # 519 free in 1830, 1366 free in 1840
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = afro_american
-				size = 87057
+				culture = deltaic
+				size = 88000
 			}
 		}
 	}

@@ -627,7 +627,7 @@
 		}
 	}
 	s:STATE_MISSISSIPPI={
-		region_state:USA={
+		region_state:MAG={
 			create_building={
 				building="building_government_administration"
 				level=1

@@ -280,3 +280,39 @@ NIK = {
 	
 	capital = STATE_ALABAMA
 }
+
+MAG = {
+	color = { 122 60 29 }
+	
+	tier = kingdom
+	
+	country_type = recognized
+	
+	cultures = { dixie deltaic }
+	
+	capital = STATE_MISSISSIPPI
+}
+
+MES = {
+	color = { 55 128 67 }
+	
+	tier = principality
+	
+	country_type = recognized
+	
+	cultures = { litoraleno }
+	
+	capital = STATE_CORRIENTES
+}
+
+BUA = {
+	color = { 0 123 224 }
+	
+	tier = principality
+	
+	country_type = recognized
+	
+	cultures = { porteno pampeano }
+	
+	capital = STATE_BUENOS_AIRES
+}
