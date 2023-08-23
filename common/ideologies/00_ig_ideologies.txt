@@ -82,6 +82,7 @@ ideology_laissez_faire = {
 	lawgroup_labor_rights = {
 		law_no_workers_rights = neutral
 		law_regulatory_bodies = disapprove
+		law_machinery_restrictions = strongly_disapprove
 		law_worker_protections = strongly_disapprove
 	}
 
@@ -277,7 +278,7 @@ ideology_moralist = {
 		law_state_religion = strongly_approve
 		law_freedom_of_confession = approve
 		law_freedom_of_conscience = neutral
-		law_total_separation = strongly_disapprove
+		law_total_separation = disapprove
 		law_state_atheism = strongly_disapprove
 	}
 
@@ -512,6 +513,7 @@ ideology_egalitarian = {
 	
 	lawgroup_labor_rights = {		
 		law_worker_protections = strongly_approve
+		law_machinery_restrictions = approve
 		law_regulatory_bodies = approve
 		law_no_workers_rights = neutral
 	}		

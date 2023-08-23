@@ -1347,6 +1347,7 @@ ideology_social_democrat = {
 
 	lawgroup_labor_rights = {		
 		law_worker_protections = strongly_approve
+		law_machinery_restrictions = approve
 		law_regulatory_bodies = approve
 		law_no_workers_rights = neutral
 	}
@@ -1494,6 +1495,7 @@ ideology_communist = {
 
 	lawgroup_labor_rights = {		
 		law_worker_protections = strongly_approve
+		law_machinery_restrictions = approve
 		law_regulatory_bodies = approve
 		law_no_workers_rights = neutral
 	}
@@ -2473,6 +2475,7 @@ ideology_market_liberal = {
 
 	lawgroup_labor_rights = {
 		law_regulatory_bodies = disapprove
+		law_machinery_restrictions = strongly_disapprove
 		law_worker_protections = strongly_disapprove
 	}
 
@@ -2682,6 +2685,13 @@ ideology_luddite = {
 		law_mercantilism = neutral
 		law_protectionism = approve		
 		law_isolationism = strongly_approve
+	}
+	
+	lawgroup_labor_rights = {	
+		law_machinery_restrictions = strongly_approve	
+		law_worker_protections = neutral
+		law_regulatory_bodies = neutral
+		law_no_workers_rights = neutral
 	}
 
 	possible = {

@@ -115,6 +115,8 @@
  law_freedom_of_conscience_desc:0 "The state has an official state religion but some degree of nonconformity in rites and teachings is tolerated."
  law_youth_suffrage:0 "Youth Suffrage"
  law_youth_suffrage_desc:0 "Children are educated with an emphasis on facilitating and encouraging their political participation."
+ law_machinery_restrictions:0 "Machinery Restrictions"
+ law_machinery_restrictions_desc:0 "The regulator places strict limits on the use of unsafe and hazardous machinery."
  
  ig_purple: "Purples"
  ig_blue: "Blues"

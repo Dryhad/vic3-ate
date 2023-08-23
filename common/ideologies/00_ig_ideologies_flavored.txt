@@ -220,7 +220,7 @@ ideology_shinto_moralist = {
 		law_state_religion = strongly_approve
 		law_freedom_of_confession = approve
 		law_freedom_of_conscience = neutral
-		law_total_separation = strongly_disapprove
+		law_total_separation = disapprove
 		law_state_atheism = strongly_disapprove
 	}
 	
@@ -377,7 +377,7 @@ ideology_buddhist_moralist = {
 		law_state_religion = strongly_approve
 		law_freedom_of_confession = approve
 		law_freedom_of_conscience = neutral
-		law_total_separation = strongly_disapprove
+		law_total_separation = disapprove
 		law_state_atheism = strongly_disapprove
 	}
 
@@ -405,7 +405,7 @@ ideology_hindu_moralist = {
 		law_state_religion = strongly_approve
 		law_freedom_of_confession = approve
 		law_freedom_of_conscience = neutral
-		law_total_separation = strongly_disapprove
+		law_total_separation = disapprove
 		law_state_atheism = strongly_disapprove
 	}
 
@@ -439,7 +439,7 @@ ideology_sikh_moralist = {
 		law_state_religion = strongly_approve
 		law_freedom_of_confession = approve
 		law_freedom_of_conscience = neutral
-		law_total_separation = strongly_disapprove
+		law_total_separation = disapprove
 		law_state_atheism = strongly_disapprove
 	}
 

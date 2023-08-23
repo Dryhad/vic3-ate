@@ -291,6 +291,13 @@ ideology_environmentalist = {
 	
 	#Placeholder
 	
+	lawgroup_labor_rights = {	
+		law_machinery_restrictions = strongly_approve	
+		law_worker_protections = approve
+		law_regulatory_bodies = approve
+		law_no_workers_rights = neutral
+	}
+	
 	possible = {
 		always = no #For now
 		

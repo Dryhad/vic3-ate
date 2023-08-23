@@ -13,7 +13,7 @@
 		law_state_religion = strongly_approve
 		law_freedom_of_confession = approve
 		law_freedom_of_conscience = neutral
-		law_total_separation = strongly_disapprove
+		law_total_separation = disapprove
 		law_state_atheism = strongly_disapprove
 	}
 
@@ -53,7 +53,7 @@ ideology_mormon_moralist = {
 		law_state_religion = strongly_approve
 		law_freedom_of_confession = approve
 		law_freedom_of_conscience = neutral
-		law_total_separation = strongly_disapprove
+		law_total_separation = disapprove
 		law_state_atheism = strongly_disapprove
 	}
 
@@ -87,7 +87,7 @@ ideology_gaian_moralist = {
 		law_state_religion = strongly_approve
 		law_freedom_of_confession = approve
 		law_freedom_of_conscience = neutral
-		law_total_separation = strongly_disapprove
+		law_total_separation = disapprove
 		law_state_atheism = strongly_disapprove
 	}
 
@@ -157,7 +157,7 @@ ideology_remembrant_moralist = {
 		law_state_religion = strongly_approve
 		law_freedom_of_confession = approve
 		law_freedom_of_conscience = neutral
-		law_total_separation = strongly_disapprove
+		law_total_separation = disapprove
 		law_state_atheism = strongly_disapprove
 	}
 
@@ -270,7 +270,7 @@ ideology_old_order_moralist = {
 		law_state_religion = strongly_approve
 		law_freedom_of_confession = approve
 		law_freedom_of_conscience = neutral
-		law_total_separation = strongly_disapprove
+		law_total_separation = disapprove
 		law_state_atheism = strongly_disapprove
 	}
 
@@ -315,7 +315,7 @@ ideology_juventide_moralist = {
 		law_state_religion = strongly_approve
 		law_freedom_of_confession = approve
 		law_freedom_of_conscience = neutral
-		law_total_separation = strongly_disapprove
+		law_total_separation = disapprove
 		law_state_atheism = strongly_disapprove
 	}
 
