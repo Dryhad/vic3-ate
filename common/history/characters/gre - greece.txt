@@ -1,0 +1,17 @@
+﻿CHARACTERS = {
+	c:GRE = {
+		create_character = {
+			first_name = "Thespis"
+			last_name = culture
+			historical = yes
+			ruler = yes
+			culture = cu:greek
+			interest_group = ig_industrialists
+			ideology = ideology_moderate
+			traits = {
+				imperious
+				ambitious
+			}
+		}	
+	}
+}

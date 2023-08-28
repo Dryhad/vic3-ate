@@ -1,0 +1,27 @@
+﻿CHARACTERS = {
+	c:PHP = {
+		create_character = {
+			first_name = "Rudolph"
+			last_name = "von_Halbpfennig"
+			ig_leader = yes
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_moderate
+			traits = {
+				grifter
+				cautious
+				reserved
+			}
+		}
+		create_character = {
+			first_name = "Ernest"
+			last_name = "Dummkopf"
+			agitator = yes
+			interest_group = ig_intelligentsia
+			ideology = ideology_radical
+			traits = {
+				ambitious
+				experienced_political_operator
+			}
+		}
+	}
+}
