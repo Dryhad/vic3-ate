@@ -9,10 +9,5 @@
 		activate_law = law_type:law_freedom_of_confession
 		activate_law = law_type:law_right_of_assembly
 
-		ig:ig_devout = {
-			set_interest_group_name = ig_mormon_priesthood
-			remove_ideology = ideology_moralist
-			add_ideology = ideology_mormon_moralist
-		}
 	}
 }

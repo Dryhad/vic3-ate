@@ -11,12 +11,5 @@
 		activate_law = law_type:law_free_trade
 		activate_law = law_type:law_per_capita_based_taxation
 
-		ig:ig_devout = {
-			set_interest_group_name = ig_gaian_faithful
-			remove_ideology = ideology_moralist
-			add_ideology = ideology_gaian_moralist
-			remove_ideology = ideology_patriarchal
-			add_ideology = ideology_matriarchal
-		}
 	}
 }

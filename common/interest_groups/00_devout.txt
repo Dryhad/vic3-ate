@@ -1,0 +1,1187 @@
+﻿ig_devout = {
+	color = hsv{ 0.50 0.30 0.67 }
+	texture = "gfx/interface/icons/ig_icons/devout.dds"
+	layer = "revolution_dynamic_devout"
+	index = 1
+
+	ideologies = {
+		ideology_pious
+		ideology_moralist
+		ideology_patriarchal
+	}
+
+	enable = {
+		always = yes
+	}
+
+	# Deprecated; use on_enable effect to assign traits instead
+	traits = {
+		ig_trait_be_fruitful_and_multiply
+		ig_trait_divine_right
+		ig_trait_pious_fiction
+	}
+
+	on_enable = {
+		ig:ig_devout = {
+			set_ig_trait = ig_trait:ig_trait_pious_fiction
+			set_ig_trait = ig_trait:ig_trait_divine_right
+			set_ig_trait = ig_trait:ig_trait_be_fruitful_and_multiply
+		}
+		
+		### Specific
+
+		# Confucian Scholars
+		if = {
+			limit = {
+				country_has_state_religion = rel:mahayana
+				OR = {
+					country_has_primary_culture = cu:korean
+					any_primary_culture = {
+						has_discrimination_trait = han_chinese
+					}
+				}
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_confucian
+				remove_ideology = ideology_pious
+				remove_ideology = ideology_moralist
+				add_ideology = ideology_confucian
+			}
+		}
+		# Evangelicals
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:protestant
+				OR = {
+					country_has_primary_culture = cu:yankee
+					country_has_primary_culture = cu:dixie
+					country_has_primary_culture = cu:afro_american
+					country_has_primary_culture = cu:cherokee
+				}
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_evangelicals
+			}
+		}
+		# Roman Curia
+		else_if = {
+			limit = {
+				c:PAP ?= this
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_roman_curia
+			}
+		}
+
+
+		### Generic
+
+		# Catholic Church
+		else_if = {
+			limit = { country_has_state_religion = rel:catholic }
+			ig:ig_devout = { 
+				set_interest_group_name = ig_catholic_church 
+			}
+		}
+		# Evangelical Church
+		else_if = {
+			limit = { country_has_state_religion = rel:protestant }
+			ig:ig_devout = { 
+				set_interest_group_name = ig_evangelical_church
+			}
+		}
+		# Sunni Ulema
+		else_if = {
+			limit = { country_has_state_religion = rel:sunni }
+			ig:ig_devout = { 
+				set_interest_group_name = ig_sunni_madrasahs
+			}
+		}
+		# Shi'a Ulema
+		else_if = {
+			limit = { country_has_state_religion = rel:shiite }
+			ig:ig_devout = { 
+				set_interest_group_name = ig_shia_madrasahs
+			}
+		}
+		# Oriental Orthodox Church
+		else_if = {
+			limit = { country_has_state_religion = rel:oriental_orthodox }
+			ig:ig_devout = { 
+				set_interest_group_name = ig_oriental_orthodox_church
+				remove_ideology = ideology_patriarchal
+				add_ideology = ideology_oriental_orthodox_patriarch
+			}
+		}
+		# Orthodox Church
+		else_if = {
+			limit = { 
+				country_has_state_religion = rel:orthodox
+			}
+			ig:ig_devout = { 
+				set_interest_group_name = ig_orthodox_church
+				remove_ideology = ideology_patriarchal
+				add_ideology = ideology_orthodox_patriarch
+			}
+		}
+		# Hindu Priesthood
+		else_if = {
+			limit = { country_has_state_religion = rel:hindu }
+			ig:ig_devout = {
+				set_interest_group_name = ig_hindu_priesthood
+				remove_ideology = ideology_moralist
+				add_ideology = ideology_hindu_moralist
+			}
+		}
+		# Vajrayana Monks
+		else_if = {
+			limit = { country_has_state_religion = rel:gelugpa }
+			ig:ig_devout = {
+				set_interest_group_name = ig_vajrayana_monks
+				remove_ideology = ideology_moralist
+				add_ideology = ideology_buddhist_moralist
+			}
+		}
+		# Vajrayana Monks
+		else_if = {
+			limit = { country_has_state_religion = rel:theravada }
+			ig:ig_devout = {
+				set_interest_group_name = ig_theravada_monks
+				remove_ideology = ideology_moralist
+				add_ideology = ideology_buddhist_moralist
+			}
+		}
+		# Mahayana Monks
+		else_if = {
+			limit = { country_has_state_religion = rel:mahayana }
+			ig:ig_devout = {
+				set_interest_group_name = ig_mahayana_monks
+				remove_ideology = ideology_moralist
+				add_ideology = ideology_buddhist_moralist
+			}
+		}
+		# Sikh Priesthood
+		else_if = {
+			limit = { country_has_state_religion = rel:sikh }
+			ig:ig_devout = {
+				set_interest_group_name = ig_sikh_priesthood
+				remove_ideology = ideology_moralist
+				add_ideology = ideology_sikh_moralist
+			}
+		}
+		# Anglicans
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:anglican
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_anglican_church
+			}
+		}
+		# Shinto Monks (Japan)
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:shinto
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_shinto_monks
+				remove_ideology = ideology_moralist
+				add_ideology = ideology_shinto_moralist
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:cristero
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_cristero_devout
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:apostolicism
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_apostolic_church
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:ursuline
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_ursuline_order
+				remove_ideology = ideology_patriarchal
+				add_ideology = ideology_matriarchal
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:particularist_religion
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_particularist_church
+				add_ideology = ideology_particularist #Dohoho
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:animism
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_animaist_church
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:mama_tatda
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_mama_tada_order
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:tridentinism
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_tridentine_church
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:penitents
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_penitente_fraternities
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:cruzob
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_cruzoob_devout
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:jolljepunco
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_jolljepunco_church
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:redemptionist
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_redemptionist_convention
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:anabaptist
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_old_order_movement
+				remove_ideology = ideology_moralist
+				add_ideology = ideology_old_order_moralist
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:peace_church
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_peace_church
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:united_church
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_united_church
+				remove_ideology = ideology_moralist
+				add_ideology = ideology_united_moralist
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:moravian
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_moravian_brethren
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:freedomite
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_freedomite_devout
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					country_has_state_religion = rel:mormon
+					country_has_state_religion = rel:woolleyite
+					country_has_state_religion = rel:strangite
+					country_has_state_religion = rel:lamanite
+				}
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_mormon_priesthood
+				remove_ideology = ideology_moralist
+				add_ideology = ideology_mormon_moralist
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:quadrine
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_mormon_priesthood
+				remove_ideology = ideology_moralist
+				add_ideology = ideology_mormon_moralist
+				remove_ideology = ideology_patriarchal
+				add_ideology = ideology_matriarchal
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:lucumi
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_santeria_devout
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:tambor_de_mina
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_trance_drummer
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:palo
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_palo_devout
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:behemothist
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_behemothian_covenant
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:remembrant
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_legion_of_remembrance
+				remove_ideology = ideology_moralist
+				add_ideology = ideology_remembrant_moralist
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:reborn
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_reborn_children
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:paracletian
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_army_of_paracletes
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:ayahan
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_ayahan_devout
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:limpio
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_limpio_devout
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:navegante
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_navegante_priesthood
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:fire_cross
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_fire_cross_hearth
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:half_moon
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_half_moon_hearth
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:hekura
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_hekura_devout
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:libertarian
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_americanist_judiciary #Maybe
+				remove_ideology = ideology_moralist
+				add_ideology = ideology_americanist_moralist
+				remove_ideology = ideology_patriarchal
+				add_ideology = ideology_matriarchal
+			}
+		}
+		else_if = {
+			limit = {
+				religion = {
+					has_discrimination_trait = americanist
+				}
+				NOT = { country_has_state_religion = rel:libertarian }
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_americanist_judiciary
+				remove_ideology = ideology_moralist
+				add_ideology = ideology_americanist_moralist
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:darian
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_vanguards_of_progress
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:constructivist
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_universal_constructivists
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:constructivist
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_universal_constructivists
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:lacunarclast
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_consumerist_management
+				remove_ideology = ideology_pious
+				add_ideology = ideology_consumerist_pious
+				remove_ideology = ideology_patriarchal
+				add_ideology = ideology_matriarchal
+			}
+		}
+		else_if = {
+			limit = {
+				religion = {
+					has_discrimination_trait = capitalist_heritage
+				}
+				NOT = { country_has_state_religion = rel:lacunarclast }
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_consumerist_management
+				remove_ideology = ideology_pious
+				add_ideology = ideology_consumerist_pious
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:cyberede
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_cyberede_covens
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:webweaver
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_webweaver_devout
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:el_santo
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_hexagonal_rite
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:alineado
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_alineado_partisans
+				add_ideology = ideology_caudillismo #Maybe
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:auditorista
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_auditorista_university
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:galvanist
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_galvanist_assembly
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:promethean
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_promethian_cults
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:sustainablist
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_sustainablist_devout
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:innovatorism
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_innovatorist_movement
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:enigmatismo
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_enigmaticos_devout
+			}
+		}
+		else_if = {
+			limit = {
+				religion = {
+					has_discrimination_trait = quantum
+				}
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_quantum_academia
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:ashtari
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_ashtari_devout
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:siderale
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_siderale_devout
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:gnarlist
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_boards_of_the_gnarl
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:burner
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_burner_rite
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:gaian
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_gaian_faithful
+				remove_ideology = ideology_moralist
+				add_ideology = ideology_gaian_moralist
+				remove_ideology = ideology_patriarchal
+				add_ideology = ideology_matriarchal
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:holocenian
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_stewards_of_the_holocene
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:revengeant
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_revengeant_devout
+				remove_ideology = ideology_patriarchal
+				add_ideology = ideology_matriarchal
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:saurian
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_saurian_cults
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:brethren
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_pirate_brethren
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:diabolic
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_diabolic_devout
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:draconian
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_draconic_tables
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:masonic
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_salem_lodge
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:gauchada
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_cantos_de_la_gauchada
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:juventide
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_banda_de_juventude
+				remove_ideology = ideology_moralist
+				add_ideology = ideology_juventide_moralist
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:sebastianism
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_sebastian_devout
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:phylosian
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_nation_of_phylos
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:quetzaltec
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_order_of_quetzalcoatl
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:balamvotanism
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_balamvotanismo_devout
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:johrei
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_johrei_devout
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:hare_krishna
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_hare_krishna_society
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:muckerism
+			}
+			ig:ig_devout = {
+				remove_ideology = ideology_patriarchal
+				add_ideology = ideology_matriarchal
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:madre_patria
+			}
+			ig:ig_devout = {
+				remove_ideology = ideology_patriarchal
+				add_ideology = ideology_matriarchal
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:vendimia_sol
+			}
+			ig:ig_devout = {
+				remove_ideology = ideology_patriarchal
+				add_ideology = ideology_matriarchal
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:liberationism
+			}
+			ig:ig_devout = {
+				remove_ideology = ideology_pious
+				add_ideology = ideology_proletarian
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:mesias_che
+			}
+			ig:ig_devout = {
+				remove_ideology = ideology_pious
+				add_ideology = ideology_proletarian
+			}
+		}
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:votanzapatista
+			}
+			ig:ig_devout = {
+				remove_ideology = ideology_pious
+				add_ideology = ideology_proletarian
+			}
+		}
+	}
+	on_disable = {}
+	on_character_ig_membership = {
+		change_character_religion = scope:interest_group.owner.religion
+	}
+
+
+	pop_potential = {
+		has_state_religion = yes
+	}
+
+	pop_weight = {
+		value = 25
+
+		add = {
+			desc = "POP_CLERGYMEN"
+			if = {
+				limit = {
+					is_pop_type = clergymen
+				}
+				value = 200
+			}
+		}
+
+		add = {
+			desc = "POP_PEASANTS"
+			if = {
+				limit = {
+					is_pop_type = peasants
+				}
+				value = 100
+			}
+		}
+
+		add = {
+			desc = "LITERACY_50_60"
+
+			if = {
+				limit = {
+					NOT = {
+						is_pop_type = clergymen
+					}
+					literacy_rate >= 0.50
+					literacy_rate < 0.60
+				}
+				add = -2
+			}
+		}
+
+		add = {
+			desc = "LITERACY_60_70"
+
+			if = {
+				limit = {
+					NOT = {
+						is_pop_type = clergymen
+					}
+					literacy_rate >= 0.60
+					literacy_rate < 0.70
+				}
+				add = -4
+			}
+		}
+
+		add = {
+			desc = "LITERACY_70_80"
+
+			if = {
+				limit = {
+					NOT = {
+						is_pop_type = clergymen
+					}
+					literacy_rate >= 0.70
+					literacy_rate < 0.80
+				}
+				add = -6
+			}
+		}
+
+		add = {
+			desc = "LITERACY_80_90"
+
+			if = {
+				limit = {
+					NOT = {
+						is_pop_type = clergymen
+					}
+					literacy_rate >= 0.80
+					literacy_rate < 0.90
+				}
+				add = -8
+			}
+		}
+
+		add = {
+			desc = "LITERACY_90_100"
+
+			if = {
+				limit = {
+					NOT = {
+						is_pop_type = clergymen
+					}
+					literacy_rate >= 0.90
+				}
+				add = -10
+			}
+		}
+
+		multiply = {
+			desc = "LEADER_POPULARITY"
+			scope:interest_group = {
+				leader ?= {
+					value = popularity
+					multiply = 0.0025
+					add = 1
+					max = 1.25
+					min = 0.75
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_in_government = yes
+				}
+			}
+			multiply = {
+				desc = "IN_GOVERNMENT_ATTRACTION"
+				value = 1
+				add = scope:interest_group.modifier:interest_group_in_government_attraction_mult
+				min = 0
+			}
+		}
+
+
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_state_atheism
+				}
+			}
+			multiply = {
+				desc = "STATE_ATHEISM_LAW"
+				value = 0.1
+			}
+		}
+	}
+
+	monarch_weight = {
+		value = 1.0
+		# Monarch is not likely to adopt a marginal IG
+		if = {
+			limit = {
+				is_marginal = yes
+			}
+			multiply = {
+				value = 0.1
+			}
+		}
+		# Monarch is more likely to adopt a Powerful IG
+		if = {
+			limit = {
+				is_powerful = yes
+			}
+			multiply = {
+				value = 2
+			}
+		}
+		# More likely with State Religion
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_state_religion
+				}
+			}
+			multiply = {
+				value = 2
+			}
+		}
+		# Less likely without State Religion
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_law = law_type:law_state_religion }
+				}
+			}
+			multiply = {
+				value = 0.25
+			}
+		}
+		# Basically impossible with State Atheism
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_state_atheism
+				}
+			}
+			multiply = {
+				value = 0
+			}
+		}
+		# Muslims and Theravada more likely to adopt Devout
+		if = {
+			limit = {
+				OR = {
+					owner.religion = rel:sunni
+					owner.religion = rel:shiite
+					owner.religion = rel:theravada
+				}
+			}
+			multiply = 2
+		}
+	}
+
+	agitator_weight = {
+		# Agitators more likely to come from populist IG's rather than elitist
+		value = 0.5
+		# Agitators will never be part of a marginalized IG
+		if = {
+			limit = {
+				owner.ig:ig_devout = {
+					is_marginal = yes
+				}
+			}
+			multiply = {
+				value = 0
+			}
+		}
+	}
+
+	commander_weight = {
+		value = 1.0
+	}
+
+	noble_chance = {
+		value = 0.5
+	}
+
+	female_commander_chance = {
+		value = 0.0
+	}
+
+	female_politician_chance = {
+		value = 0.0
+
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_womens_suffrage
+				}
+
+			}
+			add = {
+				value = 0.01
+			}
+		}
+		
+		if = {
+			limit = {
+				ig:ig_devout = {
+					has_ideology = {
+						ideology_matriarchal
+					}
+				}
+			}
+			add = {
+				value = 0.5
+			}
+		}
+	}
+
+	female_agitator_chance = {
+		value = 0.01
+		
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_women_own_property
+				}
+
+			}
+			add = {
+				value = 0.01
+			}
+		}	
+		
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_women_in_the_workplace
+				}
+
+			}
+			add = {
+				value = 0.01
+			}
+		}
+
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_womens_suffrage
+				}
+
+			}
+			add = {
+				value = 0.01
+			}
+		}	
+		
+		if = {
+			limit = {
+				ig:ig_devout = {
+					has_ideology = {
+						ideology_matriarchal
+					}
+				}
+			}
+			add = {
+				value = 0.5
+			}
+		}	
+	}
+
+	# The chance that a commander belonging to this IG takes over leadership when it changes
+	# scope:character is the most popular commander in the IG
+	commander_leader_chance = {
+		value = 0.25
+		if = {
+			limit = {
+				exists = scope:character
+			}
+			multiply = {
+				value = 1
+				add = scope:character.popularity
+				min = 0
+			}
+		}
+	}
+}

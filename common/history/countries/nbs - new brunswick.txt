@@ -21,12 +21,5 @@
 		ig:ig_armed_forces = {
 			add_ruling_interest_group = yes
 		}
-
-		ig:ig_devout = {
-			set_interest_group_name = ig_legion_of_remembrance
-			remove_ideology = ideology_moralist
-			add_ideology = ideology_remembrant_moralist
-		}
-		add_taxed_goods = g:grain
 	}
 }

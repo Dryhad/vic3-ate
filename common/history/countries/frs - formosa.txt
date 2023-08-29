@@ -12,16 +12,8 @@
 		activate_law = law_type:law_serfdom_banned
 		activate_law = law_type:law_slavery_banned
 		
-		ig:ig_landowners = { 
-			remove_ideology = ideology_paternalistic
-			add_ideology = ideology_republican_paternalistic			
+		ig:ig_landowners = { 	
 			add_ruling_interest_group = yes
-		}
-		
-		ig:ig_devout = {
-			set_interest_group_name = ig_mahayana_monks
-			remove_ideology = ideology_moralist
-			add_ideology = ideology_buddhist_moralist
 		}
 	}
 }
