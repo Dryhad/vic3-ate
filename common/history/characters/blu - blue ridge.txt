@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:BLU = {
+		create_character = {
+			first_name = "Frank"
+			last_name = dynn_Kroeger
+			ig_leader = yes
+			culture = cu:appalachian
+			interest_group = ig_devout
+			ideology = ideology_leader_xenophile
+			traits = {
+				innovative
+				persistent
+			}
+		}	
+	}
+}

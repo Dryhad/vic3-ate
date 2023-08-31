@@ -271,7 +271,7 @@ POPS = {
 		}
 	}
 	s:STATE_TARAPACA = {
-		region_state:PEU = {
+		region_state:AYM = {
 			create_pop = {
 				culture = south_andean
 				size = 12000
@@ -292,7 +292,7 @@ POPS = {
 		}
 	}
 	s:STATE_ANTOFAGASTA = {
-		region_state:BOL = {
+		region_state:AYM = {
 			create_pop = {
 				culture = south_andean
 				size = 43996
@@ -332,7 +332,7 @@ POPS = {
 		}
 	}
 	s:STATE_LA_PAZ = {
-		region_state:BOL = {
+		region_state:AYM = {
 			create_pop = {
 				culture = south_andean
 				size = 220792
@@ -356,7 +356,7 @@ POPS = {
 		}
 	}
 	s:STATE_POTOSI = {
-		region_state:BOL = {
+		region_state:AYM = {
 			create_pop = {
 				culture = south_andean
 				size = 24000
@@ -372,7 +372,7 @@ POPS = {
 		}
 	}
 	s:STATE_CAJAMARCA = {
-		region_state:PEU = {
+		region_state:TWT = {
 			create_pop = {
 				culture = south_andean
 				size = 91804
@@ -397,7 +397,7 @@ POPS = {
 		}
 	}
 	s:STATE_LIMA = {
-		region_state:PEU = {
+		region_state:TWT = {
 			create_pop = {
 				culture = south_andean
 				size = 248000
@@ -422,7 +422,7 @@ POPS = {
 		}
 	}
 	s:STATE_ICA = {
-		region_state:PEU = {
+		region_state:TWT = {
 			create_pop = {
 				culture = south_andean
 				size = 92904
@@ -447,7 +447,7 @@ POPS = {
 		}
 	}
 	s:STATE_AREQUIPA = {
-		region_state:PEU = {
+		region_state:AYM = {
 			create_pop = {
 				culture = south_andean
 				size = 48000
