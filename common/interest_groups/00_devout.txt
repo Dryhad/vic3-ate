@@ -797,6 +797,7 @@
 			ig:ig_devout = {
 				remove_ideology = ideology_patriarchal
 				add_ideology = ideology_matriarchal
+				set_interest_group_name = ig_mucker_devout
 			}
 		}
 		else_if = {
@@ -806,6 +807,7 @@
 			ig:ig_devout = {
 				remove_ideology = ideology_patriarchal
 				add_ideology = ideology_matriarchal
+				set_interest_group_name = ig_madre_patria_devout
 			}
 		}
 		else_if = {
@@ -815,6 +817,7 @@
 			ig:ig_devout = {
 				remove_ideology = ideology_patriarchal
 				add_ideology = ideology_matriarchal
+				set_interest_group_name = ig_vendimia_sol_devout
 			}
 		}
 		else_if = {
@@ -824,6 +827,7 @@
 			ig:ig_devout = {
 				remove_ideology = ideology_pious
 				add_ideology = ideology_proletarian
+				set_interest_group_name = ig_liberationist_church
 			}
 		}
 		else_if = {
@@ -833,6 +837,7 @@
 			ig:ig_devout = {
 				remove_ideology = ideology_pious
 				add_ideology = ideology_proletarian
+				set_interest_group_name = ig_mesias_che_devout
 			}
 		}
 		else_if = {
@@ -842,6 +847,7 @@
 			ig:ig_devout = {
 				remove_ideology = ideology_pious
 				add_ideology = ideology_proletarian
+				set_interest_group_name = ig_votanzapatismo_devout
 			}
 		}
 	}

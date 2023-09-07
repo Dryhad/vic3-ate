@@ -40,6 +40,11 @@
  ig_ayahan_devout: "Tea Dance of Ayah" #Ayahan Faith
  ig_limpio_devout: "Esoteric Fraternity of the Limpios" #Limpio Faith
  ig_navegante_priesthood: "Priesthood of the Navegantes" #Navegante Faith
+ ig_mucker_devout: "Mucker Movement" #Muckerism Faith
+ ig_madre_patria_devout: "Church of Madre Patria" #Madre Patria Faith
+ ig_liberationist_church: "Liberationist Catholic Church" #Liberationist Faith
+ ig_mesias_che_devout: "Ejército de Liberación" #Mesias Che Faith
+ ig_votanzapatismo_devout: "Movement of Cosmological Liberation" #Votanzapatismo Faith
  
  #Amerindian
  ig_hekura_devout: "Brother-Tribes of Hekura" #Hekura Faith
@@ -89,6 +94,7 @@
  ideology_juventide_moralist: "Juventide Moralist"
  ideology_juventide_moralist_desc: "#lore Juventide theology teaches the divinity of youth, and children are accorded an honored place in the community.#!"
  ig_sebastian_devout: "Children of King Sebastian" #Sebastianismo Faith
+ ig_vendimia_sol_devout: "Solar Monarchs" #Vendimia Sol Faith
  
  #Harmonic
  ig_nation_of_phylos: "Nation of Phylos" #Phylosian Faith
@@ -117,6 +123,8 @@
  law_youth_suffrage_desc:0 "Children are educated with an emphasis on facilitating and encouraging their political participation."
  law_machinery_restrictions:0 "Machinery Restrictions"
  law_machinery_restrictions_desc:0 "The regulator places strict limits on the use of unsafe and hazardous machinery."
+ law_privatised_military:0 "Privatized Military"
+ law_privatised_military_desc:0 "The army depends on privately operated mercenaries for the majority of its forces."
  
  ig_purple: "Purples"
  ig_blue: "Blues"
@@ -127,8 +135,11 @@
  ig_national_colour: "National Colour"
  
  ig_ahotti: "Ahotti"
+ ig_ahotti_desc: "Literally translating to 'Our People,' the Ahotti faction advocates traditional values and isolationism."
  ig_iltan: "Iltan"
+ ig_iltan_desc: "The Iltan, or 'Free Mind' faction, supports an ambitious agenda of reform and progress."
  ig_ziljir: "Ziljir"
+ ig_ziljir_desc: "Usually translated along the lines of 'Chaos Bringer,' the Ziljir faction traditionally advances their own goals through complicated alliances with other interest groups."
  
  gov_theodemocracy:0 "Theodemocracy"
  gov_theodemocracy_desc:0 "A [concept_government_type] combining republican principles with Latter Day Saints theology.\n\n$TRANSFER_OF_POWER_NAME_DESC$"

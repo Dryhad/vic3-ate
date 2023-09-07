@@ -30,6 +30,14 @@
 		
 		if = {
 			limit = {
+				country_has_state_religion = rel:zetanology
+			}
+			ig:ig_petty_bourgeoisie = {
+				set_interest_group_name = ig_ziljir
+			}
+		}
+		else_if = {
+			limit = {
 				OR = {
 					country_has_primary_culture = cu:gothamite
 					country_has_primary_culture = cu:chicagoan

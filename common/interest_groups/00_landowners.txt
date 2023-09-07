@@ -172,6 +172,14 @@
 			}
 		}
 		#TODO: Republican Paternalistic for historic republics (Taiwan especially)
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:zetanology
+			}
+			ig:ig_landowners = {
+				set_interest_group_name = ig_ahotti
+			}
+		}
 	}
 	on_disable = {}
 	on_character_ig_membership = {}
