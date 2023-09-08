@@ -88067,7 +88067,7 @@ neomexicano = {
 
 newfoundlander = {
         color = {  51 178 178  }
-        religion = fogsong
+        religion = pelagic
         
         traits = {
 			heritage_family_east_coast

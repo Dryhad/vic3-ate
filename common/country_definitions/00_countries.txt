@@ -1964,7 +1964,7 @@ CAN = {
 	
 	tier = empire
 	
-	cultures = { quebecois acadien newfoundlander maritimer gaidheal ontarian shieldshorer francontarien sixer }
+	cultures = { quebecois montrealais acadien newfoundlander maritimer gaidheal ontarian norontarian francontarien sixer }
 	capital = STATE_ONTARIO
 }
 
@@ -2187,7 +2187,7 @@ HBC = {
 	
 	tier = principality
 	
-	cultures = { shieldshorer }
+	cultures = { norontarian }
 	capital = STATE_MANITOBA
 }
 

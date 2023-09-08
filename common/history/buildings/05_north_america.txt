@@ -1524,11 +1524,11 @@
 		}
 	}
 	s:STATE_YUKON_TERRITORY={
-		region_state:ABS={
+		region_state:ATB={
 		}
 	}
 	s:STATE_NORTHWEST_TERRITORIES={
-		region_state:ABS={
+		region_state:ATB={
 		}
 	}
 	s:STATE_NUNAVUT={
