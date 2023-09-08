@@ -102,7 +102,7 @@ AUS = {
 USA = {
 	color = { 66  94  193 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = empire
 	
@@ -113,7 +113,7 @@ USA = {
 CSA = {
 	color = { 190  186  202 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = kingdom
 	
@@ -124,7 +124,7 @@ CSA = {
 FSA = {
 	color = { 106  124  243 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = kingdom
 	
@@ -135,7 +135,7 @@ FSA = {
 ASA = {
 	color = { 212 100 141 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = kingdom
 	
@@ -146,7 +146,7 @@ ASA = {
 LOU = {
 	color = { 53 52 144 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
@@ -157,7 +157,7 @@ LOU = {
 AGJ = {
 	color = { 111 56 200 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = kingdom
 	
@@ -168,22 +168,22 @@ AGJ = {
 AMZ = {
 	color = { 42 102 64 }
 	
-	country_type = unrecognized
+	country_type = recognized
 	
 	tier = kingdom
 	
-	cultures = { amazonian }
+	cultures = { amazonian } #TODO
 	capital = STATE_AMAZONAS
 }
 
 GRI = {
 	color = { 203 32 83 }
 	
-	country_type = unrecognized
+	country_type = recognized
 	
 	tier = kingdom
 	
-	cultures = { guarani }
+	cultures = { guarani } #TODO
 	capital = STATE_AMAZONAS
 }
 
@@ -1926,7 +1926,7 @@ XIN = {
 PHI = {
 	color = { 92 87 122 }
 	
-	country_type = colonial
+	country_type = unrecognized
 	
 	tier = kingdom
 	
@@ -1951,27 +1951,27 @@ CAL = {
 	
 	country_type = recognized
 	
-	tier = principality
+	tier = empire
 	
-	cultures = { yankee mexican }
+	cultures = { eightian bayfolk valleyan angeleno mojavean californio }
 	capital = STATE_CALIFORNIA
 }
 
 CAN = {
 	color = { 94  117  55 }
 	
-	country_type = colonial
+	country_type = recognized
 	
-	tier = kingdom
+	tier = empire
 	
-	cultures = { anglo_canadian franco_canadian }
+	cultures = { quebecois acadien newfie maritimer gaidheal ontarian shieldshorer francontarien sixer }
 	capital = STATE_ONTARIO
 }
 
 CHE = {
 	color = { 105  145  40 }
 	
-	country_type = unrecognized
+	country_type = recognized
 	
 	tier = principality
 	
@@ -1982,22 +1982,22 @@ CHE = {
 COL = {
 	color = { 198  113  133 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
 	capital = STATE_BRITISH_COLUMBIA
-	cultures = { british }
+	cultures = { canuck }
 }
 
 COS = {
 	color = { 207 72 60 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { central_american }
+	cultures = { tico }
 	capital = STATE_COSTA_RICA
 	is_named_from_capital = yes
 }
@@ -2005,11 +2005,11 @@ COS = {
 CUB = {
 	color = { 87  192  204 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { caribeno }
+	cultures = { cubano }
 	capital = STATE_CUBA
 	is_named_from_capital = yes
 }
@@ -2017,22 +2017,22 @@ CUB = {
 DES = {
 	color = { 125  92  110 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { yankee dixie }
+	cultures = { utahn }
 	capital = STATE_UTAH
 }
 
 DOM = {
 	color = { 93  194  122 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { caribeno afro_caribeno }
+	cultures = { quisqueyano }
 	capital = STATE_SANTO_DOMINGO
 	is_named_from_capital = yes
 }
@@ -2040,11 +2040,11 @@ DOM = {
 ELS = {
 	color = { 0 47 94 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { central_american }
+	cultures = { guanaco }
 	capital = STATE_SAN_SALVADOR
 	is_named_from_capital = yes
 }
@@ -2052,11 +2052,11 @@ ELS = {
 GUA = {
 	color = { 115 194 251 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { central_american }
+	cultures = { chapin }
 	capital = STATE_GUATEMALA
 	is_named_from_capital = yes
 }
@@ -2064,35 +2064,35 @@ GUA = {
 ALT = {
 	color = { 115 194 251 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { central_american }
+	cultures = { chapin } #Probably
 	capital = STATE_GUATEMALA
 }
 
 HAI = {
 	color = { 139  179  207 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { afro_antillean }
+	cultures = { haitian }
 	capital = STATE_HAITI
 }
 
 MEX = {
 	color = { 56 143 53 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	#173  242  175
 
-	tier = kingdom
+	tier = empire
 	
-	cultures = { mexican }
+	cultures = { abajeno chilango jarocho tapatio yucateco }
 	capital = STATE_MEXICO
 	is_named_from_capital = yes
 }
@@ -2100,7 +2100,7 @@ MEX = {
 MTC = {
 	color = { 221  186  163 }
 	
-	country_type = unrecognized
+	country_type = recognized
 	
 	tier = principality
 	
@@ -2111,11 +2111,11 @@ MTC = {
 HON = {
 	color = { 235 240 247 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { central_american }
+	cultures = { catracho garinagu }
 	capital = STATE_HONDURAS
 	is_named_from_capital = yes
 }
@@ -2123,22 +2123,22 @@ HON = {
 NEN = {
 	color = { 166  224  85 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = grand_principality
 	
-	cultures = { yankee }
+	cultures = { yankee lobsterman letterman }
 	capital = STATE_MASSACHUSETTS
 }
 
 NEW = {
 	color = { 255  211  56 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { anglo_canadian }
+	cultures = { newfie }
 	capital = STATE_NEWFOUNDLAND
 	is_named_from_capital = yes
 }
@@ -2146,11 +2146,11 @@ NEW = {
 NIC = {
 	color = { 34 88 186 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { central_american }
+	cultures = { nica }
 	capital = STATE_NICARAGUA
 	is_named_from_capital = yes
 }
@@ -2158,11 +2158,11 @@ NIC = {
 PNM = {
 	color = { 150  85  61 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { central_american }
+	cultures = { istmeno embera guna }
 	capital = STATE_PANAMA
 	is_named_from_capital = yes
 }
@@ -2170,11 +2170,11 @@ PNM = {
 QUE = {
 	color = { 194  140  86 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { franco_canadian }
+	cultures = { quebecois montrealais }
 	capital = STATE_QUEBEC
 	
 	is_named_from_capital = yes
@@ -2183,22 +2183,22 @@ QUE = {
 HBC = {
 	color = { 99 91 69 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { anglo_canadian }
+	cultures = { shieldshorer }
 	capital = STATE_MANITOBA
 }
 
 ONT = {
 	color = { 136 72 91 }
 	
-	country_type = colonial
+	country_type = recognized
 	
-	tier = principality
+	tier = kingdom
 	
-	cultures = { anglo_canadian }
+	cultures = { ontarian sixer francontarien }
 	capital = STATE_ONTARIO
 	is_named_from_capital = yes
 }
@@ -2206,33 +2206,33 @@ ONT = {
 NBS = {
 	color = { 235 196 128 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { anglo_canadian franco_canadian }
+	cultures = { maritimer acadien }
 	capital = STATE_NEW_BRUNSWICK
 }
 
 NVS = {
 	color = { 148 205 135 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { anglo_canadian }
+	cultures = { maritimer gaidheal }
 	capital = STATE_NEW_BRUNSWICK
 }
 
 TEX = {
 	color = { 4  144  178 }
 	
-	country_type = colonial
+	country_type = recognized
 	
-	tier = principality
+	tier = kingdom
 	
-	cultures = { dixie }
+	cultures = { texan texaner tejano }
 	capital = STATE_TEXAS
 	is_named_from_capital = yes
 }
@@ -2240,40 +2240,40 @@ TEX = {
 UCA = {
 	color = { 90 175 255 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = kingdom
 	
 	capital = STATE_SAN_SALVADOR
-	cultures = { central_american }
+	cultures = { chapin guanaco catracho nica tico }
 }
 
 ARG = {
 	color = { 101  102  163 }
 	
-	country_type = colonial
+	country_type = recognized
 	
-	tier = kingdom
+	tier = empire
 	
-	cultures = { platinean }
+	cultures = { pampeano porteno litoraleno desertico santacruceno }
 	capital = STATE_BUENOS_AIRES
 }
 
 BOL = {
 	color = { 219  182  182 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = kingdom
 	
-	cultures = { south_andean }
+	cultures = { camba kolla } #I think?
 	capital = STATE_LA_PAZ
 }
 
 BRZ = {
 	color = hsv360{ 143  75  61 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = empire
 	
@@ -2284,33 +2284,33 @@ BRZ = {
 CHL = {
 	color = { 236  159  89 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = kingdom
 	
-	cultures = { south_andean }
+	cultures = { atacameno centrino chilote huaso australino }
 	capital = STATE_SANTIAGO
 }
 
 CLM = {
 	color = { 255  234  168 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = kingdom
 	
-	cultures = { north_andean }
+	cultures = { valluno cachaco opita chocoano paisa costeno }
 	capital = STATE_CUNDINAMARCA
 }
 
 ECU = {
 	color = { 43  141  172 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { north_andean }
+	cultures = { pastuso serrano guayasenese }
 	capital = STATE_ECUADOR
 	is_named_from_capital = yes
 }
@@ -2318,33 +2318,33 @@ ECU = {
 PEU = {
 	color = { 124  140  162 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = kingdom
 	
-	cultures = { south_andean }
+	cultures = { charapa selvalteno }
 	capital = STATE_LIMA
 }
 
 PRG = {
 	color = { 177  44  29 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { platinean }
+	cultures = { platinean } #TODO
 	capital = STATE_BAJO_PARAGUAY
 }
 
 URU = {
 	color = { 131  101  85 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { platinean }
+	cultures = { urbuguayo }
 	capital = STATE_URUGUAY
 	is_named_from_capital = yes
 }
@@ -2352,11 +2352,11 @@ URU = {
 VNZ = {
 	color = { 255  176  140 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = kingdom
 	
-	cultures = { north_andean }
+	cultures = { gocho caraqueno guaro margariteno truenonato }
 	capital = STATE_MIRANDA
 }
 
@@ -2486,36 +2486,36 @@ BRI = {
 	is_named_from_capital = yes
 }
 
-PAT = {
+PAT = { #Mapuche
 	color = { 196 25 10 }
 	
-	country_type = decentralized
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { patagonian }
+	cultures = { mapuche }
 	capital = STATE_PATAGONIA
 }
 
 THL = {
 	color = { 57 124 138 }
 	
-	country_type = decentralized
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { patagonian }
+	cultures = { aonikenk }
 	capital = STATE_PATAGONIA
 }
 
 SLK = {
 	color = { 122 14 52 }
 	
-	country_type = decentralized
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { patagonian }
+	cultures = { selknam }
 	capital = STATE_ARAUCANIA
 }
 
@@ -2533,18 +2533,18 @@ TNG = {
 WIN = {
 	color = { 50  150  50 }
 	
-	country_type = colonial
+	country_type = recognized
 	
-	tier = kingdom
+	tier = empire
 	
-	cultures = { afro_caribbean }
+	cultures = { haitian west_indian cubano quisqueyano jamaican venteux papiamen calypsonian boricua }
 	capital = STATE_WEST_INDIES
 }
 
 MAY = {
 	color = { 98 88 142 }
 	
-	country_type = unrecognized
+	country_type = recognized
 	
 	tier = kingdom
 	
@@ -2566,18 +2566,18 @@ IBE = {
 ORG = {
 	color = { 138  80 126 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { yankee anglo_canadian }
+	cultures = { cascadian canuck } #Maybe more
 	capital = STATE_OREGON
 }
 
 COM = {
 	color = { 96 57 19 }
 
-	country_type = decentralized
+	country_type = recognized
 
 	tier = principality
 	
@@ -2588,18 +2588,18 @@ COM = {
 SEQ = {
 	color = { 86 120 117 }
 
-	country_type = unrecognized
+	country_type = recognized
 
 	tier = principality
 	
-	cultures = { cherokee siouan }
+	cultures = { cherokee siouan } #TODO
 	capital = STATE_OKLAHOMA
 }
 
 DKT = {
 	color = { 68 14 98 }
 
-	country_type = decentralized
+	country_type = recognized
 
 	tier = principality
 	
@@ -2610,18 +2610,18 @@ DKT = {
 LKT = {
 	color = { 198 114 168 }
 
-	country_type = decentralized
+	country_type = recognized
 
 	tier = principality
 	
-	cultures = { dakota }
+	cultures = { lakota }
 	capital = STATE_SOUTH_DAKOTA
 }
 
 NVJ = {
 	color = { 126 180 154 }
 
-	country_type = decentralized
+	country_type = recognized
 
 	tier = principality
 	
@@ -2632,18 +2632,18 @@ NVJ = {
 ARP = {
 	color = { 223 204 125 }
 
-	country_type = decentralized
+	country_type = recognized
 
 	tier = principality
 	
-	cultures = { siouan }
+	cultures = { siouan } #TODO
 	capital = STATE_COLORADO
 }
 
 NZP = {
 	color = { 220 190 50 }
 
-	country_type = decentralized
+	country_type = recognized
 
 	tier = principality
 	
@@ -2654,44 +2654,44 @@ NZP = {
 ABS = {
 	color = { 199 102 22 }
 
-	country_type = decentralized
+	country_type = recognized
 
 	tier = principality
 	
-	cultures = { siouan }
+	cultures = { siouan } #TODO
 	capital = STATE_MONTANA
 }
 
 IRC = {
 	color = { 61 158 124 }
 
-	country_type = decentralized
+	country_type = recognized
 
 	tier = principality
 	
-	cultures = { cree siouan }
+	cultures = { cree siouan } #TODO
 	capital = STATE_SASKATCHEWAN
 }
 
 JAM = {
 	color = hsv360{ 88  87  33 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { afro_caribbean }
+	cultures = { jamaican }
 	capital = STATE_JAMAICA
 }
 
 BAH = {
 	color = hsv360{ 189  100  55 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { afro_caribbean }
+	cultures = { west_indian }
 	capital = STATE_BAHAMAS
 	is_named_from_capital = yes
 }
@@ -2699,11 +2699,11 @@ BAH = {
 PCO = {
 	color = { 104  92  87 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { caribeno }
+	cultures = { boricua }
 	capital = STATE_PUERTO_RICO
 	is_named_from_capital = yes
 }
@@ -2711,18 +2711,18 @@ PCO = {
 MKT = {
 	color = hsv{ 0.5  0.6  0.6 }
 	
-	country_type = unrecognized
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { miskito afro_caribbean }
+	cultures = { miskito garinagu }
 	capital = STATE_NICARAGUA
 }
 
 NAH = {
 	color = hsv360{ 130 100 52 }
 	
-	country_type = unrecognized
+	country_type = recognized
 	
 	tier = principality
 	
@@ -2733,11 +2733,11 @@ NAH = {
 GRN = {
 	color = hsv360{ 130 80 52 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { danish inuit }
+	cultures = { kalaaleq inuit svalbarder } #I guess
 	capital = STATE_GREENLAND
 	is_named_from_capital = yes
 }
@@ -3017,7 +3017,7 @@ YUE = { # Yue
 OAX = { # Oaxaca
 	color = { 158 118 120 }
 	
-	country_type = decentralized
+	country_type = recognized
 	
 	tier = principality
 	
@@ -3029,7 +3029,7 @@ OAX = { # Oaxaca
 MCO = { # Michoacan
 	color = { 158 18 20 }
 	
-	country_type = decentralized
+	country_type = recognized
 	
 	tier = principality
 	
@@ -3041,7 +3041,7 @@ MCO = { # Michoacan
 TWT = { # Tawantinsuyu
 	color = { 125 92 110 }
 	
-	country_type = unrecognized
+	country_type = recognized
 	
 	tier = principality
 	
@@ -3053,7 +3053,7 @@ TWT = { # Tawantinsuyu
 AYM = { # Aymara
 	color = { 173 211 239 }
 	
-	country_type = unrecognized
+	country_type = recognized
 	
 	tier = principality
 	
@@ -3065,7 +3065,7 @@ AYM = { # Aymara
 WYU = { # Wayuu
 	color = { 40 96 65 }
 	
-	country_type = decentralized
+	country_type = recognized
 	
 	tier = principality
 	
@@ -3077,11 +3077,11 @@ WYU = { # Wayuu
 TPI = { # Tupinamba
 	color = { 157 209 192 }
 	
-	country_type = decentralized
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { tupinamba }
+	cultures = { tupinamba } #TODO
 	
 	capital = STATE_BAHIA
 }
@@ -3089,7 +3089,7 @@ TPI = { # Tupinamba
 PUE = { # Pueblo
 	color = { 162 128 8 }
 	
-	country_type = unrecognized
+	country_type = recognized
 	
 	tier = principality
 	
@@ -3101,7 +3101,7 @@ PUE = { # Pueblo
 NNV = { # Nunavut
 	color = { 205 214 216 }
 	
-	country_type = unrecognized
+	country_type = recognized
 	
 	tier = principality
 	
@@ -3113,7 +3113,7 @@ NNV = { # Nunavut
 NVL = { # Navajoland
 	color = { 126 180 154 }
 	
-	country_type = decentralized
+	country_type = recognized
 	
 	tier = principality
 	
@@ -3125,11 +3125,11 @@ NVL = { # Navajoland
 ATB = { # Athabaska
 	color = { 88 105 137 }
 	
-	country_type = decentralized
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { athabaskan }
+	cultures = { athabaskan } #TODO
 	
 	capital = STATE_NORTHWEST_TERRITORIES
 }
@@ -3137,11 +3137,11 @@ ATB = { # Athabaska
 CSC = { # Cascadia
 	color = { 105 152 73 }
 	
-	country_type = decentralized
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { salish }
+	cultures = { interior_salish coast_salish }
 	
 	capital = STATE_BRITISH_COLUMBIA
 }
@@ -3161,11 +3161,11 @@ IRO = { # Haudenosaunee, archaically known as the Iroquois Confederacy
 CTF = { # the Council of Three Fires, Niswa-mishkodewinan
 	color = { 220 147 37 }
 	
-	country_type = decentralized
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { algonquian }
+	cultures = { algonquin } #TODO
 	
 	capital = STATE_MICHIGAN
 }
@@ -3173,11 +3173,11 @@ CTF = { # the Council of Three Fires, Niswa-mishkodewinan
 MSC = { # Muscogee
 	color = { 108 139 208 }
 	
-	country_type = decentralized
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { caddoan }
+	cultures = { muskogean }
 	
 	capital = STATE_FLORIDA
 }
@@ -3187,7 +3187,7 @@ UTE = { # Ute
 	
 	cultures = { paiute }
 	
-	country_type = decentralized
+	country_type = recognized
 	
 	tier = principality
 	
@@ -3197,9 +3197,9 @@ UTE = { # Ute
 PWN = { # Pawnee
 	color = { 252 84 118 }
 	
-	cultures = { caddoan }
+	cultures = { pawnee }
 	
-	country_type = decentralized
+	country_type = recognized
 	
 	tier = principality
 	
@@ -3211,7 +3211,7 @@ APC = { # Apacheria
 	
 	cultures = { apache }
 	
-	country_type = decentralized
+	country_type = recognized
 	
 	tier = principality
 	
@@ -3221,9 +3221,9 @@ APC = { # Apacheria
 BLF = { # Niitsitapi / Blackfoot Confederacy
 	color = hsv{ 0.63 0.68 0.60 }
 	
-	cultures = { siouan }
+	cultures = { blackfoot }
 	
-	country_type = decentralized
+	country_type = recognized
 	
 	tier = principality
 	
@@ -3233,7 +3233,7 @@ BLF = { # Niitsitapi / Blackfoot Confederacy
 CCM = { # O'odham Country
 	color = hsv{ 0.19 0.61 0.67 }
 	
-	country_type = decentralized
+	country_type = recognized
 	
 	tier = principality
 	
@@ -3245,11 +3245,11 @@ CCM = { # O'odham Country
 ORN = { # Orinoco
 	color = hsv{ 0.28 0.79 0.47 }
 	
-	country_type = decentralized
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { cariban }
+	cultures = { cariban } #TODO
 	
 	capital = STATE_MIRANDA
 }
@@ -3257,7 +3257,7 @@ ORN = { # Orinoco
 MUI = { # Muisca
 	color = { 162 182 64 }
 	
-	country_type = decentralized
+	country_type = recognized
 	
 	tier = principality
 	
@@ -3281,33 +3281,33 @@ SRB = { # Sorbia
 YUC = {
 	color = { 20 142 20 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { mexican }
+	cultures = { yucateco }
 	capital = STATE_YUCATAN
 }
 
 RIO = {
 	color = { 20 20 20 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { mexican }
+	cultures = { tejano bravo }
 	capital = STATE_RIO_GRANDE
 }
 
 PNI = {
 	color = hsv360{ 120  75  61 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { brazilian }
+	cultures = { gaucho hunsrickisch }
 	capital = STATE_RIO_GRANDE_DO_SUL
 }
 
@@ -3531,11 +3531,11 @@ TPG = {
 GNI = {
 	color = { 73 139 166 }
 	
-	country_type = decentralized
+	country_type = recognized
 	
 	tier = principality
 	
-	cultures = { guarani }
+	cultures = { guarani } #TODO
 	capital = STATE_ALTO_PARAGUAY
 }
 

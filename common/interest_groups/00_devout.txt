@@ -850,6 +850,27 @@
 				set_interest_group_name = ig_votanzapatismo_devout
 			}
 		}
+		else_if = {
+			limit = {
+				religion = {
+					has_discrimination_trait = jewish
+				}
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_rabbinical_council
+			}
+		}
+		#Folkloric fallback. Keep at the end
+		else_if = {
+			limit = {
+				religion = {
+					has_discrimination_trait = folkloric
+				}
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_pagan_shamans
+			}
+		}
 	}
 	on_disable = {}
 	on_character_ig_membership = {

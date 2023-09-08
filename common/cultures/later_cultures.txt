@@ -38031,7 +38031,7 @@ crow = {
 
 cubano = {
         color = {  168 12 38  }
-        religion = santeria #or insular_carribean
+        religion = lucumi #or insular_carribean
         
         traits = {
             #TODO
@@ -65774,7 +65774,7 @@ interior_salish = {
 
 inupiat = {
         color = {  160 193 206  }
-        religion = 
+        religion = unipkaaq
         
         traits = {
 			heritage_family_eastern_indigenous

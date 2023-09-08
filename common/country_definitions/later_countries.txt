@@ -239,7 +239,7 @@ VES = {
 	
 	country_type = recognized
 	
-	cultures = { australino wladfaeg }
+	cultures = { desertico wladfaeg }
 	
 	capital = STATE_PATAGONIA
 }

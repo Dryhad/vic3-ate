@@ -1209,7 +1209,7 @@
 		}
 	}
 	s:STATE_YUKON_TERRITORY = {
-		region_state:HBC = {
+		region_state:ATB = {
 			create_pop = {
 				culture = athabaskan
 				size = 12000
@@ -1217,7 +1217,7 @@
 		}
 	}
 	s:STATE_NORTHWEST_TERRITORIES = {
-		region_state:HBC = {
+		region_state:ATB = {
 			create_pop = {
 				culture = athabaskan
 				size = 16000
@@ -1235,12 +1235,8 @@
 	s:STATE_BERMUDA = {
 		region_state:GBR = {
 			create_pop = {
-				culture = british
-				size = 14848
-			}
-			create_pop = {
-				culture = afro_caribbean
-				size = 12352
+				culture = bermudian
+				size = 27200
 			}
 		}
 	}
@@ -1409,8 +1405,8 @@
 	s:STATE_RIO_GRANDE = { # Coahuila, Nuevo Leon and Tamaulipas. est. pop 182352 in 1830, 266647 in 1840
 		region_state:RIO = {
 			create_pop = {
-				culture = mexican
-				size = 121499
+				culture = bravo
+				size = 127499
 			}
 			create_pop = {
 				culture = oodham
@@ -1420,10 +1416,6 @@
 				culture = oodham
 				religion = catholic
 				size = 70004
-			}
-			create_pop = {
-				culture = afro_caribeno
-				size = 6000
 			}
 		}
 	}
@@ -1498,16 +1490,12 @@
 	s:STATE_YUCATAN = { 
 		region_state:YUC = {
 			create_pop = {
-				culture = mexican
-				size = 226764
+				culture = yucateco
+				size = 228164
 			}
 			create_pop = {
 				culture = mayan
 				size = 388804
-			}
-			create_pop = {
-				culture = afro_caribeno
-				size = 1400
 			}
 		}
 	}
@@ -1518,12 +1506,12 @@
 	s:STATE_MEXICO = {
 		region_state:NAH = {
 			create_pop = {
-				culture = mexican
+				culture = chilango
 				size = 763486
 			}
 			create_pop = {
 				culture = mixtec
-				religion = catholic
+				#religion = catholic
 				size = 39996
 			}
 			create_pop = {
@@ -1649,7 +1637,7 @@
 	s:STATE_BAJA_CALIFORNIA = {
 		region_state:CAL = {
 			create_pop = {
-				culture = mexican
+				culture = californio
 				religion = navegante
 				size = 8264
 			}
