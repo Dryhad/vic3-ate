@@ -1964,7 +1964,7 @@ CAN = {
 	
 	tier = empire
 	
-	cultures = { quebecois acadien newfie maritimer gaidheal ontarian shieldshorer francontarien sixer }
+	cultures = { quebecois acadien newfoundlander maritimer gaidheal ontarian shieldshorer francontarien sixer }
 	capital = STATE_ONTARIO
 }
 
@@ -2138,7 +2138,7 @@ NEW = {
 	
 	tier = principality
 	
-	cultures = { newfie }
+	cultures = { newfoundlander }
 	capital = STATE_NEWFOUNDLAND
 	is_named_from_capital = yes
 }
@@ -2669,7 +2669,7 @@ IRC = {
 
 	tier = principality
 	
-	cultures = { cree siouan } #TODO
+	cultures = { east_cree woodland_cree plains_cree } #Maybe more
 	capital = STATE_SASKATCHEWAN
 }
 
@@ -3165,7 +3165,7 @@ CTF = { # the Council of Three Fires, Niswa-mishkodewinan
 	
 	tier = principality
 	
-	cultures = { algonquin } #TODO
+	cultures = { ojibwe chippewa potawatomi }
 	
 	capital = STATE_MICHIGAN
 }
@@ -3724,7 +3724,7 @@ UOM = {
 
 	tier = principality
 	
-	cultures = { yankee }
+	cultures = { michigander }
 	capital = STATE_MICHIGAN
 	is_named_from_capital = yes
 }
