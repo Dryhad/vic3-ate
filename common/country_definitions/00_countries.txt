@@ -2548,7 +2548,7 @@ MAY = {
 	
 	tier = kingdom
 	
-	cultures = { mayan }
+	cultures = { yoko_yinikob winik_atel tenek wnaqqo kiche kekchi hach_winik mopan_itza maaya }
 	capital = STATE_YUCATAN
 }
 
@@ -3249,7 +3249,7 @@ ORN = { # Orinoco
 	
 	tier = principality
 	
-	cultures = { cariban } #TODO
+	cultures = { warao lokono }
 	
 	capital = STATE_MIRANDA
 }
@@ -3269,7 +3269,7 @@ MUI = { # Muisca
 SRB = { # Sorbia
 	color = { 67 80 128 }
 	
-	country_type = recognized
+	country_type = unrecognized
 	
 	tier = principality
 	

@@ -4592,7 +4592,7 @@ alutiiq = {
 
 amapaense = {
         color = {  51 61 55  }
-        religion = pentacostalism
+        religion = pentecostalism
         
         traits = {
 			heritage_family_brazilian
@@ -23510,7 +23510,7 @@ capiau = {
 
 capixaba = {
         color = {  126 35 118  }
-        religion = neopentacostalism
+        religion = neopentecostalism
         
         traits = {
             #TODO
@@ -28724,7 +28724,7 @@ centrino = {
 
 chapin = {
         color = {  71 153 209  }
-        religion = pentacostalism
+        religion = pentecostalism
         
         traits = {
 			heritage_family_central_american
@@ -64540,7 +64540,7 @@ ilheense = {
 
 imperatrizense = {
         color = {  30 76 57  }
-        religion = pentacostalism
+        religion = pentecostalism
         
         traits = {
 			heritage_family_brazilian
@@ -70378,7 +70378,7 @@ keres = {
 
 kheuol = {
         color = {  114 72 35  }
-        religion = pentacostalism
+        religion = pentecostalism
         
         traits = {
             #TODO
@@ -76149,7 +76149,7 @@ lobsterman = {
 
 lokono = {
         color = {  198 119 119  }
-        religion = pentacostalism
+        religion = pentecostalism
         
         traits = {
             #TODO
@@ -77028,7 +77028,7 @@ makushi = {
 
 manauara = {
         color = {  40 99 76  }
-        religion = pentacostalism
+        religion = pentecostalism
         
         traits = {
             #TODO
@@ -101988,7 +101988,7 @@ paranaense = {
 
 paresi = {
         color = {  36 27 135  }
-        religion = neopentacostalism
+        religion = neopentecostalism
         
         traits = {
             #TODO
@@ -102881,7 +102881,7 @@ preiryansky = {
 
 qom = {
         color = {  79 58 91  }
-        religion = pentacostalism
+        religion = pentecostalism
         
         traits = {
             #TODO
@@ -104001,7 +104001,7 @@ riverlander = {
 
 rondoniense = {
         color = {  98 135 40  }
-        religion = neopentacostalism
+        religion = neopentecostalism
         
         traits = {
 			heritage_family_brazilian
@@ -111352,7 +111352,7 @@ waimiri = {
 
 wajapi = {
         color = {  91 99 36  }
-        religion = pentacostalism
+        religion = pentecostalism
         
         traits = {
             #TODO
@@ -111704,7 +111704,7 @@ west_indian = {
 
 wichi = {
         color = {  168 124 196  }
-        religion = pentacostalism
+        religion = pentecostalism
         
         traits = {
             #TODO
