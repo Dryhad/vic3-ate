@@ -281,6 +281,15 @@ ideology_leader_loyalist = {
 	
 	leader_weight = {
 		value = 100
+		# less likely if not in government
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_in_government = no
+				}
+			}
+			add = -50
+		}
 	}
 }
 

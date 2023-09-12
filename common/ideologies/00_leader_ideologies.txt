@@ -801,6 +801,7 @@ ideology_feminist = {
 					OR = {
 						is_interest_group_type = ig_intelligentsia
 						is_interest_group_type = ig_trade_unions
+						is_interest_group_type = ig_rural_folk
 					}
 				}
 				add = -50
@@ -3133,6 +3134,8 @@ ideology_humanitarian = {
 			OR = {
 				is_interest_group_type = ig_intelligentsia
 				is_interest_group_type = ig_trade_unions
+				is_interest_group_type = ig_rural_folk
+				is_interest_group_type = ig_devout
 			}
 		}
 		scope:interest_group = {
@@ -3277,6 +3280,21 @@ ideology_humanitarian = {
 				}
 			}
 			add = 50
+		}
+		# devout only possible if modernised or matriarchal
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_interest_group_type = ig_devout
+					OR = {
+						has_ideology = ideology_patriarchal
+						has_ideology = ideology_russian_patriarch
+						has_ideology = ideology_orthodox_patriarch
+						has_ideology = ideology_oriental_orthodox_patriarch
+					}
+				}
+			}
+			multiply = 0
 		}
 	}
 }
