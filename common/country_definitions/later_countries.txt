@@ -316,3 +316,15 @@ BUA = {
 	
 	capital = STATE_BUENOS_AIRES
 }
+
+FLO = {
+	color = { 240  227  27 }
+	
+	tier = kingdom
+	
+	country_type = recognized
+	
+	cultures = { sunshiner }
+	
+	capital = STATE_FLORIDA
+}

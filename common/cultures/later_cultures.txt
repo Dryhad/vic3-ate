@@ -107818,7 +107818,7 @@ steelfolk = {
 
 sunshiner = {
         color = {  217 190 104  }
-        religion = imaginarian
+        religion = imaginerian
         
         traits = {
             #TODO

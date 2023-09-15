@@ -359,3 +359,37 @@ ideology_omerta = {
 		law_protected_speech = disapprove
 	}
 }
+
+ideology_gerontocratic = {
+	icon = "gfx/interface/icons/ideology_icons/unused/no_ideology.dds" #Replace
+	
+	lawgroup_land_reform = {
+		law_serfdom = disapprove
+		law_tenant_farmers = approve
+		law_commercialized_agriculture = neutral
+		law_homesteading = strongly_disapprove
+		law_collectivized_agriculture = strongly_disapprove
+	}
+	
+	lawgroup_taxation = {
+		law_consumption_based_taxation = approve
+		law_land_based_taxation = approve
+		law_per_capita_based_taxation = neutral
+		law_proportional_taxation = disapprove
+		law_graduated_taxation = strongly_disapprove
+	}
+
+	lawgroup_welfare = {
+		law_no_social_security = approve
+		law_poor_laws = neutral
+		law_wage_subsidies = disapprove
+		law_old_age_pension = strongly_approve
+	}
+	
+	lawgroup_childrens_rights = { #Seen and not heard
+		law_child_labor_allowed = neutral
+		law_restricted_child_labor = neutral
+		law_compulsory_primary_school = neutral
+		law_youth_suffrage = strongly_disapprove
+	}
+}

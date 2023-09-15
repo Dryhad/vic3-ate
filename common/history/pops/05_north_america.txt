@@ -611,9 +611,9 @@
 		}
 	}
 	s:STATE_FLORIDA = {
-		region_state:USA = {
+		region_state:FLO = {
 			create_pop = {
-				culture = dixie
+				culture = sunshiner
 				size = 47996
 			}
 			create_pop = {

@@ -701,7 +701,7 @@
 		}
 	}
 	s:STATE_FLORIDA={
-		region_state:USA={
+		region_state:FLO={
 		}
 	}
 	s:STATE_GEORGIA={

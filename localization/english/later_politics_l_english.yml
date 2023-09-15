@@ -2,7 +2,11 @@
  ideology_matriarchal: "Matriarchal"
  ideology_matriarchal_desc: "#lore This interest group has a tradition of female leadership.#!"
  ideology_omerta: "Omertà"
- ideology_omerta_desc: "#lore This interest group believes everyone should keep their mouths shut and not involve the authorities, capisce?"
+ ideology_omerta_desc: "#lore This interest group believes everyone should keep their mouths shut and not involve the authorities, capisce?#!"
+ ideology_gerontocratic: "Gerontocratic"
+ ideology_gerontocratic_desc: "#lore This interest group favours a society ruled by the oldest and wisest members, for the oldest and wisest members.#!"
+ ig_trait_grey_power: "Grey Power"
+ ig_trait_grey_power_desc: "The elderly always vote in large numbers."
  
  #Abrahamic
  ig_cristero_devout: "Prelature of Cristo Rey" #Cristero Faith
@@ -104,18 +108,18 @@
  ig_hare_krishna_society: "Society of Krishna Consciousness" #Hare Krishna Faith
  
  ideology_chromatacia_paternalistic: "Chromatagensia"
- ideology_chromatacia_paternalistic_desc: "#lore This interest group believes in a society organised by color, with purple at the top, down to greys at the very bottom."
+ ideology_chromatacia_paternalistic_desc: "#lore This interest group believes in a society organised by color, with purple at the top, down to greys at the very bottom.#!"
  
  ideology_leader_capitalizt: "Capitalizt"
  ideology_leader_capitalizt_desc: "#lore This leader believes in a fully privatized society ruled by corporations.#!"
  ideology_leader_xenophile: "Xenophile"
  ideology_leader_xenophile_desc: "#lore This leader has a fondness for other cultures and wants to see them respected.#!"
  ideology_leader_loyalist: "Loyalist"
- ideology_leader_loyalist_desc: "#lore This leader believes each citizen should pay their dues to fund the vital functions of the state."
+ ideology_leader_loyalist_desc: "#lore This leader believes each citizen should pay their dues to fund the vital functions of the state.#!"
  ideology_environmentalist: "Environmentalist"
- ideology_environmentalist_desc: "#lore This leader believes in protecting the natural environment from exploitation and neglect."
+ ideology_environmentalist_desc: "#lore This leader believes in protecting the natural environment from exploitation and neglect.#!"
  ideology_nimby: "Nimby"
- ideology_nimby_desc: "#lore This leader is all for cultural and industrial progress so long as it happens far away."
+ ideology_nimby_desc: "#lore This leader is all for cultural and industrial progress so long as it happens far away.#!"
  
  law_freedom_of_confession:0 "Freedom of Confession"
  law_freedom_of_conscience_desc:0 "The state has an official state religion but some degree of nonconformity in rites and teachings is tolerated."
@@ -140,6 +144,9 @@
  ig_iltan_desc: "The Iltan, or 'Free Mind' faction, supports an ambitious agenda of reform and progress."
  ig_ziljir: "Ziljir"
  ig_ziljir_desc: "Usually translated along the lines of 'Chaos Bringer,' the Ziljir faction traditionally advances their own goals through complicated alliances with other interest groups."
+ 
+ ig_senior_citizens: "Senior Citizens"
+ ig_senior_citizens_desc: "The Sunshiner ruling class is dominated by revered elders."
  
  gov_theodemocracy:0 "Theodemocracy"
  gov_theodemocracy_desc:0 "A [concept_government_type] combining republican principles with Latter Day Saints theology.\n\n$TRANSFER_OF_POWER_NAME_DESC$"

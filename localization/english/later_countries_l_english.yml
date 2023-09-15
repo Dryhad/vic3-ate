@@ -51,6 +51,8 @@
  MES_ADJ: "Mesopotamian"
  BUA: "Buenos Aires"
  BUA_ADJ: "Porteño"
+ FLO: "Florida"
+ FLO_ADJ: "Floridian"
  
  dyn_c_amur_free_state: "Amur Free State"
  dyn_c_amur_free_state_adj: "Amurian"

@@ -180,6 +180,18 @@
 				set_interest_group_name = ig_ahotti
 			}
 		}
+		else_if = {
+			limit = {
+				country_has_primary_culture = cu:sunshiner
+			}
+			ig:ig_landowners = {
+				set_interest_group_name = ig_senior_citizens
+				remove_ideology = ideology_stratocratic
+				add_ideology = ideology_gerontocratic
+				remove_ig_trait = ig_trait:ig_trait_family_ties
+				set_ig_trait = ig_trait:ig_trait_grey_power
+			}
+		}
 	}
 	on_disable = {}
 	on_character_ig_membership = {}
