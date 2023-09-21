@@ -5,8 +5,15 @@
  ideology_omerta_desc: "#lore This interest group believes everyone should keep their mouths shut and not involve the authorities, capisce?#!"
  ideology_gerontocratic: "Gerontocratic"
  ideology_gerontocratic_desc: "#lore This interest group favours a society ruled by the oldest and wisest members, for the oldest and wisest members.#!"
+ 
  ig_trait_grey_power: "Grey Power"
  ig_trait_grey_power_desc: "The elderly always vote in large numbers."
+ ig_trait_judicial_activism: "Judicial Activism"
+ ig_trait_judicial_activism_desc: "How will the government pass laws against our wishes? Who do they think interprets the laws in the first place?"
+ ig_trait_executive_orders: "Executive Orders"
+ ig_trait_executive_orders_desc: "The sacred Constitution empowers an Executive to take care that the Laws be faithfully executed."
+ ig_trait_obiter_dicta: "Obiter Dicta"
+ ig_trait_obiter_dicta_desc: "The words of Judges carry weight even when not directly ruling on a case, and we can subtly support the government in this way."
  
  #Abrahamic
  ig_cristero_devout: "Prelature of Cristo Rey" #Cristero Faith

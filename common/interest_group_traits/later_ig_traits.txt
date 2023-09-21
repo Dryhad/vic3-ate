@@ -1,8 +1,35 @@
-﻿ig_trait_grey_power = {
+﻿ig_trait_grey_power = { #Senior Citizens
 	icon = "gfx/interface/icons/ig_trait_icons/unknown.dds"
 	min_approval = happy
 	
 	modifier = {
 		state_dependent_political_participation_add = 0.10
+	}
+}
+
+ig_trait_judicial_activism = { #Americanist Judiciary
+	icon = "gfx/interface/icons/ig_trait_icons/unknown.dds"
+	max_approval = unhappy
+	
+	modifier = {
+		country_law_enactment_time_mult = -0.25
+	}
+}
+
+ig_trait_executive_orders = { #Americanist Judiciary
+	icon = "gfx/interface/icons/ig_trait_icons/unknown.dds"
+	min_approval = happy
+	
+	modifier = {
+		country_decree_cost_mult = -0.1
+	}
+}
+
+ig_trait_obiter_dicta = { #Americanist Judiciary
+	icon = "gfx/interface/icons/ig_trait_icons/unknown.dds"
+	min_approval = loyal
+	
+	modifier = {
+		country_legitimacy_base_add = 10
 	}
 }

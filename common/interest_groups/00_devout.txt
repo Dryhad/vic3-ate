@@ -480,6 +480,12 @@
 				set_interest_group_name = ig_americanist_judiciary
 				remove_ideology = ideology_moralist
 				add_ideology = ideology_americanist_moralist
+				remove_ig_trait = ig_trait:ig_trait_pious_fiction
+				remove_ig_trait = ig_trait:ig_trait_divine_right
+				remove_ig_trait = ig_trait:ig_trait_be_fruitful_and_multiply
+				set_ig_trait = ig_trait:ig_trait_judicial_activism
+				set_ig_trait = ig_trait:ig_trait_executive_orders
+				set_ig_trait = ig_trait:ig_trait_obiter_dicta
 			}
 		}
 		else_if = {
