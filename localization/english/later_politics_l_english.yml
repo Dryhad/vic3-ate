@@ -14,6 +14,12 @@
  ig_trait_executive_orders_desc: "The sacred Constitution empowers an Executive to take care that the Laws be faithfully executed."
  ig_trait_obiter_dicta: "Obiter Dicta"
  ig_trait_obiter_dicta_desc: "The words of Judges carry weight even when not directly ruling on a case, and we can subtly support the government in this way."
+ ig_trait_laboratory_overheads: "Laboratory Overheads"
+ ig_trait_laboratory_overheads_desc: "Our rituals are delicate, and require strict safety procedures. Who would notice if we take extra in the name of safety?"
+ ig_trait_ancient_knowledge: "Ancient Knowledge"
+ ig_trait_ancient_knowledge_desc: "Every technological step forward brings our faith into greater clarity, every meditation on the Invisible World grants new insight into technology."
+ ig_trait_nuclear_families: "Nuclear Families"
+ ig_trait_nuclear_families_desc: "Atomos blesses our families and grants us prosperity. What do you mean that's not what it means?"
  
  #Abrahamic
  ig_cristero_devout: "Prelature of Cristo Rey" #Cristero Faith

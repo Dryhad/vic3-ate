@@ -33,3 +33,30 @@ ig_trait_obiter_dicta = { #Americanist Judiciary
 		country_legitimacy_base_add = 10
 	}
 }
+
+ig_trait_laboratory_overheads = { #Atomicist
+	icon = "gfx/interface/icons/ig_trait_icons/unknown.dds"
+	max_approval = unhappy
+	
+	modifier = {
+		country_bureaucracy_mult = -0.1
+	}
+}
+
+ig_trait_ancient_knowledge = { #Atomicist
+	icon = "gfx/interface/icons/ig_trait_icons/unknown.dds"
+	min_approval = happy
+	
+	modifier = {
+		country_tech_spread_mult = 0.1
+	}
+}
+
+ig_trait_nuclear_families = { #Atomicist
+	icon = "gfx/interface/icons/ig_trait_icons/be_fruitful_and_multiply.dds"
+	min_approval = loyal
+	
+	modifier = {
+		state_birth_rate_mult = 0.025
+	}
+}
