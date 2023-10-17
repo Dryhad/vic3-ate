@@ -27479,7 +27479,7 @@ catracho = {
 
 cayennais = {
         color = {  204 130 63  }
-        religion = liberationist
+        religion = liberationism
         
         traits = {
             #TODO

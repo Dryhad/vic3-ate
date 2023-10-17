@@ -114,6 +114,7 @@ mel_thomas_lecoultre_character_template = {
 	traits = {
 		reserved
 		erudite
+		honorable
 	}
 }
 
@@ -173,6 +174,22 @@ eng_john_wellington_wells_character_template = {
 		earliest_usage_date = 3440.1.1
 		latest_usage_date = 3480.1.1
 		chance = 50
+	}
+}
+
+ord_roscoe_langowski_character_template = {
+	first_name = Roscoe
+	last_name = dynn_Langowski
+	culture = cu:chicagoan
+	female = no
+	ig_leader = yes
+	religion = rel:catholic
+	ideology = ideology_royalist
+	interest_group = ig_intelligentsia
+	age = 45
+	traits = {
+		literary
+		pious
 	}
 }
 
