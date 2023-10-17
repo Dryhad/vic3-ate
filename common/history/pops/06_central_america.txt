@@ -2,7 +2,7 @@
 	s:STATE_SAN_SALVADOR = {
 		region_state:UCA = {
 			create_pop = {
-				culture = guanaco
+				culture = central_american
 				size = 428204
 			}
 		}
@@ -10,7 +10,7 @@
 	s:STATE_GUATEMALA = {
 		region_state:MAY = {
 			create_pop = {
-				culture = chapin
+				culture = central_american
 				size = 171504
 			}
 			create_pop = {
@@ -22,7 +22,7 @@
 	s:STATE_HONDURAS = {
 		region_state:UCA = {
 			create_pop = {
-				culture = catracho
+				culture = central_american
 				size = 385204
 			}
 			create_pop = {
@@ -34,7 +34,7 @@
 	s:STATE_NICARAGUA = {
 		region_state:UCA = {
 			create_pop = {
-				culture = nica
+				culture = central_american
 				size = 284000
 			}
 			create_pop = {
@@ -65,7 +65,7 @@
 	s:STATE_COSTA_RICA = {
 		region_state:UCA = {
 			create_pop = {
-				culture = tico
+				culture = central_american
 				size = 83992
 			}
 		}
@@ -73,7 +73,7 @@
 	s:STATE_PANAMA = {
 		region_state:CLM = {
 			create_pop = {
-				culture = istmeno
+				culture = central_american
 				size = 87792
 			}
 			create_pop = {
@@ -85,14 +85,14 @@
 				culture = afro_caribeno
 				size = 4100
 			}
-			create_pop = {
-				culture = embera
-				size = 4000
-			}
-			create_pop = {
-				culture = guna
-				size = 4000
-			}
+			#create_pop = {
+			#	culture = embera
+			#	size = 4000
+			#}
+			#create_pop = {
+			#	culture = guna
+			#	size = 4000
+			#}
 		}
 	}
 	# Haitian and Dominican population numbers are based off 1850 numbers from "La población de América Latina" by Nicolás Sánchez-Albornoz, scaled back 8,5% to account for approx. population growth.
@@ -216,7 +216,7 @@
 	s:STATE_JAMAICA = {
 		region_state:JAM = {
 			create_pop = {
-				culture = jamaican
+				culture = west_indian
 				size = 358596
 			}
 			#create_pop = {

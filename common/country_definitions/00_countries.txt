@@ -1953,7 +1953,7 @@ CAL = {
 	
 	tier = empire
 	
-	cultures = { eightian bayfolk valleyan angeleno mojavean californio }
+	cultures = { valleyan angeleno californio }
 	capital = STATE_CALIFORNIA
 }
 
@@ -1964,7 +1964,7 @@ CAN = {
 	
 	tier = empire
 	
-	cultures = { quebecois montrealais acadien newfoundlander maritimer gaidheal ontarian norontarian francontarien sixer }
+	cultures = { quebecois newfoundlander maritimer ontarian }
 	capital = STATE_ONTARIO
 }
 
@@ -1987,7 +1987,7 @@ COL = {
 	tier = principality
 	
 	capital = STATE_BRITISH_COLUMBIA
-	cultures = { canuck }
+	cultures = { cascadian }
 }
 
 COS = {
@@ -1997,7 +1997,7 @@ COS = {
 	
 	tier = principality
 	
-	cultures = { tico }
+	cultures = { central_american }
 	capital = STATE_COSTA_RICA
 	is_named_from_capital = yes
 }
@@ -2044,7 +2044,7 @@ ELS = {
 	
 	tier = principality
 	
-	cultures = { guanaco }
+	cultures = { central_american }
 	capital = STATE_SAN_SALVADOR
 	is_named_from_capital = yes
 }
@@ -2056,7 +2056,7 @@ GUA = {
 	
 	tier = principality
 	
-	cultures = { chapin }
+	cultures = { central_american }
 	capital = STATE_GUATEMALA
 	is_named_from_capital = yes
 }
@@ -2068,7 +2068,7 @@ ALT = {
 	
 	tier = principality
 	
-	cultures = { chapin } #Probably
+	cultures = { central_american }
 	capital = STATE_GUATEMALA
 }
 
@@ -2092,7 +2092,7 @@ MEX = {
 
 	tier = empire
 	
-	cultures = { abajeno chilango jarocho tapatio yucateco }
+	cultures = { bravp chilango } #TODO
 	capital = STATE_MEXICO
 	is_named_from_capital = yes
 }
@@ -2115,7 +2115,7 @@ HON = {
 	
 	tier = principality
 	
-	cultures = { catracho garinagu }
+	cultures = { central_american garinagu }
 	capital = STATE_HONDURAS
 	is_named_from_capital = yes
 }
@@ -2127,7 +2127,7 @@ NEN = {
 	
 	tier = grand_principality
 	
-	cultures = { yankee lobsterman letterman }
+	cultures = { yankee }
 	capital = STATE_MASSACHUSETTS
 }
 
@@ -2150,7 +2150,7 @@ NIC = {
 	
 	tier = principality
 	
-	cultures = { nica }
+	cultures = { central_american }
 	capital = STATE_NICARAGUA
 	is_named_from_capital = yes
 }
@@ -2162,7 +2162,7 @@ PNM = {
 	
 	tier = principality
 	
-	cultures = { istmeno embera guna }
+	cultures = { central_american }
 	capital = STATE_PANAMA
 	is_named_from_capital = yes
 }
@@ -2174,7 +2174,7 @@ QUE = {
 	
 	tier = principality
 	
-	cultures = { quebecois montrealais }
+	cultures = { quebecois }
 	capital = STATE_QUEBEC
 	
 	is_named_from_capital = yes
@@ -2187,7 +2187,7 @@ HBC = {
 	
 	tier = principality
 	
-	cultures = { norontarian }
+	cultures = { ontarian }
 	capital = STATE_MANITOBA
 }
 
@@ -2198,7 +2198,7 @@ ONT = {
 	
 	tier = kingdom
 	
-	cultures = { ontarian sixer francontarien }
+	cultures = { ontarian }
 	capital = STATE_ONTARIO
 	is_named_from_capital = yes
 }
@@ -2210,7 +2210,7 @@ NBS = {
 	
 	tier = principality
 	
-	cultures = { maritimer acadien }
+	cultures = { maritimer }
 	capital = STATE_NEW_BRUNSWICK
 }
 
@@ -2221,7 +2221,7 @@ NVS = {
 	
 	tier = principality
 	
-	cultures = { maritimer gaidheal }
+	cultures = { maritimer }
 	capital = STATE_NEW_BRUNSWICK
 }
 
@@ -2232,7 +2232,7 @@ TEX = {
 	
 	tier = kingdom
 	
-	cultures = { texan texaner tejano }
+	cultures = { texan tejano }
 	capital = STATE_TEXAS
 	is_named_from_capital = yes
 }
@@ -2245,7 +2245,7 @@ UCA = {
 	tier = kingdom
 	
 	capital = STATE_SAN_SALVADOR
-	cultures = { chapin guanaco catracho nica tico }
+	cultures = { central_american }
 }
 
 ARG = {
@@ -2255,7 +2255,7 @@ ARG = {
 	
 	tier = empire
 	
-	cultures = { pampeano porteno litoraleno desertico santacruceno }
+	cultures = { platinean }
 	capital = STATE_BUENOS_AIRES
 }
 
@@ -2266,7 +2266,7 @@ BOL = {
 	
 	tier = kingdom
 	
-	cultures = { camba kolla } #I think?
+	cultures = { south_andean } #TODO
 	capital = STATE_LA_PAZ
 }
 
@@ -2288,7 +2288,7 @@ CHL = {
 	
 	tier = kingdom
 	
-	cultures = { atacameno centrino chilote huaso australino }
+	cultures = { chilote }
 	capital = STATE_SANTIAGO
 }
 
@@ -2299,7 +2299,7 @@ CLM = {
 	
 	tier = kingdom
 	
-	cultures = { valluno cachaco opita chocoano paisa costeno }
+	cultures = { paisa }
 	capital = STATE_CUNDINAMARCA
 }
 
@@ -2310,7 +2310,7 @@ ECU = {
 	
 	tier = principality
 	
-	cultures = { pastuso serrano guayasenese }
+	cultures = { pastuso }
 	capital = STATE_ECUADOR
 	is_named_from_capital = yes
 }
@@ -2322,7 +2322,7 @@ PEU = {
 	
 	tier = kingdom
 	
-	cultures = { charapa selvalteno }
+	cultures = { iqueno }
 	capital = STATE_LIMA
 }
 
@@ -2333,7 +2333,7 @@ PRG = {
 	
 	tier = principality
 	
-	cultures = { platinean } #TODO
+	cultures = { platinean }
 	capital = STATE_BAJO_PARAGUAY
 }
 
@@ -2344,7 +2344,7 @@ URU = {
 	
 	tier = principality
 	
-	cultures = { urbuguayo }
+	cultures = { platinean }
 	capital = STATE_URUGUAY
 	is_named_from_capital = yes
 }
@@ -2356,7 +2356,7 @@ VNZ = {
 	
 	tier = kingdom
 	
-	cultures = { gocho caraqueno guaro margariteno truenonato }
+	cultures = { gocho }
 	capital = STATE_MIRANDA
 }
 
@@ -2475,7 +2475,7 @@ BIC = {
 }
 
 BRI = {
-	color = { 110 25 96 }
+	color = { 215 195 225 }
 	
 	country_type = recognized
 
@@ -2537,7 +2537,7 @@ WIN = {
 	
 	tier = empire
 	
-	cultures = { haitian west_indian cubano quisqueyano jamaican venteux papiamen calypsonian boricua }
+	cultures = { haitian west_indian cubano quisqueyano boricua }
 	capital = STATE_WEST_INDIES
 }
 
@@ -2548,7 +2548,7 @@ MAY = {
 	
 	tier = kingdom
 	
-	cultures = { yoko_yinikob winik_atel tenek wnaqqo kiche kekchi hach_winik mopan_itza maaya }
+	cultures = { mayan }
 	capital = STATE_YUCATAN
 }
 
@@ -2570,7 +2570,7 @@ ORG = {
 	
 	tier = principality
 	
-	cultures = { cascadian canuck } #Maybe more
+	cultures = { cascadian } #Maybe more
 	capital = STATE_OREGON
 }
 
@@ -2680,7 +2680,7 @@ JAM = {
 	
 	tier = principality
 	
-	cultures = { jamaican }
+	cultures = { west_indian }
 	capital = STATE_JAMAICA
 }
 
@@ -3141,7 +3141,7 @@ CSC = { # Cascadia
 	
 	tier = principality
 	
-	cultures = { interior_salish coast_salish }
+	cultures = { salish }
 	
 	capital = STATE_BRITISH_COLUMBIA
 }
@@ -3165,7 +3165,7 @@ CTF = { # the Council of Three Fires, Niswa-mishkodewinan
 	
 	tier = principality
 	
-	cultures = { ojibwe chippewa potawatomi }
+	cultures = { algonquian }
 	
 	capital = STATE_MICHIGAN
 }
@@ -3285,7 +3285,7 @@ YUC = {
 	
 	tier = principality
 	
-	cultures = { yucateco }
+	cultures = { chilango } #TODO
 	capital = STATE_YUCATAN
 }
 
@@ -3307,7 +3307,7 @@ PNI = {
 	
 	tier = principality
 	
-	cultures = { gaucho hunsrickisch }
+	cultures = { paranaense }
 	capital = STATE_RIO_GRANDE_DO_SUL
 }
 

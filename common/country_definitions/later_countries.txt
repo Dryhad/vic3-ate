@@ -80,7 +80,7 @@ TXK = {
 	
 	country_type = recognized
 	
-	cultures = { arklatexan }
+	cultures = { texan }
 	
 	capital = STATE_ARKANSAS
 }
@@ -166,7 +166,7 @@ WIS = {
 	
 	country_type = recognized
 	
-	cultures = { dairylander }
+	cultures = { northlander }
 	
 	capital = STATE_WISCONSIN
 }
@@ -202,7 +202,7 @@ CLT = {
 	
 	country_type = recognized
 	
-	cultures = { dixie }
+	cultures = { southron }
 	
 	capital = STATE_NORTH_CAROLINA
 }
@@ -239,7 +239,7 @@ VES = {
 	
 	country_type = recognized
 	
-	cultures = { desertico wladfaeg }
+	cultures = { platinean wladfaeg }
 	
 	capital = STATE_PATAGONIA
 }
@@ -288,7 +288,7 @@ MAG = {
 	
 	country_type = recognized
 	
-	cultures = { dixie deltaic }
+	cultures = { dixie }
 	
 	capital = STATE_MISSISSIPPI
 }
@@ -300,7 +300,7 @@ MES = {
 	
 	country_type = recognized
 	
-	cultures = { litoraleno }
+	cultures = { platinean }
 	
 	capital = STATE_CORRIENTES
 }
@@ -312,7 +312,7 @@ BUA = {
 	
 	country_type = recognized
 	
-	cultures = { porteno pampeano }
+	cultures = { platinean }
 	
 	capital = STATE_BUENOS_AIRES
 }
