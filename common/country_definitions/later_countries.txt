@@ -81,6 +81,7 @@ TXK = {
 	country_type = recognized
 	
 	cultures = { texan }
+	religion = catholic
 	
 	capital = STATE_ARKANSAS
 }
@@ -327,4 +328,65 @@ FLO = {
 	cultures = { sunshiner }
 	
 	capital = STATE_FLORIDA
+}
+
+ZLA = {
+	color = { 134 32 176 }
+	
+	tier = principality
+	
+	country_type = recognized
+	
+	cultures = { guajiro }
+	
+	capital = STATE_ZULIA
+}
+
+LLA = {
+	color = { 91 195 60 }
+	
+	tier = kingdom
+	
+	country_type = recognized
+	
+	cultures = { llanero }
+	
+	capital = STATE_BOLIVAR
+}
+
+GRG = {
+	color = { 135 133 73 }
+	
+	tier = kingdom
+	
+	country_type = recognized
+	
+	cultures = { chaquenyo }
+	
+	capital = STATE_SANTA_CRUZ
+}
+
+SMT = {
+	color = { 142 142 142 }
+	
+	tier = kingdom
+	
+	country_type = recognized
+	
+	cultures = { dixie }
+	religion = consumerist
+	
+	capital = STATE_FLORIDA
+}
+
+CAR = {
+	color = { 139 232 223 }
+	
+	tier = kingdom
+	
+	country_type = recognized
+	
+	cultures = { southron dixie }
+	
+	capital = STATE_SOUTH_CAROLINA
 }

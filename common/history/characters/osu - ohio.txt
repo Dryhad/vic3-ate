@@ -1,0 +1,28 @@
+﻿CHARACTERS = {
+	c:OSU = {
+		create_character = {
+			first_name = Elijah
+			last_name = Grixdale
+			ruler = yes
+			culture = cu:steelfolk
+			age = 70
+			interest_group = ig_industrialists
+			ideology = ideology_moderate
+			traits = {
+				engineer
+			}
+		}	
+		create_character = {
+			first_name = Prentiss
+			last_name = Grixdale
+			heir = yes
+			culture = cu:steelfolk
+			age = 16
+			interest_group = ig_trade_unions
+			ideology = ideology_traditionalist
+			traits = {
+				engineer
+			}
+		}	
+	}
+}

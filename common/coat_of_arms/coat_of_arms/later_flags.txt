@@ -404,3 +404,21 @@ SVH_theocracy={
 		}
 	}
 }
+
+CAR={
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_palmetto.dds"
+		color1 = "white"
+	}
+	colored_emblem = {
+		texture = "ce_crescent_rotated.dds"
+		color1 = "white"
+		instance = {
+			position = { 0.2 0.2 }
+			scale = { 0.3 0.3 }
+		}
+	}
+}

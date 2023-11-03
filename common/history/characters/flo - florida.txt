@@ -1,0 +1,39 @@
+﻿CHARACTERS = {
+	c:FLO = {
+		create_character = {
+			first_name = Isaiah
+			last_name = dynn_Garcia
+			ruler = yes
+			age = 65
+			culture = cu:sunshiner
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+			}
+		}
+		create_character = {
+			first_name = Leroy
+			last_name = dynn_Garcia
+			heir = yes
+			age = 64
+			culture = cu:sunshiner
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+			}
+		}
+		create_character = {
+			first_name = Elbert
+			last_name = dynn_Jenkins
+			ig_leader = yes
+			age = 60
+			culture = cu:sunshiner
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				imposing #Old man Jenkins shakes his cane at you
+				experienced_political_operator
+			}
+		}
+	}
+}

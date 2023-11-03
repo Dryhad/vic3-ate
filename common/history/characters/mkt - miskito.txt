@@ -1,0 +1,26 @@
+﻿CHARACTERS = {
+	c:MKT = {
+		create_character = {
+			first_name = Frederic
+			last_name = dynn_Sully
+			ruler = yes
+			age = 35
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_moderate
+			traits = {
+				experienced_diplomat
+			}
+		}
+		create_character = {
+			first_name = Jeremy
+			last_name = dynn_Sully
+			heir = yes
+			age = 3
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_moderate
+			traits = {
+				trait_child
+			}
+		}
+	}
+}

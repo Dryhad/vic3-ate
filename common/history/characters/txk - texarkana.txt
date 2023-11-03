@@ -4,7 +4,7 @@
 			first_name = "Filpeo"
 			last_name = dynn_Harq
 			ruler = yes
-			culture = cu:arklatexan
+			culture = cu:texan
 			religion = rel:catholic
 			interest_group = ig_landowners
 			ideology = ideology_jingoist
@@ -17,7 +17,7 @@
 			first_name = Urion
 			last_name = Benefez
 			ig_leader = yes
-			culture = cu:arklatexan
+			culture = cu:texan
 			religion = rel:catholic
 			interest_group = ig_devout
 			ideology = ideology_moderate
@@ -30,7 +30,7 @@
 			first_name = Carpios
 			last_name = e_Fondolai
 			admiral = yes
-			culture = cu:arklatexan
+			culture = cu:texan
 			interest_group = ig_armed_forces
 			traits = {
 				bandit

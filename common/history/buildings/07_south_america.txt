@@ -84,7 +84,7 @@
 		}
 	}
 	s:STATE_ZULIA={
-		region_state:VNZ={
+		region_state:ZLA={
 			create_building={
 				building="building_government_administration"
 				level=1
@@ -152,7 +152,7 @@
 		}
 	}
 	s:STATE_BOLIVAR={
-		region_state:VNZ={
+		region_state:LLA={
 			create_building={
 				building="building_livestock_ranch"
 				level=1
@@ -208,7 +208,7 @@
 		}
 	}
 	s:STATE_GUAVIARE={
-		region_state:CLM={
+		region_state:LLA={
 			create_building={
 				building="building_government_administration"
 				level=1

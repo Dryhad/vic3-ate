@@ -1,0 +1,69 @@
+﻿# Dave's Grapes and Grapeshot Shop
+company_daves_grapes = {
+	texture = "gfx/interface/icons/company_icons/custom_companies_placeholder.dds"
+	
+	flavored_company = yes
+	
+	building_types = { 
+		building_vineyard_plantation
+		building_munition_plants
+	}
+	
+	potential = {
+	}
+	
+	possible = { 
+		any_scope_state = {
+			any_scope_building = {
+				OR = {
+					is_building_type = building_vineyard_plantation
+					is_building_type = building_munition_plants
+				}
+				level > 10
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		state_loyalists_from_sol_change_mult = 0.1
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+# Dave's Lumber and Lumbar Support
+company_daves_lumber = {
+	texture = "gfx/interface/icons/company_icons/custom_companies_placeholder.dds"
+	
+	flavored_company = yes
+	
+	building_types = { 
+		building_logging_camp
+		building_furniture_manufacturies
+	}
+	
+	potential = {
+	}
+	
+	possible = { 
+		any_scope_state = {
+			any_scope_building = {
+				OR = {
+					is_building_type = building_logging_camp
+					is_building_type = building_furniture_manufacturies
+				}
+				level > 10
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		state_loyalists_from_sol_change_mult = 0.1
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}

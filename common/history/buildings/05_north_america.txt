@@ -1159,7 +1159,7 @@
 		}
 	}
 	s:STATE_NORTH_CAROLINA={
-		region_state:USA={
+		region_state:CAR={
 			create_building={
 				building="building_government_administration"
 				level=2
@@ -1217,7 +1217,7 @@
 		}
 	}
 	s:STATE_SOUTH_CAROLINA={
-		region_state:USA={
+		region_state:CAR={
 			create_building={
 				building="building_government_administration"
 				level=2

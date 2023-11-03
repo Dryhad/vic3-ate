@@ -1,0 +1,37 @@
+﻿CHARACTERS = {
+	c:SMT = {
+		create_character = {
+			first_name = "Chase"
+			last_name = dynn_Price
+			ig_leader = yes
+			culture = cu:dixie
+			religion = rel:consumerist
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_market_liberal
+			traits = {
+			}
+		}	
+		create_character = {
+			first_name = "Steve"
+			last_name = dynn_Forbus
+			ig_leader = yes
+			culture = cu:dixie
+			religion = rel:consumerist
+			interest_group = ig_landowners
+			ideology = ideology_market_liberal
+			traits = {
+			}
+		}	
+		create_character = {
+			first_name = "Smucker"
+			last_name = dynn_Gladstone
+			ig_leader = yes
+			culture = cu:dixie
+			religion = rel:consumerist
+			interest_group = ig_intelligentsia
+			ideology = ideology_market_liberal
+			traits = {
+			}
+		}	
+	}
+}
