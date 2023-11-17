@@ -28,10 +28,6 @@ law_no_workers_rights = {
 			add = 750
 		}
 	}
-
-	can_impose = { 
-		is_subject_of = scope:initiator	
-	} 
 }
 
 law_regulatory_bodies = {
@@ -75,10 +71,6 @@ law_regulatory_bodies = {
 			}			
 		}
 	}
-
-	can_impose = { 
-		is_subject_of = scope:initiator	
-	} 	
 
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
@@ -136,10 +128,6 @@ law_machinery_restrictions = {
 		}
 	}	
 
-	can_impose = { 
-		is_subject_of = scope:initiator	
-	} 
-
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
 		
@@ -195,10 +183,6 @@ law_worker_protections = {
 			}			
 		}
 	}
-
-	can_impose = { 
-		is_subject_of = scope:initiator	
-	} 
 
 	ai_enact_weight_modifier = { #Petitions
 		value = 0

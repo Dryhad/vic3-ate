@@ -114,18 +114,20 @@
 		}
 	}
 	s:STATE_ALASKA = {
-		region_state:RUS = {
+		region_state:AKA = {
 			create_pop = {
 				culture = alaskan
 				size = 19780
 			}
 			create_pop = {
-				culture = russian
-				size = 192
-			}
-			create_pop = {
 				culture = inuit
 				size = 4968
+			}
+		}
+		region_state:NVR = {
+			create_pop = {
+				culture = primorskiy
+				size = 192
 			}
 		}
 	}

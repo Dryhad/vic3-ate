@@ -1066,6 +1066,22 @@
 			}
 		}
 		
+		if = {
+			limit = {
+				owner = {
+					has_technology_researched = corporatism
+					NOT = {
+						has_law = law_type:law_total_separation
+						has_law = law_type:law_state_atheism
+					}
+				}
+			}
+			multiply = {
+				desc = "CORPORATISM_TECH"
+				value = 1.25
+			}
+		}
+		
 		add = {
 			desc = "POP_LITERACY"
 			this = {

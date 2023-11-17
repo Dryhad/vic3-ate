@@ -20,6 +20,10 @@
  ig_trait_ancient_knowledge_desc: "Every technological step forward brings our faith into greater clarity, every meditation on the Invisible World grants new insight into technology."
  ig_trait_nuclear_families: "Nuclear Families"
  ig_trait_nuclear_families_desc: "Atomos blesses our families and grants us prosperity. What do you mean that's not what it means?"
+ ig_trait_protection_payments: "Protection Payments"
+ ig_trait_protection_payments_desc: "That's a real nice economy you've got there. Be a shame if something were to happen to it."
+ ig_trait_ok_lumberjacks: "Okay Lumberjacks"
+ ig_trait_ok_lumberjacks_desc: "We're lumberjacks and we're quite well, thanks for asking. We sleep all night and we work all day."
  
  #Abrahamic
  ig_cristero_devout: "Prelature of Cristo Rey" #Cristero Faith
@@ -160,6 +164,9 @@
  
  ig_senior_citizens: "Senior Citizens"
  ig_senior_citizens_desc: "The Sunshiner ruling class is dominated by revered elders."
+ 
+ ig_legitimate_businessmen: "Legitimate Businessmen"
+ ig_legitimate_businessmen_desc: "This interest group represents entirely legitimate business interests that are definitely not a front for any criminal activities."
  
  gov_theodemocracy:0 "Theodemocracy"
  gov_theodemocracy_desc:0 "A [concept_government_type] combining republican principles with Latter Day Saints theology.\n\n$TRANSFER_OF_POWER_NAME_DESC$"

@@ -2966,7 +2966,7 @@ alagoano = {
 
 alaskan = {
         color = {  16 68 34  }
-        religion = midnighter
+        religion = midnight_sun
         
         traits = {
 			heritage_family_west_coast
@@ -69771,7 +69771,7 @@ karipuna = {
 
 kaska = {
         color = {  254 124 180  }
-        religion = midnighter
+        religion = midnight_sun
         
         traits = {
             #TODO
@@ -71102,7 +71102,7 @@ klamath = {
 
 klondiker = {
         color = {  37 142 78  }
-        religion = midnighter
+        religion = midnight_sun
         
         traits = {
 			heritage_family_west_coast
@@ -114947,7 +114947,7 @@ yucateco = {
 
 yukoner = {
         color = {  1 126 43  }
-        religion = midnighter
+        religion = midnight_sun
         
         traits = {
 			heritage_family_west_coast

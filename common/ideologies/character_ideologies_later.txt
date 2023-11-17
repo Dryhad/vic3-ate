@@ -13,13 +13,6 @@
 		law_industry_banned = strongly_disapprove
 	}
 	
-	lawgroup_childrens_rights = {
-		law_child_labor_allowed = approve
-		law_restricted_child_labor = disapprove
-		law_compulsory_primary_school = strongly_disapprove
-		law_youth_suffrage = strongly_disapprove
-	}	
-	
 	lawgroup_welfare = {
 		law_no_social_security = approve
 		law_poor_laws = neutral
@@ -58,7 +51,6 @@
 			has_role = agitator
 			owner = {
 				has_law = law_type:law_laissez_faire
-				has_law = law_type:law_child_labor_allowed
 				has_law = law_type:law_no_social_security
 				has_law = law_type:law_private_health_insurance
 				has_law = law_type:law_private_schools
@@ -305,6 +297,13 @@ ideology_environmentalist = {
 		law_worker_protections = approve
 		law_regulatory_bodies = approve
 		law_no_workers_rights = neutral
+	}
+	
+	lawgroup_health_system = {
+		law_no_health_system = strongly_disapprove
+		law_private_health_insurance = disapprove
+		law_charitable_health_system = neutral
+		law_public_health_insurance = approve
 	}
 	
 	possible = {

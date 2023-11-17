@@ -87,8 +87,10 @@
 				}
 			}
 			ig:ig_petty_bourgeoisie = {
+				set_interest_group_name = ig_legitimate_businessmen
 				remove_ideology = ideology_patriotic
 				add_ideology = ideology_omerta
+				set_ig_trait = ig_trait:ig_trait_protection_payments
 			}
 		}
 	}

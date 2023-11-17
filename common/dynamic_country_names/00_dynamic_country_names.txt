@@ -88,6 +88,7 @@ DEFAULT = {
 					is_strongest_ig_in_government = yes
 					leader = {
 						OR = {
+							has_ideology = ideology:ideology_integralist
 							has_ideology = ideology:ideology_fascist
 							has_ideology = ideology:ideology_ethno_nationalist
 						}
@@ -2218,6 +2219,259 @@ FRA = {
 			exists = scope:actor
 			scope:actor = {
 				has_law = law_type:law_council_republic
+			}
+		}
+	}
+}
+
+HRE = {
+	dynamic_country_name = {
+		name = dyn_c_hre_monarchy
+		adjective = dyn_c_hre_monarchy_adj
+
+		is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_law = law_type:law_monarchy
+					has_law = law_type:law_theocracy
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_hre_republic
+		adjective = dyn_c_hre_republic_adj
+
+		is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_law = law_type:law_parliamentary_republic
+					has_law = law_type:law_presidential_republic
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_hre_communist
+		adjective = dyn_c_hre_communist_adj
+
+		is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_council_republic
+			}
+		}
+	}
+	
+	dynamic_country_name = {
+		name = dyn_c_hre_technate
+		adjective = dyn_c_hre_technate_adj
+		
+		is_main_tag_only = yes
+		priority = 20
+		
+		trigger = {
+			scope:actor = {
+				OR = {
+					has_law = law_type:law_parliamentary_republic
+					has_law = law_type:law_presidential_republic
+				}
+				has_law = law_type:law_technocracy
+			}
+		}
+	}
+	
+	dynamic_country_name = {
+		name = dyn_c_hre_fascist
+		adjective = dyn_c_hre_fascist_adj
+		
+		is_main_tag_only = yes
+		priority = 30
+		
+		trigger = {
+			scope:actor = {
+				coa_fascist_trigger = yes
+				NOT = {
+					has_law = law_type:law_council_republic
+				}
+			}
+		}
+	}
+}
+CTR = { # Santa Catarina
+	dynamic_country_name = {
+		name = dyn_c_catharinense_republic
+		adjective = dyn_c_catharinese_republic_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+		}
+	}	
+}
+
+PNI = { # Piratini
+	dynamic_country_name = {
+		name = dyn_c_riograndense_republic
+		adjective = dyn_c_riograndense_republic_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+		}
+	}	
+}
+
+FND = { # Federation
+	dynamic_country_name = {
+		name = dyn_c_american_federation
+		adjective = dyn_c_american_federation_adj
+		
+		is_main_tag_only = yes
+		priority = 5
+		
+		trigger = {
+			scope:actor = {
+				OR = {
+					any_scope_state = {
+						NOT = { has_state_trait = state_trait_andes }
+						percent > 0.4
+					}
+					any_scope_state = {
+						is_incorporated = yes
+						OR = {
+							state_is_in_north_america = yes
+							state_is_in_central_america = yes
+						}
+						count > 1
+					}
+				}
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_united_provinces_of_south_america
+		adjective = dyn_c_united_provinces_of_south_america_adj
+		
+		is_main_tag_only = yes
+		priority = 15
+		
+		trigger = {
+			scope:actor = {
+				OR = {
+					was_formed_from = PLT
+					was_formed_from = ARG
+					was_formed_from = URU
+					was_formed_from = PRG
+				}
+			}
+		}
+	}
+	
+	dynamic_country_name = {
+		name = dyn_c_united_provinces_of_america
+		adjective = dyn_c_united_provinces_of_america_adj
+		
+		is_main_tag_only = yes
+		priority = 25
+		
+		trigger = {
+			scope:actor = {
+				OR = {
+					was_formed_from = PLT
+					was_formed_from = ARG
+					was_formed_from = URU
+					was_formed_from = PRG
+				}
+				any_scope_state = {
+					is_incorporated = yes
+					OR = {
+						state_is_in_north_america = yes
+						state_is_in_central_america = yes
+					}
+					count > 1
+				}
+			}
+		}
+	}
+}
+
+WAL = { # Wallachia
+	dynamic_country_name = {
+		name = dyn_c_united_principalities
+		adjective = dyn_c_united_principalities_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			scope:actor = {
+				has_variable = ROM_united_principality
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_wallachia_and_moldavia
+		adjective = dyn_c_wallachia_and_moldavia_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = no
+			scope:actor = {
+				has_variable = ROM_united_principality
+			}
+			c:MOL ?= {
+				is_subject_of = scope:actor
+			}
+		}
+	}
+}
+
+PLC = {
+	dynamic_country_name = {
+		name = dyn_c_commonwealth
+		adjective = dyn_c_commonwealth_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			scope:actor = { has_variable = greater_commonwealth_var }
+		}
+	}
+}
+
+TIS = { # Turtle Island
+	dynamic_country_name = {
+		name = dyn_c_great_turtle
+		adjective = dyn_c_great_turtle_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			scope:actor = {
+				was_formed_from = IRO
 			}
 		}
 	}

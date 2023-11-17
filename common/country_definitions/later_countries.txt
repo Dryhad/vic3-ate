@@ -390,3 +390,15 @@ CAR = {
 	
 	capital = STATE_SOUTH_CAROLINA
 }
+
+AKA = {
+	color = { 0 5 30 }
+	
+	tier = kingdom
+	
+	country_type = recognized
+	
+	cultures = { alaskan }
+	
+	capital = STATE_ALASKA
+}

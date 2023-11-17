@@ -60,3 +60,21 @@ ig_trait_nuclear_families = { #Atomicist
 		state_birth_rate_mult = 0.025
 	}
 }
+
+ig_trait_protection_payments = {
+	icon = "gfx/interface/icons/ig_trait_icons/unknown.dds"
+	max_approval = unhappy
+	
+	modifier = {
+		building_group_bg_service_tax_mult = -0.1
+	}
+}
+
+ig_trait_ok_lumberjacks = {
+	icon = "gfx/interface/icons/ig_trait_icons/unknown.dds"
+	min_approval = happy
+	
+	modifier = {
+		building_group_bg_logging_throughput_add = 0.15
+	}
+}

@@ -17,7 +17,7 @@
 				building="building_barracks"
 				level=2
 				reserves=1
-				activate_production_methods={ "pm_wound_dressing" "pm_line_infantry" "pm_cavalry_scouts" "pm_no_specialists" "pm_mobile_artillery" }
+				activate_production_methods={ "pm_general_training" }
 			}
 			create_building={
 				building="building_port"
@@ -39,7 +39,7 @@
 				building="building_barracks"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_wound_dressing" "pm_line_infantry" "pm_cavalry_scouts" "pm_no_specialists" "pm_mobile_artillery" }
+				activate_production_methods={ "pm_general_training" }
 			}			
 		}
 	}
@@ -49,7 +49,7 @@
 				building="building_barracks"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_wound_dressing" "pm_line_infantry" "pm_cavalry_scouts" "pm_no_specialists" "pm_mobile_artillery" }
+				activate_production_methods={ "pm_general_training" }
 			}		
 		}
 	}
@@ -67,7 +67,7 @@
 		region_state:BBQ={
 			create_building={
 				building="building_wheat_farm"
-				level=1
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_privately_owned" "pm_tools_disabled" "pm_citrus_orchards" }
 			}
@@ -75,8 +75,14 @@
 				building="building_barracks"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_wound_dressing" "pm_line_infantry" "pm_cavalry_scouts" "pm_no_specialists" "pm_mobile_artillery" }
+				activate_production_methods={ "pm_general_training" }
 			}		
+			create_building={
+				building="building_fishing_wharf"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" "pm_merchant_guilds_building_fishing_wharf" }
+			}
 		}
 	}
 	s:STATE_WESTERN_AUSTRALIA={
@@ -85,7 +91,7 @@
 				building="building_barracks"
 				level=1
 				reserves=1
-				activate_production_methods={ "pm_wound_dressing" "pm_line_infantry" "pm_cavalry_scouts" "pm_no_specialists" "pm_mobile_artillery" }
+				activate_production_methods={ "pm_general_training"}
 			}		
 		}
 	}
@@ -99,7 +105,7 @@
 				building="building_barracks"
 				level=3
 				reserves=1
-				activate_production_methods={ "pm_irregular_infantry" "pm_no_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
+				activate_production_methods={ "pm_no_organization" }
 			}
 			create_building={
 				building="building_port"
