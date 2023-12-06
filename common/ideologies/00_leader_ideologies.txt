@@ -404,6 +404,14 @@ ideology_radical = {
 		law_secret_police = strongly_disapprove
 	}
 	
+	lawgroup_church_and_state = {
+		law_state_religion = strongly_disapprove
+		law_freedom_of_confession = disapprove
+		law_freedom_of_conscience = neutral
+		law_total_separation = approve
+		law_state_atheism = neutral
+	}
+	
 	possible = {
 		owner = { has_technology_researched = egalitarianism }
 		# Agitators should have an ideology at odds with current laws
@@ -2075,15 +2083,6 @@ ideology_anarchist = {
 		law_traditionalism = strongly_disapprove	
 		law_laissez_faire = strongly_disapprove
 		law_industry_banned = disapprove
-	}
-	
-	lawgroup_economic_system = {	
-		law_cooperative_ownership = strongly_approve
-		law_interventionism = neutral
-		law_agrarianism = neutral
-		law_command_economy = disapprove
-		law_traditionalism = disapprove	
-		law_laissez_faire = strongly_disapprove
 	}
 
 	lawgroup_army_model = {

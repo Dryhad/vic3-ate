@@ -1,0 +1,12 @@
+﻿NGame = {
+	START_DATE = "3436.1.1"
+	END_DATE = "3536.1.1"
+}
+
+NPolitics = {
+	DEFAULT_LAW_ACTIVATION_DATE = "3436.1.1"	
+}
+
+NPops = {
+	LOYALTIES_GAIN_GRACE_PERIOD = "3438.1.1"
+}

@@ -64,7 +64,7 @@ txk_benjamin_eleazar_character_template = {
 ves_medex_guedder_character_template = {
 	first_name = Medex
 	last_name = Guedder
-	culture = cu:desertico
+	culture = cu:platinean
 	female = no
 	ideology = ideology_authoritarian #Could be fascist, but really more of a standard military dictator
 	interest_group = ig_armed_forces
@@ -135,6 +135,23 @@ mel_emanuel_comte_character_template = { #Fathers and Sons
 	}
 }
 
+mel_marcel_falvine_character_template = { #Wedge in the Academia
+	first_name = Marcel
+	last_name = Falvine
+	culture = cu:french
+	female = no
+	ig_leader = yes
+	religion = rel:cult_of_reason
+	ideology = ideology_atheist
+	interest_group = ig_intelligentsia
+	age = 61
+	traits = {
+		imposing
+		tactful
+		persistent
+	}
+}
+
 mel_meyssonnier_character_template = {
 	first_name = culture
 	last_name = Meyssonnier
@@ -177,6 +194,32 @@ eng_john_wellington_wells_character_template = {
 	}
 }
 
+eng_strephon_character_template = {
+	first_name = Strephon
+	last_name = culture
+	culture = cu:british
+	ideology = ideology_social_democrat
+	interest_group = ig_rural_folk
+	age = 25
+	traits = {
+		romantic
+		charismatic
+		reckless
+	}
+	agitator_usage = {
+		country_trigger = {
+			c:ENG ?= this
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_rural_folk
+		}
+		earliest_usage_date = 3440.1.1
+		latest_usage_date = 3480.1.1
+		chance = 50
+	}
+}
+
 ord_roscoe_langowski_character_template = {
 	first_name = Roscoe
 	last_name = dynn_Langowski
@@ -190,6 +233,37 @@ ord_roscoe_langowski_character_template = {
 	traits = {
 		literary
 		pious
+	}
+}
+
+cal_izzy_perez_character_template = {
+	first_name = Ivan
+	last_name = Perez
+	culture = cu:valleyan
+	female = no
+	ig_leader = yes
+	religion = rel:anahata
+	ideology = ideology_communist
+	interest_group = ig_rural_folk
+	age = 35
+	traits = {
+		inspirational_orator
+		persistent
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			c:CAL ?= this
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			OR = {
+				is_interest_group_type = ig_rural_folk
+				is_interest_group_type = ig_trade_unions
+			}
+		}
+        earliest_usage_date = 3480.1.1
+        latest_usage_date = 3536.1.1
+        chance = 50
 	}
 }
 
@@ -281,8 +355,8 @@ chi_shengji_yang_character_template = {
 	culture = cu:han
 	female = no
 	religion = rel:mahayana
-	ideology = ideology_authoritarian
-	interest_group = ig_petty_bourgeoisie #Maybe
+	ideology = ideology_despotic_utopian
+	interest_group = ig_trade_unions
 	traits = {
 		expert_political_operator
 		imperious

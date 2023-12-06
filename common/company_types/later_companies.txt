@@ -60,7 +60,41 @@ company_daves_lumber = {
 	}
 	
 	prosperity_modifier = {
-		state_loyalists_from_sol_change_mult = 0.1
+		building_tooling_workshops_throughput_add = 0.1 #Bring tools we don't have 'em
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#Global News Network
+company_gnn = {
+	texture = "gfx/interface/icons/company_icons/custom_companies_placeholder.dds"
+	
+	flavored_company = yes
+	
+	building_types = { 
+		building_paper_mills
+	}
+	
+	potential = {
+	}
+	
+	possible = { 
+		any_scope_state = {
+			any_scope_building = {
+				OR = {
+					is_building_type = building_paper_mills
+				}
+				level > 10
+			}
+		}
+		has_technology_researched = mass_communication
+	}
+	
+	prosperity_modifier = {
+		country_legitimacy_base_add = 10
 	}	
 	
 	ai_weight = {

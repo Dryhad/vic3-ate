@@ -671,6 +671,8 @@
 			}
 			ig:ig_devout = {
 				set_interest_group_name = ig_galvanist_assembly
+				remove_ideology = ideology_pious
+				add_ideology = ideology_corporatist
 			}
 		}
 		else_if = {
