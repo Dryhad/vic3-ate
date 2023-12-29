@@ -24,5 +24,18 @@
 				engineer
 			}
 		}	
+		create_character = {
+			first_name = Isaac
+			last_name = dynn_Lamothe
+			ig_leader = yes
+			culture = cu:steelfolk
+			age = 29
+			interest_group = ig_industrialists
+			ideology = ideology_moderate #Maybe something more interesting?
+			traits = {
+				expert_political_operator
+				charismatic
+			}
+		}
 	}
 }

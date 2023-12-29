@@ -4033,7 +4033,7 @@ NCR = {
 
 	tier = principality
 	
-	cultures = { dixie }
+	cultures = { southron }
 	capital = STATE_NORTH_CAROLINA
 }
 
@@ -4055,7 +4055,7 @@ CLI = {
 
 	tier = kingdom
 	
-	cultures = { dixie }
+	cultures = { southron dixie }
 	capital = STATE_NORTH_CAROLINA
 }
 
@@ -4067,6 +4067,7 @@ GRG = {
 	tier = principality
 	
 	cultures = { dixie }
+	religion = constitutionalist
 	capital = STATE_GEORGIA
 }
 
@@ -4076,9 +4077,9 @@ FLR = {
 	
 	country_type = recognized
 
-	tier = principality
+	tier = kingdom
 	
-	cultures = { dixie }
+	cultures = { sunshiner }
 	capital = STATE_FLORIDA
 }
 

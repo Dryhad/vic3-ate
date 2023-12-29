@@ -1,6 +1,7 @@
 ﻿# Dave's Grapes and Grapeshot Shop
 company_daves_grapes = {
-	texture = "gfx/interface/icons/company_icons/custom_companies_placeholder.dds"
+	icon = "gfx/interface/icons/company_icons/custom_companies_placeholder.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 	
 	flavored_company = yes
 	
@@ -35,7 +36,8 @@ company_daves_grapes = {
 
 # Dave's Lumber and Lumbar Support
 company_daves_lumber = {
-	texture = "gfx/interface/icons/company_icons/custom_companies_placeholder.dds"
+	icon = "gfx/interface/icons/company_icons/custom_companies_placeholder.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 	
 	flavored_company = yes
 	
@@ -70,7 +72,8 @@ company_daves_lumber = {
 
 #Global News Network
 company_gnn = {
-	texture = "gfx/interface/icons/company_icons/custom_companies_placeholder.dds"
+	icon = "gfx/interface/icons/company_icons/custom_companies_placeholder.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 	
 	flavored_company = yes
 	
@@ -95,6 +98,742 @@ company_gnn = {
 	
 	prosperity_modifier = {
 		country_legitimacy_base_add = 10
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#Early proof of concept in dev diary
+martins_fish_tank_emporium = {
+	icon = "gfx/interface/icons/company_icons/custom_companies_placeholder.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	flavored_company = yes
+	
+	building_types = { 
+		building_fishing_wharf
+		building_war_machine_industry
+	}
+	
+	potential = {
+	}
+	
+	possible = { 
+		any_scope_state = {
+			any_scope_building = {
+				OR = {
+					is_building_type = building_fishing_wharf
+					is_building_type = building_war_machine_industry
+				}
+				level > 10
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		unit_navy_offense_mult = 0.05
+		unit_navy_defense_mult = 0.05
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#Staten Island Ferriers
+company_staten_island_ferriers = {
+	icon = "gfx/interface/icons/company_icons/d_staten_island_ferriers.tga"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_military_shipyards
+		building_shipyards
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_new_england
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_NEW_YORK
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_NEW_YORK
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_military_shipyards
+					is_building_type = building_shipyards
+				}
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		country_convoys_capacity_mult = 0.2
+		state_infrastructure_mult = 0.05
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#Boucaniers
+company_boucaniers = {
+	icon = "gfx/interface/icons/company_icons/d_boucaniers.tga"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_military_shipyards
+		building_shipyards
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_caribbean
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_HAITI
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_HAITI
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_military_shipyards
+					is_building_type = building_shipyards
+				}
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		unit_convoy_raiding_mult = 0.2
+		unit_convoy_defense_mult = 0.2
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#Freesails of Trinidad
+company_freesails_of_trinidad = {
+	icon = "gfx/interface/icons/company_icons/d_freesails_of_trinidad.tga"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_military_shipyards
+		building_shipyards
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_caribbean
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_WEST_INDIES
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_WEST_INDIES
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_military_shipyards
+					is_building_type = building_shipyards
+				}
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		building_port_throughput_add = 0.10
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#Colima Traders
+company_colima_traders = {
+	icon = "gfx/interface/icons/company_icons/d_colima_traders.tga"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_military_shipyards
+		building_shipyards
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_mexico
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_JALISCO
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_JALISCO
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_military_shipyards
+					is_building_type = building_shipyards
+				}
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		country_trade_route_competitiveness_mult = 0.25
+		country_trade_route_cost_mult = -0.25
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#North Sea Whalers
+company_north_sea_whalers = {
+	icon = "gfx/interface/icons/company_icons/d_north_sea_whalers.tga"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_whaling_station
+		building_shipyards
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_canada
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_NEWFOUNDLAND
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_NEWFOUNDLAND
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_whaling_station
+					is_building_type = building_shipyards
+				}
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.15
+		state_infrastructure_mult = 0.05
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#Haida Coasters
+company_haida_coasters = {
+	icon = "gfx/interface/icons/company_icons/d_haida_coasters.tga"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_military_shipyards
+		building_shipyards
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_pacific_coast
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_BRITISH_COLUMBIA
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_BRITISH_COLUMBIA
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_military_shipyards
+					is_building_type = building_shipyards
+				}
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		unit_navy_offense_mult = 0.05
+		unit_navy_defense_mult = 0.05
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#Panamax Company
+company_panamax_company = {
+	icon = "gfx/interface/icons/company_icons/d_panamax_company.tga"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_military_shipyards
+		building_shipyards
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_central_america
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_PANAMA
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_PANAMA
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_military_shipyards
+					is_building_type = building_shipyards
+				}
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		country_prestige_from_navy_power_projection_mult = 0.15
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#Golden Gate Galleys
+company_golden_gate_galleys = {
+	icon = "gfx/interface/icons/company_icons/d_golden_gate_galleys.tga"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_military_shipyards
+		building_shipyards
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_pacific_coast
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_CALIFORNIA
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_CALIFORNIA
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_military_shipyards
+					is_building_type = building_shipyards
+				}
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		unit_navy_offense_mult = 0.05
+		state_building_port_max_level_add = 5
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#Delta Blues
+company_delta_blues = {
+	icon = "gfx/interface/icons/company_icons/d_delta_blues.tga"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_military_shipyards
+		building_shipyards
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_dixie
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_LOUISIANA
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_LOUISIANA
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_military_shipyards
+					is_building_type = building_shipyards
+				}
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		state_loyalists_from_sol_change_mult = 0.1
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#Cartagena Flotilla
+company_cartagena_flotilla = {
+	icon = "gfx/interface/icons/company_icons/d_cartagena_flotilla.tga"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_military_shipyards
+		building_shipyards
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_gran_colombia
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_ANTIOQUIA
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_ANTIOQUIA
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_military_shipyards
+					is_building_type = building_shipyards
+				}
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		state_colony_growth_speed_mult = 0.1
+		state_colony_growth_creation_mult = 0.1
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#Marine Highway
+company_marine_highway = {
+	icon = "gfx/interface/icons/company_icons/d_marine_highway.tga"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_military_shipyards
+		building_shipyards
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_pacific_coast
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_ALASKA
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_ALASKA
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_military_shipyards
+					is_building_type = building_shipyards
+				}
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		country_convoys_capacity_mult = 0.2
+		state_infrastructure_mult = 0.05
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#Cleveland Zoo
+company_cleveland_zoo = {
+	icon = "gfx/interface/icons/company_icons/d_cleveland_zoo.tga"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_corn.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_livestock_ranch
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_the_midwest
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_OHIO
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_OHIO
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_livestock_ranch
+				level >= 10
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		military_formation_movement_speed_mult = 0.1
+		unit_army_defense_mult = 0.05
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#San Diego Zoo
+company_san_diego_zoo = {
+	icon = "gfx/interface/icons/company_icons/d_san_diego_zoo.tga"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_corn.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_livestock_ranch
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_pacific_coast
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_CALIFORNIA
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_CALIFORNIA
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_livestock_ranch
+				level >= 10
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		state_pollution_reduction_health_mult = -0.1
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#Pinkertons
+company_pinkertons = {
+	icon = "gfx/interface/icons/company_icons/d_pinkerton_company.tga"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_railway
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_the_midwest
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_ILLINOIS
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_ILLINOIS
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_railway
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		interest_group_ig_trade_unions_approval_add = -3
+		country_suppression_ig_attraction_mult = -0.10
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#S-Mart
+company_s_mart = {
+	icon = "gfx/interface/icons/company_icons/k_s_mart.tga"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_corn.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_food_industry
+		building_textile_mills
+	}
+	
+	potential = {
+		country_has_state_religion = rel:consumerist
+	}
+	
+	attainable = {
+		country_has_state_religion = rel:consumerist
+	}		
+	
+	possible = {
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_food_industry
+					is_building_type = building_textile_mills
+				}
+				level >= 10
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		country_prestige_mult = 0.1
+		interest_group_ig_devout_pop_attraction_mult = 0.1
 	}	
 	
 	ai_weight = {

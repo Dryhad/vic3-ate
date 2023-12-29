@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:FLO = {
+	c:FLR = {
 		create_character = {
 			first_name = Isaiah
 			last_name = dynn_Garcia

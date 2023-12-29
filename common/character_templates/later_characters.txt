@@ -267,6 +267,114 @@ cal_izzy_perez_character_template = {
 	}
 }
 
+osu_isaac_lamothe_jr_character_template = {
+	first_name = Isaac
+	last_name = dynn_Lamothe
+	culture = cu:steelfolk
+	female = no
+	ig_leader = yes
+	ideology = ideology_moderate
+	interest_group = ig_industrialists
+	birth_date = 3436.7.23
+	traits = {
+		arrogant
+		honorable
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			c:OSU ?= this
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_industrialists
+		}
+		earliest_usage_date = 3456.1.1
+		latest_usage_date = 3490.1.1
+		chance = 50
+	}
+}
+
+osu_isaac_lamothe_iii_character_template = {
+	first_name = Isaac
+	last_name = dynn_Lamothe
+	culture = cu:steelfolk
+	female = no
+	ig_leader = yes
+	ideology = ideology_moderate
+	interest_group = ig_industrialists
+	birth_date = 3469.3.18
+	traits = {
+		ambitious
+		experienced_political_operator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			c:OSU ?= this
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_industrialists
+		}
+		earliest_usage_date = 3490.1.1
+		latest_usage_date = 3536.1.1
+		chance = 50
+	}
+}
+
+osu_maynard_coppergift_character_template = {
+	first_name = Maynard
+	last_name = Coppergift
+	culture = cu:steelfolk
+	female = no
+	ig_leader = yes #maybe
+	ideology = ideology_corporatist_leader
+	interest_group = ig_trade_unions
+	age = 37
+	traits = {
+		cautious
+		experienced_political_operator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			c:OSU ?= this
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_trade_unions
+		}
+		earliest_usage_date = 3490.1.1
+		latest_usage_date = 3536.1.1
+		chance = 50
+	}
+}
+
+osu_susan_pokha_character_template = {
+	first_name = Susan
+	last_name = Pokha
+	culture = cu:steelfolk
+	female = yes
+	ideology = ideology_communist
+	interest_group = ig_trade_unions
+	age = 26
+	traits = {
+		demagogue
+		engineer
+		persistent
+	}
+	agitator_usage = {
+		country_trigger = {
+			c:OSU ?= this
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_trade_unions
+		}
+		earliest_usage_date = 3490.1.1
+		latest_usage_date = 3536.1.1
+		chance = 50
+	}
+}
+
 nvr_prokhor_zakharov_character_template = {
 	first_name = Prokhor
 	last_name = Zakharov
@@ -408,7 +516,7 @@ sca_annikki_luttinen_character_template = {
 	culture = cu:norwegian
 	female = yes
 	ideology = ideology_positivist #probably
-	interest_group = ig_industrialists #probably
+	interest_group = ig_petty_bourgeoisie #probably
 	traits = {
 		direct
 		reserved

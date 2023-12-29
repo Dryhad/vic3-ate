@@ -318,17 +318,17 @@ BUA = {
 	capital = STATE_BUENOS_AIRES
 }
 
-FLO = {
-	color = { 240  227  27 }
-	
-	tier = kingdom
-	
-	country_type = recognized
-	
-	cultures = { sunshiner }
-	
-	capital = STATE_FLORIDA
-}
+#FLO = {
+#	color = { 240  227  27 }
+#	
+#	tier = kingdom
+#	
+#	country_type = recognized
+#	
+#	cultures = { sunshiner }
+#	
+#	capital = STATE_FLORIDA
+#}
 
 ZLA = {
 	color = { 134 32 176 }
@@ -354,7 +354,7 @@ LLA = {
 	capital = STATE_BOLIVAR
 }
 
-GRG = {
+GIG = {
 	color = { 135 133 73 }
 	
 	tier = kingdom
@@ -379,17 +379,17 @@ SMT = {
 	capital = STATE_FLORIDA
 }
 
-CAR = {
-	color = { 139 232 223 }
-	
-	tier = kingdom
-	
-	country_type = recognized
-	
-	cultures = { southron dixie }
-	
-	capital = STATE_SOUTH_CAROLINA
-}
+#CAR = {
+#	color = { 139 232 223 }
+#	
+#	tier = kingdom
+#	
+#	country_type = recognized
+#	
+#	cultures = { southron dixie }
+#	
+#	capital = STATE_SOUTH_CAROLINA
+#}
 
 AKA = {
 	color = { 0 5 30 }
@@ -401,4 +401,16 @@ AKA = {
 	cultures = { alaskan }
 	
 	capital = STATE_ALASKA
+}
+
+LYN = {
+	color = { 237 180 88 }
+	
+	tier = city_state
+	
+	country_type = recognized
+	
+	cultures = { southron }
+	
+	capital = STATE_VIRGINIA
 }

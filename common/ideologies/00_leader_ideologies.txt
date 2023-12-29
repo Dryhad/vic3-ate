@@ -3888,10 +3888,11 @@ ideology_liberal_leader = {
 		law_anarchy = strongly_disapprove
 	}
 	
-	lawgroup_bureaucracy = {
-		law_elected_bureaucrats = approve
-		law_appointed_bureaucrats = neutral
-		law_hereditary_bureaucrats = disapprove
+	lawgroup_free_speech = {
+		law_protected_speech = strongly_approve
+		law_right_of_assembly = neutral
+		law_censorship = neutral
+		law_outlawed_dissent = strongly_disapprove
 	}
 	
 	possible = {
@@ -3905,7 +3906,7 @@ ideology_liberal_leader = {
 					has_law = law_type:law_wealth_voting
 					has_law = law_type:law_landed_voting
 				}
-				has_law = law_type:law_elected_bureaucrats
+				has_law = law_type:law_protected_speech
 			}
 		}
 		scope:interest_group = {
@@ -3931,7 +3932,7 @@ ideology_liberal_leader = {
 						has_law = law_type:law_wealth_voting
 						has_law = law_type:law_landed_voting
 					}
-					has_law = law_type:law_elected_bureaucrats
+					has_law = law_type:law_protected_speech
 				}
 			}
 			add = -25

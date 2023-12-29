@@ -24,6 +24,10 @@
  ig_trait_protection_payments_desc: "That's a real nice economy you've got there. Be a shame if something were to happen to it."
  ig_trait_ok_lumberjacks: "Okay Lumberjacks"
  ig_trait_ok_lumberjacks_desc: "We're lumberjacks and we're quite well, thanks for asking. We sleep all night and we work all day."
+ ig_trait_they_called_me_mad: "They Called Me Mad"
+ ig_trait_they_called_me_mad_desc: "Our genius has been misunderstood, laughed at, fled from. Oh, but we'll show them. We'll show them all!"
+ ig_trait_for_science: "For Science!"
+ ig_trait_for_science_desc: "Why do we do the things we do? There is only one reason, for science!"
  
  #Abrahamic
  ig_cristero_devout: "Prelature of Cristo Rey" #Cristero Faith
@@ -167,6 +171,9 @@
  
  ig_legitimate_businessmen: "Legitimate Businessmen"
  ig_legitimate_businessmen_desc: "This interest group represents entirely legitimate business interests that are definitely not a front for any criminal activities."
+ 
+ ig_sparks: "Sparks"
+ ig_sparks_desc: "The Sparks possess a mysterious gift that grants them unparalleled scientific insight, mental instability, and megalomaniacal desire in equal measure."
  
  gov_theodemocracy:0 "Theodemocracy"
  gov_theodemocracy_desc:0 "A [concept_government_type] combining republican principles with Latter Day Saints theology.\n\n$TRANSFER_OF_POWER_NAME_DESC$"

@@ -1,0 +1,31 @@
+﻿CHARACTERS = {
+	c:GRG = {
+		create_character = {
+			first_name = "Sherman"
+			last_name = dynn_Wheelock
+			ruler = yes
+			culture = cu:beltway
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_moderate
+			age = 44
+			dna = dna_sherman
+			traits = {
+				expert_offensive_planner
+				resupply_commander
+				pillager
+			}
+		}
+		create_character = {
+			first_name = George
+			last_name = dynn_Wheelock
+			heir = yes
+			culture = cu:beltway
+			interest_group = ig_intelligentsia
+			ideology = ideology_moderate
+			age = 12
+			traits = {
+				child
+			}
+		}
+	}
+}

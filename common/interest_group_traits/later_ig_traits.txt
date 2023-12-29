@@ -78,3 +78,22 @@ ig_trait_ok_lumberjacks = {
 		building_group_bg_logging_throughput_add = 0.15
 	}
 }
+
+ig_trait_they_called_me_mad = {
+	icon = "gfx/interface/icons/ig_trait_icons/unknown.dds"
+	max_approval = unhappy
+	
+	modifier = {
+		country_revolution_progress_mult = 0.1
+		political_movement_radicalism_add = 10
+	}
+}
+
+ig_trait_for_science = {
+	icon = "gfx/interface/icons/ig_trait_icons/unknown.dds"
+	min_approval = loyal
+	
+	modifier = {
+		country_weekly_innovation_mult = 0.1
+	}
+}

@@ -92,18 +92,21 @@
 				size = 423597
 			}
 			create_pop = {
-				culture = dixie
-				religion = catholic
-				size = 48000
-			}
-			create_pop = {
 				culture = afro_american
 				size = 35120
 			}
+		}
+		region_state:CLI = {
 			create_pop = {
-				pop_type = slaves
-				culture = afro_american
+				culture = southron
 				size = 312079
+			}
+		}
+		region_state:LYN = {
+			create_pop = {
+				culture = southron
+				#religion = catholic
+				size = 48000
 			}
 		}
 		region_state:BLU = {
@@ -609,7 +612,7 @@
 		}
 	}
 	s:STATE_FLORIDA = {
-		region_state:FLO = {
+		region_state:FLR = {
 			create_pop = {
 				culture = sunshiner
 				size = 47996
@@ -631,10 +634,25 @@
 		}
 	}
 	s:STATE_GEORGIA = {
-		region_state:USA = {
+		region_state:USA = { #Temp
 			create_pop = {
 				culture = dixie
-				size = 329836
+				size = 2620
+			}
+			create_pop = {
+				culture = dixie
+				size = 256172
+			}
+		}
+		region_state:GRG = {
+			create_pop = {
+				culture = dixie
+				size = 219891
+			}
+			create_pop = {
+				culture = dixie
+				religion = constitionalist
+				size = 109945
 			}
 			create_pop = {
 				culture = yiddish
@@ -644,15 +662,6 @@
 			create_pop = {
 				culture = cherokee
 				size = 8946 # 1835 Cherokee Census "Henderson Roll"
-			}
-			create_pop = {
-				culture = afro_american
-				size = 2620 # 2486 free in 1830, 2753 free in 1840
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = afro_american
-				size = 256172
 			}
 		}
 		region_state:NIK = {
@@ -866,7 +875,7 @@
 		}
 	}
 	s:STATE_NORTH_CAROLINA = {
-		region_state:CAR = {
+		region_state:CLI = {
 			create_pop = {
 				culture = southron
 				size = 492500
@@ -876,7 +885,7 @@
 				size = 21138 # 19543 free in 1830, 22732 free in 1840
 			}
 			create_pop = {
-				pop_type = slaves
+				#pop_type = slaves
 				culture = afro_american
 				size = 222862
 			}
@@ -925,7 +934,7 @@
 		}
 	}
 	s:STATE_SOUTH_CAROLINA = {
-		region_state:CAR = {
+		region_state:CLI = {
 			create_pop = {
 				culture = southron
 				size = 253836

@@ -1,0 +1,17 @@
+﻿CHARACTERS = {
+	c:WDC = {
+		create_character = {
+			first_name = "Chuck"
+			last_name = dynn_Goodrich
+			ig_leader = yes
+			culture = cu:beltway
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_radical
+			traits = {
+				cautious
+				honorable
+				celebrity_commander
+			}
+		}	
+	}
+}

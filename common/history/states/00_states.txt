@@ -40,11 +40,19 @@ STATES = {
 	s:STATE_VIRGINIA = {
 		create_state = {
 			country = c:USA
-			owned_provinces = { xC0B0C0 x50F06C x90316A xC8ABE0 x4BD8B5 x056BA1 x76D2B5 xB5B538 xF00080 x304080 xBF8CE2 x40B0C0 x79AC2A x806B93 x9D6816 xB0C000 xAA8809 x08C98C xC070C0 x8D147E x95CEBC xF47C46 x7C5B12 }
+			owned_provinces = { x90316A xC8ABE0 x4BD8B5 x056BA1 x76D2B5 xB5B538 xF00080 x304080 x79AC2A x806B93 x9D6816 xB0C000 xAA8809 x08C98C x8D147E x7C5B12 }
 		}	
+		create_state = {
+			country = c:CLI
+			owned_provinces = { x95CEBC xF47C46 xC070C0 x50F06C xC0B0C0 xBF8CE2 x40B0C0 }
+		}
 		create_state = {
 			country = c:BLU
 			owned_provinces = { x355247 x764809 x29E263 xF13564 x8E2B78 }
+		}
+		create_state = {
+			country = c:LYN
+			owned_provinces = { x82CE19 }
 		}
 		
 		add_homeland = cu:southron	
@@ -603,7 +611,7 @@ STATES = {
 	}
 	s:STATE_FLORIDA = {
 		create_state = {
-			country = c:FLO
+			country = c:FLR
 			owned_provinces = { x7FA347 x4407A0 xF41CC0 x5B1199 xED77FB x3CDD1A xE58A3D x5CD014 x7BCB55 xE740E5 xC60D66 x4070C0 x3556E5 xAAF2AF xF0B481 x9088D5 xFE627B x65ECBE xC000F0 x2E5E47 x3126CA x88BDEA x552AD8 x31C481 xB06E20 xDAE3CC x0C1D7F xA03000 xD0761D x23B4D0 x8C16F9 x6E31DE x976584 xE3533E }
 			#state_type = unincorporated
 		}
@@ -619,7 +627,11 @@ STATES = {
 	s:STATE_GEORGIA = {
 		create_state = {
 			country = c:USA
-			owned_provinces = { x407040 xCB1A53 xA86682 x7B295A x3D2D7D x4EA3CA x14A138 x98A030 x6D8A9F xCD4C42 xA496A6 xFD85D7 xC07040 xE933F3 xEE9338 x476DE4 xC2859C x19EFC6 x391CFA x40F040 x56DBDA x69FAA9 xE2E34A xBE8916 x9BEA44 x802080 xABCC5E x39E367 xBDB2BA x21E256 xFCECD3 xF0CB48 xD66E1C }
+			owned_provinces = { x407040 xCB1A53 xA86682 x7B295A x3D2D7D x4EA3CA x14A138 x98A030 x6D8A9F xCD4C42 xA496A6 xFD85D7 xC07040 xE933F3 xEE9338 x476DE4 xC2859C x19EFC6 x391CFA x40F040 x56DBDA xE2E34A xBE8916 }
+		}
+		create_state = {
+			country = c:GRG
+			owned_provinces = { x9BEA44 x69FAA9 xF0CB48 x802080 xABCC5E xFCECD3 xBDB2BA x21E256 x39E367 xD66E1C }
 		}
 		create_state = {
 			country = c:SVH
@@ -746,7 +758,7 @@ STATES = {
 	}
 	s:STATE_NORTH_CAROLINA = {
 		create_state = {
-			country = c:CAR
+			country = c:CLI
 			owned_provinces = { xD01C13 x58A1C9 x8070C0 x5B809B x7F5918 x7DE315 x81AAED x007040 x7342E7 x1B47BD x4DC66C x711CB6 xE5DA13 xC58DAF xA59977 x3EA432 x00F040 xABF402 x228851 x338BD7 x6FBF63 x3C4F8A x758494 }
 		}
 		create_state = {
@@ -7313,7 +7325,7 @@ STATES = {
 	}
 	s:STATE_SOUTH_CAROLINA = {
 		create_state = {
-			country = c:CAR
+			country = c:CLI
 			owned_provinces = { x31E5D4 xE2F040 x8E69FE xAF8C38 x2C6AA0 x47BF09 x007602 xF5B3A1 x7AAA59 x0070C0 xF83D99 x8998F6 xD641CB xF93340 x3B0FAE x6F7B23 x1FA379 x9B1B8B xD4D27E }
 		}
 		
