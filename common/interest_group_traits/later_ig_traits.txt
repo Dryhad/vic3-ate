@@ -97,3 +97,12 @@ ig_trait_for_science = {
 		country_weekly_innovation_mult = 0.1
 	}
 }
+
+ig_trait_victory_bonds = {
+	icon = "gfx/interface/icons/ig_trait_icons/treasury_bonds.dds"
+	min_approval = loyal
+	
+	modifier = {
+		country_loan_interest_rate_mult = -0.1
+	}
+}

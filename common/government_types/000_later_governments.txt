@@ -15,6 +15,13 @@
 			country_has_state_religion = rel:quadrine
 		}
 	}
+
+	on_government_type_change = {
+		change_to_presidential_elective = yes
+	}
+ 	on_post_government_type_change = {
+		post_change_to_presidential_elective = yes
+	}
 }
 
 gov_absolute_grand_division = {
@@ -45,6 +52,13 @@ gov_absolute_grand_division = {
 				c:TNW = ROOT
 			}
 		}
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
 	}
 }
 
@@ -77,6 +91,13 @@ gov_grand_division = {
 			}
 		}
 	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
 }
 
 gov_constitutional_grand_division = {
@@ -107,5 +128,161 @@ gov_constitutional_grand_division = {
 				c:TNW = ROOT
 			}
 		}
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_wardenship = {
+	transfer_of_power = hereditary
+	
+	male_ruler = "RULER_TITLE_WARDEN"
+	female_ruler = "RULER_TITLE_WARDEN"
+
+	male_heir = "" # Empty on purpose
+	female_heir = "" # Empty on purpose
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		country_has_voting_franchise = no #Constitutional Gaian monarchies dispense with the Warden/Dryad diarchy
+		country_has_state_religion = rel:gaian
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_absolute_dryadate = {
+	transfer_of_power = dictatorial
+	
+	male_ruler = "RULER_TITLE_ENT"
+	female_ruler = "RULER_TITLE_DRYAD"
+	
+	possible = {
+		has_law = law_type:law_theocracy
+		country_has_voting_franchise = no
+		country_has_state_religion = rel:gaian
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}
+
+gov_constitutional_dryadate = {
+	transfer_of_power = dictatorial
+	
+	male_ruler = "RULER_TITLE_ENT"
+	female_ruler = "RULER_TITLE_DRYAD"
+	
+	possible = {
+		has_law = law_type:law_theocracy
+		country_has_voting_franchise = yes
+		country_has_state_religion = rel:gaian
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}
+
+gov_celestial_empire = {
+	transfer_of_power = hereditary
+	
+	male_ruler = "RULER_TITLE_CELESTIAL_EMPEROR"
+	female_ruler = "RULER_TITLE_CELESTIAL_EMPRESS"
+	
+	male_heir = "RULER_TITLE_PRINCE"
+	female_heir = "RULER_TITLE_PRINCESS"
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		exists = c:CAL
+		c:CAL = ROOT
+		country_has_state_religion = rel:saharasa
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+#Maybe want some other CAL-specific variants? Below are for splinter states mainly
+
+gov_hereditary_bureaucracy = {
+	transfer_of_power = hereditary
+	
+	male_ruler = "RULER_TITLE_PREFECT"
+	female_ruler = "RULER_TITLE_PREFECT"
+	
+	male_heir = "RULER_TITLE_PRINCE"
+	female_heir = "RULER_TITLE_PRINCESS"
+	
+	possible = {
+		has_law = law_type:law_hereditary_bureaucrats
+		country_has_state_religion = rel:saharasa
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_appointed_bureaucracy = {
+	transfer_of_power = dictatorial
+	
+	male_ruler = "RULER_TITLE_PREFECT"
+	female_ruler = "RULER_TITLE_PREFECT"
+	
+	possible = {
+		has_law = law_type:law_appointed_bureaucrats
+		country_has_state_religion = rel:saharasa
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}
+
+gov_elected_bureaucracy = {
+	transfer_of_power = parliamentary_elective
+	
+	male_ruler = "RULER_TITLE_PREFECT"
+	female_ruler = "RULER_TITLE_PREFECT"
+	
+	possible = {
+		has_law = law_type:law_elected_bureaucrats
+		country_has_state_religion = rel:saharasa
+	}
+
+	on_government_type_change = {
+		change_to_parliamentary_elective = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_parliamentary_elective = yes
 	}
 }

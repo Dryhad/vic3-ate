@@ -110318,7 +110318,7 @@ ute = {
 
 valleyan = {
         color = {  178 229 127  }
-        religion = anahata
+        religion = sahasrara
         
         traits = {
             heritage_family_west_coast

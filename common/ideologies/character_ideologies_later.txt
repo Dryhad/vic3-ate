@@ -269,10 +269,11 @@ ideology_leader_loyalist = {
 				has_variable = chose_ethno_nationalism
 			}
 		}
+		always = no #Disabled pending a purpose found now that Land Reformer has the tax stance
 	}
 	
 	leader_weight = {
-		value = 100
+		value = 0
 		# less likely if not in government
 		if = {
 			limit = {
@@ -347,6 +348,258 @@ ideology_nimby = {
 			NOT = {
 				is_interest_group_type = ig_industrialists
 			}
+		}
+		scope:interest_group = {
+			NOR = {
+				has_variable = chose_vanguardism
+				has_variable = chose_communism
+				has_variable = chose_anarchism
+				has_variable = communist_ig_var
+				has_variable = chose_fascism
+				has_variable = chose_conservatism
+				has_variable = chose_ethno_nationalism
+			}
+		}
+	}
+	
+	leader_weight = {
+		value = 0
+	}
+}
+
+#Guruist Elements
+
+ideology_wood_element = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_confucian.dds"
+	
+	character_ideology = yes
+	
+	lawgroup_taxation = {
+		law_per_capita_based_taxation = approve
+		law_proportional_taxation = strongly_approve
+		law_graduated_taxation = strongly_approve
+		law_land_based_taxation = neutral
+		law_consumption_based_taxation = disapprove
+	}
+	
+	lawgroup_bureaucracy = {
+		law_appointed_bureaucrats = approve
+		law_hereditary_bureaucrats = neutral
+		law_elected_bureaucrats = disapprove
+	}
+	
+	lawgroup_trade_policy = {		
+		law_protectionism = approve
+		law_mercantilism = disapprove		
+		law_isolationism = strongly_approve
+		law_free_trade = strongly_disapprove
+	}
+	
+	possible = {
+		always = no #For now
+		
+		owner = {
+			country_has_state_religion = rel:sahasrara
+		}
+		scope:interest_group = {
+			NOR = {
+				has_variable = chose_vanguardism
+				has_variable = chose_communism
+				has_variable = chose_anarchism
+				has_variable = communist_ig_var
+				has_variable = chose_fascism
+				has_variable = chose_conservatism
+				has_variable = chose_ethno_nationalism
+			}
+		}
+	}
+	
+	leader_weight = {
+		value = 0
+	}
+}
+
+ideology_mountain_element = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_bakufu.dds"
+	
+	character_ideology = yes
+	
+	lawgroup_army_model = {
+		law_mass_conscription = strongly_approve
+		law_professional_army = approve
+		law_national_militia = neutral
+		law_peasant_levies = disapprove
+	}
+	
+	lawgroup_migration = {
+		law_no_migration_controls = strongly_disapprove
+		law_migration_controls = disapprove
+		law_closed_borders = neutral
+	}
+	
+	lawgroup_trade_policy = {		
+		law_protectionism = approve
+		law_mercantilism = disapprove		
+		law_isolationism = strongly_approve
+		law_free_trade = strongly_disapprove
+	}
+	
+	possible = {
+		always = no #For now
+		
+		owner = {
+			country_has_state_religion = rel:sahasrara
+		}
+		scope:interest_group = {
+			NOR = {
+				has_variable = chose_vanguardism
+				has_variable = chose_communism
+				has_variable = chose_anarchism
+				has_variable = communist_ig_var
+				has_variable = chose_fascism
+				has_variable = chose_conservatism
+				has_variable = chose_ethno_nationalism
+			}
+		}
+	}
+	
+	leader_weight = {
+		value = 0
+	}
+}
+
+ideology_star_element = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_star_element.dds"
+	
+	character_ideology = yes
+	
+	lawgroup_education_system = { #Fame! I'm gonna live forever! I'm gonna learn how to fly, high!
+		law_private_schools = strongly_approve
+		law_public_schools = neutral
+		law_religious_schools = approve
+		law_no_schools = disapprove
+	}	
+	
+	lawgroup_bureaucracy = {
+		law_appointed_bureaucrats = disapprove
+		law_hereditary_bureaucrats = neutral
+		law_elected_bureaucrats = approve
+	}
+	
+	lawgroup_army_model = {
+		law_mass_conscription = strongly_approve
+		law_professional_army = approve
+		law_national_militia = neutral
+		law_peasant_levies = disapprove
+	}
+	
+	possible = {
+		always = no #For now
+		
+		owner = {
+			country_has_state_religion = rel:sahasrara
+		}
+		scope:interest_group = {
+			NOR = {
+				has_variable = chose_vanguardism
+				has_variable = chose_communism
+				has_variable = chose_anarchism
+				has_variable = communist_ig_var
+				has_variable = chose_fascism
+				has_variable = chose_conservatism
+				has_variable = chose_ethno_nationalism
+			}
+		}
+	}
+	
+	leader_weight = {
+		value = 0
+	}
+}
+
+ideology_water_element = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_scholar_paternalistic.dds"
+	
+	character_ideology = yes
+	
+	lawgroup_health_system = {
+		law_no_health_system = strongly_disapprove
+		law_charitable_health_system = disapprove
+		law_private_health_insurance = neutral
+		law_public_health_insurance = approve
+	}
+	
+	lawgroup_migration = {
+		law_no_migration_controls = approve
+		law_migration_controls = neutral
+		law_closed_borders = disapprove
+	}
+	
+	lawgroup_taxation = {
+		law_per_capita_based_taxation = approve
+		law_proportional_taxation = strongly_approve
+		law_graduated_taxation = strongly_approve
+		law_land_based_taxation = neutral
+		law_consumption_based_taxation = disapprove
+	}
+	
+	possible = {
+		always = no #For now
+		
+		owner = {
+			country_has_state_religion = rel:sahasrara
+		}
+		scope:interest_group = {
+			NOR = {
+				has_variable = chose_vanguardism
+				has_variable = chose_communism
+				has_variable = chose_anarchism
+				has_variable = communist_ig_var
+				has_variable = chose_fascism
+				has_variable = chose_conservatism
+				has_variable = chose_ethno_nationalism
+			}
+		}
+	}
+	
+	leader_weight = {
+		value = 0
+	}
+}
+
+ideology_gold_element = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_nationalism.dds"
+	
+	character_ideology = yes
+	
+	lawgroup_governance_principles = {
+		law_council_republic = strongly_disapprove
+		law_parliamentary_republic = disapprove		
+		law_presidential_republic = neutral
+		law_theocracy = neutral
+		law_monarchy = strongly_approve
+	}
+	
+	lawgroup_taxation = {
+		law_per_capita_based_taxation = approve
+		law_proportional_taxation = strongly_approve
+		law_graduated_taxation = strongly_approve
+		law_land_based_taxation = neutral
+		law_consumption_based_taxation = disapprove
+	}
+	
+	lawgroup_army_model = {
+		law_mass_conscription = strongly_approve
+		law_professional_army = approve
+		law_national_militia = neutral
+		law_peasant_levies = disapprove
+	}
+	
+	possible = {
+		always = no #For now
+		
+		owner = {
+			country_has_state_religion = rel:sahasrara
 		}
 		scope:interest_group = {
 			NOR = {

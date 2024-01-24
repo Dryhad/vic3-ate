@@ -375,6 +375,38 @@ osu_susan_pokha_character_template = {
 	}
 }
 
+wdc_rexford_hawkins_character_template = {
+	first_name = Rexford
+	last_name = dynn_Hawkins
+	culture = cu:beltway
+	female = no
+	ideology = ideology_theocrat
+	interest_group = ig_devout
+	age = 34
+	traits = {
+		pious
+		literary
+		persistent
+	}
+	agitator_usage = {
+		country_trigger = {
+			c:WDC ?= this
+			state_religion = {
+				has_discrimination_trait = americanist
+			}
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_devout
+		}
+		earliest_usage_date = 3450.1.1
+		latest_usage_date = 3500.1.1
+		chance = 50
+	}
+	#Maybe do something different with him
+	#This is supposed to be the guy who thought pre-Event history and the origins of non-Americanist religions was fabricated and Jesus was a cypher for Lincoln
+}
+
 nvr_prokhor_zakharov_character_template = {
 	first_name = Prokhor
 	last_name = Zakharov
@@ -526,7 +558,7 @@ sca_annikki_luttinen_character_template = {
 ess_cyrus_rotheram_character_template = {
 	first_name = Cyrus
 	last_name = Rotheram
-	culture = cu:north_german
+	culture = cu:steelfolk
 	female = no
 	ideology = ideology_royalist
 	interest_group = ig_armed_forces
@@ -537,7 +569,7 @@ ess_cyrus_rotheram_character_template = {
 ess_clinton_alderdice_character_template = {
 	first_name = Clinton
 	last_name = Alderdice
-	culture = cu:french #I guess
+	culture = cu:quebecois #I guess
 	female = no
 	ideology = ideology_communist
 	interest_group = ig_intelligentsia
@@ -549,7 +581,7 @@ ess_clinton_alderdice_character_template = {
 ess_ignace_curnow_character_template = {
 	first_name = Ignace
 	last_name = Curnow
-	culture = cu:russian
+	culture = cu:petropavlovskiy
 	female = no
 	ideology = ideology_authoritarian #Maybe
 	interest_group = ig_industrialists
@@ -560,7 +592,7 @@ ess_ignace_curnow_character_template = {
 ess_octavius_cutler_character_template = {
 	first_name = Octavius
 	last_name = dynn_Cutler
-	culture = cu:british
+	culture = cu:yankee
 	female = no
 	ideology = ideology_market_liberal
 	interest_group = ig_petty_bourgeoisie
@@ -571,7 +603,7 @@ ess_octavius_cutler_character_template = {
 ess_luther_griggs_character_template = {
 	first_name = Luther
 	last_name = dynn_Griggs
-	culture = cu:swedish
+	culture = cu:texan #Could be Northlander for the Swedish connection but this fits the namelist
 	female = no
 	ideology = ideology_positivist
 	interest_group = ig_intelligentsia
