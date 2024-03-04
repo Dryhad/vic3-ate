@@ -414,3 +414,195 @@ LYN = {
 	
 	capital = STATE_VIRGINIA
 }
+
+TOR = {
+	color = { 255 255 189 }
+	
+	tier = kingdom
+	
+	country_type = colonial
+	
+	cultures = { swedish } #For now
+	
+	capital = STATE_SVEALAND
+}
+
+ARN = {
+	color = { 190 128 255 }
+	
+	tier = principality
+	
+	country_type = colonial
+	
+	cultures = { swedish } #For now
+	
+	capital = STATE_SCANIA
+}
+
+FML = {
+	color = { 143 213 128 }
+	
+	tier = kingdom
+	
+	country_type = colonial
+	
+	cultures = { swedish } #For now
+	religion = catholic
+	
+	capital = STATE_NORRLAND
+}
+
+BTH = {
+	color = { 238 107 107 }
+	
+	tier = principality
+	
+	country_type = colonial
+	
+	cultures = { finnish } #For now
+	
+	capital = STATE_SOUTHERN_FINLAND
+}
+
+OTS = {
+	color = { 183 213 78 }
+	
+	tier = principality
+	
+	country_type = colonial
+	
+	cultures = { finnish } #For now
+	
+	capital = STATE_WEST_KARELIA
+}
+
+TSK = {
+	color = { 90 50 90 }
+	
+	tier = kingdom
+	
+	country_type = recognized
+	
+	cultures = { dixie }
+	
+	capital = STATE_ALABAMA
+}
+
+PIT = {
+	color = { 225 195 65 }
+	
+	tier = principality
+	
+	country_type = recognized
+	
+	cultures = { steelfolk }
+	
+	capital = STATE_PENNSYLVANIA
+}
+
+VGA = {
+	color = { 182 89 84 }
+	
+	tier = kingdom
+	
+	country_type = recognized
+	
+	cultures = { southron }
+	religion = constitutionalist
+	
+	capital = STATE_VIRGINIA
+}
+
+AMH = {
+	color = { 237 106 94 }
+	
+	tier = principality
+	
+	country_type = recognized
+	
+	cultures = { dixie }
+	
+	capital = STATE_GEORGIA
+}
+
+ARZ = {
+	color = { 137 11 46 }
+	
+	tier = kingdom
+	
+	country_type = colonial
+	
+	cultures = { kazak } #for now
+	
+	capital = STATE_URALSK
+}
+
+KCH = {
+	color = { 130 53 105 }
+	
+	tier = kingdom
+	
+	country_type = colonial
+	
+	cultures = { kazak } #for now
+	
+	capital = STATE_URALSK
+}
+
+OBR = {
+	color = { 236 15 15 }
+	
+	tier = kingdom
+	
+	country_type = colonial
+	
+	cultures = { russian } #for now
+	
+	capital = STATE_SAMARA
+}
+
+IMP = {
+	color = { 217 84 24 }
+	
+	tier = empire
+	
+	country_type = colonial
+	
+	cultures = { kalmyk }
+	
+	capital = STATE_ASTRAKHAN
+}
+
+REP = {
+	color = { 225 90 82 }
+	
+	tier = kingdom
+	
+	country_type = colonial
+	
+	cultures = { russian } #for now
+	
+	capital = STATE_ASTRAKHAN
+}
+
+ANT = {
+	color = { 70 150 70 }
+	
+	tier = kingdom
+	
+	country_type = colonial
+	
+	cultures = { russian } #for now
+	
+	capital = STATE_ASTRAKHAN
+}
+
+UNF = {
+	color = { 12 110 176 }
+	
+	tier = kingdom
+	
+	country_type = colonial
+	
+	cultures = { ukrainian circassian north_caucasian }
+}

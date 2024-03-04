@@ -86,17 +86,19 @@
 		}
 	}
 	s:STATE_VIRGINIA = { # population of VA proper minus Fairfax County, which had its population figures added to DC to inflate the pop count there
-		region_state:USA = {
+		region_state:VGA = {
 			create_pop = {
 				culture = southron
+				religion = constitionalist
 				size = 423597
 			}
 			create_pop = {
 				culture = afro_american
+				religion = constitionalist
 				size = 35120
 			}
 		}
-		region_state:CLI = {
+		region_state:NCR = {
 			create_pop = {
 				culture = southron
 				size = 312079
@@ -576,24 +578,19 @@
 		}
 	}
 	s:STATE_ALABAMA = {
-		region_state:USA = {
+		region_state:TSK = {
 			create_pop = {
 				culture = dixie
-				size = 329008
+				size = 300000
 			}
 			create_pop = {
 				culture = afro_american
 				size = 1806 # 1572 free in 1830, 2039 free in 1840
 			}
 			create_pop = {
-				pop_type = slaves
+				#pop_type = slaves
 				culture = afro_american
 				size = 229998
-			}
-			create_pop = {
-				culture = dixie
-				religion = catholic
-				size = 16004
 			}
 			create_pop = {
 				culture = cherokee
@@ -608,6 +605,19 @@
 			create_pop = {
 				culture = appalachian
 				size = 100000
+			}
+		}
+		region_state:LOU = {
+			create_pop = {
+				culture = dixie
+				religion = catholic
+				size = 16004
+			}
+		}
+		region_state:FLR = {
+			create_pop = {
+				culture = dixie
+				size = 29008
 			}
 		}
 	}
@@ -634,11 +644,7 @@
 		}
 	}
 	s:STATE_GEORGIA = {
-		region_state:USA = { #Temp
-			create_pop = {
-				culture = dixie
-				size = 2620
-			}
+		region_state:TSK = {
 			create_pop = {
 				culture = dixie
 				size = 256172
@@ -674,6 +680,12 @@
 			create_pop = {
 				culture = dixie
 				size = 20000
+			}
+		}
+		region_state:AMH = { #Temp
+			create_pop = {
+				culture = dixie
+				size = 2620
 			}
 		}
 	}
@@ -757,13 +769,15 @@
 				size = 2000
 			}
 			create_pop = {
-				culture = steelfolk #Western half, make a new tag
-				#religion = catholic
-				size = 144008
-			}
-			create_pop = {
 				culture = irish
 				size = 59800
+			}
+		}
+		region_state:PIT = {
+			create_pop = {
+				culture = steelfolk
+				#religion = catholic
+				size = 144008
 			}
 			create_pop = {
 				culture = afro_american
@@ -875,7 +889,7 @@
 		}
 	}
 	s:STATE_NORTH_CAROLINA = {
-		region_state:CLI = {
+		region_state:NCR = {
 			create_pop = {
 				culture = southron
 				size = 492500
@@ -934,7 +948,7 @@
 		}
 	}
 	s:STATE_SOUTH_CAROLINA = {
-		region_state:CLI = {
+		region_state:SCR = {
 			create_pop = {
 				culture = southron
 				size = 253836

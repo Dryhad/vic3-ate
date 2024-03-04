@@ -1,0 +1,60 @@
+﻿CHARACTERS = {
+	c:CAL = {
+		create_character = {
+			first_name = culture
+			last_name = culture
+			ruler = yes
+			culture = cu:valleyan
+			interest_group = ig_landowners
+			ideology = ideology_gold_element
+			traits = {
+				imperious
+				ambitious
+			}
+		}	
+		create_character = {
+			first_name = culture
+			last_name = culture
+			ig_leader = yes
+			culture = cu:valleyan
+			interest_group = ig_landowners
+			ideology = ideology_wood_element
+			traits = {
+			
+			}
+		}
+		create_character = {
+			first_name = culture
+			last_name = culture
+			ig_leader = yes
+			culture = cu:valleyan
+			interest_group = ig_armed_forces
+			ideology = ideology_mountain_element
+			traits = {
+			
+			}
+		}
+		create_character = {
+			first_name = culture
+			last_name = culture
+			ig_leader = yes
+			culture = cu:valleyan
+			interest_group = ig_intelligentsia
+			ideology = ideology_star_element
+			traits = {
+			
+			}
+		}
+		create_character = {
+			first_name = culture
+			last_name = culture
+			ig_leader = yes
+			culture = cu:valleyan
+			interest_group = ig_devout
+			ideology = ideology_water_element
+			traits = {
+			
+			}
+		}
+	}
+}

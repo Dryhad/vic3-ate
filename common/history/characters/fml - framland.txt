@@ -1,0 +1,14 @@
+﻿CHARACTERS = {
+	c:FML = {
+		create_character = {
+			first_name = "Erasmus"
+			last_name = culture
+			ruler = yes
+			culture = cu:swedish
+			interest_group = ig_devout
+			ideology = ideology_social_democrat
+			traits = {
+			}
+		}	
+	}
+}

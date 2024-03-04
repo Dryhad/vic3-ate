@@ -5,6 +5,7 @@
 			last_name = dynn_Sully
 			ruler = yes
 			age = 35
+			culture = cu:miskito
 			interest_group = ig_petty_bourgeoisie
 			ideology = ideology_moderate
 			traits = {
@@ -16,6 +17,7 @@
 			last_name = dynn_Sully
 			heir = yes
 			age = 3
+			culture = cu:miskito
 			interest_group = ig_petty_bourgeoisie
 			ideology = ideology_moderate
 			traits = {

@@ -37,5 +37,18 @@
 				charismatic
 			}
 		}
+		create_character = {
+			first_name = Emily
+			last_name = dynn_List
+			is_agitator = yes
+			culture = cu:steelfolk
+			female = yes
+			ideology = ideology_feminist
+			interest_group = ig_petty_bourgeoisie
+			traits = {
+				ambitious
+				experienced_political_operator
+			}
+		}
 	}
 }

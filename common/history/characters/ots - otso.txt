@@ -1,0 +1,14 @@
+﻿CHARACTERS = {
+	c:OTS = {
+		create_character = {
+			first_name = "Gustaf"
+			last_name = "Armfelt"
+			ruler = yes
+			culture = cu:finnish
+			interest_group = ig_intelligentsia
+			ideology = ideology_pacifist
+			traits = {
+			}
+		}	
+	}
+}

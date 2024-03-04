@@ -145,7 +145,7 @@
 		}
 	}
 	s:STATE_VIRGINIA={
-		region_state:USA={
+		region_state:VGA={
 			create_building={
 				building="building_government_administration"
 				level=2
@@ -251,36 +251,26 @@
 		}
 	}
 	s:STATE_WYOMING={
-		region_state:USA={
-		}
 		region_state:LKT={
 		}
 		region_state:ARP={
 		}
 	}
 	s:STATE_MONTANA={
-		region_state:USA={
-		}
 		region_state:ABS={
 		}
 		region_state:LKT={
 		}
 	}
 	s:STATE_NORTH_DAKOTA={
-		region_state:USA={
-		}
 		region_state:LKT={
 		}
 	}
 	s:STATE_SOUTH_DAKOTA={
 		region_state:LKT={
 		}
-		region_state:USA={
-		}
 	}
 	s:STATE_NEBRASKA={
-		region_state:USA={
-		}
 		region_state:LKT={
 		}
 	}
@@ -351,8 +341,6 @@
 		}
 	}
 	s:STATE_MINNESOTA={
-		region_state:USA={
-		}
 		region_state:LKT={
 		}
 	}
@@ -593,7 +581,7 @@
 		}
 	}
 	s:STATE_ALABAMA={
-		region_state:USA={
+		region_state:TSK={
 			create_building={
 				building="building_government_administration"
 				level=1
@@ -762,12 +750,6 @@
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
-			#create_building={
-			#	building="building_steel_mills"
-			#	level=2
-			#	reserves=1
-			#	activate_production_methods={ "pm_blister_steel_process" #"pm_automation_disabled" "pm_privately_owned_industry" }
-			#}
 			create_building={
 				building="building_construction_sector"
 				level=2
@@ -793,28 +775,10 @@
 				activate_production_methods={ "pm_leaded_glass" "pm_privately_owned_building_glassworks" "pm_manual_glassblowing" "pm_ceramics" }
 			}
 			create_building={
-				building="building_coal_mine"
-				level=4
-				reserves=1
-				activate_production_methods={ "pm_atmospheric_engine_pump_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_privately_owned_building_coal_mine" }
-			}
-			create_building={
 				building="building_maize_farm"
 				level=3
 				reserves=1
 				activate_production_methods={ "pm_privately_owned" "pm_soil_enriching_farming" "pm_tools_disabled" }
-			}
-			create_building={
-				building="building_tooling_workshops"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_steel" "pm_automation_disabled" "pm_privately_owned_building_tooling_workshops" }
-			}
-			create_building={
-				building="building_iron_mine"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_atmospheric_engine_pump_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_privately_owned_building_iron_mine" }
 			}
 			create_building={
 				building="building_vineyard_plantation"
@@ -833,6 +797,32 @@
 				level=5
 				reserves=1
 				activate_production_methods={ "pm_saw_mills" "pm_privately_owned_building_logging_camp" "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+			}
+		}
+		region_state:PIT={
+			create_building={
+				building="building_steel_mills"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_blister_steel_process" #"pm_automation_disabled" "pm_privately_owned_industry" }
+			}
+			create_building={
+				building="building_tooling_workshops"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_steel" "pm_automation_disabled" "pm_privately_owned_building_tooling_workshops" }
+			}
+			create_building={
+				building="building_iron_mine"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_privately_owned_building_iron_mine" }
+			}
+			create_building={
+				building="building_coal_mine"
+				level=4
+				reserves=1
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_privately_owned_building_coal_mine" }
 			}
 		}
 	}
@@ -1091,7 +1081,7 @@
 		}
 	}
 	s:STATE_NORTH_CAROLINA={
-		region_state:CLI={
+		region_state:NCR={
 			create_building={
 				building="building_government_administration"
 				level=2
@@ -1143,7 +1133,7 @@
 		}
 	}
 	s:STATE_SOUTH_CAROLINA={
-		region_state:CLI={
+		region_state:SCR={
 			create_building={
 				building="building_government_administration"
 				level=2

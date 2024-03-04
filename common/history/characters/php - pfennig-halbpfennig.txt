@@ -3,7 +3,7 @@
 		create_character = {
 			first_name = "Rudolph"
 			last_name = "von_Halbpfennig"
-			ig_leader = yes
+			ruler = yes
 			interest_group = ig_petty_bourgeoisie
 			ideology = ideology_moderate
 			traits = {

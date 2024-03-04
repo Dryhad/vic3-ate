@@ -98,3 +98,38 @@ AKA = {
 		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
 	}
 }
+
+ARZ = {
+	flag_definition = {
+		coa = ARZ
+		subject_canton = ARZ
+		coa_with_overlord_canton = ARZ_subject
+		priority = 1
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+	}
+	flag_definition = {
+		coa = ARZ_EZIC
+		subject_canton = ARZ_EZIC
+		coa_with_overlord_canton = ARZ_subject
+		allow_overlord_canton = yes
+		priority = 10
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_no_migration_controls
+			}
+		}
+	}
+}
+
+OBR = {
+	flag_definition = {
+		coa = OBR
+		subject_canton = OBR
+		coa_with_overlord_canton = OBR_subject
+		priority = 1
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+	}
+}

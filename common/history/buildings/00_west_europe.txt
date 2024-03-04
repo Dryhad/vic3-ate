@@ -1,6 +1,6 @@
 ﻿BUILDINGS={
 	s:STATE_SVEALAND={
-		region_state:SWE={
+		region_state:TOR={
 			create_building={
 				building="building_government_administration"
 				level=4
@@ -64,7 +64,7 @@
 		}
 	}
 	s:STATE_GOTALAND={
-		region_state:SWE={
+		region_state:ARN={
 			create_building={
 				building="building_government_administration"
 				level=1
@@ -108,9 +108,11 @@
 				activate_production_methods={ "pm_basic_port" }
 			}
 		}
+		region_state:TOR={
+		}
 	}
 	s:STATE_SCANIA={
-		region_state:SWE={
+		region_state:ARN={
 			create_building={
 				building="building_government_administration"
 				level=1
@@ -174,7 +176,7 @@
 		}
 	}
 	s:STATE_NORRLAND={
-		region_state:SWE={
+		region_state:FML={
 			create_building={
 				building="building_logging_camp"
 				level=2
@@ -182,15 +184,29 @@
 				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts" "pm_privately_owned_building_logging_camp" }
 			}
 			create_building={
+				building="building_shipyards"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_basic_shipbuilding" "pm_merchant_guilds_building_shipyards" }
+			}
+			create_building={
 				building="building_fishing_wharf"
 				level=2
 				reserves=1
 				activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated" "pm_merchant_guilds_building_fishing_wharf" }
 			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
+			}	
+		}
+		region_state:TOR={
 		}
 	}
 	s:STATE_GOTLAND={
-		region_state:SWE={
+		region_state:TOR={
 			create_building={
 				building="building_port"
 				level=1
@@ -444,7 +460,7 @@
 		}
 	}
 	s:STATE_SOUTHERN_FINLAND={
-		region_state:FIN={
+		region_state:BTH={
 			create_building={
 				building="building_government_administration"
 				level=1
@@ -484,7 +500,7 @@
 		}
 	}
 	s:STATE_WEST_KARELIA={
-		region_state:FIN={
+		region_state:OTS={
 			create_building={
 				building="building_government_administration"
 				level=1
@@ -518,11 +534,11 @@
 		}
 	}
 	s:STATE_ALAND={
-		region_state:FIN={
+		region_state:BTH={
 		}
 	}
 	s:STATE_OSTROBOTHNIA={
-		region_state:FIN={
+		region_state:BTH={
 			create_building={
 				building="building_logging_camp"
 				level=2
@@ -535,6 +551,10 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_privately_owned" "pm_tools_disabled" "pm_potatoes" }
 			}
+		}
+		region_state:TOR={
+		}
+		region_state:OTS={
 		}
 	}
 	s:STATE_HOME_COUNTIES={
