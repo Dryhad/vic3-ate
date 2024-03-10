@@ -82,7 +82,7 @@ ideology_laissez_faire = {
 	lawgroup_labor_rights = {
 		law_no_workers_rights = neutral
 		law_regulatory_bodies = disapprove
-		law_machinery_restrictions = strongly_disapprove
+		#law_machinery_restrictions = strongly_disapprove
 		law_worker_protections = strongly_disapprove
 	}
 
@@ -273,12 +273,12 @@ ideology_particularist = {
 		law_mass_conscription = disapprove
 		law_peasant_levies = disapprove
 	}
-
-	lawgroup_slavery = {
-		law_slavery_banned = neutral
-		law_legacy_slavery = neutral
-		law_debt_slavery = strongly_disapprove
-		law_slave_trade = neutral
+	
+	lawgroup_welfare = {
+		law_old_age_pension = neutral
+		law_wage_subsidies = neutral
+		law_poor_laws = strongly_disapprove
+		law_no_social_security = neutral
 	}
 }
 
@@ -358,6 +358,13 @@ ideology_meritocratic = {
 		law_graduated_taxation = disapprove
 		law_land_based_taxation = disapprove
 	}	
+	
+	lawgroup_health_system = {
+		law_charitable_health_system = neutral
+		law_public_health_insurance = neutral
+		law_no_health_system = disapprove
+		law_private_health_insurance = approve
+	}
 }
 
 ideology_patriotic = {
@@ -544,6 +551,13 @@ ideology_proletarian = {
 		law_religious_schools = neutral	
 		law_no_schools = disapprove	
 	}
+
+	lawgroup_trade_policy = {		
+		law_protectionism = approve
+		law_isolationism = neutral
+		law_mercantilism = neutral
+		law_free_trade = disapprove
+	}
 }
 
 ideology_egalitarian = {
@@ -565,7 +579,7 @@ ideology_egalitarian = {
 	
 	lawgroup_labor_rights = {		
 		law_worker_protections = strongly_approve
-		law_machinery_restrictions = approve
+		#law_machinery_restrictions = approve
 		law_regulatory_bodies = approve
 		law_no_workers_rights = neutral
 	}		
@@ -576,10 +590,26 @@ ideology_egalitarian = {
 		law_women_in_the_workplace = strongly_approve
 		law_womens_suffrage = strongly_approve
 	}
+
+	lawgroup_land_reform = {
+		law_serfdom = strongly_disapprove
+		law_tenant_farmers = disapprove
+		law_homesteading = neutral
+		law_collectivized_agriculture = approve
+		law_commercialized_agriculture = neutral
+	}
 }
 
 ideology_populist = {
 	icon = "gfx/interface/icons/ideology_icons/populist.dds"
+
+	lawgroup_governance_principles = {
+		law_council_republic = approve
+		law_parliamentary_republic = neutral		
+		law_presidential_republic = neutral
+		law_theocracy = strongly_disapprove
+		law_monarchy = strongly_disapprove
+	}
 	
 	lawgroup_distribution_of_power = {
 		law_universal_suffrage = strongly_approve
@@ -777,7 +807,7 @@ ideology_corporatist = {
 	lawgroup_labor_rights = {
 		law_no_workers_rights = neutral
 		law_regulatory_bodies = approve
-		law_machinery_restrictions = neutral
+		#law_machinery_restrictions = neutral
 		law_worker_protections = neutral
 	}
 	

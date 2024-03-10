@@ -77,8 +77,16 @@ ideology_traditionalist = {
 			}
 		}
 		NOT = {
-			exists = c:FRA
-			c:FRA = this
+			owner = {
+				c:FRA ?= this
+			}
+		}
+		owner = {
+			NOT = {
+				any_interest_group = {
+					has_ideology = ideology:ideology_matriarchal
+				}
+			}
 		}
 		scope:interest_group = {
 			OR = {
@@ -614,7 +622,7 @@ ideology_reformer = {
 	
 	possible = {
 		owner = {
-			has_technology_researched = egalitarianism
+			has_technology_researched = egalitarianism #Beware
 			NOT = { has_technology_researched = feminism }
 		}
 		# Agitators should have an ideology at odds with current laws
@@ -623,6 +631,7 @@ ideology_reformer = {
 			owner = {
 				has_law = law_type:law_cultural_exclusion
 				has_law = law_type:law_compulsory_primary_school
+				has_law = law_type:law_women_own_property #Beware
 			}
 		}
 		# Any Interest Group
@@ -809,7 +818,6 @@ ideology_feminist = {
 					OR = {
 						is_interest_group_type = ig_intelligentsia
 						is_interest_group_type = ig_trade_unions
-						is_interest_group_type = ig_rural_folk
 					}
 				}
 				add = -50
@@ -875,6 +883,7 @@ ideology_abolitionist = {
 				has_variable = chose_ethno_nationalism
 			}
 		}
+		always = no #Removing slavery
 	}
 	
 	leader_weight = {
@@ -943,6 +952,7 @@ ideology_slaver = {
 				has_variable = chose_ethno_nationalism
 			}
 		}
+		always = no #Removing slavery
 	}
 	
 	leader_weight = {
@@ -1358,7 +1368,7 @@ ideology_social_democrat = {
 
 	lawgroup_labor_rights = {		
 		law_worker_protections = strongly_approve
-		law_machinery_restrictions = approve
+		#law_machinery_restrictions = approve
 		law_regulatory_bodies = approve
 		law_no_workers_rights = neutral
 	}
@@ -1506,7 +1516,7 @@ ideology_communist = {
 
 	lawgroup_labor_rights = {		
 		law_worker_protections = strongly_approve
-		law_machinery_restrictions = approve
+		#law_machinery_restrictions = approve
 		law_regulatory_bodies = approve
 		law_no_workers_rights = neutral
 	}
@@ -1550,6 +1560,10 @@ ideology_communist = {
 		NAND = {
 			has_role = agitator
 			owner = {
+				OR = {
+					has_law = law_type:law_cooperative_ownership
+					has_law = law_type:law_command_economy
+				}
 				has_law = law_type:law_collectivized_agriculture
 				has_law = law_type:law_state_atheism
 				has_law = law_type:law_council_republic
@@ -1891,10 +1905,11 @@ ideology_fascist = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law = law_type:law_autocracy
+				has_law = law_type:law_single_party_state
 				has_law = law_type:law_ethnostate
 				has_law = law_type:law_outlawed_dissent
 				has_law = law_type:law_militarized_police
+				has_law = law_type:law_mass_conscription
 			}
 		}
 		# Any Interest Group
@@ -1987,8 +2002,10 @@ ideology_fascist = {
 		if = {
 			limit = {
 				scope:interest_group = {
-					is_interest_group_type = ig_petty_bourgeoisie
-					is_interest_group_type = ig_armed_forces
+					OR = {
+						is_interest_group_type = ig_petty_bourgeoisie
+						is_interest_group_type = ig_armed_forces
+					}
 				}
 			}
 			add = 50
@@ -1997,8 +2014,10 @@ ideology_fascist = {
 		if = {
 			limit = {
 				scope:interest_group = {
-					is_interest_group_type = ig_trade_unions
-					is_interest_group_type = ig_intelligentsia
+					OR = {
+						is_interest_group_type = ig_trade_unions
+						is_interest_group_type = ig_intelligentsia
+					}
 				}
 			}
 			add = -25
@@ -2125,6 +2144,7 @@ ideology_anarchist = {
 				has_law = law_type:law_protected_speech
 				has_law = law_type:law_no_police
 				has_law = law_type:law_council_republic
+				has_law = law_type:law_multicultural
 			}
 		}
 		# Monarchs cannot be republicans
@@ -2494,7 +2514,7 @@ ideology_market_liberal = {
 
 	lawgroup_labor_rights = {
 		law_regulatory_bodies = disapprove
-		law_machinery_restrictions = strongly_disapprove
+		#law_machinery_restrictions = strongly_disapprove
 		law_worker_protections = strongly_disapprove
 	}
 
@@ -2707,7 +2727,7 @@ ideology_luddite = {
 	}
 	
 	lawgroup_labor_rights = {	
-		law_machinery_restrictions = strongly_approve	
+		#law_machinery_restrictions = strongly_approve	
 		law_worker_protections = neutral
 		law_regulatory_bodies = neutral
 		law_no_workers_rights = neutral
@@ -2875,8 +2895,8 @@ ideology_authoritarian = {
 		# less likely for progressive IG's
 		if = {
 			limit = {
-				OR = {
-					scope:interest_group = {
+				scope:interest_group = {
+					OR = {
 						is_interest_group_type = ig_trade_unions
 						is_interest_group_type = ig_intelligentsia
 					}
@@ -2887,8 +2907,8 @@ ideology_authoritarian = {
 		# more likely for more authoritarian IG's
 		if = {
 			limit = {
-				OR = {
-					scope:interest_group = {
+				scope:interest_group = {
+					OR = {
 						is_interest_group_type = ig_armed_forces
 						is_interest_group_type = ig_petty_bourgeoisie
 						is_interest_group_type = ig_landowners
@@ -3152,7 +3172,6 @@ ideology_humanitarian = {
 			OR = {
 				is_interest_group_type = ig_intelligentsia
 				is_interest_group_type = ig_trade_unions
-				is_interest_group_type = ig_rural_folk
 				is_interest_group_type = ig_devout
 			}
 		}
@@ -3588,12 +3607,15 @@ ideology_land_reformer = {
 				is_interest_group_type = ig_intelligentsia
 				is_interest_group_type = ig_trade_unions
 				is_interest_group_type = ig_petty_bourgeoisie
+				is_interest_group_type = ig_devout #Replacing Abolitionist
 			}
 		}
 		scope:interest_group = {
 			NOR = {
 				has_variable = communist_ig_var
 				has_variable = chose_vanguardism
+				has_variable = chose_anarchism
+				has_variable = chose_communism
 				has_variable = chose_fascism
 				has_variable = chose_conservatism
 				has_variable = chose_ethno_nationalism
@@ -3758,6 +3780,8 @@ ideology_integralist = {
 			NOR = {
 				has_variable = communist_ig_var
 				has_variable = chose_vanguardism
+				has_variable = chose_anarchism
+				has_variable = chose_communism
 				has_variable = chose_conservatism
 				has_variable = chose_ethno_nationalism
 			}
@@ -3833,9 +3857,11 @@ ideology_integralist = {
 		if = {
 			limit = {
 				scope:interest_group = {
-					is_interest_group_type = ig_petty_bourgeoisie
-					is_interest_group_type = ig_devout
-					is_interest_group_type = ig_armed_forces
+					OR = {
+						is_interest_group_type = ig_petty_bourgeoisie
+						is_interest_group_type = ig_devout
+						is_interest_group_type = ig_armed_forces
+					}
 				}
 			}
 			add = 50
@@ -3844,8 +3870,10 @@ ideology_integralist = {
 		if = {
 			limit = {
 				scope:interest_group = {
-					is_interest_group_type = ig_trade_unions
-					is_interest_group_type = ig_intelligentsia
+					OR = {
+						is_interest_group_type = ig_trade_unions
+						is_interest_group_type = ig_intelligentsia
+					}
 				}
 			}
 			add = -25
@@ -3913,6 +3941,8 @@ ideology_liberal_leader = {
 			NOR = {
 				has_variable = communist_ig_var
 				has_variable = chose_vanguardism
+				has_variable = chose_anarchism
+				has_variable = chose_communism
 				has_variable = chose_fascism
 				has_variable = chose_conservatism
 				has_variable = chose_ethno_nationalism
@@ -4002,7 +4032,7 @@ ideology_corporatist_leader = {
 	
 	lawgroup_education_system = {
 		law_religious_schools = approve
-		law_public_schools = neutral
+		law_public_schools = approve
 		law_private_schools = neutral	
 		law_no_schools = disapprove	
 	}	
@@ -4010,7 +4040,7 @@ ideology_corporatist_leader = {
 	lawgroup_labor_rights = {
 		law_no_workers_rights = neutral
 		law_regulatory_bodies = approve
-		law_machinery_restrictions = neutral
+		#law_machinery_restrictions = neutral
 		law_worker_protections = neutral
 	}
 	
@@ -4030,7 +4060,10 @@ ideology_corporatist_leader = {
 				NOT = {
 					has_law = law_type:law_council_republic
 				}
-				has_law = law_type:law_religious_schools
+				OR = {
+					has_law = law_type:law_religious_schools
+					has_law = law_type:law_public_schools
+				}
 				has_law = law_type:law_regulatory_bodies
 				has_law = law_type:law_wage_subsidies
 			}
@@ -4039,6 +4072,8 @@ ideology_corporatist_leader = {
 			NOR = {
 				has_variable = communist_ig_var
 				has_variable = chose_vanguardism
+				has_variable = chose_anarchism
+				has_variable = chose_communism
 				has_variable = chose_fascism
 				has_variable = chose_ethno_nationalism
 			}
@@ -4168,7 +4203,7 @@ ideology_humanitarian_royalist = {
 			owner = {
 				has_law = law_type:law_monarchy
 				has_law = law_type:law_multicultural
-				has_law = law_type:law_guaranteed_liberties
+				has_law = law_type:law_protected_speech
 				has_law = law_type:law_womens_suffrage
 				has_law = law_type:law_compulsory_primary_school
 			}
@@ -4182,6 +4217,8 @@ ideology_humanitarian_royalist = {
 		scope:interest_group = {
 			NOR = {
 				has_variable = chose_vanguardism
+				has_variable = chose_anarchism
+				has_variable = chose_communism
 				has_variable = communist_ig_var
 				has_variable = chose_fascism
 				has_variable = chose_conservatism
@@ -4205,7 +4242,7 @@ ideology_humanitarian_royalist = {
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_humanitarian_royalist
+					has_law = law_type:law_monarchy
 				}
 			}
 			add = 50
@@ -4296,7 +4333,7 @@ ideology_humanitarian_royalist = {
 				owner = {
 					OR = {
 						has_law = law_type:law_restricted_child_labor
-						has_law = law_type:law_compulsory_primary_school
+						has_law = law_type:law_child_labor_allowed
 					}
 				}
 			}

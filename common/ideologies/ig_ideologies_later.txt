@@ -393,3 +393,68 @@ ideology_gerontocratic = {
 		law_youth_suffrage = strongly_disapprove
 	}
 }
+
+ideology_republican_reactionary = {
+	icon = "gfx/interface/icons/ideology_icons/unused/nationalism.dds"
+	
+	lawgroup_governance_principles = {
+		law_monarchy = approve
+		law_theocracy = approve		
+		law_presidential_republic = approve
+		law_parliamentary_republic = neutral
+		law_council_republic = disapprove
+	}
+
+	lawgroup_citizenship = {
+		law_ethnostate = approve
+		law_national_supremacy = strongly_approve
+		law_racial_segregation = approve
+		law_cultural_exclusion = neutral
+		law_multicultural = disapprove	
+	}
+
+	lawgroup_migration = {
+		law_closed_borders = approve
+		law_migration_controls = strongly_approve
+		law_no_migration_controls = disapprove
+	}
+}
+
+ideology_spark_plutocratic = {
+	icon = "gfx/interface/icons/ideology_icons/plutocratic.dds" #TODO
+	
+	lawgroup_distribution_of_power = {
+		law_oligarchy = neutral
+		law_wealth_voting = approve
+		law_technocracy = approve
+		law_landed_voting = neutral
+		law_census_voting = neutral
+		law_single_party_state = neutral
+		law_autocracy = disapprove
+		law_universal_suffrage = strongly_disapprove
+		law_anarchy = strongly_disapprove
+	}
+
+	lawgroup_governance_principles = {
+		law_monarchy = neutral			
+		law_presidential_republic = neutral
+		law_parliamentary_republic = neutral
+		law_theocracy = disapprove
+		law_council_republic = strongly_disapprove
+	}
+	
+	lawgroup_taxation = {
+		law_per_capita_based_taxation = approve
+		law_consumption_based_taxation = neutral
+		law_land_based_taxation = neutral
+		law_proportional_taxation = neutral
+		law_graduated_taxation = disapprove
+	}	
+	
+	lawgroup_colonization = {
+		law_colonial_exploitation = approve
+		law_no_colonial_affairs = neutral
+		law_colonial_resettlement = neutral
+		law_frontier_colonization = neutral
+	}
+}

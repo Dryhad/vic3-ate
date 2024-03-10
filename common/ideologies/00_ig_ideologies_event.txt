@@ -118,6 +118,7 @@ ideology_egalitarian_modern = { #This is just dumb and should not exist
 		law_compulsory_primary_school = strongly_approve
 		law_restricted_child_labor = approve	
 		law_child_labor_allowed = disapprove
+		law_youth_suffrage = neutral #maybe changing this to approve is the reason for this to exist
 	}
 	
 	lawgroup_labor_rights = {		
@@ -131,5 +132,13 @@ ideology_egalitarian_modern = { #This is just dumb and should not exist
 		law_women_own_property = approve
 		law_women_in_the_workplace = strongly_approve
 		law_womens_suffrage = strongly_approve
+	}
+
+	lawgroup_land_reform = {
+		law_serfdom = strongly_disapprove
+		law_tenant_farmers = disapprove
+		law_homesteading = neutral
+		law_collectivized_agriculture = approve
+		law_commercialized_agriculture = neutral
 	}
 }

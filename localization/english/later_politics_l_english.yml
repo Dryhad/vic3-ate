@@ -5,6 +5,10 @@
  ideology_omerta_desc: "#lore This interest group believes everyone should keep their mouths shut and not involve the authorities, capisce?#!"
  ideology_gerontocratic: "Gerontocratic"
  ideology_gerontocratic_desc: "#lore This interest group favours a society ruled by the oldest and wisest members, for the oldest and wisest members.#!"
+ ideology_republican_reactionary: "Nativist"
+ ideology_republican_reactionary_desc: "#lore This group is nostalgic for a past, real or imagined, where strong leaders ruled over a uniform society.#!"
+ ideology_spark_plutocratic: "Megalomaniacal"
+ ideology_spark_plutocratic_desc: "#lore This group seeks world domination by an intellectual elite.#!"
  
  ig_trait_grey_power: "Grey Power"
  ig_trait_grey_power_desc: "The elderly always vote in large numbers."

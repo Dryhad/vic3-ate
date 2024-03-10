@@ -294,7 +294,7 @@ ideology_environmentalist = {
 	#Placeholder
 	
 	lawgroup_labor_rights = {	
-		law_machinery_restrictions = strongly_approve	
+		#law_machinery_restrictions = strongly_approve	
 		law_worker_protections = approve
 		law_regulatory_bodies = approve
 		law_no_workers_rights = neutral
@@ -339,6 +339,13 @@ ideology_nimby = {
 		law_no_migration_controls = strongly_disapprove
 		law_migration_controls = approve
 		law_closed_borders = neutral
+	}
+	
+	lawgroup_health_system = {
+		law_charitable_health_system = neutral
+		law_public_health_insurance = approve
+		law_no_health_system = disapprove
+		law_private_health_insurance = approve
 	}
 	
 	possible = {
