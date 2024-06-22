@@ -61,6 +61,8 @@
  GIG_ADJ: "Grigotán"
  SMT: "S-Mart"
  SMT_ADJ: "S-Mart"
+ dyn_c_smart_communist: "S-Coop"
+ dyn_c_smart_communist_adj: "S-Coop"
  CAR: "Carolina"
  CAR_ADJ: "Carolinan"
  AKA: "Alaska"
@@ -101,6 +103,8 @@
  ANT_ADJ: "Antegrian"
  UNF: "United Federation"
  UNF_ADJ: "United Federal"
+ NGR: "Nigeria"
+ NGR_ADJ: "Nigerian"
  
  dyn_c_amur_free_state: "Amur Free State"
  dyn_c_amur_free_state_adj: "Amurian"

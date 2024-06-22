@@ -1,9 +1,9 @@
 
-effect_starting_politics_socialist = {
+effect_starting_politics_socialist = { #Requires starting tech level 2 equivalent or better (Assuming Egalitarianism and Labor Movement moved to era 1, do not use before doing this)
 	activate_law = law_type:law_parliamentary_republic
 	activate_law = law_type:law_total_separation
 	activate_law = law_type:law_census_voting
-	activate_law = law_type:law_graduated_taxation
+	activate_law = law_type:law_proportional_taxation
 	activate_law = law_type:law_appointed_bureaucrats
 	activate_law = law_type:law_public_schools
 	activate_law = law_type:law_regulatory_bodies
@@ -13,5 +13,5 @@ effect_starting_politics_socialist = {
 	activate_law = law_type:law_professional_army
 	activate_law = law_type:law_no_migration_controls
 	activate_law = law_type:law_wage_subsidies
-	activate_law = law_type:law_public_health_insurance
+	activate_law = law_type:law_right_of_assembly
 }

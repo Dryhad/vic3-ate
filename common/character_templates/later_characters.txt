@@ -407,6 +407,34 @@ wdc_rexford_hawkins_character_template = {
 	#This is supposed to be the guy who thought pre-Event history and the origins of non-Americanist religions was fabricated and Jesus was a cypher for Lincoln
 }
 
+hop_leon_chavatangakwunua_character_template = {
+	first_name = Leon
+	last_name = Chavatangakwunua
+	culture = cu:pueblo
+	religion = rel:atheist
+	female = no
+	ideology = ideology_vanguardist
+	interest_group = ig_trade_unions
+    birth_date = 3470.4.22
+	traits = {
+        firebrand
+        charismatic
+        reckless
+	}
+	agitator_usage = {
+		country_trigger = {
+			has_state_in_state_region = STATE_ARIZONA
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_trade_unions
+		}
+		earliest_usage_date = 3501.1.1
+		latest_usage_date = 3536.1.1
+		chance = 50
+	}
+}
+
 nvr_prokhor_zakharov_character_template = {
 	first_name = Prokhor
 	last_name = Zakharov
@@ -569,7 +597,7 @@ ess_cyrus_rotheram_character_template = {
 ess_clinton_alderdice_character_template = {
 	first_name = Clinton
 	last_name = Alderdice
-	culture = cu:quebecois #I guess
+	culture = cu:gothamite #Was Quebecois for the French connection, this is for the Manhattan Commune/Lord Byron connection
 	female = no
 	ideology = ideology_communist
 	interest_group = ig_intelligentsia

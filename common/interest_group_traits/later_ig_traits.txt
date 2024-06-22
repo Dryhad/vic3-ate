@@ -106,3 +106,12 @@ ig_trait_victory_bonds = {
 		country_loan_interest_rate_mult = -0.1
 	}
 }
+
+ig_trait_la_pappesse = {
+	icon = "gfx/interface/icons/ig_trait_icons/unknown.dds"
+	min_approval = loyal
+	
+	modifier = {
+		state_working_adult_ratio_add = 0.05
+	}
+}

@@ -421,6 +421,40 @@ building_machu_picchu = {
 	required_construction = construction_cost_monument
 }
 
+building_chichen_itza = {
+	building_group = bg_monuments
+	texture = "gfx/interface/icons/building_icons/placeholder Copy.dds"
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "chichen_itza_locator"
+	
+	entity_not_constructed = { }
+	entity_under_construction = { }
+	entity_constructed = { "wonder_chichen_itza_01_entity"}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 4
+	}
+	
+	production_method_groups = {
+		pmg_base_building_chichen_itza
+	}
+	
+	possible = {
+		error_check = {
+			severity = invalid
+			this = {
+				state_region = s:STATE_YUCATAN
+			}
+		}
+	}
+	
+	required_construction = construction_cost_monument
+}
+
 # Decorative only
 
 building_argebam = {
@@ -438,28 +472,6 @@ building_argebam = {
 	city_gfx_interactions = {
 		clear_size_area = yes
 		size = 8
-	}
-	
-	production_method_groups = {
-		pmg_dummy
-	}
-}
-
-building_chichen_itza = {
-	building_group = bg_monuments_hidden
-	expandable = no
-	buildable = no
-	downsizeable = no
-	unique = yes
-	locator = "chichen_itza_locator"
-	
-	entity_not_constructed = { }
-	entity_under_construction = { }
-	entity_constructed = { "wonder_chichen_itza_01_entity"}
-	
-	city_gfx_interactions = {
-		clear_size_area = yes
-		size = 4
 	}
 	
 	production_method_groups = {

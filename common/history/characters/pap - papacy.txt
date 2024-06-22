@@ -1,0 +1,54 @@
+﻿CHARACTERS = {
+	c:PAP ?= {
+		create_character = {
+			# Linus VII
+			first_name = "Linus"
+			last_name = culture
+			ruler = yes
+			age = 73
+			culture = riverlander
+			interest_group = ig_devout
+			ideology = ideology_theocrat
+			traits = {
+				imperious
+			}
+		}
+
+		create_character = {
+			first_name = Eli_pst_a
+			last_name = Brownpony
+			age = 32
+			ig_leader = yes
+			culture = grangelander
+			interest_group = ig_devout
+			ideology = ideology_moderate
+			traits = {
+			}
+		}
+
+		create_character = {
+			first_name = Sorely
+			last_name = Nauwhat
+			age = 41
+			ig_leader = yes
+			culture = riverlander
+			interest_group = ig_landowners
+			ideology = ideology_theocrat
+			traits = {
+			}
+		}
+
+		create_character = {
+			first_name = Amen
+			last_name = Specklebird
+			age = 57
+			ig_leader = yes
+			culture = grangelander
+			interest_group = ig_rural_folk
+			ideology = ideology_theocrat
+			traits = {
+				reserved
+			}
+		}
+	}
+}

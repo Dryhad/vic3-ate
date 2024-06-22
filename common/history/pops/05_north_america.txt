@@ -931,7 +931,7 @@
 			create_pop = {
 				culture = utahn
 				religion = mormon
-				size = 50000
+				size = 260000
 			}
 		}
 		region_state:NVJ = {

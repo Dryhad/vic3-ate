@@ -60,9 +60,9 @@
 				has_law = law_type:law_secret_police
 			}
 		}
-		# trade unions should always go vanguardist instead if available
+		# trade unions should always go vanguardist instead under council republic
 		NAND = {
-			owner = { has_technology_researched = socialism }
+			owner = { has_law = law_type:law_council_republic }
 			is_interest_group_type = ig_trade_unions
 		}
 		# PB should always go fascist instead if available

@@ -52384,7 +52384,7 @@ gothamite = {
 
 grangelander = {
         color = {  127 25 12  }
-        religion = real_road
+        religion = catholic
         
         traits = {
 			heritage_family_mountain_central
@@ -103968,7 +103968,7 @@ rimense = {
 
 riverlander = {
         color = { 25 75 125 }
-        religion = watcher
+        religion = catholic
         
         traits = {
             #TODO

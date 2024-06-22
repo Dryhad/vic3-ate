@@ -78,7 +78,7 @@ company_gnn = {
 	flavored_company = yes
 	
 	building_types = { 
-		building_paper_mills
+		building_arts_academy
 	}
 	
 	potential = {
@@ -88,16 +88,16 @@ company_gnn = {
 		any_scope_state = {
 			any_scope_building = {
 				OR = {
-					is_building_type = building_paper_mills
+					is_building_type = building_arts_academy
 				}
-				level > 10
+				level >= 3
 			}
 		}
 		has_technology_researched = mass_communication
 	}
 	
 	prosperity_modifier = {
-		country_legitimacy_base_add = 10
+		country_authority_mult = 0.1
 	}	
 	
 	ai_weight = {
@@ -181,8 +181,7 @@ company_staten_island_ferriers = {
 	}
 	
 	prosperity_modifier = {
-		country_convoys_capacity_mult = 0.2
-		state_infrastructure_mult = 0.05
+		country_military_tech_spread_mult = 0.1
 	}	
 	
 	ai_weight = {

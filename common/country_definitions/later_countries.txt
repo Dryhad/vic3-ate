@@ -606,3 +606,15 @@ UNF = {
 	
 	cultures = { ukrainian circassian north_caucasian }
 }
+
+NGR = {
+	color = { 110  173  129 }
+	
+	tier = grand_principality
+	
+	country_type = recognized
+	
+	cultures = { fulbe hausa yoruba tiv }
+	
+	capital = STATE_EAST_HAUSALAND
+}
