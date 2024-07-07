@@ -389,7 +389,7 @@ dutch={
 		Marius
 		Matthijs
 		Maurits
-		Maximiliaam
+		Maximiliaan
 		Merkus
 		Moritz
 		Nikolaas
@@ -2020,7 +2020,7 @@ british={ # "English" in localization
 	}
 	common_last_names={
 		Allenby Anstruther Abercromby Annesley Assheton Arkwright Acland Armistead Archdale Anderson Akroyd Adair Aytoun Amcotts Allen Amherst Ashton Aytoun
-		Brown Buller Barrie Bright Benyon Brinckman Bathurst Bagwell Brewer Bruce Backhouse Bass Bateson Bowring Bourne Barrington Blennerhassett Bourke Beach Beaumont Brassey Bailey Biddulph Brand Baring Baines Brocklehurst Bentall Bazley Birley Bingham Bolckow Baxter Bagge Barttelot Beevor Barbauld Balfour Baillie Barnard Bayly Beerbohm Bellairs Bewick Bloomfield Blagden Borthwick Booth Bousfield Brightwell Broderip Broughton Budden Burdon Borradaile Buxton Beauclerk Bosanquet Bromhead Brightwen
+		Brown Buller Barrie Bright Benyon Brinckman Bathurst Bagwell Brewer Bruce Backhouse Bass Bateson Bowring Bourne Barrington Blennerhassett Bourke Beach Beaumont Brassey Bailey Biddulph Brand Baring Baines Brocklehurst Bentall Bazley Birley Bingham Bolckow Baxter Bagge Barttelot Beevor Barbauld Balfour Baillie Barnard Bayly Beerbohm Bellairs Bewick Bloomfield Blagden Borthwick Booth Bousfield Brightwell Broderip Broughton Budden Burdon Borradaile Buxton Beauclerk Bosanquet Bromhead Brightwen Brander
 		Cory Chard Courtney Coward Cowell Craufurd Cave Collins Cadogan Chambers Conolly Callan Coleridge Cole Carnegie Cholmeley Clive Croft Cowper Cameron Castlerosse Clay Cogan Colthurst Colebrooke Cross Chaplin Cowen Cartwright Cardwell Corrance Cochrane Conroy Cotton Calthorpe
 		Duff Dalrymple Dixon Dalway Dilke Downing Dickson Davison Dalglish Dimsdale Dyott Dowse Dawson Dease Denison Dillwyn Dow Dunnell Despard Day Darter Selkirk
 		Edge Ennis Edwards Eaton Elliot Elcho Eastwick Eddowes
@@ -2041,7 +2041,7 @@ british={ # "English" in localization
 		Upton Underdown
 		Veitch Vance Verner Vandeleur Vivian Vicars
 		Woollcombe Wedderburn Whitbread Whitmore Willyams Whitworth Waterlow Williamson Wethered Wyllie Wheelhouse Whatman Waterhouse Walsh Winterbotham Weguelin Wedgwood Whitelaw Wheatley Wingate Willan Waugh Wisden
-		Young
+		Young Younghusband
 	}
 	
 	male_noble_first_names= {
@@ -2065,7 +2065,7 @@ british={ # "English" in localization
 		Maynard Manningham-Buller Meynell-Ingram Montgomery-Cuninghame Mure-Campbell
 		Newport Newark 
 		Orr-Ewing Ormsby-Gore
-		Pleydell-Bouverie Pelham-Clinton
+		Pleydell-Bouverie Pelham-Clinton Prothero
 		Rosebery Ruggles-Brise Ramsay-Gibson-Maitland Rawdon-Hastings
 		Salisbury Salusbury-Trelawny Smith-Barry Selwin-Ibeetson Sclater-Booth Somerset Stopford-Sackville Shaw-Lefevre Spencer-Churchill
 		Thoroton-Hildyard Torrington Trevor Tadcaster Trematon Townsend
@@ -6449,6 +6449,8 @@ turkish={
 
 	ethnicities = {
 		1 = arab
+		2 = north_caucasian
+		1 = slavic
 	}
 	graphics = arabic
 }
@@ -6533,7 +6535,7 @@ azerbaijani={
 	ethnicities = {
 		1 = arab
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 north_caucasian={
@@ -9060,7 +9062,7 @@ filipino={
 		Emilio
 		Hermano
 		Jacinto
-		Jose
+		JosE_
 		Ladislao
 		Leon_3
 		Manuel
@@ -9841,7 +9843,7 @@ japanese={
 
 manchu={
 	color= rgb{ 233 207 84 }
-	religion = mahayana
+	religion = confucian
 	traits = { sinosphere north_asian_heritage }
 	male_common_first_names={
 		Changlin
@@ -9917,7 +9919,7 @@ manchu={
 
 han={
 	color= rgb{ 190 80 48 }
-	religion = mahayana
+	religion = confucian
 	traits = { sinosphere han_chinese east_asian_heritage }
 	obsessions = {
 		opium
@@ -9998,7 +10000,7 @@ han={
 
 korean={
 	color= hsv{ 0.17 0.41 0.34 }
-	religion = mahayana
+	religion = confucian
 	traits = { korean_language east_asian_heritage }
 	male_common_first_names={
 		Bak Bong-haek
@@ -10129,7 +10131,7 @@ ainu={
 
 hakka={
 	color= hsv{ 0.1 0.43 0.34 }
-	religion = mahayana
+	religion = confucian
 	traits = { han_chinese east_asian_heritage }
 	male_common_first_names={
 		Chen
@@ -10262,7 +10264,7 @@ miao={
 
 min={
 	color= hsv{ 0.71 0.54 0.78 }
-	religion = mahayana
+	religion = confucian
 	traits = { han_chinese east_asian_heritage }
 	male_common_first_names={
 		Bing
@@ -10458,7 +10460,7 @@ yi={
 
 yue={
 	color= hsv{ 0.80 0.36 0.39 }
-	religion = mahayana
+	religion = confucian
 	traits = { han_chinese east_asian_heritage}
 	male_common_first_names={
 		Chen
