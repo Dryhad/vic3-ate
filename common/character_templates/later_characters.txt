@@ -220,6 +220,56 @@ eng_strephon_character_template = {
 	}
 }
 
+eng_richard_dauntless_character_template = {
+	first_name = Richard
+	last_name = Dauntless
+	culture = cu:british
+	religion = rel:thelema
+	ideology = ideology_atheist
+	interest_group = ig_armed_forces
+	age = 35
+	traits = {
+		direct
+		honorable #within his own paradigm
+		convoy_raider_commander
+	}
+	agitator_usage = {
+		country_trigger = {
+			c:ENG ?= this
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_armed_forces
+		}
+		earliest_usage_date = 3440.1.1
+		latest_usage_date = 3480.1.1
+		chance = 50
+	}
+}
+
+eng_major_general_stanley_character_template = {
+	first_name = culture
+	last_name = Stanley
+	culture = cu:british
+	ideology = ideology_reformer
+	interest_group = ig_armed_forces
+	commander_rank = commander_rank_2
+	age = 50
+	traits = {
+		erudite
+		honorable
+	}
+	commander_usage = {
+		country_trigger = {
+			c:ENG ?= this
+		}
+		role = general
+		earliest_usage_date = 3440.1.1
+		latest_usage_date = 3480.1.1
+		chance = 50
+	}
+}
+
 ord_roscoe_langowski_character_template = {
 	first_name = Roscoe
 	last_name = dynn_Langowski

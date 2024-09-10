@@ -278,17 +278,13 @@ ideology_republican_leader = {
 		law_hereditary_bureaucrats = disapprove
 	}
 	
-	lawgroup_distribution_of_power = {
-		law_universal_suffrage = strongly_approve
-		law_census_voting = strongly_approve
-		law_wealth_voting = approve
-		law_landed_voting = neutral
-		law_single_party_state = neutral
-		law_technocracy = neutral
+	lawgroup_distribution_of_power = { #Dislikes undemocratic distributions of power, but defers to default (or neutral) for voting systems
+		law_single_party_state = disapprove
+		law_technocracy = disapprove
 		law_oligarchy = disapprove
-		law_autocracy = disapprove
+		law_autocracy = strongly_disapprove
 		law_anarchy = strongly_disapprove
-	}	
+	}
 	
 	possible = {
 		# Agitators should have an ideology at odds with current laws
@@ -300,7 +296,12 @@ ideology_republican_leader = {
 					has_law = law_type:law_parliamentary_republic
 				}
 				has_law = law_type:law_elected_bureaucrats
-				has_law = law_type:law_universal_suffrage
+				OR = {
+					has_law = law_type:law_landed_voting
+					has_law = law_type:law_wealth_voting
+					has_law = law_type:law_census_voting
+					has_law = law_type:law_universal_suffrage
+				}
 			}
 		}
 		# Monarchs cannot be republicans
@@ -313,12 +314,26 @@ ideology_republican_leader = {
 				is_heir = yes
 			}
 		}
+		NAND = {
+			owner = {
+				OR = {
+					has_law = law_type:law_monarchy
+					has_law = law_type:law_theocracy
+				}
+			}
+			OR = {
+				is_interest_group_type = ig_devout
+				is_interest_group_type = ig_rural_folk
+			}
+		}
 		scope:interest_group = {
 			OR = {
 				is_interest_group_type = ig_trade_unions
 				is_interest_group_type = ig_armed_forces
 				is_interest_group_type = ig_petty_bourgeoisie
 				is_interest_group_type = ig_industrialists
+				is_interest_group_type = ig_devout
+				is_interest_group_type = ig_rural_folk
 			}
 		}
 		scope:interest_group = {
@@ -465,6 +480,7 @@ ideology_radical = {
 				is_interest_group_type = ig_trade_unions
 				is_interest_group_type = ig_petty_bourgeoisie
 				is_interest_group_type = ig_industrialists
+				is_interest_group_type = ig_armed_forces #vanilla has enough of these scripted that they may as well be dynamic
 			}
 		}
 		scope:interest_group = {
@@ -543,6 +559,24 @@ ideology_radical = {
 					}
 				}
 				add = -200
+			}
+			# more likely for party members
+			if = {
+				limit = {
+					scope:interest_group = {
+						is_member_of_party = radical_party
+					}
+				}
+				add = 75
+			}
+			# while the Armed Forces *can* be radical, it shouldn't be that common
+			if = {
+				limit = {
+					scope:interest_group = {
+						is_interest_group_type = ig_armed_forces
+					}
+				}
+				add = -100
 			}
 			if = {
 				limit = {
@@ -1227,6 +1261,15 @@ ideology_jingoist_leader = {
 			}
 			add = 50
 		}
+		# more likely for party members
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_member_of_party = military_party
+				}
+			}
+			add = 75
+		}
 		# less likely for conservative French IG's
 		if = {
 			limit = {
@@ -1298,6 +1341,15 @@ ideology_royalist = {
 				is_interest_group_type = ig_rural_folk
 				is_interest_group_type = ig_petty_bourgeoisie
 				is_interest_group_type = ig_armed_forces
+				is_interest_group_type = ig_intelligentsia
+				is_interest_group_type = ig_trade_unions
+			}
+		}
+		NAND = { #These IGs should go Enlightened Royalist if available
+			owner = { has_technology_researched = feminism }
+			OR = {
+				is_interest_group_type = ig_intelligentsia
+				is_interest_group_type = ig_trade_unions
 			}
 		}
 		scope:interest_group = {
@@ -1347,6 +1399,18 @@ ideology_royalist = {
 				}
 			}
 			add = 50
+		}
+		# less likely for progressive IG's
+		if = {
+			limit = {
+				scope:interest_group = {
+					OR = {
+						is_interest_group_type = ig_trade_unions
+						is_interest_group_type = ig_intelligentsia
+					}
+				}
+			}
+			add = -75
 		}
 		# conservative and/or reactionary leaders have a higher spawn chance if the Anti-Dreyfusards won.
 		if = {
@@ -1480,6 +1544,15 @@ ideology_social_democrat = {
 				}
 				owner = {
 					NOT = { has_law = law_type:law_council_republic }
+				}
+			}
+			add = 75
+		}
+		# more likely for party members
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_member_of_party = social_democrat_party
 				}
 			}
 			add = 75
@@ -1622,6 +1695,15 @@ ideology_communist = {
 				}
 			}
 			add = 50
+		}
+		# more likely for party members
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_member_of_party = communist_party
+				}
+			}
+			add = 75
 		}
 		if = { #Armed Forces should not become communist too often outside CRs.
 			limit = {
@@ -1823,6 +1905,15 @@ ideology_vanguardist = {
 				}
 			}
 			add = 50
+		}
+		# more likely for party members
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_member_of_party = communist_party
+				}
+			}
+			add = 75
 		}
 		if = { #Armed Forces should not become communist too often outside CRs.
 			limit = {
@@ -2039,6 +2130,15 @@ ideology_fascist = {
 			}
 			add = 150
 		}
+		# more likely for party members
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_member_of_party = fascist_party
+				}
+			}
+			add = 75
+		}
 		# conservative and/or reactionary leaders have a higher spawn chance if the Anti-Dreyfusards won.
 		if = {
 			limit = {
@@ -2210,6 +2310,15 @@ ideology_anarchist = {
 			}
 			add = 75
 		}
+		# more likely for party members
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_member_of_party = anarchist_party
+				}
+			}
+			add = 75
+		}
 		if = {
 			limit = {
 				owner = { has_variable = communism_1_done }
@@ -2348,6 +2457,15 @@ ideology_ethno_nationalist = {
 				}
 			}
 			add = -75
+		}
+		# more likely for party members
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_member_of_party = fascist_party
+				}
+			}
+			add = 75
 		}
 		# conservative and/or reactionary leaders have a higher spawn chance if the Anti-Dreyfusards won.
 		if = {
@@ -2674,6 +2792,15 @@ ideology_market_liberal = {
 			}
 			add = -75
 		}
+		# more likely for party members
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_member_of_party = free_trade_party
+				}
+			}
+			add = 75
+		}
 		# less likely for conservative French IG's
 		if = {
 			limit = {
@@ -2846,7 +2973,7 @@ ideology_authoritarian = {
 		scope:interest_group = {
 			# trade unions should always go vanguardist instead if available
 			NAND = {
-				owner = { has_technology_researched = socialism }
+				owner = { has_technology_researched = political_agitation }
 				is_interest_group_type = ig_trade_unions
 			}
 			# PB should always go fascist instead if available
@@ -3876,6 +4003,15 @@ ideology_integralist = {
 				}
 			}
 			add = -25
+		}
+		# more likely for party members
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_member_of_party = fascist_party
+				}
+			}
+			add = 75
 		}
 		# Vargas fosters fascism
 		if = {

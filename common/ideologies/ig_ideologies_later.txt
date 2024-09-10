@@ -347,9 +347,9 @@ ideology_omerta = {
 
 	lawgroup_internal_security = {
 		law_secret_police = disapprove
-		law_national_guard = disapprove
+		law_national_guard = neutral
 		law_no_home_affairs = approve
-		law_guaranteed_liberties = neutral
+		law_guaranteed_liberties = strongly_disapprove
 	}	
 	
 	lawgroup_free_speech = {
