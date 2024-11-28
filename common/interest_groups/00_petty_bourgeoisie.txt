@@ -9,6 +9,13 @@
 		ideology_meritocratic
 		ideology_patriotic
 	}
+	
+	character_ideologies = {
+		ideology_moderate
+		ideology_traditionalist
+		ideology_jingoist_leader
+		ideology_protectionist
+	}
 
 	enable = {
 		always = yes
@@ -35,9 +42,9 @@
 				limit = {
 					owner = { c:TUR ?= this }
 				}
-						set_ig_trait = ig_trait:ig_trait_xenophobia
-						set_ig_trait = ig_trait:ig_trait_effendi
-						set_ig_trait = ig_trait:ig_trait_reorganization
+				set_ig_trait = ig_trait:ig_trait_xenophobia
+				set_ig_trait = ig_trait:ig_trait_effendi
+				set_ig_trait = ig_trait:ig_trait_reorganization
 			}
 			else_if = {
 				limit = {
@@ -143,7 +150,24 @@
 	}
 
 	pop_weight = {
-		value = 50
+		if = {
+			limit = {
+				strata = lower
+			}
+			add = {
+				desc = "POP_BASE_ATTRACTION"
+				value = 25
+			}
+		}
+		else_if = {
+			limit = {
+				strata = middle
+			}
+			add = {
+				desc = "POP_BASE_ATTRACTION"
+				value = 50
+			}
+		}
 
 		add = {
 			desc = "POP_SHOPKEEPERS"
@@ -429,15 +453,6 @@
 	# scope:character is the most popular commander in the IG
 	commander_leader_chance = {
 		value = 0.25
-		if = {
-			limit = {
-				exists = scope:character
-			}
-			multiply = {
-				value = 1
-				add = scope:character.popularity
-				min = 0
-			}
-		}
+		multiply = ig_commander_leader_chance_mult
 	}
 }

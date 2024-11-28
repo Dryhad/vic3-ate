@@ -41,11 +41,16 @@
 		law_homesteading = neutral
 		law_commercialized_agriculture = approve
 	}
+	
+	country_trigger = {
+		has_technology_researched = modern_financial_instruments
+	}
 
-	possible = {
-		owner = {
-			has_technology_researched = modern_financial_instruments
-		}
+	interest_group_leader_trigger = {
+		ideology_capitalizt_valid_trigger = yes
+	}
+	
+	non_interest_group_leader_trigger = {
 		# Agitator ideologies should disapprove of a current law
 		NAND = {
 			has_role = agitator
@@ -57,47 +62,27 @@
 				has_law = law_type:law_commercialized_agriculture
 			}
 		}
-		scope:interest_group = {
-			OR = {
-				is_interest_group_type = ig_petty_bourgeoisie
-				is_interest_group_type = ig_landowners
-				is_interest_group_type = ig_intelligentsia
-				is_interest_group_type = ig_industrialists
-			}
-		}
-		scope:interest_group = {
-			NOR = {
-				has_variable = chose_vanguardism
-				has_variable = chose_communism
-				has_variable = chose_anarchism
-				has_variable = communist_ig_var
-				has_variable = chose_fascism
-				has_variable = chose_conservatism
-				has_variable = chose_ethno_nationalism
-			}
+		interest_group = {
+			ideology_capitalizt_valid_trigger = yes
 		}
 	}
 
-	leader_weight = { #For now, the same as Market Liberal
+	interest_group_leader_weight = { #For now, same as Market Liberal
 		value = 100
 		# more likely for industrialists
 		if = {
 			limit = {
-				scope:interest_group = {
-					is_interest_group_type = ig_industrialists
-				}
+				is_interest_group_type = ig_industrialists
 			}
 			add = 50
 		}
 		# more likely for intelligentsia, industrialists, and PB with traditional economic laws
 		if = {
 			limit = {
-				scope:interest_group = {
-					OR = {
-						is_interest_group_type = ig_petty_bourgeoisie
-						is_interest_group_type = ig_intelligentsia
-						is_interest_group_type = ig_industrialists
-					}
+				OR = {
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_intelligentsia
+					is_interest_group_type = ig_industrialists
 				}
 				owner = {
 					OR = {
@@ -108,16 +93,15 @@
 					}
 				}
 			}
-			add = 75
+			add = 50
 		}
 		# more likely for weaker landowers when industrialists are powerful
 		if = {
 			limit = {
-				scope:interest_group = {
-					is_interest_group_type = ig_landowners
-					is_powerful = no
-				}
+				is_interest_group_type = ig_landowners
+				is_powerful = no
 				owner = {
+					exists = ig:ig_industrialists
 					ig:ig_industrialists = {
 						is_powerful = yes
 					}
@@ -128,10 +112,8 @@
 		# less likely for powerful landowners under traditional laws
 		if = {
 			limit = {
-				scope:interest_group = {
-					is_interest_group_type = ig_landowners
-					is_powerful = yes
-				}
+				is_interest_group_type = ig_landowners
+				is_powerful = yes
 				owner = {
 					OR = {
 						has_law = law_type:law_agrarianism
@@ -157,7 +139,70 @@
 			}
 			add = -150
 		}
+		# Less likely for unrecognized countries
+		if = {
+			limit = {
+				owner = {
+					is_country_type = unrecognized
+				}
+			}
+			add = -50
+		}
+		# More likely for GP's
+		if = {
+			limit = {
+				owner = {
+					country_rank = rank_value:great_power
+				}
+			}
+			add = 25
+		}
+		# Less likely if issues are not relevant
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_free_trade
+					has_law = law_type:law_laissez_faire
+					has_law = law_type:law_commercialized_agriculture
+				}
+			}
+			add = -75
+		}
+		if = {
+			limit = {
+				OR = {
+					has_variable = communist_ig_var
+					has_variable = chose_vanguardism
+					has_variable = chose_anarchism
+					has_variable = chose_communism
+					has_variable = chose_ethno_nationalism
+					has_variable = chose_conservatism
+					has_variable = chose_fascism
+				}
+			}
+			multiply = 0.1
+		}
 	}
+	
+	non_interest_group_leader_weight = {
+		value = 100
+		if = {
+			limit = {
+				interest_group = {
+					OR = {
+						has_variable = communist_ig_var
+						has_variable = chose_vanguardism
+						has_variable = chose_anarchism
+						has_variable = chose_communism
+						has_variable = chose_ethno_nationalism
+						has_variable = chose_conservatism
+						has_variable = chose_fascism
+					}
+				}
+			}
+			multiply = 0.1
+		}
+	}	
 }
 
 ideology_leader_xenophile = {
@@ -184,11 +229,16 @@ ideology_leader_xenophile = {
 		law_migration_controls = disapprove
 		law_closed_borders = strongly_disapprove
 	}
+	
+	country_trigger = {
+		has_technology_researched = human_rights
+	}
 
-	possible = {
-		owner = {
-			has_technology_researched = human_rights
-		}
+	interest_group_leader_trigger = {
+		ideology_xenophile_valid_trigger = yes
+	}
+	
+	non_interest_group_leader_trigger = {
 		# Agitator ideologies should disapprove of a current law
 		NAND = {
 			has_role = agitator
@@ -198,92 +248,50 @@ ideology_leader_xenophile = {
 				has_law = law_type:law_no_migration_controls
 			}
 		}
-		scope:interest_group = {
-			NOT = {
-				is_interest_group_type = ig_petty_bourgeoisie
-				is_interest_group_type = ig_landowners
-				is_interest_group_type = ig_armed_forces
-			}
-		}
-		scope:interest_group = {
-			NOR = {
-				has_variable = chose_vanguardism
-				has_variable = chose_communism
-				has_variable = chose_anarchism
-				has_variable = communist_ig_var
-				has_variable = chose_fascism
-				has_variable = chose_conservatism
-				has_variable = chose_ethno_nationalism
-			}
+		interest_group = {
+			ideology_xenophile_valid_trigger = yes
 		}
 	}
 	
-	leader_weight = {
+	interest_group_leader_weight = {
 		value = 100
-	}
-}
-
-ideology_leader_loyalist = {
-	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_loyalist.dds"
-	
-	character_ideology = yes
-	
-	lawgroup_taxation = {
-		law_per_capita_based_taxation = approve
-		law_proportional_taxation = strongly_approve
-		law_graduated_taxation = approve
-		law_land_based_taxation = neutral
-		law_consumption_based_taxation = disapprove
-	}
-	
-	lawgroup_internal_security = {
-		law_no_home_affairs = strongly_disapprove
-		law_guaranteed_liberties = neutral
-		law_national_guard = neutral
-		law_secret_police = neutral
-	}
-	
-	possible = {
-		# Agitator ideologies should disapprove of a current law
-		NAND = {
-			has_role = agitator
-			owner = {
-				has_law = law_type:law_proportional_taxation
-				NOT = { has_law = law_type:law_no_home_affairs }
-			}
-		}
-		scope:interest_group = {
-			NOT = {
-				is_interest_group_type = ig_petty_bourgeoisie
-				is_interest_group_type = ig_armed_forces
-			}
-		}
-		scope:interest_group = {
-			NOR = {
-				has_variable = chose_vanguardism
-				has_variable = chose_communism
-				has_variable = chose_anarchism
-				has_variable = communist_ig_var
-				has_variable = chose_fascism
-				has_variable = chose_conservatism
-				has_variable = chose_ethno_nationalism
-			}
-		}
-		always = no #Disabled pending a purpose found now that Land Reformer has the tax stance
-	}
-	
-	leader_weight = {
-		value = 0
-		# less likely if not in government
 		if = {
 			limit = {
-				scope:interest_group = {
-					is_in_government = no
+				interest_group = {
+					OR = {
+						has_variable = communist_ig_var
+						has_variable = chose_vanguardism
+						has_variable = chose_anarchism
+						has_variable = chose_communism
+						has_variable = chose_ethno_nationalism
+						has_variable = chose_conservatism
+						has_variable = chose_fascism
+					}
 				}
 			}
-			add = -50
+			multiply = 0.1
 		}
-	}
+	}	
+	
+	non_interest_group_leader_weight = {
+		value = 100
+		if = {
+			limit = {
+				interest_group = {
+					OR = {
+						has_variable = communist_ig_var
+						has_variable = chose_vanguardism
+						has_variable = chose_anarchism
+						has_variable = chose_communism
+						has_variable = chose_ethno_nationalism
+						has_variable = chose_conservatism
+						has_variable = chose_fascism
+					}
+				}
+			}
+			multiply = 0.1
+		}
+	}	
 }
 
 ideology_environmentalist = {
@@ -307,25 +315,66 @@ ideology_environmentalist = {
 		law_public_health_insurance = approve
 	}
 	
-	possible = {
-		always = no #For now
-		
-		scope:interest_group = {
-			NOR = {
-				has_variable = chose_vanguardism
-				has_variable = chose_communism
-				has_variable = chose_anarchism
-				has_variable = communist_ig_var
-				has_variable = chose_fascism
-				has_variable = chose_conservatism
-				has_variable = chose_ethno_nationalism
+	country_trigger = {
+		has_technology_researched = environmentalism
+	}
+
+	interest_group_leader_trigger = {
+		ideology_environmentalist_valid_trigger = yes
+	}
+	
+	non_interest_group_leader_trigger = {
+		# Agitator ideologies should disapprove of a current law
+		NAND = {
+			has_role = agitator
+			owner = {
+				has_law = law_type:law_public_health_insurance
 			}
+		}
+		interest_group = {
+			ideology_environmentalist_valid_trigger = yes
 		}
 	}
 	
-	leader_weight = {
-		value = 0
-	}
+	interest_group_leader_weight = {
+		value = 100
+		if = {
+			limit = {
+				interest_group = {
+					OR = {
+						has_variable = communist_ig_var
+						has_variable = chose_vanguardism
+						has_variable = chose_anarchism
+						has_variable = chose_communism
+						has_variable = chose_ethno_nationalism
+						has_variable = chose_conservatism
+						has_variable = chose_fascism
+					}
+				}
+			}
+			multiply = 0.1
+		}
+	}	
+	
+	non_interest_group_leader_weight = {
+		value = 100
+		if = {
+			limit = {
+				interest_group = {
+					OR = {
+						has_variable = communist_ig_var
+						has_variable = chose_vanguardism
+						has_variable = chose_anarchism
+						has_variable = chose_communism
+						has_variable = chose_ethno_nationalism
+						has_variable = chose_conservatism
+						has_variable = chose_fascism
+					}
+				}
+			}
+			multiply = 0.1
+		}
+	}	
 }
 
 ideology_nimby = {
@@ -348,30 +397,67 @@ ideology_nimby = {
 		law_private_health_insurance = approve
 	}
 	
-	possible = {
-		always = no #For now
-		
-		scope:interest_group = {
-			NOT = {
-				is_interest_group_type = ig_industrialists
+	country_trigger = {
+		has_technology_researched = environmentalism
+	}
+
+	interest_group_leader_trigger = {
+		ideology_nimby_valid_trigger = yes
+	}
+	
+	non_interest_group_leader_trigger = {
+		# Agitator ideologies should disapprove of a current law
+		NAND = {
+			has_role = agitator
+			owner = {
+				has_law = law_type:law_public_health_insurance
+				has_law = law_type:law_migration_controls
 			}
 		}
-		scope:interest_group = {
-			NOR = {
-				has_variable = chose_vanguardism
-				has_variable = chose_communism
-				has_variable = chose_anarchism
-				has_variable = communist_ig_var
-				has_variable = chose_fascism
-				has_variable = chose_conservatism
-				has_variable = chose_ethno_nationalism
-			}
+		interest_group = {
+			ideology_nimby_valid_trigger = yes
 		}
 	}
 	
-	leader_weight = {
-		value = 0
-	}
+	interest_group_leader_weight = {
+		value = 100
+		if = {
+			limit = {
+				interest_group = {
+					OR = {
+						has_variable = communist_ig_var
+						has_variable = chose_vanguardism
+						has_variable = chose_anarchism
+						has_variable = chose_communism
+						has_variable = chose_ethno_nationalism
+						has_variable = chose_conservatism
+						has_variable = chose_fascism
+					}
+				}
+			}
+			multiply = 0.1
+		}
+	}	
+	
+	non_interest_group_leader_weight = {
+		value = 100
+		if = {
+			limit = {
+				interest_group = {
+					OR = {
+						has_variable = communist_ig_var
+						has_variable = chose_vanguardism
+						has_variable = chose_anarchism
+						has_variable = chose_communism
+						has_variable = chose_ethno_nationalism
+						has_variable = chose_conservatism
+						has_variable = chose_fascism
+					}
+				}
+			}
+			multiply = 0.1
+		}
+	}	
 }
 
 #Guruist Elements
@@ -402,28 +488,57 @@ ideology_wood_element = {
 		law_free_trade = strongly_disapprove
 	}
 	
-	possible = {
-		always = no #For now
+	country_trigger = {
+		country_has_state_religion = rel:sahasrara
+	}
+
+	interest_group_leader_trigger = {
 		
-		owner = {
-			country_has_state_religion = rel:sahasrara
-		}
-		scope:interest_group = {
-			NOR = {
-				has_variable = chose_vanguardism
-				has_variable = chose_communism
-				has_variable = chose_anarchism
-				has_variable = communist_ig_var
-				has_variable = chose_fascism
-				has_variable = chose_conservatism
-				has_variable = chose_ethno_nationalism
-			}
-		}
 	}
 	
-	leader_weight = {
-		value = 0
+	non_interest_group_leader_trigger = {
+		
 	}
+	
+	interest_group_leader_weight = {
+		value = 100
+		if = {
+			limit = {
+				interest_group = {
+					OR = {
+						has_variable = communist_ig_var
+						has_variable = chose_vanguardism
+						has_variable = chose_anarchism
+						has_variable = chose_communism
+						has_variable = chose_ethno_nationalism
+						has_variable = chose_conservatism
+						has_variable = chose_fascism
+					}
+				}
+			}
+			multiply = 0.1
+		}
+	}	
+	
+	non_interest_group_leader_weight = {
+		value = 100
+		if = {
+			limit = {
+				interest_group = {
+					OR = {
+						has_variable = communist_ig_var
+						has_variable = chose_vanguardism
+						has_variable = chose_anarchism
+						has_variable = chose_communism
+						has_variable = chose_ethno_nationalism
+						has_variable = chose_conservatism
+						has_variable = chose_fascism
+					}
+				}
+			}
+			multiply = 0.1
+		}
+	}	
 }
 
 ideology_mountain_element = {
@@ -451,28 +566,57 @@ ideology_mountain_element = {
 		law_free_trade = strongly_disapprove
 	}
 	
-	possible = {
-		always = no #For now
+	country_trigger = {
+		country_has_state_religion = rel:sahasrara
+	}
+
+	interest_group_leader_trigger = {
 		
-		owner = {
-			country_has_state_religion = rel:sahasrara
-		}
-		scope:interest_group = {
-			NOR = {
-				has_variable = chose_vanguardism
-				has_variable = chose_communism
-				has_variable = chose_anarchism
-				has_variable = communist_ig_var
-				has_variable = chose_fascism
-				has_variable = chose_conservatism
-				has_variable = chose_ethno_nationalism
-			}
-		}
 	}
 	
-	leader_weight = {
-		value = 0
+	non_interest_group_leader_trigger = {
+		
 	}
+	
+	interest_group_leader_weight = {
+		value = 100
+		if = {
+			limit = {
+				interest_group = {
+					OR = {
+						has_variable = communist_ig_var
+						has_variable = chose_vanguardism
+						has_variable = chose_anarchism
+						has_variable = chose_communism
+						has_variable = chose_ethno_nationalism
+						has_variable = chose_conservatism
+						has_variable = chose_fascism
+					}
+				}
+			}
+			multiply = 0.1
+		}
+	}	
+	
+	non_interest_group_leader_weight = {
+		value = 100
+		if = {
+			limit = {
+				interest_group = {
+					OR = {
+						has_variable = communist_ig_var
+						has_variable = chose_vanguardism
+						has_variable = chose_anarchism
+						has_variable = chose_communism
+						has_variable = chose_ethno_nationalism
+						has_variable = chose_conservatism
+						has_variable = chose_fascism
+					}
+				}
+			}
+			multiply = 0.1
+		}
+	}	
 }
 
 ideology_star_element = {
@@ -500,28 +644,57 @@ ideology_star_element = {
 		law_peasant_levies = disapprove
 	}
 	
-	possible = {
-		always = no #For now
+	country_trigger = {
+		country_has_state_religion = rel:sahasrara
+	}
+
+	interest_group_leader_trigger = {
 		
-		owner = {
-			country_has_state_religion = rel:sahasrara
-		}
-		scope:interest_group = {
-			NOR = {
-				has_variable = chose_vanguardism
-				has_variable = chose_communism
-				has_variable = chose_anarchism
-				has_variable = communist_ig_var
-				has_variable = chose_fascism
-				has_variable = chose_conservatism
-				has_variable = chose_ethno_nationalism
-			}
-		}
 	}
 	
-	leader_weight = {
-		value = 0
+	non_interest_group_leader_trigger = {
+		
 	}
+	
+	interest_group_leader_weight = {
+		value = 100
+		if = {
+			limit = {
+				interest_group = {
+					OR = {
+						has_variable = communist_ig_var
+						has_variable = chose_vanguardism
+						has_variable = chose_anarchism
+						has_variable = chose_communism
+						has_variable = chose_ethno_nationalism
+						has_variable = chose_conservatism
+						has_variable = chose_fascism
+					}
+				}
+			}
+			multiply = 0.1
+		}
+	}	
+	
+	non_interest_group_leader_weight = {
+		value = 100
+		if = {
+			limit = {
+				interest_group = {
+					OR = {
+						has_variable = communist_ig_var
+						has_variable = chose_vanguardism
+						has_variable = chose_anarchism
+						has_variable = chose_communism
+						has_variable = chose_ethno_nationalism
+						has_variable = chose_conservatism
+						has_variable = chose_fascism
+					}
+				}
+			}
+			multiply = 0.1
+		}
+	}	
 }
 
 ideology_water_element = {
@@ -550,28 +723,57 @@ ideology_water_element = {
 		law_consumption_based_taxation = disapprove
 	}
 	
-	possible = {
-		always = no #For now
+	country_trigger = {
+		country_has_state_religion = rel:sahasrara
+	}
+
+	interest_group_leader_trigger = {
 		
-		owner = {
-			country_has_state_religion = rel:sahasrara
-		}
-		scope:interest_group = {
-			NOR = {
-				has_variable = chose_vanguardism
-				has_variable = chose_communism
-				has_variable = chose_anarchism
-				has_variable = communist_ig_var
-				has_variable = chose_fascism
-				has_variable = chose_conservatism
-				has_variable = chose_ethno_nationalism
-			}
-		}
 	}
 	
-	leader_weight = {
-		value = 0
+	non_interest_group_leader_trigger = {
+		
 	}
+	
+	interest_group_leader_weight = {
+		value = 100
+		if = {
+			limit = {
+				interest_group = {
+					OR = {
+						has_variable = communist_ig_var
+						has_variable = chose_vanguardism
+						has_variable = chose_anarchism
+						has_variable = chose_communism
+						has_variable = chose_ethno_nationalism
+						has_variable = chose_conservatism
+						has_variable = chose_fascism
+					}
+				}
+			}
+			multiply = 0.1
+		}
+	}	
+	
+	non_interest_group_leader_weight = {
+		value = 100
+		if = {
+			limit = {
+				interest_group = {
+					OR = {
+						has_variable = communist_ig_var
+						has_variable = chose_vanguardism
+						has_variable = chose_anarchism
+						has_variable = chose_communism
+						has_variable = chose_ethno_nationalism
+						has_variable = chose_conservatism
+						has_variable = chose_fascism
+					}
+				}
+			}
+			multiply = 0.1
+		}
+	}	
 }
 
 ideology_gold_element = {
@@ -602,26 +804,55 @@ ideology_gold_element = {
 		law_peasant_levies = disapprove
 	}
 	
-	possible = {
-		always = no #For now
+	country_trigger = {
+		country_has_state_religion = rel:sahasrara
+	}
+
+	interest_group_leader_trigger = {
 		
-		owner = {
-			country_has_state_religion = rel:sahasrara
-		}
-		scope:interest_group = {
-			NOR = {
-				has_variable = chose_vanguardism
-				has_variable = chose_communism
-				has_variable = chose_anarchism
-				has_variable = communist_ig_var
-				has_variable = chose_fascism
-				has_variable = chose_conservatism
-				has_variable = chose_ethno_nationalism
-			}
-		}
 	}
 	
-	leader_weight = {
-		value = 0
+	non_interest_group_leader_trigger = {
+		
 	}
+	
+	interest_group_leader_weight = {
+		value = 100
+		if = {
+			limit = {
+				interest_group = {
+					OR = {
+						has_variable = communist_ig_var
+						has_variable = chose_vanguardism
+						has_variable = chose_anarchism
+						has_variable = chose_communism
+						has_variable = chose_ethno_nationalism
+						has_variable = chose_conservatism
+						has_variable = chose_fascism
+					}
+				}
+			}
+			multiply = 0.1
+		}
+	}	
+	
+	non_interest_group_leader_weight = {
+		value = 100
+		if = {
+			limit = {
+				interest_group = {
+					OR = {
+						has_variable = communist_ig_var
+						has_variable = chose_vanguardism
+						has_variable = chose_anarchism
+						has_variable = chose_communism
+						has_variable = chose_ethno_nationalism
+						has_variable = chose_conservatism
+						has_variable = chose_fascism
+					}
+				}
+			}
+			multiply = 0.1
+		}
+	}	
 }

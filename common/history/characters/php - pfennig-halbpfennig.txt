@@ -15,7 +15,7 @@
 		create_character = {
 			first_name = "Ernest"
 			last_name = "Dummkopf"
-			agitator = yes
+			is_agitator = yes
 			interest_group = ig_intelligentsia
 			ideology = ideology_radical
 			traits = {

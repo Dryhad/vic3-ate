@@ -1,0 +1,112 @@
+﻿BUILDINGS= {
+	s:STATE_BIHAR= {
+	}
+	s:STATE_WEST_BENGAL= {
+	}
+	s:STATE_EAST_BENGAL= {
+	}
+	s:STATE_ASSAM= {
+	}
+	s:STATE_DELHI= {
+	}
+	s:STATE_AWADH= {
+	}
+	s:STATE_AGRA= {
+		region_state:GAR = {
+			create_building = {
+				building = "building_taj_mahal"
+				level=1
+			}
+		}
+	}
+	s:STATE_GUJARAT= {
+	}
+	s:STATE_BUNDELKHAND= {
+	}
+	s:STATE_MALWA= {
+	}
+	s:STATE_KASHMIR= {
+	}
+	s:STATE_PUNJAB= {
+	}
+	s:STATE_HILL_PUNJAB= {
+	}
+	s:STATE_CENTRAL_PROVINCES= {
+	}
+	s:STATE_SINDH= {
+	}
+	s:STATE_RAJPUTANA= {
+	}
+	s:STATE_CEYLON= {
+	}
+	s:STATE_INDIAN_OCEAN_TERRITORY= {
+		#region_state:FRA= {
+		#	create_building = {
+		#		building = "building_sugar_plantation"
+		#		add_ownership = {
+		#			building = {
+		#				type = "building_manor_house"
+		#				country = "c:FRA"
+		#				levels = 2
+		#				region = "STATE_ILE_DE_FRANCE"
+		#			}
+		#		}
+		#		reserves = 1
+		#		activate_production_methods = { "default_building_sugar_plantation" "pm_road_carts" }
+		#	}
+		#	create_building = {
+		#		building = "building_port"
+		#		add_ownership = {
+		#			country= {
+		#				country = "c:FRA"
+		#				levels = 1
+		#			}
+		#		}
+		#		reserves = 1
+		#		activate_production_methods = { "pm_anchorage" }
+		#	}
+		#}
+		#region_state:GBR= {
+		#	create_building = {
+		#		building = "building_sugar_plantation"
+		#		add_ownership = {
+		#			building = {
+		#				type = "building_manor_house"
+		#				country = "c:GBR"
+		#				levels = 1
+		#				region = "STATE_HOME_COUNTIES"
+		#			}
+		#		}
+		#		reserves = 1
+		#		activate_production_methods = { "default_building_sugar_plantation" "pm_road_carts" }
+		#	}
+		#	create_building = {
+		#		building = "building_port"
+		#		add_ownership = {
+		#			country= {
+		#				country = "c:GBR"
+		#				levels = 1
+		#			}
+		#		}
+		#		reserves = 1
+		#		activate_production_methods = { "pm_anchorage" }
+		#	}
+		#}
+	}
+	s:STATE_ORISSA= {
+	}
+	s:STATE_CIRCARS= {
+	}
+	s:STATE_MYSORE= {
+	}
+	s:STATE_TRAVANCORE= {
+	}
+	s:STATE_MADRAS= {
+	}
+	s:STATE_KURNOOL = {
+	}
+	s:STATE_HYDERABAD= {
+	}
+	s:STATE_BOMBAY= {
+	}
+}

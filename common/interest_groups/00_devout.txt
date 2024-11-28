@@ -9,6 +9,11 @@
 		ideology_moralist
 		ideology_patriarchal
 	}
+	
+	character_ideologies = {
+		ideology_moderate
+		ideology_traditionalist
+	}
 
 	enable = {
 		always = yes
@@ -40,6 +45,7 @@
 							country_has_state_religion = rel:hindu
 							country_has_state_religion = rel:mahayana
 							country_has_state_religion = rel:theravada
+							country_has_state_religion = rel:confucian
 						}
 					}
 				}
@@ -54,7 +60,7 @@
 					}
 				}
 				set_ig_trait = ig_trait:ig_trait_pious_fiction
-				set_ig_trait = ig_trait:ig_trait_khalsa
+				set_ig_trait = ig_trait:ig_trait_rehat
 				set_ig_trait = ig_trait:ig_trait_kar_seva
 			}
 			else_if = {
@@ -119,7 +125,7 @@
 		### Specific
 
 		# Confucian Scholars
-		else_if = {
+		if = {
 			limit = {
 				country_has_state_religion = rel:confucian
 			}
@@ -1001,7 +1007,10 @@
 	}
 
 	pop_weight = {
-		value = 25
+		add = {
+			desc = "POP_BASE_ATTRACTION"
+			value = 25
+		}
 
 		add = {
 			desc = "POP_CLERGYMEN"
@@ -1332,15 +1341,6 @@
 	# scope:character is the most popular commander in the IG
 	commander_leader_chance = {
 		value = 0.25
-		if = {
-			limit = {
-				exists = scope:character
-			}
-			multiply = {
-				value = 1
-				add = scope:character.popularity
-				min = 0
-			}
-		}
+		multiply = ig_commander_leader_chance_mult
 	}
 }

@@ -27,5 +27,10 @@
 				child
 			}
 		}
+		create_character = {
+			ig_leader = yes
+			interest_group = ig_rural_folk
+			ideology = ideology_traditionalist_minoritarian
+		}
 	}
 }
