@@ -11,6 +11,7 @@
 		law_command_economy = strongly_disapprove
 		law_cooperative_ownership = strongly_disapprove
 		law_industry_banned = strongly_disapprove
+		law_extraction_economy = strongly_disapprove
 	}
 	
 	lawgroup_welfare = {
@@ -220,6 +221,7 @@ ideology_leader_xenophile = {
 	
 	lawgroup_colonization = {
 		law_no_colonial_affairs = neutral
+		law_frontier_colonization = strongly_disapprove
 		law_colonial_resettlement = strongly_disapprove
 		law_colonial_exploitation = strongly_disapprove
 	}

@@ -68,7 +68,7 @@ NYS = {
 	country_type = recognized
 	
 	cultures = { gothamite }
-	religion = jewish
+	#religion = jewish
 	
 	capital = STATE_NEW_YORK
 }

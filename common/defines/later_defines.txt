@@ -8,5 +8,7 @@ NPolitics = {
 }
 
 NPops = {
-	LOYALTIES_GAIN_GRACE_PERIOD = "3438.1.1"
+	LOYALTIES_GAIN_GRACE_PERIOD_SHORT = "3437.1.1"		# Until this date, only a scaling part of the Radicals and Loyalists gained from SOL changes will be applied if the Short game rule is applied
+	LOYALTIES_GAIN_GRACE_PERIOD_LONG = "3441.1.1"		# Until this date, only a scaling part of the Radicals and Loyalists gained from SOL changes will be applied if the Long game rule is applied
+	LOYALTIES_GAIN_GRACE_PERIOD_EXTRA_LONG = "3446.1.1"	# Until this date, only a scaling part of the Radicals and Loyalists gained from SOL changes will be applied if the Extra Long game rule is applied
 }

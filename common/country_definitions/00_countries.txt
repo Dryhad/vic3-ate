@@ -4588,7 +4588,7 @@ COO = { # Cooch Behar
 
 SHS = { # Shan
 	color = { 204 229 255 }
-	country_type = unrecognized
+	country_type = decentralized
 
 	tier = principality
 	

@@ -1,0 +1,34 @@
+﻿default_social_hierarchy = {
+	is_default = yes
+}
+
+british_indian_caste_system = {
+	pop_criteria = {
+		always = no
+		custom_tooltip = {
+			text = british_indian_caste_system_trigger_desc
+			has_pop_religion = hindu
+			culture = {
+				has_discrimination_trait = south_asian_heritage
+			}
+		}
+	}
+}
+
+slavery_dummy = {
+	pop_criteria = {
+		always = no
+	}
+}
+
+test_hierarchy = {
+	pop_criteria = {
+		always = yes
+	}
+}
+
+chromatic_hierarchy = {
+	pop_criteria = {
+		always = yes #For now
+	}
+}

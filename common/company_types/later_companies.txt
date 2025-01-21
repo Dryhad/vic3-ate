@@ -26,7 +26,7 @@ company_daves_grapes = {
 	}
 	
 	prosperity_modifier = {
-		state_loyalists_from_sol_change_mult = 0.1
+		state_loyalists_from_political_movements_mult = 0.1
 	}	
 	
 	ai_weight = {
@@ -70,12 +70,21 @@ company_daves_lumber = {
 	}
 }
 
-#Global News Network
-company_gnn = {
+#Generic Media Company
+company_basic_media = {
 	icon = "gfx/interface/icons/company_icons/custom_companies_placeholder.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 	
-	flavored_company = yes
+	uses_dynamic_naming = yes
+	
+	dynamic_company_type_names = {
+		"dynamic_company_type_company"
+		"dynamic_company_type_consortium"
+		"dynamic_company_type_corporation"
+		"dynamic_company_type_conglomerate"
+		"dynamic_company_type_syndicate"
+		"dynamic_company_type_society"
+	}
 	
 	building_types = { 
 		building_arts_academy
@@ -99,10 +108,6 @@ company_gnn = {
 	prosperity_modifier = {
 		country_authority_mult = 0.1
 	}	
-	
-	ai_weight = {
-		value = 3 # Higher base value for flavored companies
-	}
 }
 
 #Early proof of concept in dev diary
@@ -562,7 +567,7 @@ company_delta_blues = {
 	}
 	
 	prosperity_modifier = {
-		state_loyalists_from_sol_change_mult = 0.1
+		state_loyalists_from_political_movements_mult = 0.1
 	}	
 	
 	ai_weight = {
@@ -1017,6 +1022,49 @@ company_portland_timber = {
 	
 	prosperity_modifier = {
 		building_construction_sector_throughput_add = 0.05
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#Packers', Salters', and Preservers' Guild
+company_packers_salters_preservers = {
+	icon = "gfx/interface/icons/company_icons/custom_companies_placeholder.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+	
+	flavored_company = yes
+	
+	building_types = { 
+		building_food_industry
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_new_england
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_NEW_YORK
+			}
+		}
+	}		
+	
+	possible = { 
+		any_scope_state = {
+			state_region = s:STATE_NEW_YORK
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_food_industry
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		country_trade_route_competitiveness_mult = 0.25
 	}	
 	
 	ai_weight = {

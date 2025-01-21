@@ -125,7 +125,7 @@ ideology_matriarchal = { #Gaian
 }
 
 ideology_consumerist_pious = {
-	icon = "gfx/interface/icons/ideology_icons/plutocratic.dds" #Replace
+	icon = "gfx/interface/icons/ideology_icons/malthusian.dds" #Replace
 	
 	lawgroup_health_system = {
 		law_charitable_health_system = approve

@@ -1,0 +1,127 @@
+﻿preps = {
+	social_hierarchy = test_hierarchy
+	strata = upper
+
+	allowed_professions = {
+		aristocrats
+		capitalists
+	}
+}
+
+jocks = {
+	social_hierarchy = test_hierarchy
+	strata = middle
+
+	allowed_professions = {
+		farmers
+		officers
+		shopkeepers
+		machinists
+	}
+}
+
+nerds = {
+	social_hierarchy = test_hierarchy
+	strata = lower
+
+	allowed_professions = {
+		academics
+		bureaucrats
+		clergymen
+		engineers
+		clerks
+	}
+}
+
+outcasts = {
+	social_hierarchy = test_hierarchy
+	strata = lower
+
+	allowed_professions = {
+		laborers
+		peasants
+		soldiers
+		slaves
+	}
+}
+
+purples = {
+	social_hierarchy = chromatic_hierarchy
+	strata = upper
+	
+	allowed_professions = {
+		aristocrats
+	}
+}
+
+blues = {
+	social_hierarchy = chromatic_hierarchy
+	strata = middle
+	
+	allowed_professions = {
+		academics
+		clerks
+		capitalists
+		shopkeepers
+	}
+	
+	pop_criteria = {
+		NOT = { pop_employment_building = building_arts_academy }
+	}
+}
+
+greens = {
+	social_hierarchy = chromatic_hierarchy
+	strata = middle
+	
+	allowed_professions = {
+		farmers
+	}
+}
+
+yellows = {
+	social_hierarchy = chromatic_hierarchy
+	strata = middle
+	
+	allowed_professions = {
+		officers
+		bureaucrats
+		clergymen
+	}
+}
+
+oranges = {
+	social_hierarchy = chromatic_hierarchy
+	strata = lower
+	
+	allowed_professions = {
+		academics
+		clerks
+	}
+	
+	pop_criteria = {
+		pop_employment_building = building_arts_academy
+	}
+}
+
+reds = {
+	social_hierarchy = chromatic_hierarchy
+	strata = lower
+	
+	allowed_professions = {
+		machinists
+		engineers
+	}
+}
+
+greys = {
+	social_hierarchy = chromatic_hierarchy
+	strata = lower
+	
+	allowed_professions = {
+		laborers
+		peasants
+		soldiers
+		slaves
+	}
+}

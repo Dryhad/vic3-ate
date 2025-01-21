@@ -7,8 +7,8 @@
 			ruler = yes
 			culture = cu:gothamite
 			religion = r:jewish
-			age = 43
-			interest_group = ig_devout
+			#age = 43
+			interest_group = ig_intelligentsia
 			ideology = ideology_moderate #for now
 			traits = {
 			
@@ -19,7 +19,7 @@
 			last_name = "Wayne"
 			ig_leader = yes
 			culture = cu:gothamite
-			age = 43
+			#age = 43
 			interest_group = ig_armed_forces
 			ideology = ideology_moderate #for now
 			traits = {
@@ -31,7 +31,7 @@
 			last_name = "Coeur"
 			ig_leader = yes
 			culture = cu:gothamite
-			age = 43
+			#age = 43
 			interest_group = ig_petty_bourgeoise
 			ideology = ideology_moderate #for now
 			traits = {
@@ -43,11 +43,33 @@
 			last_name = "Amos"
 			ig_leader = yes
 			culture = cu:gothamite
-			age = 43
+			#age = 43
 			interest_group = ig_industrialists
 			ideology = ideology_moderate #for now
 			traits = {
 			
+			}
+		}
+		create_character = {
+			first_name = Robert
+			last_name = Livingston
+			ig_leader = yes
+			culture = cu:gothamite
+			interest_group = ig_devout
+			ideology = ideology_liberal_leader
+			traits = {
+				experienced_diplomat
+			}
+		}
+		create_character = {
+			first_name = Lewis
+			last_name = Morris
+			ig_leader = yes
+			culture = cu:gothamite
+			interest_group = ig_landowners
+			ideology = ideology_liberal_leader
+			traits = {
+				reserved #New York courteously abstains
 			}
 		}
 	}

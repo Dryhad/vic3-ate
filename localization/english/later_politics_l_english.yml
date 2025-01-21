@@ -170,14 +170,6 @@
  law_privatised_military:0 "Privatized Military"
  law_privatised_military_desc:0 "The army depends on privately operated mercenaries for the majority of its forces."
  
- ig_purple: "Purples"
- ig_blue: "Blues"
- ig_green: "Greens"
- ig_yellow: "Yellows"
- ig_orange: "Oranges"
- ig_red: "Reds"
- ig_national_colour: "National Colour"
- 
  ig_ahotti: "Ahotti"
  ig_ahotti_desc: "Literally translating to 'Our People,' the Ahotti faction advocates traditional values and isolationism."
  ig_iltan: "Iltan"
@@ -247,3 +239,32 @@
  party_workers_league: "Workers' League"
  
  pmg_base_building_machu_picchu: "Base"
+ 
+ test_hierarchy: "Some Hierarchy"
+ 
+ preps: "Preps"
+ preps_desc: "The posh and wealthy, who enjoy purchased social status and advantages."
+ jocks: "Jocks"
+ jocks_desc: "The physically strong and others who make their way with brawn before brains."
+ nerds: "Nerds"
+ nerds_desc: "Bookworms, mathematics enthusiasts, and others who engage in intellectual pursuits."
+ outcasts: "Outcasts"
+ outcasts_desc: "Just plain weird, nobody can explain why."
+ 
+ chromatic_hierarchy: "Chromatic Hierarchy"
+ chromatic_hierarchy_desc: "A society organised by color, with purple at the top, down to greys at the very bottom."
+ 
+ purples: "Purples"
+ purples_desc: "Those who can see purple are afforded significant privileges, positions of power, and respect."
+ blues: "Blues"
+ blues_desc: "Those who can see blue traditionally serve educational and informational roles."
+ greens: "Greens"
+ greens_desc: "Those who can see green are primarily tasked with cultivating the food that feeds the collective."
+ yellows: "Yellows"
+ yellows_desc: "Those who can see yellow are given the role of enforcing The Rules. This tends to make them unpopular with other shades."
+ oranges: "Oranges"
+ oranges_desc: "Those who can see orange serve as artists and entertainers."
+ reds: "Reds"
+ reds_desc: "Those who can see red primarily engage in skilled trades and other physical work."
+ greys: "Greys"
+ greys_desc: "Those who cannot see much of any color are limited to menial manual labor with little prospect of advancement."

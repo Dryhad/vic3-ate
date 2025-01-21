@@ -30,6 +30,31 @@
     }   
 }
 
+nys_frank_white_character_template = {
+	first_name = Frank
+	last_name = White
+	culture = cu:gothamite
+	female = no
+	ideology = ideology_royalist
+	interest_group = ig_petty_bourgeoisie
+	traits = {
+		ambitious
+		bandit
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			c:NYS ?= this
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_petty_bourgeoisie
+		}
+        earliest_usage_date = 3475.1.1
+        latest_usage_date = 3536.1.1
+        chance = 50
+	}
+}
+
 txk_benjamin_eleazar_character_template = {
 	first_name = Benjamin
 	last_name = Eleazar
