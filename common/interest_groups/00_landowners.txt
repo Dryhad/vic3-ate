@@ -30,7 +30,7 @@
 		ig:ig_landowners = {
 			if = {
 				limit = {
-					owner = { c:RUS ?= this}
+					owner = { c:NVR ?= this}
 				}
 				set_ig_trait = ig_trait:ig_trait_profitable_estates
 				set_ig_trait = ig_trait:ig_trait_the_velvet_book
@@ -80,9 +80,8 @@
 			else_if = {
 				limit = {
 					owner = {
-						OR = {
-							country_has_primary_culture = cu:yankee
-							country_has_primary_culture = cu:dixie
+						any_primary_culture = {
+							has_discrimination_trait = heritage_family_east_coast
 						}
 					}
 				}
@@ -129,7 +128,7 @@
 		# Gentry Assembly
 		else_if = {
 			limit = {
-				c:RUS ?= this
+				c:NVR ?= this
 			}
 			ig:ig_landowners = {
 				set_interest_group_name = ig_gentry_assembly
@@ -141,7 +140,7 @@
 				c:PAP ?= this
 			}
 			ig:ig_landowners = {
-				set_interest_group_name = ig_roman_landowners
+				#set_interest_group_name = ig_roman_landowners
 				remove_ideology = ideology_paternalistic
 				add_ideology = ideology_papal_paternalistic
 			}
@@ -203,23 +202,6 @@
 				set_interest_group_name = ig_aristocracy_of_officials
 			}
 		}
-		# Southern Planters
-		else_if = {
-			limit = {
-				OR = {
-					AND = {
-						c:USA ?= this
-						NOT = { exists = c:CSA }
-					}
-					country_has_primary_culture = cu:dixie
-				}
-			}
-			ig:ig_landowners = {
-				set_interest_group_name = ig_southern_planters
-				remove_ideology = ideology_paternalistic
-				add_ideology = ideology_republican_paternalistic
-			}
-		}
 		# Caudillo Ideology
 		else_if = {
 			limit = {
@@ -240,7 +222,6 @@
 				add_ideology = ideology_caudillismo
 			}
 		}
-		#TODO: Republican Paternalistic for historic republics (Taiwan especially)
 		else_if = {
 			limit = {
 				country_has_state_religion = rel:zetanology
@@ -269,6 +250,35 @@
 				remove_ideology = ideology_paternalistic
 				add_ideology = ideology_republican_paternalistic
 				add_ideology = ideology_isolationist
+			}
+		}
+		#TODO: Republican Paternalistic for historic republics (Taiwan especially)
+		#Probably make a scripted trigger but for now we just do them one by one
+		else_if = {
+			limit = {
+				c:FRS ?= this
+			}
+			ig:ig_landowners = {
+				remove_ideology = ideology_paternalistic
+				add_ideology = ideology_republican_paternalistic
+			}
+		}
+		else_if = {
+			limit = {
+				c:REP ?= this
+			}
+			ig:ig_landowners = {
+				remove_ideology = ideology_paternalistic
+				add_ideology = ideology_republican_paternalistic
+			}
+		}
+		else_if = {
+			limit = {
+				c:NYS ?= this
+			}
+			ig:ig_landowners = {
+				remove_ideology = ideology_paternalistic
+				add_ideology = ideology_republican_paternalistic
 			}
 		}
 	}
@@ -468,12 +478,44 @@
 		value = 2.0
 	}
 
+	executive_weight = {
+		value = 0.25
+	}
+
 	noble_chance = {
 		value = 1.0
 	}
 
 	female_commander_chance = {
 		value = 0.0
+	}
+
+	female_executive_chance = {
+		value = 0.0
+
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_women_in_the_workplace
+				}
+
+			}
+			add = {
+				value = 0.01
+			}
+		}
+
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_womens_suffrage
+				}
+
+			}
+			add = {
+				value = 0.01
+			}
+		}
 	}
 
 	female_politician_chance = {
@@ -537,5 +579,11 @@
 	commander_leader_chance = {
 		value = 0.5
 		multiply = ig_commander_leader_chance_mult
+	}
+
+	# The chance that a executive belonging to this IG takes over leadership when it changes
+	# scope:character is the most popular executive in the IG
+	executive_leader_chance = {
+		value = 0.1
 	}
 }

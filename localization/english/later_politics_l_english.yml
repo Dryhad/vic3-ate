@@ -150,16 +150,18 @@
  ideology_gold_element: "Gold Disciple"
  ideology_gold_element_desc: "#lore More than an element, Gold is the refinement and combination of the others.#!"
  
- ideology_leader_capitalizt: "Capitalizt"
- ideology_leader_capitalizt_desc: "#lore This leader believes in a fully privatized society ruled by corporations.#!"
- ideology_leader_xenophile: "Xenophile"
- ideology_leader_xenophile_desc: "#lore This leader has a fondness for other cultures and wants to see them respected.#!"
+ ideology_capitalizt: "Capitalizt"
+ ideology_capitalizt_desc: "#lore This leader believes in a fully privatized society ruled by corporations.#!"
+ ideology_xenophile: "Xenophile"
+ ideology_xenophile_desc: "#lore This leader has a fondness for other cultures and wants to see them respected.#!"
  ideology_leader_loyalist: "Loyalist"
  ideology_leader_loyalist_desc: "#lore This leader believes each citizen should pay their dues to fund the vital functions of the state.#!"
  ideology_environmentalist: "Environmentalist"
  ideology_environmentalist_desc: "#lore This leader believes in protecting the natural environment from exploitation and neglect.#!"
  ideology_nimby: "Nimby"
  ideology_nimby_desc: "#lore This leader is all for cultural and industrial progress so long as it happens far away.#!"
+ ideology_education_reformer: "Education Reformer"
+ ideology_education_reformer_desc: "#lore This leader wishes to extend education to all citizens and opposes measure that would prevent this.#!"
  
  law_freedom_of_confession:0 "Freedom of Confession"
  law_freedom_of_conscience_desc:0 "The state has an official state religion but some degree of nonconformity in rites and teachings is tolerated."
@@ -237,6 +239,45 @@
  party_nimbus_party: "Nimbus Party"
  party_taharangi_party: "Taharangi Party"
  party_workers_league: "Workers' League"
+ 
+ #Green Party
+ party_green_party: "Green Party"
+ party_mountain_party: "Mountain Party" #West Virginia
+ party_survivalist_party: "Survivalist Party" #Ecotopia
+ 
+ #Faith Party
+ #Divina Patriota?
+ #Remembrant?
+ #Rasta?
+ #Orishan?
+ #Voodoo?
+ #Revelationist?
+ party_natural_law_party: "Natural Law Party" #Americanist, potentially also Hindu
+ #Consumerist?
+ #Galvanist?
+ #Atomicist?
+ #Modernist?
+ #Platinean?
+ party_glorian: "Glorian Party"
+ party_montagnard: "La Montagne" #Cult of reason
+ #Peyotist?
+ #Exovedate?
+ #Inti?
+ #Mesoamerican?
+ #Dreaming?
+ #Saharasa?
+ #Anahata?
+ #Gaian?
+ #Nousthreskia?
+ #Juventide?
+ 
+ #Other Parties
+ party_reform_party: "Reform Party" #Texarkana
+ party_cala: "CALA" #California Vanguardist
+ party_coastal_legislators_coalition: "Coastal Legislators Coalition" #Alaska
+ party_fusion_party: "Fusion Party" #Ohio, perhaps Australia?
+ party_aswpp: "ASWPP" #I hate the Illinois Nazis
+ party_pirate_party: "Pirate Party" #Various
  
  pmg_base_building_machu_picchu: "Base"
  

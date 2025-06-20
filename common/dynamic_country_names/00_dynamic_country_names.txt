@@ -10,112 +10,464 @@ DEFAULT = {
 	dynamic_country_name = {
 		name = csa_revolt_name
 		adjective = csa_revolt_name_adj
-		
+
 		is_revolutionary = yes
 		priority = 100
-		
+
 		trigger = {
 			exists = c:CSA
 			exists = c:USA
 			exists = scope:actor
-			scope:actor = {
+			scope:actor ?= {
 				this = c:CSA
 			}
 			c:USA = {
-				has_journal_entry = je_acw_war			
+				has_journal_entry = je_acw_war
 			}
 		}
 	}
 	dynamic_country_name = {
 		name = fsa_revolt_name
 		adjective = fsa_revolt_name_adj
-		
+
 		is_revolutionary = yes
 		priority = 100
-		
+
 		trigger = {
 			exists = c:FSA
 			exists = scope:actor
-			scope:actor = {
+			scope:actor ?= {
 				this = c:FSA
 			}
 			c:USA = {
-				has_journal_entry = je_acw_war			
-			}			
+				has_journal_entry = je_acw_war
+			}
 		}
 	}
+	# San Marco
+	dynamic_country_name = {
+		name = rsm_revolt_name
+		adjective = rsm_revolt_name_adj
+
+		is_revolutionary = yes
+		priority = 100
+
+		trigger = {
+			exists = c:RSM
+			scope:actor ?= {
+				c:RSM ?= this
+			}
+		}
+	}
+
 	# Important ideologies
+	dynamic_country_name = {
+		name = generic_revolt_anti_slavery
+		adjective = generic_revolt_anti_slavery_adj
+
+		is_revolutionary = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				is_secessionist = no
+				var:civil_war_type_var ?= movement_type:movement_anti_slavery
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = generic_revolt_pro_slavery
+		adjective = generic_revolt_pro_slavery_adj
+
+		is_revolutionary = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				is_secessionist = no
+				var:civil_war_type_var ?= movement_type:movement_pro_slavery
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = generic_revolt_absolutist
+		adjective = generic_revolt_absolutist_adj
+
+		is_revolutionary = yes
+		priority = 1000
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				is_secessionist = no
+				var:civil_war_type_var ?= movement_type:movement_royalist_absolutist
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = generic_revolt_royalist
+		adjective = generic_revolt_royalist_adj
+
+		is_revolutionary = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				is_secessionist = no
+				var:civil_war_type_var ?= movement_type:movement_royalist_constitutional
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = generic_revolt_labor
+		adjective = generic_revolt_labor_adj
+
+		is_revolutionary = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				is_secessionist = no
+				var:civil_war_type_var ?= movement_type:movement_labor
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = generic_revolt_socialist
+		adjective = generic_revolt_socialist_adj
+
+		is_revolutionary = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				is_secessionist = no
+				var:civil_war_type_var ?= movement_type:movement_socialist
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = generic_revolt_anarchist
+		adjective = generic_revolt_anarchist_adj
+
+		is_revolutionary = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				is_secessionist = no
+				var:civil_war_type_var ?= movement_type:movement_anarchist
+			}
+		}
+	}
 	dynamic_country_name = {
 		name = generic_revolt_communist
 		adjective = generic_revolt_communist_adj
-		
+
 		is_revolutionary = yes
-		priority = 0
-		
+		priority = 10
+
 		trigger = {
 			exists = scope:actor
-			scope:actor = {
+			scope:actor ?= {
 				is_secessionist = no
-				has_law = law_type:law_council_republic
-				any_interest_group = {
-					is_in_government = yes
-					is_strongest_ig_in_government = yes
-					leader = {
-						OR = {
-							has_ideology = ideology:ideology_communist
-							has_ideology = ideology:ideology_anarchist
-							has_ideology = ideology:ideology_vanguardist
-						}
-					}
-				}
+				var:civil_war_type_var ?= movement_type:movement_communist
 			}
 		}
 	}
 	dynamic_country_name = {
 		name = generic_revolt_fascist
 		adjective = generic_revolt_fascist_adj
-		
+
 		is_revolutionary = yes
-		priority = 0
-		
+		priority = 10
+
 		trigger = {
 			exists = scope:actor
-			scope:actor = {
+			scope:actor ?= {
 				is_secessionist = no
-				NOT = { has_law = law_type:law_council_republic }
-				any_interest_group = {
-					is_in_government = yes
-					is_strongest_ig_in_government = yes
-					leader = {
-						OR = {
-							has_ideology = ideology:ideology_integralist
-							has_ideology = ideology:ideology_fascist
-							has_ideology = ideology:ideology_ethno_nationalist
-						}
-					}
-				}
+				var:civil_war_type_var ?= movement_type:movement_fascist
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = generic_revolt_corporatist
+		adjective = generic_revolt_corporatist_adj
+
+		is_revolutionary = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				is_secessionist = no
+				var:civil_war_type_var ?= movement_type:movement_corporatist
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = generic_revolt_liberal
+		adjective = generic_revolt_liberal_adj
+
+		is_revolutionary = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				is_secessionist = no
+				var:civil_war_type_var ?= movement_type:movement_liberal
 			}
 		}
 	}
 	dynamic_country_name = {
 		name = generic_revolt_radical
 		adjective = generic_revolt_radical_adj
-		
+
 		is_revolutionary = yes
-		priority = 0
-		
+		priority = 10
+
 		trigger = {
 			exists = scope:actor
-			scope:actor = {
+			scope:actor ?= {
 				is_secessionist = no
-				NOT = { has_law = law_type:law_council_republic }
-				any_interest_group = {
-					is_in_government = yes
-					is_strongest_ig_in_government = yes
-					leader = {
-						has_ideology = ideology:ideology_radical
-					}
-				}
+				var:civil_war_type_var ?= movement_type:movement_radical
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = generic_revolt_nihilist
+		adjective = generic_revolt_nihilist_adj
+
+		is_revolutionary = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				is_secessionist = no
+				var:civil_war_type_var ?= movement_type:movement_nihilist
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = generic_revolt_positivist
+		adjective = generic_revolt_positivist_adj
+
+		is_revolutionary = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				is_secessionist = no
+				var:civil_war_type_var ?= movement_type:movement_positivist
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = generic_revolt_land_reform
+		adjective = generic_revolt_land_reform_adj
+
+		is_revolutionary = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				is_secessionist = no
+				var:civil_war_type_var ?= movement_type:movement_land_reform
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = generic_revolt_feminist
+		adjective = generic_revolt_feminist_adj
+
+		is_revolutionary = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				is_secessionist = no
+				var:civil_war_type_var ?= movement_type:movement_feminist
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = generic_revolt_reactionary
+		adjective = generic_revolt_reactionary_adj
+
+		is_revolutionary = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				is_secessionist = no
+				var:civil_war_type_var ?= movement_type:movement_reactionary
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = generic_revolt_modernizer
+		adjective = generic_revolt_modernizer_adj
+
+		is_revolutionary = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				is_secessionist = no
+				var:civil_war_type_var ?= movement_type:movement_modernizer
+			}
+		}
+	}
+
+	### French Monarchists
+	dynamic_country_name = {
+		name = generic_revolt_bonapartist
+		adjective = generic_revolt_bonapartist_adj
+
+		is_revolutionary = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				is_secessionist = no
+				var:civil_war_type_var ?= movement_type:movement_bonapartist
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = generic_revolt_legitimist
+		adjective = generic_revolt_legitimist_adj
+
+		is_revolutionary = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				is_secessionist = no
+				var:civil_war_type_var ?= movement_type:movement_legitimist
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = generic_revolt_orleanist
+		adjective = generic_revolt_orleanist_adj
+
+		is_revolutionary = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				is_secessionist = no
+				var:civil_war_type_var ?= movement_type:movement_orleanist
+			}
+		}
+	}
+
+	### India
+	dynamic_country_name = {
+		name = generic_revolt_utilitarian
+		adjective = generic_revolt_utilitarian_adj
+
+		is_revolutionary = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				is_secessionist = no
+				var:civil_war_type_var ?= movement_type:movement_utilitarian
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = generic_revolt_india_pan_national
+		adjective = generic_revolt_india_pan_national_adj
+
+		is_revolutionary = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				is_secessionist = no
+				var:civil_war_type_var ?= movement_type:movement_india_pan_national
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = generic_revolt_hindu_nationalist
+		adjective = generic_revolt_hindu_nationalist_adj
+
+		is_revolutionary = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				is_secessionist = no
+				var:civil_war_type_var ?= movement_type:movement_hindu_nationalist
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = generic_revolt_muslim_nationalist
+		adjective = generic_revolt_muslim_nationalist_adj
+
+		is_revolutionary = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				is_secessionist = no
+				var:civil_war_type_var ?= movement_type:movement_muslim_nationalist
+			}
+		}
+	}
+	# Majority movements
+	dynamic_country_name = {
+		name = generic_revolt_nationalist
+		adjective = generic_revolt_nationalist_adj
+
+		is_revolutionary = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				is_secessionist = no
+				var:civil_war_type_var ?= movement_type:movement_cultural_majority
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = generic_revolt_fundamentalist
+		adjective = generic_revolt_fundamentalist_adj
+
+		is_revolutionary = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				is_secessionist = no
+				var:civil_war_type_var ?= movement_type:movement_religious_majority
 			}
 		}
 	}
@@ -129,7 +481,7 @@ DEFAULT = {
 		
 		trigger = {
 			exists = scope:actor
-			scope:actor = {
+			scope:actor ?= {
 				is_secessionist = no
 				ig:ig_rural_folk = {
 					  
@@ -149,7 +501,7 @@ DEFAULT = {
 		trigger = {
 
 			exists = scope:actor
-			scope:actor = {
+			scope:actor ?= {
 				is_secessionist = no
 				ig:ig_landowners = {
 					  
@@ -161,7 +513,7 @@ DEFAULT = {
 				AND = {
 					exists = c:CSA
 					exists = c:USA
-					scope:actor = {
+					scope:actor ?= {
 						this = c:CSA
 					}
 					c:USA = {
@@ -180,7 +532,7 @@ DEFAULT = {
 		
 		trigger = {
 			exists = scope:actor
-			scope:actor = {
+			scope:actor ?= {
 				is_secessionist = no
 				any_interest_group = {
 					  
@@ -206,7 +558,7 @@ DEFAULT = {
 		
 		trigger = {
 			exists = scope:actor
-			scope:actor = {
+			scope:actor ?= {
 				is_secessionist = no
 				ig:ig_industrialists = {
 					  
@@ -225,7 +577,7 @@ DEFAULT = {
 		
 		trigger = {
 			exists = scope:actor
-			scope:actor = {
+			scope:actor ?= {
 				is_secessionist = no
 				ig:ig_armed_forces = {
 					  
@@ -244,7 +596,7 @@ DEFAULT = {
 		
 		trigger = {
 			exists = scope:actor
-			scope:actor = {
+			scope:actor ?= {
 				is_secessionist = no
 				ig:ig_devout = {
 					  
@@ -263,7 +615,7 @@ DEFAULT = {
 		
 		trigger = {
 			exists = scope:actor
-			scope:actor = {
+			scope:actor ?= {
 				is_secessionist = no
 				ig:ig_petty_bourgeoisie = {
 					  
@@ -282,7 +634,7 @@ DEFAULT = {
 		
 		trigger = {
 			exists = scope:actor
-			scope:actor = {
+			scope:actor ?= {
 				is_secessionist = no
 				ig:ig_trade_unions = {
 					  
@@ -302,7 +654,7 @@ DEFAULT = {
 		
 		trigger = {
 			exists = scope:actor
-			scope:actor = {
+			scope:actor ?= {
 				is_secessionist = no
 			}
 		}
@@ -316,7 +668,7 @@ DEFAULT = {
 		
 		trigger = {
 			exists = scope:actor
-			scope:actor = {
+			scope:actor ?= {
 				is_secessionist = no
 			}
 		}
@@ -330,7 +682,7 @@ DEFAULT = {
 		
 		trigger = {
 			exists = scope:actor
-			scope:actor = {
+			scope:actor ?= {
 				is_secessionist = no
 			}
 		}
@@ -657,7 +1009,7 @@ COM = { # Comanche
 		
 		trigger = {
 			exists = scope:actor
-			scope:actor = {
+			scope:actor ?= {
 				NOT = { is_country_type = decentralized } # if Comanche is recognized, then they get a more formal name
 			}
 		}
@@ -667,11 +1019,12 @@ COM = { # Comanche
 CSA = { # Confederate States of America
 	dynamic_country_name = {
 		name = dyn_c_confederate_state_of_america
+		adjective = CSA_ADJ
 		priority = 0
 		
 		trigger = {
 			exists = scope:actor
-			scope:actor = { 
+			scope:actor ?= { 
 				any_scope_state = {
 					count = 1
 				}
@@ -744,7 +1097,7 @@ GBR = { # Great Britain of United Kingdom
 		
 		trigger = {
 			coa_def_republic_flag_trigger = yes
-			scope:actor = { NOT = { capital = { state_region = s:STATE_LANCASHIRE } } }
+			scope:actor ?= { NOT = { capital = { state_region = s:STATE_LANCASHIRE } } }
 		}
 	}	
 	dynamic_country_name = {
@@ -767,7 +1120,7 @@ GBR = { # Great Britain of United Kingdom
 		trigger = {
 			exists = scope:actor
 			NOT = { has_game_rule = plausible_formable_nations }
-			scope:actor = { 
+			scope:actor ?= { 
 				NOT = { has_law = law_type:law_council_republic }
 				exists = capital
 				capital = { state_region = s:STATE_LANCASHIRE } 
@@ -782,7 +1135,7 @@ GBR = { # Great Britain of United Kingdom
 
 		trigger = {
 			coa_def_communist_flag_trigger = yes
-			scope:actor = { 
+			scope:actor ?= { 
 				exists = capital
 				capital = { state_region = s:STATE_LANCASHIRE } 
 			}
@@ -793,13 +1146,14 @@ GBR = { # Great Britain of United Kingdom
 GER = { # Germany
 	dynamic_country_name = {
 		name = dyn_c_german_empire
+		adjective = GER_ADJ
 		
 		is_main_tag_only = yes
 		priority = 0
 		
 		trigger = {
 			coa_def_monarchy_flag_trigger = yes
-			scope:actor = { 
+			scope:actor ?= { 
 				country_rank >= rank_value:major_power
 			}
 		}
@@ -877,7 +1231,7 @@ HOL = { # Holstein
 		
 		trigger = {
 			exists = scope:actor
-			scope:actor = {
+			scope:actor ?= {
 				owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
 			}
 		}
@@ -894,7 +1248,7 @@ HRO = { # Herero
 		
 		trigger = {
 			exists = scope:actor
-			scope:actor = {
+			scope:actor ?= {
 				NOT = { is_country_type = decentralized } # if Herero is recognized, then they get a more formal name
 			}
 		}
@@ -911,7 +1265,7 @@ IDN = { # Majapahit
 		
 		trigger = {
 			exists = scope:actor
-			scope:actor = {
+			scope:actor ?= {
 				has_law = law_type:law_monarchy
 				ruler = {
 					has_culture = cu:javan
@@ -929,7 +1283,7 @@ IDN = { # Majapahit
 		
 		trigger = {
 			exists = scope:actor
-			scope:actor = {
+			scope:actor ?= {
 				has_law = law_type:law_monarchy
 				ruler = {
 					OR = {
@@ -937,40 +1291,6 @@ IDN = { # Majapahit
 						has_culture = cu:sumatran
 					}
 				}
-			}
-		}
-	}
-}
-
-ITA = { # Italy
-	dynamic_country_name = { # Papal Italy
-		name = dyn_c_papal_italy
-		adjective = dyn_c_papal_italy_adj
-		
-		is_main_tag_only = yes
-		priority = 5
-		
-		trigger = {
-			exists = scope:actor
-			scope:actor = { has_law = law_type:law_theocracy }
-			NOT = { exists = c:PAP }
-		}
-	}
-}
-
-JAP = { # Japan
-	dynamic_country_name = {
-		name = dyn_c_japan_shogunate
-		adjective = dyn_c_japan_shogunate_adj
-
-		is_main_tag_only = yes
-		priority = 10
-
-		trigger = {
-			exists = scope:actor
-			scope:actor = { 
-				has_law = law_type:law_monarchy
-				NOT = { has_variable = meiji_var }
 			}
 		}
 	}
@@ -986,7 +1306,7 @@ JMB = { # Jambi
 		
 		trigger = {
 			exists = scope:actor
-			scope:actor = {
+			scope:actor ?= {
 				owns_entire_state_region = STATE_ACEH
 				owns_entire_state_region = STATE_NORTH_SUMATRA
 				owns_entire_state_region = STATE_SOUTH_SUMATRA
@@ -1005,7 +1325,7 @@ KTI = { # Kutai
 		
 		trigger = {
 			exists = scope:actor
-			scope:actor = {
+			scope:actor ?= {
 				owns_entire_state_region = STATE_WEST_BORNEO
 				owns_entire_state_region = STATE_EAST_BORNEO
 				owns_entire_state_region = STATE_NORTH_BORNEO
@@ -1024,7 +1344,7 @@ KOR = { # Korea
 		
 		trigger = {
 			exists = scope:actor
-			scope:actor = { has_law = law_type:law_monarchy }
+			scope:actor ?= { has_law = law_type:law_monarchy }
 		}
 	}
 }
@@ -1039,7 +1359,7 @@ LAN = { # Lanfang
 		
 		trigger = {
 			exists = scope:actor
-			scope:actor = {
+			scope:actor ?= {
 				owns_entire_state_region = STATE_WEST_BORNEO
 				owns_entire_state_region = STATE_EAST_BORNEO
 				owns_entire_state_region = STATE_NORTH_BORNEO
@@ -2440,6 +2760,853 @@ TIS = { # Turtle Island
 		trigger = {
 			scope:actor = {
 				was_formed_from = IRO
+			}
+		}
+	}
+}
+
+ARG = { # Argentina
+	dynamic_country_name = {
+		name = dyn_c_argentine_confederation
+		adjective = ARG_ADJ
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+
+			scope:actor ?= {
+				any_scope_character = {
+					is_ruler = yes
+					has_template = ARG_Juan_Manuel_de_Rosas
+				}
+			}
+		}
+	}
+
+	dynamic_country_name = { # Rio de la Plata also has this dynamic name
+		name = dyn_c_river_plate
+		adjective = dyn_c_river_plate_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			exists = c:GBR
+			scope:actor ?= {
+				is_subject_of = c:GBR
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_argentina_legionaria
+		adjective = ARG_ADJ
+
+		is_main_tag_only = yes
+		priority = 30
+
+		trigger = {
+			scope:actor ?= {
+				coa_fascist_trigger = yes
+				NOT = {
+					has_law = law_type:law_council_republic
+				}
+			}
+		}
+	}
+}
+
+ECU = {
+	dynamic_country_name = {
+		name = dyn_c_quito
+		adjective = dyn_c_quito_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = c:SPA
+			scope:actor ?= {
+				is_subject_of = c:SPA
+			}
+		}
+	}
+}
+
+URU = {
+	dynamic_country_name = {
+		name = dyn_c_cisplatina
+		adjective = dyn_c_cisplatina_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = c:BRZ
+					scope:actor ?= {
+						is_subject_of = c:BRZ
+					}
+				}
+				AND = {
+					exists = c:POR
+					scope:actor ?= {
+						is_subject_of = c:POR
+					}
+				}
+			}
+		}
+	}
+
+
+	dynamic_country_name = {
+		name = dyn_c_banda_oriental
+		adjective = dyn_c_banda_oriental_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = c:SPA
+			scope:actor ?= {
+				is_subject_of = c:SPA
+			}
+		}
+	}
+}
+
+BOL = {
+	dynamic_country_name = {
+		name = dyn_c_charcas
+		adjective = dyn_c_charcas_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			exists = c:SPA
+			scope:actor ?= {
+				is_direct_subject_of = c:SPA
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_upper_peru
+		adjective = dyn_c_upper_peru_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = c:SPA
+			exists = c:PEU
+			c:PEU = {
+				is_direct_subject_of = c:SPA
+			}
+			scope:actor ?= {
+				is_direct_subject_of = c:PEU
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_plurinational_bolivia
+		adjective = BOL_ADJ
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law = law_type:law_multicultural
+			}
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+}
+
+VNZ = {
+	dynamic_country_name = {
+		name = dyn_c_klein_venedig
+		adjective = dyn_c_klein_venedig_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			OR = {
+				AND = {
+					exists = c:HRE
+					scope:actor ?= {
+						is_subject_of = c:HRE
+					}
+				}
+				AND = {
+					exists = c:GER
+					scope:actor ?= {
+						is_subject_of = c:GER
+					}
+				}
+				AND = {
+					exists = c:AUS
+					scope:actor ?= {
+						is_subject_of = c:AUS
+					}
+				}
+			}
+		}
+	}
+}
+
+PLT = {
+	dynamic_country_name = { # Argentina also has this dynamic name
+		name = dyn_c_river_plate
+		adjective = dyn_c_river_plate_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			exists = c:GBR
+			scope:actor ?= {
+				is_subject_of = c:GBR
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_sudamerica_legionaria
+		adjective = dyn_c_sudamerica_legionaria_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				was_formed_from = ARG
+				coa_fascist_trigger = yes
+				NOT = {
+					has_law = law_type:law_council_republic
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_confederacion_sudamericana
+		adjective = dyn_c_confederacion_sudamericana_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+			exists = scope:actor
+			scope:actor ?= {
+				was_formed_from = ARG
+			}
+		}
+	}
+}
+
+ARB = {
+	dynamic_country_name = {
+		name = dyn_c_muhammara
+		adjective = dyn_c_muhammara_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+}
+
+
+PER = {
+	dynamic_country_name = {
+		name = dyn_c_iran
+		adjective = dyn_c_iran_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			scope:actor = {
+				NOT = { is_country_type = unrecognized }
+			}
+		}
+	}
+}
+
+AFG = {
+	dynamic_country_name = {
+		name = dyn_c_durrani_empire
+		adjective = dyn_c_durrani_empire_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_monarchy
+				was_formed_from = HER
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_peristan
+		adjective = dyn_c_peristan_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				country_has_state_religion = rel:hindu
+				was_formed_from = KAF
+			}
+		}
+	}
+}
+
+GEO = {
+	dynamic_country_name = {
+		name = dyn_c_kartli_kakheti
+		adjective = dyn_c_kartli_kakheti_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				is_country_type = unrecognized
+				NOT = {
+					has_technology_researched = nationalism
+				}
+			}
+		}
+	}
+}
+
+LUR = {
+	dynamic_country_name = {
+		name = dyn_c_bakhtiari
+		adjective = dyn_c_bakhtiari_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				is_country_type = unrecognized
+				NOT = {
+					has_technology_researched = nationalism
+				}
+			}
+		}
+	}
+}
+
+# Chinese Warlords
+HNA = {
+	dynamic_country_name = {
+		name = dyn_c_hunan_clique
+		adjective = HNA_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			has_global_variable = china_shatters
+			scope:actor ?= {
+				has_government_type = gov_warlord_state
+			}
+		}
+	}
+}
+GNG = {
+	dynamic_country_name = {
+		name = dyn_c_guangxi_clique
+		adjective = AHU_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			has_global_variable = china_shatters
+			scope:actor ?= {
+				has_government_type = gov_warlord_state
+			}
+		}
+	}
+}
+AHU = {
+	dynamic_country_name = {
+		name = dyn_c_anhui_clique
+		adjective = AHU_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			has_global_variable = china_shatters
+			scope:actor ?= {
+				has_government_type = gov_warlord_state
+			}
+		}
+	}
+}
+ZHI = {
+	dynamic_country_name = {
+		name = dyn_c_zhili_clique
+		adjective = ZHI_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			has_global_variable = china_shatters
+			scope:actor ?= {
+				has_government_type = gov_warlord_state
+			}
+		}
+	}
+}
+MCH = {
+	dynamic_country_name = {
+		name = dyn_c_fengtian_clique
+		adjective = dyn_c_fengtian_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			has_global_variable = china_shatters
+			scope:actor ?= {
+				any_scope_state = {
+					state_region = s:STATE_SHENGJING
+				}
+				has_government_type = gov_warlord_state
+			}
+		}
+	}
+}
+SHN = {
+	dynamic_country_name = {
+		name = dyn_c_shanxi_clique
+		adjective = SHN_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			has_global_variable = china_shatters
+			scope:actor ?= {
+				has_government_type = gov_warlord_state
+			}
+		}
+	}
+}
+XIN = {
+	dynamic_country_name = {
+		name = dyn_c_xinjiang_clique
+		adjective = dyn_c_xinjiang_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			has_global_variable = china_shatters
+			scope:actor ?= {
+				has_government_type = gov_warlord_state
+			}
+		}
+	}
+}
+GUI = {
+	dynamic_country_name = {
+		name = dyn_c_guizhou_clique
+		adjective = GUI_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			has_global_variable = china_shatters
+			scope:actor ?= {
+				has_government_type = gov_warlord_state
+			}
+		}
+	}
+}
+YUE = {
+	dynamic_country_name = {
+		name = dyn_c_guangdong_clique
+		adjective = dyn_c_guangdong_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			has_global_variable = china_shatters
+			scope:actor ?= {
+				has_government_type = gov_warlord_state
+			}
+		}
+	}
+}
+SIH = {
+	dynamic_country_name = {
+		name = dyn_c_sichuan_clique
+		adjective = SIH_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			has_global_variable = china_shatters
+			scope:actor ?= {
+				has_government_type = gov_warlord_state
+			}
+		}
+	}
+}
+SHA = {
+	dynamic_country_name = {
+		name = dyn_c_shandong_clique
+		adjective = SHA_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			has_global_variable = china_shatters
+			scope:actor ?= {
+				has_government_type = gov_warlord_state
+			}
+		}
+	}
+}
+YUN = {
+	dynamic_country_name = {
+		name = dyn_c_yunnan_clique
+		adjective = YUN_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			has_global_variable = china_shatters
+			scope:actor ?= {
+				has_government_type = gov_warlord_state
+			}
+		}
+	}
+}
+BEI = {
+	dynamic_country_name = {
+		name = dyn_c_beiyang_government
+		adjective = CHI_ADJ
+
+		is_main_tag_only = yes
+		priority = 15
+
+		trigger = {
+			scope:actor = {
+				has_global_variable = china_shatters
+				global_var:chinese_central_government ?= THIS
+				capital = {
+					OR = {
+						state_region = s:STATE_BEIJING
+						state_region = s:STATE_HEBEI
+					}
+				}
+			}
+		}
+	}
+}
+KAF = {
+	dynamic_country_name = {
+		name = dyn_c_nuristan
+		adjective = dyn_c_nuristan_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				OR = {
+					country_has_state_religion = rel:sunni
+					country_has_state_religion = rel:shiite
+				}
+			}
+		}
+	}
+}
+
+KAS = {
+	dynamic_country_name = {
+		name = dyn_c_jammu
+		adjective = dyn_c_jammu_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			exists = scope:actor
+			exists = c:PAN
+			scope:actor ?= {
+				is_subject_of = c:PAN
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_jammu_and_kashmir
+		adjective = KAS_ADJ
+
+		is_main_tag_only = yes
+		priority = 2
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				any_overlord_or_above = {
+					OR = {
+						country_has_primary_culture = cu:british
+						country_has_primary_culture = cu:scottish
+					}
+				}
+			}
+		}
+	}
+}
+
+SHS = {
+	dynamic_country_name = {
+		name = dyn_c_shan_states
+		adjective = dyn_c_shan_states_adj
+
+		is_main_tag_only = yes
+		priority = 5
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				any_overlord_or_above = {
+					OR = {
+						country_has_primary_culture = cu:british
+						country_has_primary_culture = cu:scottish
+					}
+				}
+			}
+		}
+	}
+}
+
+# Indian Princely Names
+
+JOD = {
+	dynamic_country_name = {
+		name = dyn_c_jodhpur
+		adjective = dyn_c_jodhpur_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				any_overlord_or_above = {
+					OR = {
+						country_has_primary_culture = cu:british
+						country_has_primary_culture = cu:scottish
+					}
+				}
+			}
+		}
+	}
+}
+
+MEW = {
+	dynamic_country_name = {
+		name = dyn_c_udaipur
+		adjective = dyn_c_udaipur_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				any_overlord_or_above = {
+					OR = {
+						country_has_primary_culture = cu:british
+						country_has_primary_culture = cu:scottish
+					}
+				}
+			}
+		}
+	}
+}
+
+AWA = {
+	dynamic_country_name = {
+		name = dyn_c_oudh
+		adjective = dyn_c_oudh_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				any_overlord_or_above = {
+					OR = {
+						country_has_primary_culture = cu:british
+						country_has_primary_culture = cu:scottish
+					}
+				}
+			}
+		}
+	}
+}
+
+JAI = {
+	dynamic_country_name = {
+		name = dyn_c_jaipur
+		adjective = dyn_c_jaipur_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				any_overlord_or_above = {
+					OR = {
+						country_has_primary_culture = cu:british
+						country_has_primary_culture = cu:scottish
+					}
+				}
+			}
+		}
+	}
+}
+
+BHT = {
+	dynamic_country_name = {
+		name = dyn_c_dominion_of_india
+		adjective = BHT_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			coa_def_subject_trigger = yes
+			scope:actor = {
+				NOT = {
+					has_government_type = gov_chartered_company
+				}
+			}
+		}
+	}
+}
+
+ALK = {
+	dynamic_country_name = {
+		name = dyn_c_russian_american_company
+		adjective = dyn_c_russian_american_company_adj
+		use_overlord_prefix = yes
+
+		is_main_tag_only = yes
+		priority = 5
+
+		trigger = {
+			scope:actor = {
+				is_subject = yes
+				is_subject_type = subject_type_chartered_company
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_alyaska
+		adjective = dyn_c_alyaska_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			scope:actor = {
+				any_primary_culture = {
+					cu:russian ?= this
+				}
+			}
+		}
+	}
+}
+
+IDS = {
+	dynamic_country_name = {
+		name = dyn_c_indusstan_federation
+		adjective = IDS_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			coa_def_subject_trigger = yes
+			scope:actor = {
+				has_variable = indian_federation_member
+				any_overlord_or_above = {
+					has_variable = selected_federal_solution_var
+				}
+			}
+		}
+	}
+}
+
+BGL = {
+	dynamic_country_name = {
+		name = dyn_c_bengal_federation
+		adjective = BGL_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			coa_def_subject_trigger = yes
+			scope:actor = {
+				has_variable = indian_federation_member
+				any_overlord_or_above = {
+					has_variable = selected_federal_solution_var
+				}
+			}
+		}
+	}
+}
+
+SIB = {
+	dynamic_country_name = {
+		name = dyn_c_cyberia
+		adjective = dyn_c_cyberia_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			scope:actor = {
+				has_government_type = gov_cybernetic_state
 			}
 		}
 	}

@@ -125,7 +125,7 @@ ideology_matriarchal = { #Gaian
 }
 
 ideology_consumerist_pious = {
-	icon = "gfx/interface/icons/ideology_icons/malthusian.dds" #Replace
+	icon = "gfx/interface/icons/ideology_icons/unused/market_liberal.dds" #Replace
 	
 	lawgroup_health_system = {
 		law_charitable_health_system = approve
@@ -256,7 +256,7 @@ ideology_chromatacia_paternalistic = {
 }
 
 ideology_old_order_moralist = {
-	icon = "gfx/interface/icons/ideology_icons/unused/pacifist.dds" #Replace
+	icon = "gfx/interface/icons/ideology_icons/unused/land_reformer.dds" #Replace
 	
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_approve

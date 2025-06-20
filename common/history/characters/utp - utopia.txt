@@ -1,0 +1,90 @@
+﻿CHARACTERS = {
+	c:UTP = {
+		create_character = {
+			first_name = "Paramount"
+			last_name = culture
+			age = 55
+			ruler = yes
+			culture = cu:polynesian
+			interest_group = ig_landowners
+			ideology = ideology_market_liberal
+			traits = {
+				
+			}
+		}	
+		create_character = {
+			first_name = "Zara"
+			last_name = culture
+			age = 21
+			heir = yes
+			female = yes
+			culture = cu:polynesian
+			religion = rel:consumerist
+			interest_group = ig_intelligentsia
+			ideology = ideology_humanitarian_royalist
+			traits = {
+			
+			}
+		}
+		create_character = {
+			first_name = culture
+			last_name = "Goldberry"
+			ig_leader = yes
+			culture = cu:british
+			religion = rel:consumerist
+			interest_group = ig_industrialists
+			ideology = ideology_capitalizt
+			traits = {
+			
+			}
+		}
+		create_character = {
+			first_name = "Arthur"
+			last_name = "Fitzbattleaxe"
+			age = 25
+			is_general = yes
+			culture = cu:british
+			religion = rel:consumerist
+			interest_group = ig_industrialists
+			ideology = ideology_capitalizt
+			traits = {
+			
+			}
+		}
+		create_character = {
+			first_name = "Edward"
+			last_name = "Corcoran"
+			age = 62
+			is_admiral = yes
+			culture = cu:british
+			religion = rel:consumerist
+			interest_group = ig_industrialists
+			ideology = ideology_capitalizt
+			traits = {
+			
+			}
+		}
+		create_character = {
+			first_name = "Scaphio"
+			last_name = culture
+			ig_leader = yes
+			culture = cu:polynesian
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+			
+			}
+		}
+		create_character = {
+			first_name = "Calynx"
+			last_name = culture
+			ig_leader = yes
+			culture = cu:polynesian
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_moderate
+			traits = {
+			
+			}
+		}
+	}
+}

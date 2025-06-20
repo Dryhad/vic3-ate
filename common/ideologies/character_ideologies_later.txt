@@ -1,5 +1,5 @@
-﻿ideology_leader_capitalizt = {
-	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_plutocratic.dds"
+﻿ideology_capitalizt = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_malthusian.dds"
 	
 	character_ideology = yes
 
@@ -206,7 +206,7 @@
 	}	
 }
 
-ideology_leader_xenophile = {
+ideology_xenophile = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_individualist.dds"
 	
 	character_ideology = yes
@@ -462,6 +462,109 @@ ideology_nimby = {
 	}	
 }
 
+ideology_education_reformer = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_Meritocratic.dds" #Replace
+	
+	character_ideology = yes
+	
+	lawgroup_education_system = {
+		law_private_schools = approve
+		law_public_schools = strongly_approve
+		law_religious_schools = neutral
+		law_no_schools = disapprove
+	}	
+	
+	lawgroup_childrens_rights = {
+		law_child_labor_allowed = strongly_disapprove
+		law_restricted_child_labor = disapprove
+		law_compulsory_primary_school = approve
+	}	
+	
+	lawgroup_church_and_state = {
+		law_state_religion = disapprove
+		law_freedom_of_conscience = approve
+		law_total_separation = approve
+		law_state_atheism = neutral
+	}
+
+	lawgroup_land_reform = {
+		law_collectivized_agriculture = neutral
+		law_serfdom = disapprove
+		law_tenant_farmers = neutral
+		law_homesteading = neutral
+		law_commercialized_agriculture = neutral
+	}
+	
+	country_trigger = {
+		has_technology_researched = academia
+	}
+
+	interest_group_leader_trigger = {
+		ideology_education_reformer_valid_trigger = yes
+	}
+	
+	non_interest_group_leader_trigger = {
+		# Agitator ideologies should disapprove of a current law
+		NAND = {
+			has_role = agitator
+			owner = {
+				has_law = law_type:law_compulsory_primary_school
+				has_law = law_type:law_public_schools
+				OR = {
+					has_law = law_type:law_freedom_of_conscience
+					has_law = law_type:law_total_separation
+				}
+				NOT = {
+					has_law = law_type:law_serfdom
+				}
+			}
+		}
+		interest_group = {
+			ideology_education_reformer_valid_trigger = yes
+		}
+	}
+	
+	interest_group_leader_weight = {
+		value = 100
+		if = {
+			limit = {
+				interest_group = {
+					OR = {
+						has_variable = communist_ig_var
+						has_variable = chose_vanguardism
+						has_variable = chose_anarchism
+						has_variable = chose_communism
+						has_variable = chose_ethno_nationalism
+						has_variable = chose_conservatism
+						has_variable = chose_fascism
+					}
+				}
+			}
+			multiply = 0.1
+		}
+	}	
+	
+	non_interest_group_leader_weight = {
+		value = 100
+		if = {
+			limit = {
+				interest_group = {
+					OR = {
+						has_variable = communist_ig_var
+						has_variable = chose_vanguardism
+						has_variable = chose_anarchism
+						has_variable = chose_communism
+						has_variable = chose_ethno_nationalism
+						has_variable = chose_conservatism
+						has_variable = chose_fascism
+					}
+				}
+			}
+			multiply = 0.1
+		}
+	}	
+}
+
 #Guruist Elements
 
 ideology_wood_element = {
@@ -622,7 +725,7 @@ ideology_mountain_element = {
 }
 
 ideology_star_element = {
-	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_star_element.dds"
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_socialist.dds"
 	
 	character_ideology = yes
 	

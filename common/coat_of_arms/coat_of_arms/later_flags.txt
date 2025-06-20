@@ -611,6 +611,22 @@ OBR_subject = {
 	}
 }
 
+KCH = {
+	pattern = "pattern_solid.tga"
+	color1 = "purple"
+	color2 = "yellow_light"
+	
+	colored_emblem = {
+		texture = "ce_saltire.dds"
+		color1 = "yellow_light"
+	}
+	
+	colored_emblem = {
+		texture = "ce_cross_england.dds"
+		color1 = "yellow_light"
+	}
+}
+
 NYS = {
 	pattern = "pattern_solid.tga"
 	color1 = "blue"

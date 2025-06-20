@@ -42,14 +42,14 @@ nihilism.1 = {
 			create_character = {
 				is_agitator = yes 
 				interest_group = ig_intelligentsia
-				ideology = ideology_atheist
+				ideology = ideology_nihilist
 			}
 		}
 		
 		random_scope_character = {
 			limit = {
 				has_role = agitator
-				has_ideology = ideology:ideology_atheist
+				has_ideology = ideology:ideology_nihilist
 			}
 			save_scope_as = nihilist_scope
 			set_variable = { name = memento_mori_immunity years = 20 }
@@ -184,7 +184,7 @@ nihilism.2 = {
 			limit = {
 				ig:ig_intelligentsia = {
 					leader = {
-						has_ideology = ideology:ideology_atheist
+						has_ideology = ideology:ideology_nihilist
 					}
 				}
 			}
@@ -213,7 +213,7 @@ nihilism.2 = {
 			limit = {
 				ig:ig_intelligentsia = {
 					leader = {
-						has_ideology = ideology:ideology_atheist
+						has_ideology = ideology:ideology_nihilist
 					}
 				}
 			}
@@ -267,7 +267,7 @@ nihilism.3 = {
 			every_scope_character = {
 				limit = {
 					has_role = agitator
-					has_ideology = ideology:ideology_atheist
+					has_ideology = ideology:ideology_nihilist
 				}
 				set_ideology = ideology:ideology_communist
 			}
@@ -275,7 +275,7 @@ nihilism.3 = {
 				limit = {
 					ig:ig_intelligentsia = {
 						leader = {
-							has_ideology = ideology:ideology_atheist
+							has_ideology = ideology:ideology_nihilist
 						}
 					}
 				}
@@ -289,7 +289,7 @@ nihilism.3 = {
 				limit = {
 					ig:ig_trade_unions = {
 						leader = {
-							has_ideology = ideology:ideology_atheist
+							has_ideology = ideology:ideology_nihilist
 						}
 					}
 				}
@@ -305,7 +305,7 @@ nihilism.3 = {
 				limit = {
 					ig:ig_intelligentsia = {
 						leader = {
-							has_ideology = ideology:ideology_atheist
+							has_ideology = ideology:ideology_nihilist
 						}
 					}
 				}
@@ -319,7 +319,7 @@ nihilism.3 = {
 				limit = {
 					ig:ig_trade_unions = {
 						leader = {
-							has_ideology = ideology:ideology_atheist
+							has_ideology = ideology:ideology_nihilist
 						}
 					}
 				}
@@ -332,7 +332,7 @@ nihilism.3 = {
 			every_scope_character = {
 				limit = {
 					has_role = agitator
-					has_ideology = ideology:ideology_atheist
+					has_ideology = ideology:ideology_nihilist
 				}
 				set_ideology = ideology:ideology_radical
 			}
@@ -357,7 +357,7 @@ nihilism.3 = {
 				limit = {
 					ig:ig_intelligentsia = {
 						leader = {
-							has_ideology = ideology:ideology_atheist
+							has_ideology = ideology:ideology_nihilist
 						}
 					}
 				}
@@ -371,7 +371,7 @@ nihilism.3 = {
 				limit = {
 					ig:ig_trade_unions = {
 						leader = {
-							has_ideology = ideology:ideology_atheist
+							has_ideology = ideology:ideology_nihilist
 						}
 					}
 				}
@@ -384,7 +384,7 @@ nihilism.3 = {
 			every_scope_character = {
 				limit = {
 					has_role = agitator
-					has_ideology = ideology:ideology_atheist
+					has_ideology = ideology:ideology_nihilist
 				}
 				set_ideology = ideology:ideology_communist
 			}
@@ -394,7 +394,7 @@ nihilism.3 = {
 				limit = {
 					ig:ig_intelligentsia = {
 						leader = {
-							has_ideology = ideology:ideology_atheist
+							has_ideology = ideology:ideology_nihilist
 						}
 					}
 				}
@@ -408,7 +408,7 @@ nihilism.3 = {
 				limit = {
 					ig:ig_trade_unions = {
 						leader = {
-							has_ideology = ideology:ideology_atheist
+							has_ideology = ideology:ideology_nihilist
 						}
 					}
 				}
@@ -421,7 +421,7 @@ nihilism.3 = {
 			every_scope_character = {
 				limit = {
 					has_role = agitator
-					has_ideology = ideology:ideology_atheist
+					has_ideology = ideology:ideology_nihilist
 				}
 				set_ideology = ideology:ideology_radical
 			}
@@ -456,7 +456,7 @@ nihilism.4 = {  #Fathers and Sons
 		}
 		any_scope_character = {
 			has_role = agitator
-			has_ideology = ideology:ideology_atheist
+			has_ideology = ideology:ideology_nihilist
 		}
 	}
 
@@ -470,7 +470,7 @@ nihilism.4 = {  #Fathers and Sons
 		random_scope_character = {
 			limit = {
 				has_role = agitator
-				has_ideology = ideology:ideology_atheist
+				has_ideology = ideology:ideology_nihilist
 			}
 			save_scope_as = nihilist_scope
 		}
@@ -709,7 +709,7 @@ nihilism.7 = { #Turmoil at universities
 		}
 		any_scope_character = {
 			has_role = agitator
-			has_ideology = ideology:ideology_atheist
+			has_ideology = ideology:ideology_nihilist
 		}
 		any_scope_state = {
 			has_building = building_university
@@ -742,7 +742,7 @@ nihilism.7 = { #Turmoil at universities
 		random_scope_character = {
 			limit = {
 				has_role = agitator
-				has_ideology = ideology:ideology_atheist
+				has_ideology = ideology:ideology_nihilist
 			}
 			save_scope_as = nihilist_scope
 		}
@@ -1019,7 +1019,7 @@ nihilism.10 = { #Intellectual leader becomes a nihilist
 			ig_approval < 0	
 			leader = {
 				NOT = {
-					has_ideology = ideology:ideology_atheist
+					has_ideology = ideology:ideology_nihilist
 				}
 			}
 		}
@@ -1056,7 +1056,7 @@ nihilism.10 = { #Intellectual leader becomes a nihilist
 			create_character = {
 				ig_leader = yes
 				interest_group = ig_intelligentsia
-				ideology = ideology_atheist
+				ideology = ideology_nihilist
 			}
 		}
 		ig:ig_intelligentsia = { 
@@ -1074,7 +1074,7 @@ nihilism.10 = { #Intellectual leader becomes a nihilist
 			create_character = {
 				ig_leader = yes
 				interest_group = ig_intelligentsia
-				ideology = ideology_atheist
+				ideology = ideology_nihilist
 			}
 		}
 		random_scope_state = {
@@ -1094,7 +1094,7 @@ nihilism.10 = { #Intellectual leader becomes a nihilist
 			create_character = {
 				ig_leader = yes
 				interest_group = ig_intelligentsia
-				ideology = ideology_atheist
+				ideology = ideology_nihilist
 			}
 		}
 		ig:ig_intelligentsia = {
@@ -1130,7 +1130,7 @@ nihilism.11 = { #Agitator fight! Nihilist agitator argues with communists about 
 		ig:ig_intelligentsia = {
 			ig_approval < 0	
 			leader = {
-				has_ideology = ideology:ideology_atheist
+				has_ideology = ideology:ideology_nihilist
 			}
 		}
 		any_scope_character = {
@@ -1143,7 +1143,7 @@ nihilism.11 = { #Agitator fight! Nihilist agitator argues with communists about 
 		}
 		any_scope_character = {
 			has_role = agitator
-			has_ideology = ideology:ideology_atheist
+			has_ideology = ideology:ideology_nihilist
 		}
 	}
 
@@ -1176,7 +1176,7 @@ nihilism.11 = { #Agitator fight! Nihilist agitator argues with communists about 
 		random_scope_character = {
 			limit = {
 				has_role = agitator
-				has_ideology = ideology:ideology_atheist
+				has_ideology = ideology:ideology_nihilist
 			}
 			save_scope_as = nihilist_scope
 		}	
@@ -1249,7 +1249,7 @@ nihilism.12 = { #Trade Unions adopt a positive view of state atheism/total separ
 		ig:ig_intelligentsia = {
 			ig_approval < 0
 			leader = {
-				has_ideology = ideology:ideology_atheist
+				has_ideology = ideology:ideology_nihilist
 			}
 		}
 		any_interest_group = {
@@ -1288,7 +1288,7 @@ nihilism.12 = { #Trade Unions adopt a positive view of state atheism/total separ
 		}
 		scope:communist_ig = {
 			leader = {
-				set_ideology = ideology:ideology_atheist
+				set_ideology = ideology:ideology_nihilist
 			}
 			add_ideology = ideology_anti_clerical
 			add_modifier = {
@@ -1377,7 +1377,7 @@ nihilism.13 = { #Instant law pass for abolishing state religion/instituting athe
 		any_interest_group = {
 			is_in_government = yes
 			leader = {
-				has_ideology = ideology:ideology_atheist
+				has_ideology = ideology:ideology_nihilist
 			}
 		}
 		NOT = {

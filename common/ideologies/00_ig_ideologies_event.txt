@@ -58,13 +58,16 @@ ideology_modernizer = {
 		law_agrarianism = disapprove
 		law_traditionalism = strongly_disapprove
 		law_laissez_faire = neutral
+		law_industry_banned = strongly_disapprove
 	}
+	
+	#Could include the education and Distribution of Power stances?
 }
 
 ideology_liberal_modern = { #Revisit, could be used for Citizenship
 	icon = "gfx/interface/icons/ideology_icons/liberal.dds"
 
-	priority = 100
+	#priority = 100
 
 	lawgroup_citizenship = {
 		law_multicultural = disapprove
@@ -106,7 +109,7 @@ ideology_liberal_modern = { #Revisit, could be used for Citizenship
 ideology_egalitarian_modern = { #This is just dumb and should not exist
 	icon = "gfx/interface/icons/ideology_icons/egalitarian.dds"
 
-	priority = 100
+	#priority = 100
 
 	lawgroup_free_speech = {
 		law_protected_speech = strongly_approve

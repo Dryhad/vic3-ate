@@ -766,7 +766,6 @@ building_power_bloc_statue = {
 	expandable = no
 	
 	statue = yes
-	centerpiece_mesh_weight = 1
 
 	production_method_groups = {
 		pmg_base_building_power_bloc_statue
@@ -802,7 +801,7 @@ building_power_bloc_statue = {
 			
 			add = {
 				value = state_population
-				divide = 1000
+				divide = 2500
 				max = 5000
 			}
 		}
@@ -888,7 +887,7 @@ building_victoria_terminus = {
 	}
 
 	unlocking_technologies = { 
-		pneumatic_tools 
+		steel_frame_buildings 
 	}
 	
 	required_construction = construction_cost_monument
@@ -898,11 +897,7 @@ building_victoria_terminus = {
 	}
 
 	possible = {
-		owner = {
-			NOT = {
-				has_law = law_type:law_state_atheism
-			}
-		}
+		always = yes
 	}
 	ai_value = 10000
 

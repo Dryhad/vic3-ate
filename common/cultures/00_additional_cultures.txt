@@ -19,7 +19,7 @@
 		Owen
 		Robert Roger Ronald Rowland Rowley
 		Shadrach Samuel
-		Thomas Theophilus 
+		Thomas Theophilus
 		William Watkin Walter
 	}
 	female_common_first_names = {
@@ -112,7 +112,7 @@ scottish={
 		Philip Patrick Peter
 		Roderick Ralph Robert Ruaridh
 		Struan Samuel
-		Thomas Theodore_2 Torquil
+		Thomas Theodore Torquil
 		Windham William
 	}
 	female_common_first_names = {
@@ -1539,7 +1539,7 @@ luri ={
 kho ={
 	color= rgb{ 123 44 98 }
 	religion = sunni
-	traits = { south_asian_heritage hindustani }
+	traits = { south_asian_heritage indo_aryan_language }
 	male_common_first_names={
 		Abdul_Akbar Afzal Amir
 		Burhan-ud-Din

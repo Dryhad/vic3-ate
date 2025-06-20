@@ -116,7 +116,7 @@ ves_zachary_gray_character_template = {
 	dna = dna_zachary_gray
 	is_agitator = yes
 	religion = rel:atheist
-	ideology = ideology_atheist
+	ideology = ideology_nihilist
 	interest_group = ig_intelligentsia
 	age = 21
 	traits = {
@@ -133,7 +133,7 @@ mel_thomas_lecoultre_character_template = {
 	female = no
 	is_agitator = yes
 	religion = rel:cult_of_reason
-	ideology = ideology_atheist
+	ideology = ideology_nihilist
 	interest_group = ig_intelligentsia
 	age = 25
 	traits = {
@@ -167,7 +167,7 @@ mel_marcel_falvine_character_template = { #Wedge in the Academia
 	female = no
 	ig_leader = yes
 	religion = rel:cult_of_reason
-	ideology = ideology_atheist
+	ideology = ideology_nihilist
 	interest_group = ig_intelligentsia
 	age = 61
 	traits = {
@@ -250,7 +250,7 @@ eng_richard_dauntless_character_template = {
 	last_name = Dauntless
 	culture = cu:british
 	religion = rel:thelema
-	ideology = ideology_atheist
+	ideology = ideology_nihilist
 	interest_group = ig_armed_forces
 	age = 35
 	traits = {
@@ -291,6 +291,115 @@ eng_major_general_stanley_character_template = {
 		role = general
 		earliest_usage_date = 3440.1.1
 		latest_usage_date = 3480.1.1
+		chance = 50
+	}
+}
+
+utp_sir_bailey_barre_character_template = {
+	first_name = "Bailey"
+	last_name = "Barre"
+	culture = cu:british
+	religion = rel:consumerist
+	ideology = ideology_capitalizt
+	interest_group = ig_industrialists
+	traits = {
+	
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			c:UTP ?= this
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_industrialists
+		}
+		chance = 100
+	}
+}
+
+utp_lord_dramaleigh_character_template = {
+	first_name = culture
+	last_name = "Dramaleigh"
+	culture = cu:british
+	religion = rel:consumerist
+	ideology = ideology_capitalizt
+	interest_group = ig_industrialists
+	traits = {
+	
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			c:UTP ?= this
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_industrialists
+		}
+		chance = 100
+	}
+}
+
+utp_mr_blushington_character_template = {
+	first_name = culture
+	last_name = "Blushington"
+	culture = cu:british
+	religion = rel:consumerist
+	ideology = ideology_capitalizt
+	interest_group = ig_industrialists
+	traits = {
+	
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			c:UTP ?= this
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_industrialists
+		}
+		chance = 100
+	}
+}
+
+utp_phantis_character_template = {
+	first_name = "Phantis"
+	last_name = culture
+	culture = cu:polynesian
+	ideology = ideology_traditionalist
+	interest_group = ig_landowners
+	traits = {
+	
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			c:UTP ?= this
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_landowners
+		}
+		chance = 100
+	}
+}
+
+utp_tarara_character_template = {
+	first_name = "Tarara"
+	last_name = culture
+	culture = cu:polynesian
+	ideology = ideology_royalist #I guess?
+	interest_group = ig_landowners
+	traits = {
+	
+	}
+	agitator_usage = {
+		country_trigger = {
+			c:UTP ?= this
+			has_technology_researched = dynamite
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_landowners
+		}
 		chance = 50
 	}
 }
@@ -339,6 +448,129 @@ cal_izzy_perez_character_template = {
         earliest_usage_date = 3480.1.1
         latest_usage_date = 3536.1.1
         chance = 50
+	}
+}
+
+cal_tobias_fangor_character_template = {
+	first_name = Tobias
+	last_name = Fangor
+	culture = cu:angeleno
+	female = no
+	religion = rel:anahata
+	interest_group = ig_intelligentsia
+	ideology = ideology_nihilist
+	birth_date = 3484.9.25 #This is [1500 years after] Tobias's canonical birth date, determined by Torren's ridiculously thorough timeline
+	traits = {
+		reserved
+		surveyor
+	}
+	commander_usage = {
+		country_trigger = {
+			CAL ?= this
+		}
+		role = general
+		earliest_usage_date = 3497.10.3 #Walking through the construction site
+		latest_usage_date = 3536.1.1
+		chance = 50
+	}
+}
+
+cal_jake_berenson_character_template = {
+	first_name = Jake
+	last_name = Berenson
+	culture = cu:angeleno
+	female = no
+	religion = rel:anahata
+	interest_group = ig_intelligentsia
+	ideology = ideology_moderate
+	birth_date = 3484.1.1 #Eh
+	traits = {
+	`	direct
+		popular_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			CAL ?= this
+		}
+		role = general
+		earliest_usage_date = 3497.10.3 #Walking through the construction site
+		latest_usage_date = 3536.1.1
+		chance = 50
+	}
+}
+
+cal_rachel_berenson_character_template = {
+	first_name = Rachel
+	last_name = Berenson
+	culture = cu:angeleno
+	female = yes
+	religion = rel:anahata
+	interest_group = ig_intelligentsia
+	ideology = ideology_jingoist_leader
+	birth_date = 3484.1.1 #Eh
+	traits = {
+		reckless
+		brave
+	}
+	commander_usage = {
+		country_trigger = {
+			CAL ?= this
+		}
+		role = general
+		earliest_usage_date = 3497.10.3 #Walking through the construction site
+		latest_usage_date = 3536.1.1
+		chance = 50
+	}
+}
+
+cal_marco_character_template = {
+	first_name = Marco
+	last_name = culture
+	culture = cu:angeleno
+	female = no
+	religion = rel:anahata
+	interest_group = ig_intelligentsia
+	ideology = ideology_utilitarian
+	birth_date = 3484.1.1 #Eh
+	traits = {
+		charismatic
+		social_bandit
+	}
+	commander_usage = {
+		country_trigger = {
+			CAL ?= this
+		}
+		role = general
+		earliest_usage_date = 3497.10.3 #Walking through the construction site
+		latest_usage_date = 3536.1.1
+		chance = 50
+	}
+}
+
+cal_cassie_character_template = {
+	first_name = Cassie
+	last_name = culture
+	culture = cu:angeleno
+	female = yes
+	religion = rel:anahata
+	interest_group = ig_intelligentsia
+	ideology = ideology_humanitarian
+	birth_date = 3484.1.1 #Eh
+	traits = {
+		persistent
+		cautious
+	}
+	agitator_usage = {
+		country_trigger = {
+			CAL ?= this
+		}
+		interest_group_trigger = {
+			is_marginal = no
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 3497.10.3 #Walking through the construction site
+		latest_usage_date = 3536.1.1
+		chance = 50
 	}
 }
 
