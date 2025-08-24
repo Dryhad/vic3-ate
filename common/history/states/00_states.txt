@@ -6997,7 +6997,7 @@ STATES = {
 		}
 		create_state = {
 			country = c:REP
-			owned_provinces = { "x0BABA7" "x2DED24" "x805140" "x9743F5" "xA79C89" "xD99F59" }
+			owned_provinces = { "x0BABA7" "x2DED24" "x805140" "x9743F5" "xA79C89" }
 		}
 		create_state = {
 			country = c:KCH
@@ -7005,7 +7005,7 @@ STATES = {
 		}
 		create_state = {
 			country = c:IMP
-			owned_provinces = { "x015040" "x1D7F6C" "x1EBACB" "x3AC527" "x653DD0" "x702ECE" }
+			owned_provinces = { "x015040" "x1D7F6C" "x1EBACB" "x653DD0" "x702ECE" }
 		}
 		add_homeland = cu:kalmyk
 		add_homeland = cu:russian
