@@ -1010,7 +1010,7 @@ STATES = {
 			owned_provinces = { x3C64D6 x9A0C09 x964591 x90EF40 xFA595E xE521E1 x52914C x907040 xC77E76 x5C25CB x55B06A xC27057 xE2A108 xD08FCB x63D186 xEF5C1F x0E5459 x98E7D7 x3D20D1 x10EF40 x600AC6 x907080 x528F3B }
 		}
 		add_homeland = cu:central_american
-		add_homeland = cu:garafuna
+		#add_homeland = cu:garifuna
 	}
 	s:STATE_NICARAGUA = {
 		create_state = {
@@ -6997,7 +6997,7 @@ STATES = {
 		}
 		create_state = {
 			country = c:REP
-			owned_provinces = { "x0BABA7" "x2DED24" "x805140" "x9743F5" "xA79C89" }
+			owned_provinces = { "x0BABA7" "x2DED24" "x805140" }
 		}
 		create_state = {
 			country = c:KCH
@@ -7005,7 +7005,7 @@ STATES = {
 		}
 		create_state = {
 			country = c:IMP
-			owned_provinces = { "x015040" "x1D7F6C" "x1EBACB" "x653DD0" "x702ECE" }
+			owned_provinces = { "x015040" "x702ECE" }
 		}
 		add_homeland = cu:kalmyk
 		add_homeland = cu:russian
@@ -7760,7 +7760,7 @@ STATES = {
 			owned_provinces = { x205040 xBC4223 xC642C3 x1E47C8 x9F7207 x7546F8 x0418C4 xD34672 xDD6E50 x6320AE xF8AB7F x249043 x3FF655 x57EBCB x0D1D9D xD5E26E xB0A278 x21AA9D xBED6FE xA1B232 x657B7B x247143 x90DF58 x11D494 x567116 xD4D12E x5B4ABD xC42EA6 }
 		}
 		
-		add_homeland = cu:californio
+		add_homeland = cu:californiano
 		add_homeland = cu:oodham
 	}
 	s:STATE_CONNAUGHT = {
