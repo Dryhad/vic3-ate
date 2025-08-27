@@ -1,6 +1,6 @@
 ﻿primorskiy={
 	color= { 0.2 0.4 0.1 }
-	religion = nousthreskia
+	religion = nousthreskeia
 	traits = { 
 		heritage_family_siberian 
 		tradition_maritime_mercantilism
