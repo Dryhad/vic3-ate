@@ -102,6 +102,33 @@
 				set_ig_trait = ig_trait:ig_trait_protection_payments
 			}
 		}
+		else_if = {
+			limit = {
+				c:MAD ?= this
+			}
+			ig:ig_petty_bourgeoisie = {
+				remove_ideology = ideology_reactionary
+				add_ideology = ideology_modernizer
+			}
+		}
+		else_if = {
+			limit = {
+				c:FRS ?= this
+			}
+			ig:ig_petty_bourgeoisie = {
+				remove_ideology = ideology_reactionary
+				add_ideology = ideology_modernizer
+			}
+		}
+		else_if = {
+			limit = {
+				c:REP ?= this
+			}
+			ig:ig_petty_bourgeoisie = {
+				remove_ideology = ideology_reactionary
+				add_ideology = ideology_modernizer
+			}
+		}
 	}
 
 	on_disable = {}

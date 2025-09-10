@@ -25,3 +25,15 @@
  company_steel_brotherhood: "Steel Brotherhood"
  company_russian_american: "Russian-American Company"
  company_portland_timber: "Portland Timber"
+ company_packers_salters_preservers: "Packers', Salters', and Preservers' Guild"
+ company_ravenscroft_industries: "Ravenscroft Industries"
+ company_detroit_jewelers: "Detroit Jewelers"
+ 
+ 
+ prestige_good_generic_fine_art: "Acclaimed Literature"
+ prestige_good_fordite_jewelry: "Fordite Jewelry"
+ prestige_good_private_label_groceries: "Private Label Groceries"
+ prestige_good_cuban_cigars: "Cuban Cigars"
+ prestige_good_ravenscroft_aircraft: "Ravenscroft Aircraft"
+ prestige_good_panamax_steamers: "Panamax Steamers"
+ prestige_good_anthracite: "Anthracite"

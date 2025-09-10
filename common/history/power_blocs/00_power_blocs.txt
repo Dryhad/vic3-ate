@@ -1,3 +1,61 @@
 ﻿POWER_BLOCS = {
-	
+	c:DES = {
+		create_power_bloc = {
+			name = MORMON_CONFEDERATION
+			
+			map_color = { 191 102 140 }
+			
+			founding_date = 3434.1.1
+			identity = identity_religious
+			principle = principle_sacred_civics_1
+			
+			member = c:NVJ
+		}
+		if = {
+			limit = {
+				has_dlc_feature = power_bloc_features
+			}
+			power_bloc = {
+				add_principle = principle_market_unification_2
+			}
+		}
+	}
+	c:BRZ = {
+		create_power_bloc = {
+			name = FIFTH_EMPIRE
+			
+			map_color = hsv360{ 143  75  61 }
+			
+			founding_date = 3434.1.1
+			identity = identity_sovereign_empire
+			principle = principle_vassalisation_1
+		}
+		if = {
+			limit = {
+				has_dlc_feature = power_bloc_features
+			}
+			power_bloc = {
+				add_principle = principle_defensive_cooperation_1
+			}
+		}
+	}
+	c:TXK = {
+		create_power_bloc = {
+			name = ATLANTIC_CONFEDERACY
+			
+			map_color = { 208 225 255 }
+			
+			founding_date = 3434.1.1
+			identity = identity_sovereign_empire
+			principle = principle_vassalisation_1
+		}
+		if = {
+			limit = {
+				has_dlc_feature = power_bloc_features
+			}
+			power_bloc = {
+				add_principle = principle_sacred_civics_1
+			}
+		}
+	}
 }

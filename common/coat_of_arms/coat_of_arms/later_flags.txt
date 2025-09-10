@@ -699,3 +699,14 @@ NGR = {
 		color2 = "green"
 	}
 }
+
+RMI = {
+	pattern = "pattern_horizontal_split_01.tga"
+	color1 = "blue"
+	color2 = "green"
+	
+	colored_emblem = {
+		texture = "ce_dharmachakra_india.dds"
+		color1 = "red"
+	}
+}

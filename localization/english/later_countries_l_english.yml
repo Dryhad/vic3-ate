@@ -118,3 +118,7 @@
  dyn_c_indus_free_state_adj: "Indus"
  dyn_c_godavari_free_state: "Godavari Free State"
  dyn_c_godavari_free_state_adj: "Godavari"
+ 
+ MORMON_CONFEDERATION: "Mormon Confederation"
+ FIFTH_EMPIRE: "Quinto Império"
+ ATLANTIC_CONFEDERACY: "Atlantic Confederacy"

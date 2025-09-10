@@ -3,7 +3,7 @@
     last_name = Publius
     culture = cu:gothamite
     female = no
-    religion = rel:constituionalist #hamiltonian
+    religion = rel:constitutionalist #hamiltonian
     ideology = ideology_vanguardist
     interest_group = ig_trade_unions
     birth_date = 3455.1.11
@@ -52,6 +52,28 @@ nys_frank_white_character_template = {
         earliest_usage_date = 3475.1.1
         latest_usage_date = 3536.1.1
         chance = 50
+	}
+}
+
+nys_hank_scorpio_character_template = {
+	first_name = Hank
+	last_name = Scorpio
+	culture = primary_culture
+	female = no
+	ideology = ideology_despotic_utopian
+	interest_group = ig_trade_unions #His twisted twin obsessions are his plot to rule the world and his employees' health
+	traits = {
+		ambitious
+		reckless
+		experienced_entrepreneur
+	}
+	executive_usage = {
+		country_trigger = {
+			any_primary_culture = {
+				has_discrimination_trait = heritage_family_east_coast
+			}
+		}
+		chance = 50
 	}
 }
 
@@ -586,6 +608,7 @@ osu_isaac_lamothe_jr_character_template = {
 	traits = {
 		arrogant
 		honorable
+		basic_entrepreneur
 	}
 	interest_group_leader_usage = {
 		country_trigger = {
@@ -742,6 +765,25 @@ hop_leon_chavatangakwunua_character_template = {
 	}
 }
 
+egy_jaako_arola_character_template = {
+	first_name = Jaako
+	last_name = Arola
+	culture = cu:finnish
+	female = no
+	ideology = ideology_moderate
+	interest_group = ig_industrialists
+	traits = {
+		grifter
+		ambitious
+	}
+	executive_usage = {
+		country_trigger = {
+			c:EGY ?= this
+		}
+		chance = 50
+	}
+}
+
 nvr_prokhor_zakharov_character_template = {
 	first_name = Prokhor
 	last_name = Zakharov
@@ -795,6 +837,7 @@ nmb_nwabudike_morgan_character_template = {
 	traits = {
 		ambitious
 		grifter
+		expert_entrepreneur
 	}
 }
 
@@ -922,6 +965,7 @@ ess_ignace_curnow_character_template = {
 	ideology = ideology_authoritarian #Maybe
 	interest_group = ig_industrialists
 	traits = {
+		experienced_entrepreneur
 	}
 }
 

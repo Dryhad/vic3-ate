@@ -1,0 +1,41 @@
+﻿prestige_good_generic_fine_art = {
+	base_good = fine_art
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/literature.dds"
+}
+
+prestige_good_fordite_jewelry = {
+	base_good = fine_art
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/unused/lightbulbs.dds" #Replace
+}
+
+prestige_good_private_label_groceries = {
+	base_good = groceries
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/unused/food.dds" #Replace
+}
+
+prestige_good_cuban_cigars = {
+	base_good = tobacco
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/unused/lightbulbs.dds" #Replace
+}
+
+prestige_good_ravenscroft_aircraft = {
+	base_good = aeroplanes
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/unused/lightbulbs.dds" #Replace
+}
+
+prestige_good_panamax_steamers = {
+	base_good = steamers
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/unused/lightbulbs.dds" #Replace
+}
+
+prestige_good_anthracite = {
+	base_good = coal
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/unused/lightbulbs.dds" #Replace
+}
