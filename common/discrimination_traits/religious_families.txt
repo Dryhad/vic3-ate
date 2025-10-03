@@ -1,8 +1,4 @@
 ﻿# heritage = yes for faith groups, heritage = no or null for families
-
-abrahamic = {
-	#Family
-}
 	#Christian, Muslim, and Jewish in vanilla
 	orishan = {
 		heritage = yes
@@ -16,8 +12,9 @@ abrahamic = {
 		heritage = yes
 	}
 	
-	afrosyncretic = { #Covers Orishan, Rastafari, and Vodun, making all three essentially flavour
-		heritage = yes
+	heritage_afrosyncretic = { #Covers Orishan, Rastafari, and Vodun, making all three essentially flavour
+		type = heritage
+		heritage_type = heritage_group_abrahamic
 	}
 
 	vernacular = {
@@ -56,8 +53,9 @@ abrahamic = {
 		heritage = yes
 	}
 	
-	druze_heritage = {
-		heritage = yes
+	heritage_druze = {
+		type = heritage
+		heritage_type = heritage_group_abrahamic
 	}
 	
 	rezadeiros = {
@@ -101,45 +99,49 @@ abrahamic = {
 	esoteric = {
 		heritage = yes
 	}
-	
-anachronous = {
-	#Family
-}
 
-	americanist = {
-		heritage = yes
+	heritage_americanist = {
+		type = heritage
+		heritage_type = heritage_group_anachronous
 	}
 	
 	artistic = {
-		heritage = yes
+		type = heritage
+		heritage_type = heritage_group_anachronous
 	}
 	
 	capitalist_heritage = { #probably rename
-		heritage = yes
+		type = heritage
+		heritage_type = heritage_group_anachronous
 	}
 	
 	digital = {
-		heritage = yes
+		type = heritage
+		heritage_type = heritage_group_anachronous
 	}
 	
 	idiosyncratic = {
-		heritage = yes
+		type = heritage
+		heritage_type = heritage_group_anachronous
 	}
 	
 	industrial_heritage = { #probably rename
-		heritage = yes
+		type = heritage
+		heritage_type = heritage_group_anachronous
 	}
 	
 	idunnic = {
 		heritage = yes
 	}
 	
-	modernist = {
-		heritage = yes
+	heritage_modernist = {
+		type = heritage
+		heritage_type = heritage_group_anachronous
 	}
 	
-	platinean = {
-		heritage = yes
+	heritage_platinean = {
+		type = heritage
+		heritage_type = heritage_group_anachronous
 	}
 	
 	quantum = {
@@ -147,11 +149,13 @@ anachronous = {
 	}
 	
 	jacobin = {
-		heritage = yes
+		type = heritage
+		heritage_type = heritage_group_anachronous
 	}
 	
-	scholastic = {
-		heritage = yes
+	heritage_scholastic = {
+		type = heritage
+		heritage_type = heritage_group_anachronous
 	}
 	
 amerindian = {

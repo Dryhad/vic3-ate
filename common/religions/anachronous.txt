@@ -1,5 +1,5 @@
 ﻿constitutionalist = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		americanist
 		anachronous
@@ -8,7 +8,7 @@
 }
 
 principlist = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		americanist
 		anachronous
@@ -17,7 +17,7 @@ principlist = {
 }
 
 libertarian = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		americanist
 		anachronous
@@ -26,7 +26,7 @@ libertarian = {
 }
 
 exceptionalist = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		americanist
 		anachronous
@@ -35,7 +35,7 @@ exceptionalist = {
 }
 
 imaginerian = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		americanist
 		anachronous
@@ -44,7 +44,7 @@ imaginerian = {
 }
 
 consumerist = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		capitalist_heritage
 		anachronous
@@ -53,7 +53,7 @@ consumerist = {
 }
 
 monetarist = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		capitalist_heritage
 		anachronous
@@ -62,7 +62,7 @@ monetarist = {
 }
 
 lacunarclast = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		capitalist_heritage
 		anachronous
@@ -71,7 +71,7 @@ lacunarclast = {
 }
 
 greenbacker = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		capitalist_heritage
 		americanist
@@ -81,7 +81,7 @@ greenbacker = {
 }
 
 galvanist = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		industrial_heritage
 		anachronous
@@ -90,7 +90,7 @@ galvanist = {
 }
 
 sustainablist = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		industrial_heritage
 		anachronous
@@ -99,7 +99,7 @@ sustainablist = {
 }
 
 promethean = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		industrial_heritage
 		anachronous
@@ -108,7 +108,7 @@ promethean = {
 }
 
 innovatorism = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		industrial_heritage
 		anachronous
@@ -117,7 +117,7 @@ innovatorism = {
 }
 
 enigmatismo = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		industrial_heritage
 		anachronous
@@ -126,7 +126,7 @@ enigmatismo = {
 }
 
 atomicist = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		quantum
 		anachronous
@@ -135,7 +135,7 @@ atomicist = {
 }
 
 aphite = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		quantum
 		anachronous
@@ -148,7 +148,7 @@ aphite = {
 }
 
 thermonullist = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		quantum
 		anachronous
@@ -157,7 +157,7 @@ thermonullist = {
 }
 
 novaist = {
-	texture = "gfx/interface/icons/generic_icons/unused/culture_icon.dds"
+	icon = "gfx/interface/icons/generic_icons/unused/culture_icon.dds"
 	traits = {
 		quantum
 		anachronous
@@ -166,7 +166,7 @@ novaist = {
 }
 
 webweaver = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		digital
 		anachronous
@@ -175,7 +175,7 @@ webweaver = {
 }
 
 cyberede = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		digital
 		anachronous
@@ -184,7 +184,7 @@ cyberede = {
 }
 
 syncado = { #Unfinished on the CK3 side; future-proofing
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		digital
 		anachronous
@@ -193,7 +193,7 @@ syncado = { #Unfinished on the CK3 side; future-proofing
 }
 
 darian = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		artistic
 		anachronous
@@ -202,7 +202,7 @@ darian = {
 }
 
 constructivist = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		artistic
 		anachronous
@@ -211,7 +211,7 @@ constructivist = {
 }
 
 el_santo = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		idiosyncratic
 		anachronous
@@ -220,7 +220,7 @@ el_santo = {
 }
 
 auditorista = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		idiosyncratic
 		anachronous
@@ -229,7 +229,7 @@ auditorista = {
 }
 
 alineado = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		idiosyncratic
 		anachronous
@@ -238,7 +238,7 @@ alineado = {
 }
 
 confederal = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		platinean
 		anachronous
@@ -247,7 +247,7 @@ confederal = {
 }
 
 federalista = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		platinean
 		anachronous
@@ -256,7 +256,7 @@ federalista = {
 }
 
 unitario = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		platinean
 		anachronous
@@ -265,7 +265,7 @@ unitario = {
 }
 
 anthropophagic = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		modernist
 		anachronous
@@ -274,7 +274,7 @@ anthropophagic = {
 }
 
 architecturalist = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		modernist
 		anachronous
@@ -283,7 +283,7 @@ architecturalist = {
 }
 
 sagarana = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		modernist
 		anachronous
@@ -292,7 +292,7 @@ sagarana = {
 }
 
 alternative_society = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		modernist
 		anachronous
@@ -301,7 +301,7 @@ alternative_society = {
 }
 
 saudosism = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		modernist
 		anachronous
@@ -310,7 +310,7 @@ saudosism = {
 }
 
 earthvault = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds" #Replace
+	icon = "gfx/interface/icons/religion_icons/animist.dds" #Replace
 	traits = {
 		idunnic
 		anachronous

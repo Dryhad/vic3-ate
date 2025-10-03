@@ -1,5 +1,5 @@
 ﻿hekura = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		amazonian_religion
 		amerindian
@@ -8,7 +8,7 @@
 }
 
 hekwapienai = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		amazonian_religion
 		amerindian
@@ -17,7 +17,7 @@ hekwapienai = {
 }
 
 iraacungeguma = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		amazonian_religion
 		amerindian
@@ -26,7 +26,7 @@ iraacungeguma = {
 }
 
 porantimao = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		amazonian_religion
 		amerindian
@@ -35,7 +35,7 @@ porantimao = {
 }
 
 wasahure_sena = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		amazonian_religion
 		amerindian
@@ -44,7 +44,7 @@ wasahure_sena = {
 }
 
 inkarri_religion = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		andean_religion
 		amerindian
@@ -53,7 +53,7 @@ inkarri_religion = {
 }
 
 inti_religion = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		andean_religion
 		amerindian
@@ -62,7 +62,7 @@ inti_religion = {
 }
 
 pachamama_religion = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		andean_religion
 		amerindian
@@ -71,7 +71,7 @@ pachamama_religion = {
 }
 
 xoon = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		chon
 		amerindian
@@ -80,7 +80,7 @@ xoon = {
 }
 
 gaiwiio = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		haudenosaunee
 		amerindian
@@ -92,7 +92,7 @@ gaiwiio = {
 }
 
 exovedate = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		indigenaelecti
 		amerindian
@@ -102,7 +102,7 @@ exovedate = {
 }
 
 ayahan = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		indigenaelecti
 		amerindian
@@ -112,7 +112,7 @@ ayahan = {
 }
 
 unipkaaq = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		inuit
 		amerindian
@@ -121,7 +121,7 @@ unipkaaq = {
 }
 
 ilisaijjut = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		inuit
 		amerindian
@@ -130,7 +130,7 @@ ilisaijjut = {
 }
 
 midewiwin = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		medicine
 		amerindian
@@ -139,7 +139,7 @@ midewiwin = {
 }
 
 jakakukuecha = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		mesoamerican_religion
 		amerindian
@@ -148,7 +148,7 @@ jakakukuecha = {
 }
 
 tucaari_wixarika = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		mesoamerican_religion
 		amerindian
@@ -157,7 +157,7 @@ tucaari_wixarika = {
 }
 
 miquiztonatiuh = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		mesoamerican_religion
 		amerindian
@@ -166,7 +166,7 @@ miquiztonatiuh = {
 }
 
 hach_kanik = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		mesoamerican_religion
 		amerindian
@@ -175,7 +175,7 @@ hach_kanik = {
 }
 
 hozhooji = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		navajo_religion
 		amerindian
@@ -184,7 +184,7 @@ hozhooji = {
 }
 
 raven_tales = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		northwestern_religion
 		amerindian
@@ -193,7 +193,7 @@ raven_tales = {
 }
 
 sun_dance = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		plains_religion
 		amerindian
@@ -205,7 +205,7 @@ sun_dance = {
 }
 
 nguillatun = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		feyentun
 		amerindian

@@ -1,27 +1,18 @@
 ﻿shangrilaism = {
-	texture = "gfx/interface/icons/religion_icons/gelugpa.dds"
-	traits = {
-		buddhist
-		eastern
-	}
+	icon = "gfx/interface/icons/religion_icons/gelugpa.dds"
+	heritage = heritage_dharmic
 	color = { 252 3 198 }
 }
 
 humanistic_buddhism = {
-	texture = "gfx/interface/icons/religion_icons/gelugpa.dds"
-	traits = {
-		buddhist
-		eastern
-	}
+	icon = "gfx/interface/icons/religion_icons/gelugpa.dds"
+	heritage = heritage_dharmic
 	color = { 198 104 45 }
 }
 
 samaj_hinduism = {
-	texture = "gfx/interface/icons/religion_icons/hindu.dds"
-	traits = {
-		hindu_heritage
-		eastern
-	}
+	icon = "gfx/interface/icons/religion_icons/hindu.dds"
+	heritage = heritage_dharmic
 	color = { 255 0 0 }
 	taboos = {
 		meat
@@ -29,11 +20,8 @@ samaj_hinduism = {
 }
 
 sanatani = {
-	texture = "gfx/interface/icons/religion_icons/hindu.dds"
-	traits = {
-		hindu_heritage
-		eastern
-	}
+	icon = "gfx/interface/icons/religion_icons/hindu.dds"
+	heritage = heritage_dharmic
 	color = { 255 145 28 }
 	taboos = {
 		meat
@@ -41,11 +29,8 @@ sanatani = {
 }
 
 hare_krishna = {
-	texture = "gfx/interface/icons/religion_icons/hindu.dds"
-	traits = {
-		hindu_heritage
-		eastern
-	}
+	icon = "gfx/interface/icons/religion_icons/hindu.dds"
+	heritage = heritage_dharmic
 	color = { 102 204 255 }
 	taboos = {
 		meat fish
@@ -53,7 +38,7 @@ hare_krishna = {
 }
 
 johrei = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		neoniponic
 		eastern
@@ -62,7 +47,7 @@ johrei = {
 }
 
 phylosian = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		atlantean
 		eastern
@@ -71,7 +56,7 @@ phylosian = {
 }
 
 quetzaltec = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		atlantean
 		eastern
@@ -80,7 +65,7 @@ quetzaltec = {
 }
 
 theosophist = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		atlantean
 		eastern
@@ -89,7 +74,7 @@ theosophist = {
 }
 
 sahasrara = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		guruist
 		eastern
@@ -98,7 +83,7 @@ sahasrara = {
 }
 
 anahata = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		guruist
 		eastern
@@ -107,7 +92,7 @@ anahata = {
 }
 
 balamvotanism = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		mayanist
 		eastern
@@ -116,7 +101,7 @@ balamvotanism = {
 }
 
 neomayan = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		mayanist
 		eastern
@@ -125,7 +110,7 @@ neomayan = {
 }
 
 petromancer = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		wellness
 		eastern
@@ -134,7 +119,7 @@ petromancer = {
 }
 
 gaian = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		naturalist
 		eastern
@@ -143,7 +128,7 @@ gaian = {
 }
 
 holocenian = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		naturalist
 		eastern
@@ -152,7 +137,7 @@ holocenian = {
 }
 
 revengeant = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		naturalist
 		eastern
@@ -161,7 +146,7 @@ revengeant = {
 }
 
 burner = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		naturalist
 		eastern
@@ -170,7 +155,7 @@ burner = {
 }
 
 saurian = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		naturalist
 		eastern
