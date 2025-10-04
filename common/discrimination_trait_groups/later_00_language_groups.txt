@@ -1,0 +1,9 @@
+﻿language_group_hispanophone = {
+	type = language
+}
+language_group_francophone = {
+	type = language
+}
+language_group_anglophone = {
+	type = language
+}

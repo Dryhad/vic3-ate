@@ -32,8 +32,6 @@
 	s:STATE_TOMSK={
 		region_state:RUS={
 		}
-		region_state:CHI={
-		}
 	}
 	s:STATE_TUVA={
 		region_state:CHI={
@@ -51,25 +49,22 @@
 		region_state:RUS={
 		}
 	}
-	s:STATE_NENETSIA={
+	s:STATE_CHUKOTKA={
 		region_state:RUS={
 		}
 	}
-	s:STATE_CHUKOTKA={
-		region_state:NVR={
-		}
-	}
 	s:STATE_KAMCHATKA={
-		region_state:NVR={
+		region_state:RUS={
 		}
 	}
 	s:STATE_OKHOTSK={
-		region_state:NVR={
+		region_state:RUS={
 			create_building={
 				building="building_port"
 				add_ownership={
-					country={
-						country="c:NVR"
+					company={
+						type = company_russian_american_company
+						country="c:RUS"
 						levels=1
 					}
 				}
@@ -79,19 +74,19 @@
 		}
 	}
 	s:STATE_YAKUTSK={
-		region_state:NVR={
+		region_state:RUS={
 		}
 	}
 	s:STATE_TRANS_BAIKAL={
-		region_state:NVR={
+		region_state:RUS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:NVR"
+						country="c:RUS"
 						levels=1
-						region="STATE_OUTER_MANCHURIA"
+						region="STATE_INGRIA"
 					}
 				}
 				reserves=1
@@ -104,103 +99,3 @@
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

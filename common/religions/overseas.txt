@@ -1,7 +1,7 @@
 ﻿# Anything not from AtE Proper/The Americas
 
 thelema = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		anachronous
 		esoteric
@@ -10,25 +10,19 @@ thelema = {
 }
 
 glorian = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
-	traits = {
-		anachronous
-		scholastic
-	}
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
+	heritage = heritage_scholastic
 	color = { 0.6 0.6 0.5 }
 }
 
 chromatacia = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
-	traits = {
-		anachronous
-		scholastic
-	}
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
+	heritage = heritage_scholastic
 	color = { 0.6 0.4 0.3 }
 }
 
 nousthreskeia = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		eastern
 		esoteric
@@ -37,7 +31,7 @@ nousthreskeia = {
 }
 
 cult_of_reason = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		anachronous
 		jacobin
@@ -46,7 +40,7 @@ cult_of_reason = {
 }
 
 dreaming = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		animist #replace
 	}
@@ -54,11 +48,8 @@ dreaming = {
 }
 
 jain = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
-	traits = {
-		eastern
-		#probably something else
-	}
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
+	heritage = heritage_dharmic
 	taboos = {
 		meat fish
 	}

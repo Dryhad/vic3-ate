@@ -1,7 +1,7 @@
 ﻿# Oh alright I'll do them (I hate everything)
 
 camino_estelar = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		astronomer
@@ -10,7 +10,7 @@ camino_estelar = {
 }
 
 zetanology = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		astronomer
@@ -19,7 +19,7 @@ zetanology = {
 }
 
 valley_of_dawn = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		astronomer
@@ -28,7 +28,7 @@ valley_of_dawn = {
 }
 
 siderale = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		astronomer
@@ -37,7 +37,7 @@ siderale = {
 }
 
 ashtari = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		astronomer
@@ -46,7 +46,7 @@ ashtari = {
 }
 
 gnarlist = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		athletic
@@ -55,7 +55,7 @@ gnarlist = {
 }
 
 stokeism = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		athletic
@@ -64,7 +64,7 @@ stokeism = {
 }
 
 boiadist = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		conterraneo
@@ -73,7 +73,7 @@ boiadist = {
 }
 
 pantaneiro = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		conterraneo
@@ -82,7 +82,7 @@ pantaneiro = {
 }
 
 evonian = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		gardenerian
@@ -91,7 +91,7 @@ evonian = {
 }
 
 aria_de_machete = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		llanoist
@@ -100,7 +100,7 @@ aria_de_machete = {
 }
 
 lakeshore = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		nautical
@@ -109,7 +109,7 @@ lakeshore = {
 }
 
 brethren = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		nautical
@@ -118,7 +118,7 @@ brethren = {
 }
 
 pelagic = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		nautical
@@ -127,7 +127,7 @@ pelagic = {
 }
 
 viking = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		nautical
@@ -136,7 +136,7 @@ viking = {
 }
 
 masonic = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		occultist
@@ -145,7 +145,7 @@ masonic = {
 }
 
 diabolic = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		occultist
@@ -154,7 +154,7 @@ diabolic = {
 }
 
 draconian = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		occultist
@@ -163,7 +163,7 @@ draconian = {
 }
 
 gauchada = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		pampeano
@@ -172,7 +172,7 @@ gauchada = {
 }
 
 farrapo = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		pampeano
@@ -181,7 +181,7 @@ farrapo = {
 }
 
 calafatist = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		patagonic
@@ -190,7 +190,7 @@ calafatist = {
 }
 
 juventide = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		patagonic
@@ -199,7 +199,7 @@ juventide = {
 }
 
 sebastianism = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		sebastianic
@@ -208,7 +208,7 @@ sebastianism = {
 }
 
 real_road = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		trailwalker
@@ -217,7 +217,7 @@ real_road = {
 }
 
 midnight_sun = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		trailwalker
@@ -226,7 +226,7 @@ midnight_sun = {
 }
 
 dustrider = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		trailwalker
@@ -235,7 +235,7 @@ dustrider = {
 }
 
 interranger = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		trailwalker
@@ -244,7 +244,7 @@ interranger = {
 }
 
 sagestepper = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		trailwalker
@@ -253,7 +253,7 @@ sagestepper = {
 }
 
 saguarorrinche = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		trailwalker
@@ -262,7 +262,7 @@ saguarorrinche = {
 }
 
 vendimia_sol = {
-	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	icon = "gfx/interface/icons/religion_icons/animist.dds"
 	traits = {
 		folkloric
 		viticulturian
