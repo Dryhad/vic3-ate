@@ -1,0 +1,50 @@
+﻿# Religious heritage
+
+heritage_group_anachronous = {
+	type = heritage
+}
+
+# Cultural heritage
+
+heritage_group_bolivarian = {
+	type = heritage
+}
+heritage_group_great_guyanese = {
+	type = heritage
+}
+heritage_group_brazilian = {
+	type = heritage
+}
+heritage_group_southern_cone = {
+	type = heritage
+}
+heritage_group_east_coast = {
+	type = heritage
+}
+heritage_group_west_coast = {
+	type = heritage
+}
+heritage_group_mountain_central = {
+	type = heritage
+}
+heritage_group_central_american = {
+	type = heritage
+}
+
+# Language
+
+language_group_hispanophone = {
+	type = language
+}
+language_group_francophone = {
+	type = language
+}
+language_group_anglophone = {
+	type = language
+}
+language_group_germanophone = {
+	type = language
+}
+language_group_lusophone = {
+	type = language
+}

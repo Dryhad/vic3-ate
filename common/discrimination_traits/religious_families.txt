@@ -1,272 +1,321 @@
 ﻿# heritage = yes for faith groups, heritage = no or null for families
+
+#abrahamic = {
+	#Family
+#}
 	#Christian, Muslim, and Jewish in vanilla
-	orishan = {
-		heritage = yes
-	}
+	#orishan = {
+	#	type = heritage
+	#	trait_group = heritage_group_abrahamic
+	#}
 	
-	rastafari = {
-		heritage = yes
-	}
+	#rastafari = {
+	#	type = heritage
+	#	trait_group = heritage_group_abrahamic
+	#}
 	
-	vodun = {
-		heritage = yes
-	}
+	#vodun = {
+	#	type = heritage
+	#	trait_group = heritage_group_abrahamic
+	#}
 	
 	heritage_afrosyncretic = { #Covers Orishan, Rastafari, and Vodun, making all three essentially flavour
 		type = heritage
-		heritage_type = heritage_group_abrahamic
+		trait_group = heritage_group_abrahamic
 	}
 
 	vernacular = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_abrahamic
 	}
 
 	postadventist = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_abrahamic
 	}
 	
 	divina_patriota = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_abrahamic
 	}
 	
 	originario = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_abrahamic
 	}
 	
 	peyotist = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_abrahamic
 	}
 	
 	universalist = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_abrahamic
 	}
 	
 	tributist = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_abrahamic
 	}
 	
 	tarahumara = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_abrahamic
 	}
 	
 	spiritist = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_abrahamic
 	}
 	
 	heritage_druze = {
 		type = heritage
-		heritage_type = heritage_group_abrahamic
+		trait_group = heritage_group_abrahamic
 	}
 	
 	rezadeiros = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_abrahamic
 	}
 
 #Harmonic Family [eastern]
-	#Buddhism in vanilla
+	#Taoic and Dharmic in vanilla
 	atlantean = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_eastern
 	}
 	
 	guruist = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_eastern
 	}
 	
 	mayanist = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_eastern
 	}
 	
 	nanakpanthi = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_eastern
 	}
 	
 	naturalist = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_eastern
 	}
 	
 	neoniponic = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_eastern
 	}
 	
 	wellness = {
-		heritage = yes
-	}
-	
-	hindu_heritage = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_eastern
 	}
 	
 	esoteric = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_eastern
 	}
 
 	heritage_americanist = {
 		type = heritage
-		heritage_type = heritage_group_anachronous
+		trait_group = heritage_group_anachronous
 	}
 	
 	artistic = {
 		type = heritage
-		heritage_type = heritage_group_anachronous
+		trait_group = heritage_group_anachronous
 	}
 	
 	capitalist_heritage = { #probably rename
 		type = heritage
-		heritage_type = heritage_group_anachronous
+		trait_group = heritage_group_anachronous
 	}
 	
 	digital = {
 		type = heritage
-		heritage_type = heritage_group_anachronous
+		trait_group = heritage_group_anachronous
 	}
 	
 	idiosyncratic = {
 		type = heritage
-		heritage_type = heritage_group_anachronous
+		trait_group = heritage_group_anachronous
 	}
 	
 	industrial_heritage = { #probably rename
 		type = heritage
-		heritage_type = heritage_group_anachronous
+		trait_group = heritage_group_anachronous
 	}
 	
 	idunnic = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_anachronous
 	}
 	
-	heritage_modernist = {
+	modernist = {
 		type = heritage
-		heritage_type = heritage_group_anachronous
+		trait_group = heritage_group_anachronous
 	}
 	
-	heritage_platinean = {
+	platinean = {
 		type = heritage
-		heritage_type = heritage_group_anachronous
+		trait_group = heritage_group_anachronous
 	}
 	
 	quantum = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_anachronous
 	}
 	
 	jacobin = {
 		type = heritage
-		heritage_type = heritage_group_anachronous
+		trait_group = heritage_group_anachronous
 	}
 	
-	heritage_scholastic = {
+	scholastic = {
 		type = heritage
-		heritage_type = heritage_group_anachronous
+		trait_group = heritage_group_anachronous
 	}
 	
-amerindian = {
+#amerindian = {
 	#Family
-}
+#}
 
 	amazonian_religion = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_naturalistic
 	}
 	
 	andean_religion = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_naturalistic
 	}
 	
 	chon = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_naturalistic
 	}
 	
 	indigenaelecti = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_naturalistic
 	}
 	
 	haudenosaunee = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_naturalistic
 	}
 	
 	inuit_religion = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_naturalistic
 	}
 	
 	feyentun = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_naturalistic
 	}
 	
 	medicine = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_naturalistic
 	}
 	
 	mesoamerican_religion = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_naturalistic
 	}
 	
 	navajo_religion = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_naturalistic
 	}
 	
 	northwestern_religion = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_naturalistic
 	}
 	
 	plains_religion = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_naturalistic
 	}
 	
 #Folkloric can be glossed as Animist for now
-folkloric = {
+#folkloric = {
 	#Family
-}
+#}
 
 	astronomer = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_naturalistic
 	}
 	
 	athletic = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_naturalistic
 	}
 	
 	conterraneo = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_naturalistic
 	}
 	
 	gardenerian = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_naturalistic
 	}
 	
 	lacustrine = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_naturalistic
 	}
 	
 	llanoist = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_naturalistic
 	}
 	
 	nautical = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_naturalistic
 	}
 	
 	norse = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_naturalistic
 	}
 	
 	occultist = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_naturalistic
 	}
 	
 	pampeano = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_naturalistic
 	}
 	
 	patagonic = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_naturalistic
 	}
 	
 	sebastianic = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_naturalistic
 	}
 	
 	trailwalker = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_naturalistic
 	}
 	
 	viticulturian = {
-		heritage = yes
+		type = heritage
+		trait_group = heritage_group_naturalistic
 	}

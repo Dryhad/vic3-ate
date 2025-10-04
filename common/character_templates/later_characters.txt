@@ -106,6 +106,9 @@ txk_benjamin_eleazar_character_template = {
 		latest_usage_date = 3536.1.1
 		chance = 50
 	}
+	on_created = {
+		set_character_immortal = yes
+	}
 }
 
 ves_medex_guedder_character_template = {

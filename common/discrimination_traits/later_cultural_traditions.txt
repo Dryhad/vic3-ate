@@ -1,4 +1,14 @@
-﻿tradition_RICE_whalers = {
+﻿tradition_chromatacia = {
+	type = tradition
+}
+
+tradition_braziliosphere = {
+	type = tradition
+}
+
+#Probably delete everything below this comment
+
+tradition_RICE_whalers = {
 	
 }
 

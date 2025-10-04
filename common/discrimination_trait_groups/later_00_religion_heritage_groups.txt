@@ -1,3 +1,0 @@
-﻿heritage_group_anachronous = {
-	type = heritage
-}
